@@ -5,7 +5,7 @@ interface ItemDisplayProps {
   name: string;
   id: string;
   count?: number;
-  onClick?: () => void;
+  onClick?: (e?: React.MouseEvent) => void;
 }
 
 export function ItemDisplay({ icon, name, id, count, onClick }: ItemDisplayProps) {

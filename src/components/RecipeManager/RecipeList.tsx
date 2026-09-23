@@ -1,17 +1,21 @@
 import { useState } from 'react';
 import { useApp } from '../../contexts/AppContext';
+import { useNavigation } from '../../contexts/NavigationContext';
 import { Recipe } from '../../types';
 import { RecipeSearch, RecipeSearchOptions } from '../../data/recipeSearch';
 import { SearchInput } from '../common/SearchInput';
 import { ItemDisplay } from '../common/ItemDisplay';
 import { RecipeEditDialog } from './RecipeEditDialog';
+import { ItemSelector } from '../common/ItemSelector';
 
 export function RecipeList() {
   const { data, setData } = useApp();
+  const { setSelectedRecipe } = useNavigation();
   const [searchOptions, setSearchOptions] = useState<RecipeSearchOptions>({});
-  const [editingRecipe, setEditingRecipe] = useState<Recipe | null>(null);
   const [isCreating, setIsCreating] = useState(false);
   const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+  const workstationTag = Object.values(data.tags).find(tag => tag.name === '工作方块');
+  const workstationItemIds = workstationTag?.items || [];
 
   const recipes = RecipeSearch.search(data, searchOptions);
 
@@ -27,16 +31,7 @@ export function RecipeList() {
         [recipe.id]: recipe
       }
     }));
-    setEditingRecipe(null);
     setIsCreating(false);
-  };
-
-  const handleDelete = (recipeId: string) => {
-    if (!confirm('确定删除该配方吗？')) return;
-
-    const newData = { ...data };
-    delete newData.recipes[recipeId];
-    setData(newData);
   };
 
   return (
@@ -59,54 +54,43 @@ export function RecipeList() {
         <div className="advanced-search">
           <div className="search-row">
             <label>工作方块:</label>
-            <select
-              value={searchOptions.workstation || ''}
-              onChange={e => setSearchOptions({ ...searchOptions, workstation: e.target.value || undefined })}
-            >
-              <option value="">全部</option>
-              {Object.values(data.items).map(item => (
-                <option key={item.id} value={item.id}>📦 {item.name}</option>
-              ))}
-            </select>
+            <ItemSelector
+              value={searchOptions.workstation ? { type: 'item', ref: searchOptions.workstation } : undefined}
+              onChange={(value) => setSearchOptions({ ...searchOptions, workstation: value?.ref })}
+              placeholder="全部"
+              allowTags={false}
+              allowedItemIds={workstationItemIds}
+            />
           </div>
 
           <div className="search-row">
             <label>输入物品:</label>
-            <select
-              value={searchOptions.input || ''}
-              onChange={e => setSearchOptions({ ...searchOptions, input: e.target.value || undefined })}
-            >
-              <option value="">全部</option>
-              {Object.values(data.items).map(item => (
-                <option key={item.id} value={item.id}>📦 {item.name}</option>
-              ))}
-            </select>
+            <ItemSelector
+              value={searchOptions.input ? { type: 'item', ref: searchOptions.input } : undefined}
+              onChange={(value) => setSearchOptions({ ...searchOptions, input: value?.ref })}
+              placeholder="全部"
+              allowTags={false}
+            />
           </div>
 
           <div className="search-row">
             <label>附加物品:</label>
-            <select
-              value={searchOptions.attachment || ''}
-              onChange={e => setSearchOptions({ ...searchOptions, attachment: e.target.value || undefined })}
-            >
-              <option value="">全部</option>
-              {Object.values(data.items).map(item => (
-                <option key={item.id} value={item.id}>📦 {item.name}</option>
-              ))}
-            </select>
+            <ItemSelector
+              value={searchOptions.attachment ? { type: 'item', ref: searchOptions.attachment } : undefined}
+              onChange={(value) => setSearchOptions({ ...searchOptions, attachment: value?.ref })}
+              placeholder="全部"
+              allowTags={false}
+            />
           </div>
 
           <div className="search-row">
             <label>输出物品:</label>
-            <select
-              value={searchOptions.output || ''}
-              onChange={e => setSearchOptions({ ...searchOptions, output: e.target.value || undefined })}
-            >
-              <option value="">全部</option>
-              {Object.values(data.items).map(item => (
-                <option key={item.id} value={item.id}>📦 {item.name}</option>
-              ))}
-            </select>
+            <ItemSelector
+              value={searchOptions.output ? { type: 'item', ref: searchOptions.output } : undefined}
+              onChange={(value) => setSearchOptions({ ...searchOptions, output: value?.ref })}
+              placeholder="全部"
+              allowTags={false}
+            />
           </div>
 
           <button
@@ -122,7 +106,7 @@ export function RecipeList() {
         {recipes.map(recipe => {
           const workstation = data.items[recipe.workstation];
           return (
-            <div key={recipe.id} className="recipe-card" onClick={() => setEditingRecipe(recipe)}>
+            <div key={recipe.id} className="recipe-card" onClick={() => setSelectedRecipe(recipe)}>
               <div className="recipe-header">
                 <h3>{recipe.name}</h3>
                 {workstation && (
@@ -174,15 +158,12 @@ export function RecipeList() {
         )}
       </div>
 
-      {(editingRecipe || isCreating) && (
+      {isCreating && (
         <RecipeEditDialog
-          recipe={editingRecipe}
+          recipe={null}
           onSave={handleSave}
-          onDelete={editingRecipe ? () => handleDelete(editingRecipe.id) : undefined}
-          onCancel={() => {
-            setEditingRecipe(null);
-            setIsCreating(false);
-          }}
+          onDelete={undefined}
+          onCancel={() => setIsCreating(false)}
         />
       )}
     </div>

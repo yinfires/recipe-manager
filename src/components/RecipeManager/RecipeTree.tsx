@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import ReactFlow, {
   Node,
   Edge,
@@ -7,51 +7,77 @@ import ReactFlow, {
   useNodesState,
   useEdgesState,
   ConnectionLineType,
-  MarkerType
+  MarkerType,
+  Position
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 import { useApp } from '../../contexts/AppContext';
+import { useNavigation } from '../../contexts/NavigationContext';
 import { ViewMode } from '../../types';
 import { RecipeTreeBuilder } from '../../utils/recipeTreeAlgo';
-import { SearchInput } from '../common/SearchInput';
+import { ItemSelector } from '../common/ItemSelector';
 
 export function RecipeTree() {
   const { data } = useApp();
+  const { setSelectedItem, setSelectedTag, recipeTreeTarget, setRecipeTreeTarget } = useNavigation();
   const [targetIds, setTargetIds] = useState<string[]>([]);
-  const [mode, setMode] = useState<ViewMode>('source');
+  const [modes, setModes] = useState<ViewMode[]>(['source', 'usage']);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
-  const [searchText, setSearchText] = useState('');
+  const [expandedTags, setExpandedTags] = useState<Set<string>>(new Set());
+
+  const handleNodeClick = useCallback((_event: React.MouseEvent, node: Node) => {
+    const item = data.items[node.id];
+    const tag = data.tags[node.id];
+    if (item) {
+      setSelectedItem(item);
+    } else if (tag) {
+      // 点击标签节点时切换展开/收起状态
+      setExpandedTags(prev => {
+        const newSet = new Set(prev);
+        if (newSet.has(node.id)) {
+          newSet.delete(node.id);
+        } else {
+          newSet.add(node.id);
+        }
+        return newSet;
+      });
+    }
+  }, [data, setSelectedItem, setSelectedTag]);
 
   const buildTree = useCallback(() => {
-    if (targetIds.length === 0) {
+    if (targetIds.length === 0 || modes.length === 0) {
       setNodes([]);
       setEdges([]);
       return;
     }
 
-    const { nodes: treeNodes, edges: treeEdges } = RecipeTreeBuilder.build(data, targetIds, mode);
+    const { nodes: treeNodes, edges: treeEdges } = RecipeTreeBuilder.build(data, targetIds, modes, expandedTags);
 
     // 转换为 React Flow 节点
     const flowNodes: Node[] = treeNodes.map(node => {
       const item = data.items[node.id];
       const tag = data.tags[node.id];
       const ref = item || tag;
+      const isExpanded = tag && expandedTags.has(node.id);
 
       return {
         id: node.id,
         type: 'default',
         position: {
           x: node.level * 250,
-          y: node.branchIndex * 80
+          y: node.row * 80
         },
         data: {
           label: (
             <div className="recipe-node">
               {item ? '📦' : '🏷️'} {ref?.name || node.id}
+              {tag && <span style={{ marginLeft: '4px' }}>{isExpanded ? '▼' : '▶'}</span>}
             </div>
           )
-        }
+        },
+        sourcePosition: Position.Right,
+        targetPosition: Position.Left
       };
     });
 
@@ -61,15 +87,17 @@ export function RecipeTree() {
       source: edge.from,
       target: edge.to,
       type: ConnectionLineType.SmoothStep,
-      animated: true,
+      animated: false,
+      style: { stroke: '#64748b', strokeWidth: 2 },
       markerEnd: {
-        type: MarkerType.ArrowClosed
+        type: MarkerType.ArrowClosed,
+        color: '#64748b'
       }
     }));
 
     setNodes(flowNodes);
     setEdges(flowEdges);
-  }, [data, targetIds, mode, setNodes, setEdges]);
+  }, [data, targetIds, modes, expandedTags, setNodes, setEdges]);
 
   const addTarget = (itemId: string) => {
     if (!targetIds.includes(itemId)) {
@@ -81,14 +109,35 @@ export function RecipeTree() {
     setTargetIds(targetIds.filter(id => id !== itemId));
   };
 
-  const filteredItems = Object.values(data.items).filter(item =>
-    item.name.toLowerCase().includes(searchText.toLowerCase())
-  );
+  const toggleMode = (mode: ViewMode) => {
+    if (modes.includes(mode)) {
+      const newModes = modes.filter(m => m !== mode);
+      if (newModes.length > 0) {
+        setModes(newModes);
+      }
+    } else {
+      setModes([...modes, mode]);
+    }
+  };
 
-  // 每次目标或模式改变时重新构建树
-  useState(() => {
+  // 监听外部导航请求
+  useEffect(() => {
+    if (recipeTreeTarget) {
+      const id = recipeTreeTarget.id;
+      setTargetIds(prev => {
+        if (!prev.includes(id)) {
+          return [...prev, id];
+        }
+        return prev;
+      });
+      setRecipeTreeTarget(null);
+    }
+  }, [recipeTreeTarget, setRecipeTreeTarget]);
+
+  // 每次目标或模式改变时自动重新构建树
+  useEffect(() => {
     buildTree();
-  });
+  }, [buildTree]);
 
   return (
     <div className="recipe-tree-container">
@@ -98,51 +147,47 @@ export function RecipeTree() {
           <div className="target-chips">
             {targetIds.map(id => {
               const item = data.items[id];
-              return item ? (
+              const tag = data.tags[id];
+              const target = item || tag;
+              return target ? (
                 <div key={id} className="target-chip">
-                  📦 {item.name}
+                  {item ? '📦' : '🏷️'} {target.name}
                   <button onClick={() => removeTarget(id)}>×</button>
                 </div>
               ) : null;
             })}
           </div>
-          <div className="target-search">
-            <SearchInput placeholder="搜索添加物品..." onSearch={setSearchText} />
-            <div className="target-dropdown">
-              {filteredItems.slice(0, 10).map(item => (
-                <div key={item.id} className="target-option" onClick={() => addTarget(item.id)}>
-                  📦 {item.name}
-                </div>
-              ))}
-            </div>
-          </div>
+          <ItemSelector
+            value={undefined}
+            onChange={(value) => {
+              if (value?.ref) {
+                addTarget(value.ref);
+              }
+            }}
+            placeholder="搜索添加物品或标签..."
+            allowTags={true}
+          />
         </div>
 
         <div className="tree-mode">
           <label>模式:</label>
           <label>
             <input
-              type="radio"
-              value="source"
-              checked={mode === 'source'}
-              onChange={e => setMode(e.target.value as ViewMode)}
+              type="checkbox"
+              checked={modes.includes('source')}
+              onChange={() => toggleMode('source')}
             />
             查看获取
           </label>
           <label>
             <input
-              type="radio"
-              value="usage"
-              checked={mode === 'usage'}
-              onChange={e => setMode(e.target.value as ViewMode)}
+              type="checkbox"
+              checked={modes.includes('usage')}
+              onChange={() => toggleMode('usage')}
             />
             查看制作
           </label>
         </div>
-
-        <button className="btn-primary" onClick={buildTree}>
-          生成配方树
-        </button>
       </div>
 
       <div className="tree-canvas">
@@ -152,16 +197,17 @@ export function RecipeTree() {
             edges={edges}
             onNodesChange={onNodesChange}
             onEdgesChange={onEdgesChange}
+            onNodeClick={handleNodeClick}
             connectionLineType={ConnectionLineType.SmoothStep}
             fitView
+            fitViewOptions={{ padding: 0.2 }}
           >
             <Background />
             <Controls />
           </ReactFlow>
         ) : (
           <div className="tree-empty">
-            <p>请选择物品并点击"生成配方树"</p>
-            <p className="tree-hint">提示：Ctrl+滚轮缩放 | Shift+滚轮平移</p>
+            <p>请选择物品查看配方树</p>
           </div>
         )}
       </div>

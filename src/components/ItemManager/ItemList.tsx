@@ -1,60 +1,74 @@
 import { useState } from 'react';
 import { useApp } from '../../contexts/AppContext';
+import { useNavigation } from '../../contexts/NavigationContext';
 import { Item } from '../../types';
 import { SearchInput } from '../common/SearchInput';
 import { ItemDisplay } from '../common/ItemDisplay';
-import { QuickMenu } from '../common/QuickMenu';
+import { TagFilter } from '../common/TagFilter';
 import { ItemEditDialog } from './ItemEditDialog';
 
 export function ItemList() {
   const { data, setData } = useApp();
+  const { setSelectedItem } = useNavigation();
   const [searchText, setSearchText] = useState('');
-  const [selectedItem, setSelectedItem] = useState<Item | null>(null);
-  const [editingItem, setEditingItem] = useState<Item | null>(null);
+  const [selectedTagIds, setSelectedTagIds] = useState<string[]>([]);
   const [isCreating, setIsCreating] = useState(false);
 
-  const items = Object.values(data.items).filter(item =>
-    item.name.toLowerCase().includes(searchText.toLowerCase()) ||
-    item.itemId.toLowerCase().includes(searchText.toLowerCase())
-  );
+  const items = Object.values(data.items).filter(item => {
+    // 文本搜索过滤
+    const matchesSearch = item.name.toLowerCase().includes(searchText.toLowerCase()) ||
+      item.itemId.toLowerCase().includes(searchText.toLowerCase());
+
+    // 标签过滤：物品必须包含所有选中的标签
+    const matchesTags = selectedTagIds.length === 0 ||
+      selectedTagIds.every(tagId => item.tags.includes(tagId));
+
+    return matchesSearch && matchesTags;
+  });
 
   const handleCreate = () => {
     setIsCreating(true);
   };
 
   const handleSave = (item: Item) => {
-    setData(prev => ({
-      ...prev,
-      items: {
-        ...prev.items,
-        [item.id]: item
-      }
-    }));
-    setEditingItem(null);
-    setIsCreating(false);
-  };
+    setData(prev => {
+      // 批量构建更新
+      const updatedTags: Record<string, any> = {};
+      const newTags = item.tags || [];
 
-  const handleDelete = (itemId: string) => {
-    if (!confirm('确定删除该物品吗？')) return;
+      // 在新标签中添加此物品
+      newTags.forEach((tagId: string) => {
+        const tag = prev.tags[tagId];
+        if (tag && !tag.items.includes(item.id)) {
+          updatedTags[tagId] = {
+            ...tag,
+            items: [...tag.items, item.id]
+          };
+        }
+      });
 
-    const newData = { ...data };
-    delete newData.items[itemId];
-
-    // 从所有标签中移除该物品
-    Object.keys(newData.tags).forEach(tagId => {
-      newData.tags[tagId] = {
-        ...newData.tags[tagId],
-        items: newData.tags[tagId].items.filter(id => id !== itemId)
+      return {
+        ...prev,
+        items: {
+          ...prev.items,
+          [item.id]: item
+        },
+        tags: Object.keys(updatedTags).length > 0
+          ? { ...prev.tags, ...updatedTags }
+          : prev.tags
       };
     });
-
-    setData(newData);
+    setIsCreating(false);
   };
 
   return (
     <div className="item-list-container">
       <div className="list-header">
         <SearchInput placeholder="搜索物品名称或ID..." onSearch={setSearchText} />
+        <TagFilter
+          selectedTags={selectedTagIds}
+          onChange={setSelectedTagIds}
+        />
         <button className="btn-primary" onClick={handleCreate}>+ 新建物品</button>
       </div>
 
@@ -74,39 +88,12 @@ export function ItemList() {
         )}
       </div>
 
-      {selectedItem && (
-        <QuickMenu
-          target={selectedItem}
-          type="item"
-          onClose={() => setSelectedItem(null)}
-          onEdit={() => {
-            setEditingItem(selectedItem);
-            setSelectedItem(null);
-          }}
-          onViewSource={() => {
-            // TODO: 跳转到配方树
-            setSelectedItem(null);
-          }}
-          onViewUsage={() => {
-            // TODO: 跳转到配方树
-            setSelectedItem(null);
-          }}
-          onViewTags={() => {
-            // TODO: 显示所在标签
-            setSelectedItem(null);
-          }}
-        />
-      )}
-
-      {(editingItem || isCreating) && (
+      {isCreating && (
         <ItemEditDialog
-          item={editingItem}
+          item={null}
           onSave={handleSave}
-          onDelete={editingItem ? () => handleDelete(editingItem.id) : undefined}
-          onCancel={() => {
-            setEditingItem(null);
-            setIsCreating(false);
-          }}
+          onDelete={undefined}
+          onCancel={() => setIsCreating(false)}
         />
       )}
     </div>

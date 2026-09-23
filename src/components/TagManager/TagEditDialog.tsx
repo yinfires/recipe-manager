@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { Tag } from '../../types';
-import { TagResolver } from '../../data/tagResolver';
+import { ItemSelector } from '../common/ItemSelector';
 
 interface TagEditDialogProps {
   tag: Tag | null;
   onSave: (tag: Tag) => void;
   onDelete?: () => void;
   onCancel: () => void;
+  onClose?: () => void;
 }
 
-export function TagEditDialog({ tag, onSave, onDelete, onCancel }: TagEditDialogProps) {
-  const { data, setData } = useApp();
+export function TagEditDialog({ tag, onSave, onDelete, onCancel, onClose }: TagEditDialogProps) {
+  const { data } = useApp();
   const [formData, setFormData] = useState<Tag>({
     id: tag?.id || '',
     name: tag?.name || '',
@@ -19,7 +20,6 @@ export function TagEditDialog({ tag, onSave, onDelete, onCancel }: TagEditDialog
     childTags: tag?.childTags || [],
     parentTags: tag?.parentTags || []
   });
-  const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
     if (!tag) {
@@ -47,53 +47,40 @@ export function TagEditDialog({ tag, onSave, onDelete, onCancel }: TagEditDialog
 
   const handleAddItem = (itemId: string) => {
     if (formData.items.includes(itemId)) return;
-
-    // 使用 TagResolver 同步到父标签
-    const newData = TagResolver.addItemToTag(data, formData.id, itemId);
-    setData(newData);
-    setFormData(newData.tags[formData.id]);
+    setFormData({
+      ...formData,
+      items: [...formData.items, itemId]
+    });
   };
 
   const handleRemoveItem = (itemId: string) => {
-    // 使用 TagResolver 从父标签同步移除
-    const newData = TagResolver.removeItemFromTag(data, formData.id, itemId);
-    setData(newData);
-    setFormData(newData.tags[formData.id]);
+    setFormData({
+      ...formData,
+      items: formData.items.filter(id => id !== itemId)
+    });
   };
 
   const handleAddChildTag = (childTagId: string) => {
     if (formData.childTags.includes(childTagId) || childTagId === formData.id) return;
-
-    // 使用 TagResolver 建立父子关系并同步物品
-    const newData = TagResolver.addChildTag(data, formData.id, childTagId);
-    setData(newData);
-    setFormData(newData.tags[formData.id]);
+    setFormData({
+      ...formData,
+      childTags: [...formData.childTags, childTagId]
+    });
   };
 
   const handleRemoveChildTag = (childTagId: string) => {
-    // 使用 TagResolver 移除父子关系
-    const newData = TagResolver.removeChildTag(data, formData.id, childTagId);
-    setData(newData);
-    setFormData(newData.tags[formData.id]);
+    setFormData({
+      ...formData,
+      childTags: formData.childTags.filter(id => id !== childTagId)
+    });
   };
-
-  const availableItems = Object.values(data.items).filter(item =>
-    !formData.items.includes(item.id) &&
-    item.name.toLowerCase().includes(searchText.toLowerCase())
-  );
-
-  const availableTags = Object.values(data.tags).filter(t =>
-    t.id !== formData.id &&
-    !formData.childTags.includes(t.id) &&
-    t.name.toLowerCase().includes(searchText.toLowerCase())
-  );
 
   return (
     <div className="dialog-overlay" onClick={onCancel}>
       <div className="dialog dialog-large" onClick={e => e.stopPropagation()}>
         <div className="dialog-header">
           <h2>{tag ? '编辑标签' : '新建标签'}</h2>
-          <button className="dialog-close" onClick={onCancel}>×</button>
+          <button type="button" className="dialog-close" onClick={onClose || onCancel}>×</button>
         </div>
 
         <form onSubmit={handleSubmit} className="dialog-body">
@@ -121,19 +108,18 @@ export function TagEditDialog({ tag, onSave, onDelete, onCancel }: TagEditDialog
                 ) : null;
               })}
             </div>
-            <input
-              type="text"
+            <ItemSelector
+              value={undefined}
+              onChange={(value) => {
+                if (value?.type === 'item' && value.ref) {
+                  handleAddItem(value.ref);
+                }
+              }}
               placeholder="搜索添加物品..."
-              value={searchText}
-              onChange={e => setSearchText(e.target.value)}
+              allowTags={false}
+              excludeItemIds={formData.items}
+              keepOpenAfterSelect={true}
             />
-            <div className="tag-items-available">
-              {availableItems.slice(0, 10).map(item => (
-                <div key={item.id} className="tag-item-available" onClick={() => handleAddItem(item.id)}>
-                  📦 {item.name}
-                </div>
-              ))}
-            </div>
           </div>
 
           <div className="form-group">
@@ -149,13 +135,17 @@ export function TagEditDialog({ tag, onSave, onDelete, onCancel }: TagEditDialog
                 ) : null;
               })}
             </div>
-            <div className="tag-items-available">
-              {availableTags.slice(0, 10).map(t => (
-                <div key={t.id} className="tag-item-available" onClick={() => handleAddChildTag(t.id)}>
-                  🏷️ {t.name}
-                </div>
-              ))}
-            </div>
+            <ItemSelector
+              value={undefined}
+              onChange={(value) => {
+                if (value?.type === 'tag' && value.ref && value.ref !== formData.id) {
+                  handleAddChildTag(value.ref);
+                }
+              }}
+              placeholder="搜索添加子标签..."
+              allowTags={true}
+              keepOpenAfterSelect={true}
+            />
           </div>
 
           <div className="dialog-footer">
@@ -166,7 +156,7 @@ export function TagEditDialog({ tag, onSave, onDelete, onCancel }: TagEditDialog
             )}
             <div className="dialog-footer-right">
               <button type="button" className="btn-secondary" onClick={onCancel}>
-                取消
+                返回
               </button>
               <button type="submit" className="btn-primary">
                 保存

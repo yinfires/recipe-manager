@@ -1,16 +1,15 @@
 import { useState } from 'react';
 import { useApp } from '../../contexts/AppContext';
+import { useNavigation } from '../../contexts/NavigationContext';
 import { Tag } from '../../types';
 import { SearchInput } from '../common/SearchInput';
 import { ItemDisplay } from '../common/ItemDisplay';
-import { QuickMenu } from '../common/QuickMenu';
 import { TagEditDialog } from './TagEditDialog';
 
 export function TagList() {
   const { data, setData } = useApp();
+  const { setSelectedTag } = useNavigation();
   const [searchText, setSearchText] = useState('');
-  const [selectedTag, setSelectedTag] = useState<Tag | null>(null);
-  const [editingTag, setEditingTag] = useState<Tag | null>(null);
   const [isCreating, setIsCreating] = useState(false);
 
   const tags = Object.values(data.tags).filter(tag =>
@@ -22,45 +21,48 @@ export function TagList() {
   };
 
   const handleSave = (tag: Tag) => {
-    setData(prev => ({
-      ...prev,
-      tags: {
-        ...prev.tags,
+    setData(prev => {
+      // 批量构建更新
+      const updatedTags: Record<string, any> = {
         [tag.id]: tag
-      }
-    }));
-    setEditingTag(null);
+      };
+      const updatedItems: Record<string, any> = {};
+
+      // 同步所有子标签的父标签引用
+      tag.childTags.forEach(childId => {
+        const childTag = prev.tags[childId];
+        if (childTag && !childTag.parentTags.includes(tag.id)) {
+          updatedTags[childId] = {
+            ...childTag,
+            parentTags: [...childTag.parentTags, tag.id]
+          };
+        }
+      });
+
+      // 从物品反向同步：更新物品的 tags 字段
+      tag.items.forEach(itemId => {
+        const item = prev.items[itemId];
+        const itemTags = item?.tags || [];
+        if (item && !itemTags.includes(tag.id)) {
+          updatedItems[itemId] = {
+            ...item,
+            tags: [...itemTags, tag.id]
+          };
+        }
+      });
+
+      return {
+        ...prev,
+        tags: {
+          ...prev.tags,
+          ...updatedTags
+        },
+        items: Object.keys(updatedItems).length > 0
+          ? { ...prev.items, ...updatedItems }
+          : prev.items
+      };
+    });
     setIsCreating(false);
-  };
-
-  const handleDelete = (tagId: string) => {
-    if (!confirm('确定删除该标签吗？')) return;
-
-    const newData = { ...data };
-    const tag = newData.tags[tagId];
-
-    // 从所有父标签的子标签列表中移除
-    tag.parentTags.forEach(parentId => {
-      if (newData.tags[parentId]) {
-        newData.tags[parentId] = {
-          ...newData.tags[parentId],
-          childTags: newData.tags[parentId].childTags.filter(id => id !== tagId)
-        };
-      }
-    });
-
-    // 从所有子标签的父标签列表中移除
-    tag.childTags.forEach(childId => {
-      if (newData.tags[childId]) {
-        newData.tags[childId] = {
-          ...newData.tags[childId],
-          parentTags: newData.tags[childId].parentTags.filter(id => id !== tagId)
-        };
-      }
-    });
-
-    delete newData.tags[tagId];
-    setData(newData);
   };
 
   return (
@@ -91,35 +93,12 @@ export function TagList() {
         )}
       </div>
 
-      {selectedTag && (
-        <QuickMenu
-          target={selectedTag}
-          type="tag"
-          onClose={() => setSelectedTag(null)}
-          onEdit={() => {
-            setEditingTag(selectedTag);
-            setSelectedTag(null);
-          }}
-          onViewSource={() => {
-            // TODO: 查看标签相关配方
-            setSelectedTag(null);
-          }}
-          onViewUsage={() => {
-            // TODO: 查看标签相关配方
-            setSelectedTag(null);
-          }}
-        />
-      )}
-
-      {(editingTag || isCreating) && (
+      {isCreating && (
         <TagEditDialog
-          tag={editingTag}
+          tag={null}
           onSave={handleSave}
-          onDelete={editingTag ? () => handleDelete(editingTag.id) : undefined}
-          onCancel={() => {
-            setEditingTag(null);
-            setIsCreating(false);
-          }}
+          onDelete={undefined}
+          onCancel={() => setIsCreating(false)}
         />
       )}
     </div>

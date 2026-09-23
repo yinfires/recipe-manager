@@ -1,16 +1,20 @@
 import { useState, useEffect } from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { Recipe, RecipeSlot } from '../../types';
+import { ItemSelector } from '../common/ItemSelector';
 
 interface RecipeEditDialogProps {
   recipe: Recipe | null;
   onSave: (recipe: Recipe) => void;
   onDelete?: () => void;
   onCancel: () => void;
+  onClose?: () => void;
 }
 
-export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel }: RecipeEditDialogProps) {
+export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel, onClose }: RecipeEditDialogProps) {
   const { data } = useApp();
+  const workstationTag = Object.values(data.tags).find(tag => tag.name === '工作方块');
+  const workstationItemIds = workstationTag?.items || [];
   const [formData, setFormData] = useState<Recipe>({
     id: recipe?.id || '',
     name: recipe?.name || '',
@@ -36,11 +40,6 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel }: RecipeE
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name.trim()) {
-      alert('配方名称不能为空');
-      return;
-    }
-
     if (!formData.workstation) {
       alert('请选择工作方块');
       return;
@@ -51,7 +50,20 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel }: RecipeE
       return;
     }
 
-    onSave(formData);
+    // 自动生成配方名称：使用第一个输出物品的名称
+    let autoName = formData.name;
+    if (!autoName.trim() && formData.outputs.length > 0) {
+      const firstOutput = formData.outputs[0];
+      if (firstOutput.type === 'item' && firstOutput.ref) {
+        const item = data.items[firstOutput.ref];
+        autoName = item?.name || '';
+      } else if (firstOutput.type === 'tag' && firstOutput.ref) {
+        const tag = data.tags[firstOutput.ref];
+        autoName = tag?.name || '';
+      }
+    }
+
+    onSave({ ...formData, name: autoName || '未命名配方' });
   };
 
   const addSlot = (slotType: 'inputs' | 'attachments' | 'outputs') => {
@@ -80,31 +92,15 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel }: RecipeE
       <div className="slots-editor">
         {formData[slotType].map((slot, idx) => (
           <div key={idx} className="slot-editor-row">
-            <select
-              value={slot.type}
-              onChange={e => updateSlot(slotType, idx, { ...slot, type: e.target.value as 'item' | 'tag', ref: '' })}
-            >
-              <option value="item">📦 物品</option>
-              <option value="tag">🏷️ 标签</option>
-            </select>
-
-            <select
-              value={slot.ref}
-              onChange={e => updateSlot(slotType, idx, { ...slot, ref: e.target.value })}
-            >
-              <option value="">请选择...</option>
-              {slot.type === 'item'
-                ? Object.values(data.items).map(item => (
-                    <option key={item.id} value={item.id}>
-                      📦 {item.name}
-                    </option>
-                  ))
-                : Object.values(data.tags).map(tag => (
-                    <option key={tag.id} value={tag.id}>
-                      🏷️ {tag.name}
-                    </option>
-                  ))}
-            </select>
+            <ItemSelector
+              value={{ type: slot.type, ref: slot.ref }}
+              onChange={(value) => {
+                if (value) {
+                  updateSlot(slotType, idx, { ...slot, type: value.type, ref: value.ref });
+                }
+              }}
+              placeholder="选择物品或标签"
+            />
 
             <input
               type="number"
@@ -131,34 +127,29 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel }: RecipeE
       <div className="dialog dialog-large" onClick={e => e.stopPropagation()}>
         <div className="dialog-header">
           <h2>{recipe ? '编辑配方' : '新建配方'}</h2>
-          <button className="dialog-close" onClick={onCancel}>×</button>
+          <button type="button" className="dialog-close" onClick={onClose || onCancel}>×</button>
         </div>
 
         <form onSubmit={handleSubmit} className="dialog-body">
           <div className="form-group">
-            <label>配方名称 *</label>
+            <label>配方名称（可选，留空自动使用第一个输出物品名）</label>
             <input
               type="text"
               value={formData.name}
               onChange={e => setFormData({ ...formData, name: e.target.value })}
-              placeholder="例如：金枪鱼寿司"
-              autoFocus
+              placeholder="留空则自动命名"
             />
           </div>
 
           <div className="form-group">
             <label>工作方块 *</label>
-            <select
-              value={formData.workstation}
-              onChange={e => setFormData({ ...formData, workstation: e.target.value })}
-            >
-              <option value="">请选择...</option>
-              {Object.values(data.items).map(item => (
-                <option key={item.id} value={item.id}>
-                  📦 {item.name}
-                </option>
-              ))}
-            </select>
+            <ItemSelector
+              value={formData.workstation ? { type: 'item', ref: formData.workstation } : undefined}
+              onChange={(value) => setFormData({ ...formData, workstation: value?.ref || '' })}
+              placeholder="选择工作方块"
+              allowTags={false}
+              allowedItemIds={workstationItemIds}
+            />
           </div>
 
           {renderSlotEditor('inputs', '输入槽位')}
@@ -173,7 +164,7 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel }: RecipeE
             )}
             <div className="dialog-footer-right">
               <button type="button" className="btn-secondary" onClick={onCancel}>
-                取消
+                返回
               </button>
               <button type="submit" className="btn-primary">
                 保存
