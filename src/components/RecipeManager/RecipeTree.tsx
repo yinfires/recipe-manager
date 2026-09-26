@@ -11,6 +11,10 @@ import ReactFlow, {
   Position,
   Handle,
   BaseEdge,
+  useStore,
+  useReactFlow,
+  useViewport,
+  ControlButton,
   EdgeProps
 } from 'reactflow';
 import 'reactflow/dist/style.css';
@@ -36,12 +40,32 @@ function RecipeFlowNode({ data }: { data: { label: React.ReactNode } }) {
 const nodeTypes = { recipeNode: RecipeFlowNode };
 
 function RecipeTreeEdge({ sourceX, sourceY, targetX, targetY, markerEnd, style, data }: EdgeProps) {
-  const branchOffset = ((data?.lane as number | undefined) || 0) % 7 * 7;
-  const midX = sourceX + (targetX - sourceX) / 2 + branchOffset;
-  const path = data?.relation === 'tag-member'
-    ? `M ${sourceX} ${sourceY} V ${targetY}`
-    : `M ${sourceX} ${sourceY} H ${midX} V ${targetY} H ${targetX}`;
-  return <BaseEdge path={path} markerEnd={markerEnd} style={style} />;
+  const nodes = useStore(state => state.nodeInternals);
+  const inputs = (data?.inputs as string[] || []).map(id => nodes.get(id)).filter(Boolean);
+  const outputs = (data?.outputs as string[] || []).map(id => nodes.get(id)).filter(Boolean);
+  if (data?.relation === 'tag-member' || !inputs.length || !outputs.length) {
+    const x = Math.min(sourceX, targetX) - 18;
+    return <BaseEdge path={`M ${sourceX} ${sourceY} H ${x} V ${targetY} H ${targetX}`} markerEnd={markerEnd} style={style} />;
+  }
+  const starts = inputs.map(node => ({ x: node!.positionAbsolute!.x + (node!.width || 204), y: node!.positionAbsolute!.y + (node!.height || 52) / 2 }));
+  const ends = outputs.map(node => ({ x: node!.positionAbsolute!.x, y: node!.positionAbsolute!.y + (node!.height || 52) / 2 }));
+  const left = Math.max(...starts.map(p => p.x));
+  const right = Math.min(...ends.map(p => p.x));
+  const trunk = (left + right) / 2 + ((data?.channel as number) || 0);
+  const ys = [...starts, ...ends].map(p => p.y);
+  return <>
+    <BaseEdge path={`M ${trunk} ${Math.min(...ys)} V ${Math.max(...ys)}`} style={style} />
+    {starts.map((p, i) => <BaseEdge key={`in-${i}`} path={`M ${p.x} ${p.y} H ${trunk}`} style={style} />)}
+    {ends.map((p, i) => <BaseEdge key={`out-${i}`} path={`M ${trunk} ${p.y} H ${p.x}`} markerEnd={markerEnd} style={style} />)}
+  </>;
+}
+
+function TreeZoomControls() {
+  const { zoomTo } = useReactFlow();
+  const { zoom } = useViewport();
+  return <Controls fitViewOptions={{ padding: 0.15, minZoom: 0.05, maxZoom: 1 }}>
+    <ControlButton title="Reset zoom to 100%" onClick={() => zoomTo(1)}>{Math.round(zoom * 100)}%</ControlButton>
+  </Controls>;
 }
 
 const edgeTypes = { recipeTree: RecipeTreeEdge };
@@ -55,6 +79,7 @@ export function RecipeTree() {
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [expandedTags, setExpandedTags] = useState<Set<string>>(new Set());
   const [includeAttachments, setIncludeAttachments] = useState(true);
+  const [controlsOpen, setControlsOpen] = useState(true);
 
   const handleNodeClick = useCallback((_event: React.MouseEvent, node: Node) => {
     const entityId = (node.data as { entityId?: string }).entityId || node.id;
@@ -118,22 +143,25 @@ export function RecipeTree() {
       };
     });
 
-    // 转换为 React Flow 边；每条边保留自己的 branch/lane，避免无关配方共享主干。
-      const flowEdges: Edge[] = treeEdges.map((edge) => ({
-      id: edge.id,
-      source: edge.from,
-      target: edge.to,
-      sourceHandle: edge.relation === 'tag-member' ? 'source-tag' : 'source-main',
-      targetHandle: edge.relation === 'tag-member' ? 'target-tag' : 'target-main',
-      type: 'recipeTree',
-      data: { relation: edge.relation, branchId: edge.branchId, lane: treeNodes.find(node => node.id === edge.from)?.lane || 0 },
-      animated: false,
-      style: { stroke: edge.relation === 'tag-member' ? '#94a3b8' : '#64748b', strokeWidth: edge.relation === 'tag-member' ? 1.5 : 2, strokeDasharray: edge.relation === 'tag-member' ? '4 4' : undefined },
-      markerEnd: {
-        type: MarkerType.ArrowClosed,
-        color: '#64748b'
-      }
-    }));
+    const groups = new Map<string, typeof treeEdges>();
+    treeEdges.forEach(edge => {
+      const key = edge.relation === 'recipe' ? edge.branchId : edge.id;
+      groups.set(key, [...(groups.get(key) || []), edge]);
+    });
+    const flowEdges: Edge[] = [...groups.values()].map(group => {
+      const edge = group[0];
+      return {
+        id: edge.id, source: edge.from, target: edge.to,
+        sourceHandle: edge.relation === 'tag-member' ? 'source-tag' : 'source-main',
+        targetHandle: edge.relation === 'tag-member' ? 'target-tag' : 'target-main',
+        type: 'recipeTree',
+        data: { relation: edge.relation, branchId: edge.branchId,
+          inputs: [...new Set(group.map(e => e.from))], outputs: [...new Set(group.map(e => e.to))] },
+        style: { stroke: '#64748b', strokeWidth: edge.relation === 'recipe' ? 2 : 1.5,
+          strokeDasharray: edge.relation === 'tag-member' ? '4 4' : undefined },
+        markerEnd: { type: MarkerType.ArrowClosed, color: '#64748b' }
+      };
+    });
 
     setNodes(flowNodes);
     setEdges(flowEdges);
@@ -180,7 +208,10 @@ export function RecipeTree() {
 
   return (
     <div className="recipe-tree-container">
-      <div className="tree-controls">
+      <button className={`tree-controls-toggle ${controlsOpen ? 'is-open' : ''}`} onClick={() => setControlsOpen(value => !value)}>
+        {controlsOpen ? '收起控制栏' : '展开控制栏'}
+      </button>
+      {controlsOpen && <div className="tree-controls">
         <div className="tree-targets">
           <label>查看目标:</label>
           <div className="target-chips">
@@ -243,7 +274,7 @@ export function RecipeTree() {
             显示附加物品
           </label>
         </div>
-      </div>
+      </div>}
 
       <div className="tree-canvas">
         {nodes.length > 0 ? (
@@ -257,10 +288,12 @@ export function RecipeTree() {
             onNodeClick={handleNodeClick}
             connectionLineType={ConnectionLineType.SmoothStep}
             fitView
-            fitViewOptions={{ padding: 0.2 }}
+            fitViewOptions={{ padding: 0.2, minZoom: 0.25, maxZoom: 1 }}
+            minZoom={0.05}
+            maxZoom={4}
           >
             <Background />
-            <Controls />
+            <TreeZoomControls />
           </ReactFlow>
         ) : (
           <div className="tree-empty">

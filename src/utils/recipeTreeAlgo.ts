@@ -42,10 +42,16 @@ export class RecipeTreeBuilder {
       const branchId = `branch-${state.branchSequence++}`;
       const lane = state.branchSequence;
       const slots = mode === 'source' ? (includeAttachments ? [...recipe.inputs, ...recipe.attachments] : recipe.inputs) : recipe.outputs;
-      slots.forEach((slot, slotIndex) => {
+      const uniqueSlots = slots.filter((slot, index) => slots.findIndex(candidate =>
+        candidate.type === slot.type && candidate.ref === slot.ref &&
+        recipe.attachments.includes(candidate) === recipe.attachments.includes(slot)) === index);
+      uniqueSlots.forEach((slot, slotIndex) => {
         const role: TreeNodeRole = mode === 'usage' ? 'output' : (recipe.attachments.includes(slot) ? 'attachment' : 'input');
         const entityTarget: EntityTarget = { type: slot.type, id: slot.ref };
-        const slotNode = this.addNode(state, entityTarget, level + (mode === 'source' ? 1 : -1), role, branchId, recipe.id, lane, `slot-${branchId}-${mode}-${slotIndex}`);
+        // Keep the dependency direction stable: ingredients are to the left of
+        // the current product, while usage/output nodes are to the right.
+        const nextLevel = level + (mode === 'source' ? -1 : 1);
+        const slotNode = this.addNode(state, entityTarget, nextLevel, role, branchId, recipe.id, lane, `slot-${branchId}-${mode}-${slotIndex}`);
         this.addEdge(state, mode === 'source' ? slotNode : current, mode === 'source' ? current : slotNode, 'recipe', branchId, recipe.id);
         if (slot.type === 'tag') {
           const tag = data.tags[slot.ref];
@@ -61,31 +67,80 @@ export class RecipeTreeBuilder {
   }
 
   private static layout(state: BuildState) {
-    const spacing = 92;
-    const branchGap = 260;
-    const laneRows = new Map<number, number>();
-    const nodes = [...state.nodes].sort((a, b) => a.level - b.level || a.lane - b.lane || a.id.localeCompare(b.id));
-    nodes.forEach(node => {
-      const row = laneRows.get(node.lane) || 0;
-      node.row = row; node.x = node.level * 300; node.y = row * spacing + node.lane * branchGap;
-      laneRows.set(node.lane, row + 1);
-    });
-    state.edges.filter(edge => edge.relation === 'tag-member').forEach(edge => {
-      const tag = state.nodes.find(node => node.id === edge.from && !node.isTagMember) || state.nodes.find(node => node.id === edge.to && !node.isTagMember);
-      const member = state.nodes.find(node => node.id === edge.from && node.isTagMember) || state.nodes.find(node => node.id === edge.to && node.isTagMember);
-      if (!tag || !member) return;
-      const members = state.edges.filter(candidate => candidate.relation === 'tag-member' && (candidate.from === tag.id || candidate.to === tag.id)).map(candidate => state.nodes.find(node => node.id === (candidate.from === tag.id ? candidate.to : candidate.from))).filter((node): node is TreeNode => !!node);
-      const index = members.findIndex(node => node.id === member.id);
-      member.x = tag.x; member.y = tag.y + 74 + index * 58; member.row = tag.row + index + 1;
-      laneRows.set(tag.lane, Math.max(laneRows.get(tag.lane) || 0, member.row + 1));
-    });
-    state.nodes.filter(node => node.entityType === 'tag' && !node.isTagMember).forEach(tag => {
-      const memberCount = state.edges.filter(edge => edge.relation === 'tag-member' && (edge.from === tag.id || edge.to === tag.id)).length;
-      if (!memberCount) return;
-      const occupiedHeight = memberCount * 58 + 28;
-      state.nodes.forEach(node => {
-        if (node.id !== tag.id && !node.isTagMember && node.lane === tag.lane && node.y > tag.y) node.y += occupiedHeight;
+    const byId = new Map(state.nodes.map(node => [node.id, node]));
+    const children = new Map<string, TreeNode[]>();
+    const members = new Map<string, TreeNode[]>();
+    for (const edge of state.edges) {
+      const from = byId.get(edge.from)!;
+      const to = byId.get(edge.to)!;
+      const parent = edge.relation === 'tag-member'
+        ? (from.isTagMember ? to : from)
+        : (Math.abs(from.level) < Math.abs(to.level) ? from : to);
+      const child = parent === from ? to : from;
+      const map = edge.relation === 'tag-member' ? members : children;
+      map.set(parent.id, [...(map.get(parent.id) || []), child]);
+    }
+    const ownHeight = (node: TreeNode) => 52 + (members.get(node.id)?.length || 0) * 60;
+    const gap = (a: TreeNode, b: TreeNode) => a.branchId === b.branchId ? 24 : 48;
+    const heights = new Map<string, number>();
+    const span = (list: TreeNode[]): number => list.reduce((sum, node, i) =>
+      sum + measure(node) + (i ? gap(list[i - 1], node) : 0), 0);
+    const measure = (node: TreeNode): number => {
+      if (!heights.has(node.id)) heights.set(node.id,
+        Math.max(ownHeight(node), span(children.get(node.id) || [])));
+      return heights.get(node.id)!;
+    };
+    const place = (node: TreeNode, center: number, offset = 0) => {
+      node.x = node.level * 320 + offset;
+      node.y = center - ownHeight(node) / 2;
+      node.row = center;
+      (members.get(node.id) || []).forEach((member, i) => {
+        member.x = node.x; member.y = node.y + 60 * (i + 1); member.row = member.y;
       });
-    });
+      const list = children.get(node.id) || [];
+      // Nodes belonging to one recipe share a vertical center. Only separate
+      // recipe groups receive a horizontal offset, keeping each recipe's
+      // same-level inputs/outputs visually aligned.
+      const groups = [...new Map(list.map(child => [child.branchId, child])).keys()]
+        .map(branchId => list.filter(child => child.branchId === branchId));
+      const groupGap = 48;
+      const groupHeights = groups.map(group => span(group));
+      const totalHeight = groupHeights.reduce((sum, height) => sum + height, 0) + Math.max(0, groups.length - 1) * groupGap;
+      let groupCursor = center - totalHeight / 2;
+      groups.forEach((group, groupIndex) => {
+        const groupHeight = groupHeights[groupIndex];
+        let childCursor = groupCursor;
+        group.forEach((child, i) => {
+          if (i) childCursor += gap(group[i - 1], child);
+          place(child, childCursor + measure(child) / 2, groups.length > 1 ? (groupIndex / (groups.length - 1) - 0.5) * 28 : 0);
+          childCursor += measure(child);
+        });
+        groupCursor += groupHeight + groupGap;
+      });
+    };
+    let cursor = 0;
+    for (const root of state.nodes.filter(node => node.role === 'target')) {
+      const list = children.get(root.id) || [];
+      const left = list.filter(node => node.level < 0);
+      const right = list.filter(node => node.level > 0);
+      const height = Math.max(ownHeight(root), span(left), span(right));
+      const center = cursor + height / 2;
+      children.set(root.id, []);
+      place(root, center);
+      for (const side of [left, right]) {
+        let y = center - span(side) / 2;
+        side.forEach((child, i) => {
+          if (i) y += gap(side[i - 1], child);
+          place(child, y + measure(child) / 2);
+          y += measure(child);
+        });
+      }
+      cursor += height + 80;
+    }
+    if (state.nodes.length) {
+      const top = Math.min(...state.nodes.map(node => node.y));
+      const bottom = Math.max(...state.nodes.map(node => node.y + 52));
+      state.nodes.forEach(node => { node.y -= (top + bottom) / 2; });
+    }
   }
 }
