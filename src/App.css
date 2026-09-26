@@ -1560,11 +1560,12 @@ button {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 120px);
+  overflow: hidden;
 }
 
 .tree-controls {
-  max-height: 45%;
-  overflow: auto;
+  max-height: none;
+  overflow: hidden;
   flex-shrink: 0;
   padding: 20px;
   background: var(--surface-2);
@@ -1574,6 +1575,16 @@ button {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.tree-controls-panel {
+  position: relative;
+  z-index: 5;
+  flex-shrink: 0;
+}
+
+.tree-controls-panel.is-closed {
+  height: 0;
 }
 
 .tree-targets {
@@ -1645,10 +1656,31 @@ button {
 }
 
 .tree-controls-toggle {
-  align-self: flex-end;
-  flex-shrink: 0;
-  z-index: 5;
-  padding: 5px 10px;
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 0 0 10px 10px;
+  background: var(--surface-2);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.tree-controls-toggle:hover {
+  color: var(--text-primary);
+  background: var(--surface-3);
+}
+
+.tree-controls-panel.is-closed .tree-controls-toggle {
+  top: 0;
+  bottom: auto;
+  border-radius: 0 0 10px 10px;
 }
 
 .tree-canvas .recipe-node {
@@ -1734,7 +1766,7 @@ button {
   border-radius: 12px;
   overflow: hidden;
   position: relative;
-  min-height: 640px;
+  min-height: 0;
 }
 
 .tree-empty {

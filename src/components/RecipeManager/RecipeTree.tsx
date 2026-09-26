@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import ReactFlow, {
   Node,
   Edge,
@@ -17,6 +17,7 @@ import ReactFlow, {
   ControlButton,
   EdgeProps
 } from 'reactflow';
+import type { ReactFlowInstance } from 'reactflow';
 import 'reactflow/dist/style.css';
 import { useApp } from '../../contexts/AppContext';
 import { useNavigation } from '../../contexts/NavigationContext';
@@ -80,6 +81,7 @@ export function RecipeTree() {
   const [expandedTags, setExpandedTags] = useState<Set<string>>(new Set());
   const [includeAttachments, setIncludeAttachments] = useState(true);
   const [controlsOpen, setControlsOpen] = useState(true);
+  const flowInstance = useRef<ReactFlowInstance | null>(null);
 
   const handleNodeClick = useCallback((_event: React.MouseEvent, node: Node) => {
     const entityId = (node.data as { entityId?: string }).entityId || node.id;
@@ -206,12 +208,19 @@ export function RecipeTree() {
     buildTree();
   }, [buildTree]);
 
+  // 展开标签或切换目标后，按最新节点边界重新适配视口，避免树被裁切。
+  useEffect(() => {
+    if (!flowInstance.current || nodes.length === 0) return;
+    const frame = requestAnimationFrame(() => {
+      flowInstance.current?.fitView({ padding: 0.2, minZoom: 0.05, maxZoom: 1, duration: 180 });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [nodes, edges]);
+
   return (
     <div className="recipe-tree-container">
-      <button className={`tree-controls-toggle ${controlsOpen ? 'is-open' : ''}`} onClick={() => setControlsOpen(value => !value)}>
-        {controlsOpen ? '收起控制栏' : '展开控制栏'}
-      </button>
-      {controlsOpen && <div className="tree-controls">
+      <div className={`tree-controls-panel ${controlsOpen ? 'is-open' : 'is-closed'}`}>
+        {controlsOpen && <div className="tree-controls">
         <div className="tree-targets">
           <label>查看目标:</label>
           <div className="target-chips">
@@ -274,7 +283,16 @@ export function RecipeTree() {
             显示附加物品
           </label>
         </div>
-      </div>}
+        </div>}
+        <button
+          className="tree-controls-toggle"
+          onClick={() => setControlsOpen(value => !value)}
+          aria-label={controlsOpen ? '收起控制栏' : '展开控制栏'}
+          title={controlsOpen ? '收起控制栏' : '展开控制栏'}
+        >
+          <span aria-hidden="true">{controlsOpen ? '↑' : '↓'}</span>
+        </button>
+      </div>
 
       <div className="tree-canvas">
         {nodes.length > 0 ? (
@@ -286,6 +304,7 @@ export function RecipeTree() {
             onNodesChange={onNodesChange}
             onEdgesChange={onEdgesChange}
             onNodeClick={handleNodeClick}
+            onInit={instance => { flowInstance.current = instance; }}
             connectionLineType={ConnectionLineType.SmoothStep}
             fitView
             fitViewOptions={{ padding: 0.2, minZoom: 0.25, maxZoom: 1 }}
