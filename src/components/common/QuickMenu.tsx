@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Item, Tag, Recipe } from '../../types';
+import { useBackdropClick } from './useBackdropClick';
 
 interface QuickMenuProps {
   target: Item | Tag | Recipe;
@@ -12,10 +13,12 @@ interface QuickMenuProps {
   onViewUsage?: () => void;
   onViewTags?: () => void;
   onViewRecipeTree?: () => void;
+  onAddSourceRecipe?: () => void;
 }
 
-export function QuickMenu({ target, type, onClose, onBack, onEdit, onViewDetail, onViewSource, onViewUsage, onViewTags, onViewRecipeTree }: QuickMenuProps) {
+export function QuickMenu({ target, type, onClose, onBack, onEdit, onViewDetail, onViewSource, onViewUsage, onViewTags, onViewRecipeTree, onAddSourceRecipe }: QuickMenuProps) {
   const [copiedField, setCopiedField] = useState<'name' | 'id' | null>(null);
+  const backdropClickHandlers = useBackdropClick(onClose);
 
   const copyText = async (text: string, field: 'name' | 'id') => {
     try {
@@ -37,10 +40,17 @@ export function QuickMenu({ target, type, onClose, onBack, onEdit, onViewDetail,
   };
 
   return (
-    <div className="quick-menu-overlay" onClick={onClose}>
-      <div className="quick-menu" onClick={e => e.stopPropagation()}>
+    <div className="quick-menu-overlay" {...backdropClickHandlers}>
+      <div
+        className="quick-menu"
+        onClick={e => e.stopPropagation()}
+      >
         <div className="menu-header">
-          <div className="menu-header-content">
+          <div
+            className="menu-header-content"
+            data-entity-type={type}
+            data-entity-id={target.id}
+          >
             <div className="menu-title-row">
               <span className="menu-title">
                 {type === 'item' && '📦 ' + target.name}
@@ -80,6 +90,7 @@ export function QuickMenu({ target, type, onClose, onBack, onEdit, onViewDetail,
           <button onClick={onEdit}>编辑</button>
           {onViewDetail && <button onClick={onViewDetail}>显示详情</button>}
           {onViewSource && <button onClick={onViewSource}>查看获取配方 →</button>}
+          {type === 'item' && onAddSourceRecipe && <button onClick={onAddSourceRecipe}>添加获取配方</button>}
           {onViewUsage && <button onClick={onViewUsage}>查看制作配方 →</button>}
           {type === 'item' && onViewTags && <button onClick={onViewTags}>查看所在标签</button>}
           {onViewRecipeTree && <button onClick={onViewRecipeTree}>查看配方树 →</button>}

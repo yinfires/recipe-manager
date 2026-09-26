@@ -2,6 +2,8 @@ import { useState, useEffect, useMemo } from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { Item } from '../../types';
 import { SearchInput } from '../common/SearchInput';
+import { matchesSearch } from '../../utils/searchMatcher';
+import { useBackdropClick } from '../common/useBackdropClick';
 
 interface ItemEditDialogProps {
   item: Item | null;
@@ -13,6 +15,7 @@ interface ItemEditDialogProps {
 
 export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: ItemEditDialogProps) {
   const { data } = useApp();
+  const backdropClickHandlers = useBackdropClick(onCancel);
   const [formData, setFormData] = useState<Item>({
     id: item?.id || '',
     name: item?.name || '',
@@ -36,12 +39,22 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name.trim() || !formData.itemId.trim()) {
+    const itemId = formData.itemId.trim();
+
+    if (!formData.name.trim() || !itemId) {
       alert('名称和物品ID不能为空');
       return;
     }
 
-    onSave(formData);
+    const hasDuplicateItemId = Object.values(data.items).some(existingItem =>
+      existingItem.id !== formData.id && existingItem.itemId.trim() === itemId
+    );
+    if (hasDuplicateItemId) {
+      alert('该物品ID已存在，无法重复添加');
+      return;
+    }
+
+    onSave({ ...formData, itemId });
   };
 
   const handleToggleTag = (tagId: string) => {
@@ -55,14 +68,13 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
 
   // 使用 useMemo 缓存过滤结果，只在搜索文本或标签数据变化时重新计算
   const filteredTags = useMemo(() => {
-    const searchLower = tagSearchText.toLowerCase();
     return Object.values(data.tags).filter(tag =>
-      tag.name.toLowerCase().includes(searchLower)
+      matchesSearch(tagSearchText, tag.name)
     );
   }, [data.tags, tagSearchText]);
 
   return (
-    <div className="dialog-overlay" onClick={onCancel}>
+    <div className="dialog-overlay" {...backdropClickHandlers}>
       <div className="dialog" onClick={e => e.stopPropagation()}>
         <div className="dialog-header">
           <h2>{item ? '编辑物品' : '新建物品'}</h2>
@@ -98,7 +110,12 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
               {filteredTags.map(tag => {
                 const isChecked = formData.tags.includes(tag.id);
                 return (
-                  <label key={tag.id} className="tag-checkbox">
+                  <label
+                    key={tag.id}
+                    className="tag-checkbox"
+                    data-entity-type="tag"
+                    data-entity-id={tag.id}
+                  >
                     <input
                       type="checkbox"
                       checked={isChecked}

@@ -3,6 +3,8 @@ import { useApp } from '../../contexts/AppContext';
 import { Tag } from '../../types';
 import { SearchInput } from '../common/SearchInput';
 import { ItemDisplay } from '../common/ItemDisplay';
+import { matchesSearch } from '../../utils/searchMatcher';
+import { useBackdropClick } from '../common/useBackdropClick';
 
 interface TagDetailDialogProps {
   tag: Tag;
@@ -14,22 +16,23 @@ interface TagDetailDialogProps {
 
 export function TagDetailDialog({ tag, onClose, onBack, onNavigateToItem, onNavigateToTag }: TagDetailDialogProps) {
   const { data, showItemIds } = useApp();
+  const backdropClickHandlers = useBackdropClick(onBack || onClose);
   const [searchText, setSearchText] = useState('');
 
   const filteredItems = tag.items
     .map(itemId => data.items[itemId])
-    .filter(item => item && (
-      item.name.toLowerCase().includes(searchText.toLowerCase()) ||
-      item.itemId.toLowerCase().includes(searchText.toLowerCase())
-    ));
+    .filter(item => item && matchesSearch(searchText, item.name, item.itemId));
 
   const childTags = Object.values(data.tags).filter(t => t.parentTags?.includes(tag.id));
 
   return (
-    <div className="dialog-overlay" onClick={onBack || onClose}>
-      <div className="dialog dialog-large" onClick={e => e.stopPropagation()}>
+    <div className="dialog-overlay" {...backdropClickHandlers}>
+      <div
+        className="dialog dialog-large"
+        onClick={e => e.stopPropagation()}
+      >
         <div className="dialog-header">
-          <h2>🏷️ {tag.name} - 标签详情</h2>
+          <h2 data-entity-type="tag" data-entity-id={tag.id}>🏷️ {tag.name} - 标签详情</h2>
           <button className="dialog-close" onClick={onClose}>×</button>
         </div>
 
@@ -45,12 +48,19 @@ export function TagDetailDialog({ tag, onClose, onBack, onNavigateToItem, onNavi
               {filteredItems.length > 0 ? (
                 <div className="item-grid-detail">
                   {filteredItems.map(item => (
-                    <div key={item.id} className="item-card-detail">
+                    <div
+                      key={item.id}
+                      className="item-card-detail"
+                      data-entity-type="item"
+                      data-entity-id={item.id}
+                      onClick={() => onNavigateToItem(item.id)}
+                    >
                       <ItemDisplay
                         icon="📦"
                         name={item.name}
                         id={showItemIds ? item.itemId : ''}
-                        onClick={() => onNavigateToItem(item.id)}
+                        entityType="item"
+                        entityId={item.id}
                       />
                     </div>
                   ))}
@@ -67,12 +77,19 @@ export function TagDetailDialog({ tag, onClose, onBack, onNavigateToItem, onNavi
                 <div className="section-title">子标签 ({childTags.length})</div>
                 <div className="item-grid-detail">
                   {childTags.map(childTag => (
-                    <div key={childTag.id} className="item-card-detail">
+                    <div
+                      key={childTag.id}
+                      className="item-card-detail"
+                      data-entity-type="tag"
+                      data-entity-id={childTag.id}
+                      onClick={() => onNavigateToTag(childTag.id)}
+                    >
                       <ItemDisplay
                         icon="🏷️"
                         name={childTag.name}
                         id=""
-                        onClick={() => onNavigateToTag(childTag.id)}
+                        entityType="tag"
+                        entityId={childTag.id}
                       />
                     </div>
                   ))}

@@ -1,6 +1,7 @@
 import { useApp } from '../../contexts/AppContext';
 import { Recipe } from '../../types';
 import { ItemDisplay } from '../common/ItemDisplay';
+import { useBackdropClick } from '../common/useBackdropClick';
 
 interface RecipeDetailDialogProps {
   recipe: Recipe;
@@ -12,13 +13,17 @@ interface RecipeDetailDialogProps {
 
 export function RecipeDetailDialog({ recipe, onClose, onBack, onNavigateToItem, onNavigateToTag }: RecipeDetailDialogProps) {
   const { data, showItemIds } = useApp();
+  const backdropClickHandlers = useBackdropClick(onBack || onClose);
   const workstation = data.items[recipe.workstation];
 
   return (
-    <div className="dialog-overlay" onClick={onBack || onClose}>
-      <div className="dialog dialog-large" onClick={e => e.stopPropagation()}>
+    <div className="dialog-overlay" {...backdropClickHandlers}>
+      <div
+        className="dialog dialog-large"
+        onClick={e => e.stopPropagation()}
+      >
         <div className="dialog-header">
-          <h2>📋 {recipe.name} - 配方详情</h2>
+          <h2 data-entity-type="recipe" data-entity-id={recipe.id}>📋 {recipe.name} - 配方详情</h2>
           <button className="dialog-close" onClick={onClose}>×</button>
         </div>
 
@@ -31,6 +36,8 @@ export function RecipeDetailDialog({ recipe, onClose, onBack, onNavigateToItem, 
                   icon="📦"
                   name={workstation.name}
                   id={showItemIds ? workstation.itemId : ''}
+                  entityType="item"
+                  entityId={workstation.id}
                   onClick={(e) => {
                     e?.stopPropagation();
                     onNavigateToItem(workstation.id);
@@ -53,6 +60,8 @@ export function RecipeDetailDialog({ recipe, onClose, onBack, onNavigateToItem, 
                           name={item.name}
                           id={showItemIds ? item.itemId : ''}
                           count={slot.count}
+                          entityType="item"
+                          entityId={item.id}
                           onClick={(e) => {
                             e?.stopPropagation();
                             onNavigateToItem(item.id);
@@ -68,6 +77,8 @@ export function RecipeDetailDialog({ recipe, onClose, onBack, onNavigateToItem, 
                           name={tag.name}
                           id=""
                           count={slot.count}
+                          entityType="tag"
+                          entityId={tag.id}
                           onClick={(e) => {
                             e?.stopPropagation();
                             onNavigateToTag(tag.id);
@@ -94,6 +105,8 @@ export function RecipeDetailDialog({ recipe, onClose, onBack, onNavigateToItem, 
                           name={item.name}
                           id={showItemIds ? item.itemId : ''}
                           count={slot.count}
+                          entityType="item"
+                          entityId={item.id}
                           onClick={(e) => {
                             e?.stopPropagation();
                             onNavigateToItem(item.id);
@@ -109,6 +122,8 @@ export function RecipeDetailDialog({ recipe, onClose, onBack, onNavigateToItem, 
                           name={tag.name}
                           id=""
                           count={slot.count}
+                          entityType="tag"
+                          entityId={tag.id}
                           onClick={(e) => {
                             e?.stopPropagation();
                             onNavigateToTag(tag.id);
@@ -134,6 +149,8 @@ export function RecipeDetailDialog({ recipe, onClose, onBack, onNavigateToItem, 
                         name={item.name}
                         id={showItemIds ? item.itemId : ''}
                         count={slot.count}
+                        entityType="item"
+                        entityId={item.id}
                         onClick={(e) => {
                           e?.stopPropagation();
                           onNavigateToItem(item.id);
@@ -149,6 +166,8 @@ export function RecipeDetailDialog({ recipe, onClose, onBack, onNavigateToItem, 
                         name={tag.name}
                         id=""
                         count={slot.count}
+                        entityType="tag"
+                        entityId={tag.id}
                         onClick={(e) => {
                           e?.stopPropagation();
                           onNavigateToTag(tag.id);

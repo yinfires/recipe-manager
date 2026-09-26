@@ -40,12 +40,17 @@ export function UrlItemImporter() {
         const nextItems = { ...items };
 
         incomingItems.forEach(incoming => {
-          const existingId = Object.keys(nextItems).find(id => nextItems[id].itemId === incoming.itemId);
-          const id = existingId || incoming.id;
-          nextItems[id] = {
-            ...nextItems[id],
+          const itemId = incoming.itemId.trim();
+          const alreadyExists = Object.values(nextItems).some(
+            existing => existing.itemId.trim() === itemId
+          );
+
+          // 导入不得覆盖已有物品；内部 ID 冲突时也保留现有数据。
+          if (alreadyExists || nextItems[incoming.id]) return;
+
+          nextItems[incoming.id] = {
             ...incoming,
-            id
+            itemId
           };
         });
 
@@ -61,7 +66,7 @@ export function UrlItemImporter() {
       const nextSearch = params.toString();
       const nextUrl = `${window.location.pathname}${nextSearch ? `?${nextSearch}` : ''}${window.location.hash}`;
       window.history.replaceState({}, '', nextUrl);
-      alert(`已导入 ${incomingItems.length} 个物品`);
+      alert('物品导入完成，已存在的同ID物品已保留');
     } catch {
       alert('物品导入链接解析失败');
     }

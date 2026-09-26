@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { Tag } from '../../types';
 import { ItemSelector } from '../common/ItemSelector';
+import { useBackdropClick } from '../common/useBackdropClick';
 
 interface TagEditDialogProps {
   tag: Tag | null;
@@ -13,6 +14,7 @@ interface TagEditDialogProps {
 
 export function TagEditDialog({ tag, onSave, onDelete, onCancel, onClose }: TagEditDialogProps) {
   const { data } = useApp();
+  const backdropClickHandlers = useBackdropClick(onCancel);
   const [formData, setFormData] = useState<Tag>({
     id: tag?.id || '',
     name: tag?.name || '',
@@ -76,7 +78,7 @@ export function TagEditDialog({ tag, onSave, onDelete, onCancel, onClose }: TagE
   };
 
   return (
-    <div className="dialog-overlay" onClick={onCancel}>
+    <div className="dialog-overlay" {...backdropClickHandlers}>
       <div className="dialog dialog-large" onClick={e => e.stopPropagation()}>
         <div className="dialog-header">
           <h2>{tag ? '编辑标签' : '新建标签'}</h2>
@@ -101,7 +103,12 @@ export function TagEditDialog({ tag, onSave, onDelete, onCancel, onClose }: TagE
               {formData.items.map(itemId => {
                 const item = data.items[itemId];
                 return item ? (
-                  <div key={itemId} className="tag-item-chip">
+                  <div
+                    key={itemId}
+                    className="tag-item-chip"
+                    data-entity-type="item"
+                    data-entity-id={item.id}
+                  >
                     📦 {item.name}
                     <button type="button" onClick={() => handleRemoveItem(itemId)}>×</button>
                   </div>
@@ -128,7 +135,12 @@ export function TagEditDialog({ tag, onSave, onDelete, onCancel, onClose }: TagE
               {formData.childTags.map(childTagId => {
                 const childTag = data.tags[childTagId];
                 return childTag ? (
-                  <div key={childTagId} className="tag-item-chip">
+                  <div
+                    key={childTagId}
+                    className="tag-item-chip"
+                    data-entity-type="tag"
+                    data-entity-id={childTag.id}
+                  >
                     🏷️ {childTag.name}
                     <button type="button" onClick={() => handleRemoveChildTag(childTagId)}>×</button>
                   </div>

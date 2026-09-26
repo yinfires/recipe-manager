@@ -5,6 +5,7 @@ import { Tag } from '../../types';
 import { SearchInput } from '../common/SearchInput';
 import { ItemDisplay } from '../common/ItemDisplay';
 import { TagEditDialog } from './TagEditDialog';
+import { matchesSearch } from '../../utils/searchMatcher';
 
 export function TagList() {
   const { data, setData } = useApp();
@@ -13,7 +14,7 @@ export function TagList() {
   const [isCreating, setIsCreating] = useState(false);
 
   const tags = Object.values(data.tags).filter(tag =>
-    tag.name.toLowerCase().includes(searchText.toLowerCase())
+    matchesSearch(searchText, tag.name)
   );
 
   const handleCreate = () => {
@@ -74,12 +75,19 @@ export function TagList() {
 
       <div className="tag-grid">
         {tags.map(tag => (
-          <div key={tag.id} className="tag-card">
+          <div
+            key={tag.id}
+            className="tag-card"
+            data-entity-type="tag"
+            data-entity-id={tag.id}
+            onClick={() => setSelectedTag(tag)}
+          >
             <ItemDisplay
               icon="🏷️"
               name={tag.name}
               id={`${tag.items.length} 项物品`}
-              onClick={() => setSelectedTag(tag)}
+              entityType="tag"
+              entityId={tag.id}
             />
             {tag.childTags.length > 0 && (
               <div className="tag-children">

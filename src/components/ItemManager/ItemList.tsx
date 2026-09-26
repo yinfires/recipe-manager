@@ -6,6 +6,7 @@ import { SearchInput } from '../common/SearchInput';
 import { ItemDisplay } from '../common/ItemDisplay';
 import { TagFilter } from '../common/TagFilter';
 import { ItemEditDialog } from './ItemEditDialog';
+import { matchesSearch } from '../../utils/searchMatcher';
 
 export function ItemList() {
   const { data, setData } = useApp();
@@ -16,14 +17,13 @@ export function ItemList() {
 
   const items = Object.values(data.items).filter(item => {
     // 文本搜索过滤
-    const matchesSearch = item.name.toLowerCase().includes(searchText.toLowerCase()) ||
-      item.itemId.toLowerCase().includes(searchText.toLowerCase());
+    const matchesText = matchesSearch(searchText, item.name, item.itemId);
 
     // 标签过滤：物品必须包含所有选中的标签
     const matchesTags = selectedTagIds.length === 0 ||
       selectedTagIds.every(tagId => item.tags.includes(tagId));
 
-    return matchesSearch && matchesTags;
+    return matchesText && matchesTags;
   });
 
   const handleCreate = () => {
@@ -74,12 +74,19 @@ export function ItemList() {
 
       <div className="item-grid">
         {items.map(item => (
-          <div key={item.id} className="item-card">
+          <div
+            key={item.id}
+            className="item-card"
+            data-entity-type="item"
+            data-entity-id={item.id}
+            onClick={() => setSelectedItem(item)}
+          >
             <ItemDisplay
               icon="📦"
               name={item.name}
               id={item.itemId}
-              onClick={() => setSelectedItem(item)}
+              entityType="item"
+              entityId={item.id}
             />
           </div>
         ))}

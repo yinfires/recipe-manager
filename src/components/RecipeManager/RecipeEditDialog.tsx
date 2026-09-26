@@ -1,27 +1,41 @@
-import { useState, useEffect } from 'react';
+import { CSSProperties, useState, useEffect, useLayoutEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { useApp } from '../../contexts/AppContext';
 import { Recipe, RecipeSlot } from '../../types';
 import { ItemSelector } from '../common/ItemSelector';
+import { useBackdropClick } from '../common/useBackdropClick';
 
 interface RecipeEditDialogProps {
   recipe: Recipe | null;
+  initialOutputs?: RecipeSlot[];
   onSave: (recipe: Recipe) => void;
   onDelete?: () => void;
   onCancel: () => void;
   onClose?: () => void;
 }
 
-export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel, onClose }: RecipeEditDialogProps) {
+export function RecipeEditDialog({ recipe, initialOutputs = [], onSave, onDelete, onCancel, onClose }: RecipeEditDialogProps) {
   const { data } = useApp();
+  const backdropClickHandlers = useBackdropClick(onCancel);
   const workstationTag = Object.values(data.tags).find(tag => tag.name === '工作方块');
   const workstationItemIds = workstationTag?.items || [];
+  const initialOutputsSignature = initialOutputs
+    .map(slot => `${slot.type}:${slot.ref}:${slot.count}`)
+    .join('|');
   const [formData, setFormData] = useState<Recipe>({
     id: recipe?.id || '',
     name: recipe?.name || '',
     workstation: recipe?.workstation || '',
     inputs: recipe?.inputs || [],
     attachments: recipe?.attachments || [],
-    outputs: recipe?.outputs || []
+    outputs: recipe?.outputs || initialOutputs.map(slot => ({ ...slot }))
+  });
+  const [openAddPicker, setOpenAddPicker] = useState<'inputs' | 'attachments' | 'outputs' | null>(null);
+  const [pickerStyle, setPickerStyle] = useState<CSSProperties>({});
+  const addButtonRefs = useRef<Record<'inputs' | 'attachments' | 'outputs', HTMLButtonElement | null>>({
+    inputs: null,
+    attachments: null,
+    outputs: null
   });
 
   useEffect(() => {
@@ -32,10 +46,66 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel, onClose }
         workstation: '',
         inputs: [],
         attachments: [],
-        outputs: []
+        outputs: initialOutputs.map(slot => ({ ...slot }))
       });
     }
-  }, [recipe]);
+  }, [recipe, initialOutputsSignature]);
+
+  const calculatePickerStyle = (slotType: 'inputs' | 'attachments' | 'outputs'): CSSProperties | null => {
+    const button = addButtonRefs.current[slotType];
+    if (!button) return null;
+
+    const buttonRect = button.getBoundingClientRect();
+    const safeGap = 8;
+    const gapToButton = 6;
+    const pickerWidth = Math.min(320, Math.max(220, window.innerWidth - safeGap * 2));
+    const preferredLeft = buttonRect.right + gapToButton;
+    // Always favor the button's right side. Clamp only against the viewport, not
+    // the dialog, so the output picker can extend beyond the dialog's right edge.
+    const left = Math.max(
+      safeGap,
+      Math.min(preferredLeft, window.innerWidth - safeGap - pickerWidth)
+    );
+    const top = Math.max(safeGap, buttonRect.top - 8);
+    const availableHeight = Math.max(140, window.innerHeight - top - safeGap);
+
+    return {
+      position: 'fixed',
+      left,
+      top,
+      width: pickerWidth,
+      maxHeight: availableHeight
+    };
+  };
+
+  useLayoutEffect(() => {
+    if (!openAddPicker) return;
+
+    const updatePickerPosition = () => {
+      const nextStyle = calculatePickerStyle(openAddPicker);
+      if (nextStyle) setPickerStyle(nextStyle);
+    };
+
+    updatePickerPosition();
+    window.addEventListener('resize', updatePickerPosition);
+    document.addEventListener('scroll', updatePickerPosition, true);
+    return () => {
+      window.removeEventListener('resize', updatePickerPosition);
+      document.removeEventListener('scroll', updatePickerPosition, true);
+    };
+  }, [openAddPicker]);
+
+  const toggleAddPicker = (slotType: 'inputs' | 'attachments' | 'outputs') => {
+    if (openAddPicker === slotType) {
+      setOpenAddPicker(null);
+      setPickerStyle({});
+      return;
+    }
+
+    const nextStyle = calculatePickerStyle(slotType);
+    if (nextStyle) setPickerStyle(nextStyle);
+    setOpenAddPicker(slotType);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -66,11 +136,11 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel, onClose }
     onSave({ ...formData, name: autoName || '未命名配方' });
   };
 
-  const addSlot = (slotType: 'inputs' | 'attachments' | 'outputs') => {
-    setFormData({
-      ...formData,
-      [slotType]: [...formData[slotType], { type: 'item', ref: '', count: 1 }]
-    });
+  const addSlot = (slotType: 'inputs' | 'attachments' | 'outputs', value: { type: 'item' | 'tag'; ref: string }) => {
+    setFormData(current => ({
+      ...current,
+      [slotType]: [...current[slotType], { type: value.type, ref: value.ref, count: 1 }]
+    }));
   };
 
   const updateSlot = (slotType: 'inputs' | 'attachments' | 'outputs', index: number, slot: RecipeSlot) => {
@@ -86,10 +156,80 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel, onClose }
     });
   };
 
-  const renderSlotEditor = (slotType: 'inputs' | 'attachments' | 'outputs', label: string) => (
-    <div className="form-group">
-      <label>{label}</label>
-      <div className="slots-editor">
+  const slotPanelMeta = {
+    inputs: { title: '输入', description: '制作时需要消耗的材料' },
+    attachments: { title: '附加', description: '工具、催化剂或额外条件' },
+    outputs: { title: '输出', description: '配方最终生成的物品或标签' }
+  } as const;
+
+  const renderSlotEditor = (slotType: 'inputs' | 'attachments' | 'outputs') => {
+    const meta = slotPanelMeta[slotType];
+    const isPickerOpen = openAddPicker === slotType;
+
+    return (
+    <section className={`recipe-slot-editor-panel recipe-slot-editor-${slotType}`}>
+      <div className="recipe-slot-editor-header">
+        <div>
+          <div className="recipe-slot-editor-title-row">
+            <h3>{meta.title}</h3>
+            <span className="slot-count-badge">{formData[slotType].length}</span>
+          </div>
+          <p>{meta.description}</p>
+        </div>
+        <div className="recipe-slot-editor-actions">
+          {slotType === 'outputs' && <span className="required-badge">必填</span>}
+          <button
+            ref={element => { addButtonRefs.current[slotType] = element; }}
+            type="button"
+            className={`slot-header-add-button ${isPickerOpen ? 'active' : ''}`}
+            aria-label={`添加${meta.title}槽位`}
+            aria-expanded={isPickerOpen}
+            data-item-selector-toggle
+            onPointerDown={event => {
+              event.preventDefault();
+              event.stopPropagation();
+            }}
+            onClick={event => {
+              event.preventDefault();
+              event.stopPropagation();
+              toggleAddPicker(slotType);
+            }}
+          >
+            ＋
+          </button>
+          {isPickerOpen && createPortal(
+            <div
+              className="slot-header-picker slot-header-picker-portal"
+              style={pickerStyle}
+              onMouseDown={event => event.stopPropagation()}
+              onClick={event => event.stopPropagation()}
+            >
+              <ItemSelector
+                value={undefined}
+                onChange={(value) => {
+                  if (value) addSlot(slotType, value);
+                }}
+                placeholder={`搜索${meta.title}物品或标签...`}
+                allowTags={true}
+                keepOpenAfterSelect={true}
+                open={true}
+                onOpenChange={(nextOpen) => {
+                  if (!nextOpen) {
+                    setOpenAddPicker(null);
+                    window.requestAnimationFrame(() => addButtonRefs.current[slotType]?.focus());
+                  }
+                }}
+                dropdownOnly={true}
+              />
+            </div>,
+            document.body
+          )}
+        </div>
+      </div>
+      <div className="slots-editor slot-editor-scroll-area">
+        {formData[slotType].length === 0 && (
+          <div className="slot-editor-empty">暂无{meta.title}槽位</div>
+        )}
         {formData[slotType].map((slot, idx) => (
           <div key={idx} className="slot-editor-row">
             <ItemSelector
@@ -105,9 +245,9 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel, onClose }
             <input
               type="number"
               min="1"
+              aria-label={`${meta.title}槽位数量`}
               value={slot.count}
               onChange={e => updateSlot(slotType, idx, { ...slot, count: parseInt(e.target.value) || 1 })}
-              style={{ width: '60px' }}
             />
 
             <button type="button" className="btn-icon" onClick={() => removeSlot(slotType, idx)}>
@@ -115,48 +255,60 @@ export function RecipeEditDialog({ recipe, onSave, onDelete, onCancel, onClose }
             </button>
           </div>
         ))}
-        <button type="button" className="btn-secondary btn-small" onClick={() => addSlot(slotType)}>
-          + 添加槽位
-        </button>
       </div>
-    </div>
+    </section>
   );
+  };
 
   return (
-    <div className="dialog-overlay" onClick={onCancel}>
-      <div className="dialog dialog-large" onClick={e => e.stopPropagation()}>
+    <div className="dialog-overlay" {...backdropClickHandlers}>
+      <div className="dialog recipe-edit-dialog" onClick={e => e.stopPropagation()}>
         <div className="dialog-header">
           <h2>{recipe ? '编辑配方' : '新建配方'}</h2>
           <button type="button" className="dialog-close" onClick={onClose || onCancel}>×</button>
         </div>
 
-        <form onSubmit={handleSubmit} className="dialog-body">
-          <div className="form-group">
-            <label>配方名称（可选，留空自动使用第一个输出物品名）</label>
-            <input
-              type="text"
-              value={formData.name}
-              onChange={e => setFormData({ ...formData, name: e.target.value })}
-              placeholder="留空则自动命名"
-            />
+        <form onSubmit={handleSubmit} className="recipe-edit-form">
+          <div className="dialog-body recipe-edit-body">
+            <section className="recipe-basic-section">
+              <div className="recipe-basic-heading">
+                <div>
+                  <h3>基础信息</h3>
+                  <p>设置配方名称与使用的工作方块</p>
+                </div>
+              </div>
+              <div className="recipe-basic-grid">
+                <div className="form-group">
+                  <label>配方名称</label>
+                  <input
+                    type="text"
+                    value={formData.name}
+                    onChange={e => setFormData({ ...formData, name: e.target.value })}
+                    placeholder="留空则使用第一个输出物品名"
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label>工作方块 <span className="required-mark">*</span></label>
+                  <ItemSelector
+                    value={formData.workstation ? { type: 'item', ref: formData.workstation } : undefined}
+                    onChange={(value) => setFormData({ ...formData, workstation: value?.ref || '' })}
+                    placeholder="选择工作方块"
+                    allowTags={false}
+                    allowedItemIds={workstationItemIds}
+                  />
+                </div>
+              </div>
+            </section>
+
+            <div className="recipe-slot-editor-grid">
+              {renderSlotEditor('inputs')}
+              {renderSlotEditor('attachments')}
+              {renderSlotEditor('outputs')}
+            </div>
           </div>
 
-          <div className="form-group">
-            <label>工作方块 *</label>
-            <ItemSelector
-              value={formData.workstation ? { type: 'item', ref: formData.workstation } : undefined}
-              onChange={(value) => setFormData({ ...formData, workstation: value?.ref || '' })}
-              placeholder="选择工作方块"
-              allowTags={false}
-              allowedItemIds={workstationItemIds}
-            />
-          </div>
-
-          {renderSlotEditor('inputs', '输入槽位')}
-          {renderSlotEditor('attachments', '附加槽位（可选）')}
-          {renderSlotEditor('outputs', '输出槽位 *')}
-
-          <div className="dialog-footer">
+          <div className="dialog-footer recipe-edit-footer">
             {onDelete && (
               <button type="button" className="btn-danger" onClick={onDelete}>
                 删除

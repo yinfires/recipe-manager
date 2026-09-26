@@ -1,9 +1,12 @@
 import { useApp } from '../../contexts/AppContext';
-import { Item, Recipe } from '../../types';
+import { Item, Recipe, Tag } from '../../types';
 import { ItemDisplay } from '../common/ItemDisplay';
+import { findRecipesForTarget } from '../../utils/recipeRelations';
+import { entityDataAttributes } from '../../utils/entityTarget';
+import { useBackdropClick } from '../common/useBackdropClick';
 
 interface ItemDetailDialogProps {
-  item: Item;
+  item: Item | Tag;
   mode: 'source' | 'usage' | 'tags';
   onClose: () => void;
   onBack?: () => void;
@@ -14,69 +17,18 @@ interface ItemDetailDialogProps {
 
 export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem, onNavigateToTag, onNavigateToRecipe }: ItemDetailDialogProps) {
   const { data, showItemIds } = useApp();
+  const backdropClickHandlers = useBackdropClick(onBack || onClose);
 
-  // 递归获取标签的所有父标签
-  const getAllParentTags = (tagIds: string[]): string[] => {
-    const result = new Set<string>(tagIds);
-    const toProcess = [...tagIds];
-
-    while (toProcess.length > 0) {
-      const currentTagId = toProcess.pop()!;
-      const tag = data.tags[currentTagId];
-      if (tag?.parentTags) {
-        tag.parentTags.forEach(parentId => {
-          if (!result.has(parentId)) {
-            result.add(parentId);
-            toProcess.push(parentId);
-          }
-        });
-      }
-    }
-
-    return Array.from(result);
-  };
-
-  // 获取物品的所有相关配方（包括标签配方及父标签配方）
-  const getItemRecipes = (itemId: string, isSource: boolean): Recipe[] => {
-    const targetItem = data.items[itemId];
-
-    let allTags: string[] = [];
-
-    if (targetItem) {
-      // 如果是物品，获取其所有标签（包括父标签）
-      const itemTags = targetItem.tags || [];
-      allTags = getAllParentTags(itemTags);
-    } else {
-      // 如果是标签，直接使用该标签及其父标签
-      const tag = data.tags[itemId];
-      if (tag) {
-        allTags = getAllParentTags([itemId]);
-      } else {
-        return [];
-      }
-    }
-
-    return Object.values(data.recipes).filter(recipe => {
-      if (isSource) {
-        // 查找输出配方
-        return recipe.outputs.some(slot =>
-          (slot.type === 'item' && slot.ref === itemId) ||
-          (slot.type === 'tag' && allTags.includes(slot.ref))
-        );
-      } else {
-        // 查找消耗配方
-        const allSlots = [...recipe.inputs, ...recipe.attachments];
-        return allSlots.some(slot =>
-          (slot.type === 'item' && slot.ref === itemId) ||
-          (slot.type === 'tag' && allTags.includes(slot.ref))
-        );
-      }
-    });
-  };
-
-  const sourceRecipes = mode === 'source' ? getItemRecipes(item.id, true) : [];
-  const usageRecipes = mode === 'usage' ? getItemRecipes(item.id, false) : [];
-  const itemTags = mode === 'tags' ? item.tags.map(tagId => data.tags[tagId]).filter(Boolean) : [];
+  const targetType = 'itemId' in item ? 'item' : 'tag';
+  const sourceRecipes = mode === 'source'
+    ? findRecipesForTarget(data, { type: targetType, id: item.id }, 'source')
+    : [];
+  const usageRecipes = mode === 'usage'
+    ? findRecipesForTarget(data, { type: targetType, id: item.id }, 'usage')
+    : [];
+  const itemTags = mode === 'tags' && 'tags' in item
+    ? item.tags.map(tagId => data.tags[tagId]).filter(Boolean)
+    : [];
 
   const renderRecipe = (recipe: Recipe) => {
     const workstation = data.items[recipe.workstation];
@@ -86,6 +38,7 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
         key={recipe.id}
         className="detail-recipe-card"
         onClick={() => onNavigateToRecipe?.(recipe.id)}
+        {...entityDataAttributes({ type: 'recipe', id: recipe.id })}
       >
         <div className="recipe-name">{recipe.name}</div>
         {workstation && (
@@ -94,6 +47,8 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
               icon="📦"
               name={workstation.name}
               id={showItemIds ? workstation.itemId : ''}
+              entityType="item"
+              entityId={workstation.id}
               onClick={() => {
                 onNavigateToItem?.(workstation.id);
               }}
@@ -114,6 +69,8 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
                       name={slotItem.name}
                       id={showItemIds ? slotItem.itemId : ''}
                       count={slot.count}
+                      entityType="item"
+                      entityId={slotItem.id}
                       onClick={() => {
                         onNavigateToItem?.(slotItem.id);
                       }}
@@ -128,6 +85,8 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
                       name={slotTag.name}
                       id=""
                       count={slot.count}
+                      entityType="tag"
+                      entityId={slotTag.id}
                       onClick={() => {
                         onNavigateToTag?.(slotTag.id);
                       }}
@@ -150,6 +109,8 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
                       name={slotItem.name}
                       id={showItemIds ? slotItem.itemId : ''}
                       count={slot.count}
+                      entityType="item"
+                      entityId={slotItem.id}
                       onClick={() => {
                         onNavigateToItem?.(slotItem.id);
                       }}
@@ -164,6 +125,8 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
                       name={slotTag.name}
                       id=""
                       count={slot.count}
+                      entityType="tag"
+                      entityId={slotTag.id}
                       onClick={() => {
                         onNavigateToTag?.(slotTag.id);
                       }}
@@ -185,6 +148,8 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
                     name={slotItem.name}
                     id={showItemIds ? slotItem.itemId : ''}
                     count={slot.count}
+                    entityType="item"
+                    entityId={slotItem.id}
                     onClick={() => {
                       onNavigateToItem?.(slotItem.id);
                     }}
@@ -199,6 +164,8 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
                     name={slotTag.name}
                     id=""
                     count={slot.count}
+                    entityType="tag"
+                    entityId={slotTag.id}
                     onClick={() => {
                       onNavigateToTag?.(slotTag.id);
                     }}
@@ -213,17 +180,22 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
   };
 
   return (
-    <div className="dialog-overlay" onClick={onBack || onClose}>
-      <div className="dialog dialog-large" onClick={e => e.stopPropagation()}>
+    <div className="dialog-overlay" {...backdropClickHandlers}>
+      <div
+        className="dialog dialog-large"
+        onClick={e => e.stopPropagation()}
+      >
         <div className="dialog-header">
           <div>
-            <h2>
-              📦 {item.name}
+            <h2 data-entity-type={targetType} data-entity-id={item.id}>
+              {targetType === 'item' ? '📦' : '🏷️'} {item.name}
               {mode === 'source' && ' - 获取配方'}
               {mode === 'usage' && ' - 制作配方'}
               {mode === 'tags' && ' - 所在标签'}
             </h2>
-            {showItemIds && <div className="item-id-display">{item.itemId}</div>}
+            {showItemIds && 'itemId' in item && (
+              <div className="item-id-display">{item.itemId}</div>
+            )}
           </div>
           <button className="dialog-close" onClick={onClose}>×</button>
         </div>
@@ -234,7 +206,7 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
               {sourceRecipes.length > 0 ? (
                 sourceRecipes.map(renderRecipe)
               ) : (
-                <div className="empty-state">该物品没有获取配方</div>
+                <div className="empty-state">该{targetType === 'item' ? '物品' : '标签'}没有获取配方</div>
               )}
             </div>
           )}
@@ -244,7 +216,7 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
               {usageRecipes.length > 0 ? (
                 usageRecipes.map(renderRecipe)
               ) : (
-                <div className="empty-state">该物品没有被用于任何配方</div>
+                <div className="empty-state">该{targetType === 'item' ? '物品' : '标签'}没有被用于任何配方</div>
               )}
             </div>
           )}
@@ -258,6 +230,7 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
                       key={tag.id}
                       className="tag-item-card"
                       onClick={() => onNavigateToTag?.(tag.id)}
+                      {...entityDataAttributes({ type: 'tag', id: tag.id })}
                     >
                       <div className="tag-icon">🏷️</div>
                       <div className="tag-info">

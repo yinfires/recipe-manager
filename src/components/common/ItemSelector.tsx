@@ -1,5 +1,6 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import { useApp } from '../../contexts/AppContext';
+import { matchesSearch } from '../../utils/searchMatcher';
 
 interface ItemSelectorProps {
   value?: { type: 'item' | 'tag'; ref: string };
@@ -9,6 +10,10 @@ interface ItemSelectorProps {
   excludeItemIds?: string[];
   allowedItemIds?: string[];
   keepOpenAfterSelect?: boolean;
+  compactAddTrigger?: boolean;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
+  dropdownOnly?: boolean;
 }
 
 export function ItemSelector({
@@ -18,22 +23,49 @@ export function ItemSelector({
   allowTags = true,
   excludeItemIds = [],
   allowedItemIds,
-  keepOpenAfterSelect = false
+  keepOpenAfterSelect = false,
+  compactAddTrigger = false,
+  open,
+  onOpenChange,
+  dropdownOnly = false
 }: ItemSelectorProps) {
   const { data, showItemIds } = useApp();
-  const [isOpen, setIsOpen] = useState(false);
+  const [internalOpen, setInternalOpen] = useState(false);
   const [searchText, setSearchText] = useState('');
   const containerRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const isOpen = open ?? internalOpen;
+
+  const setIsOpen = (nextOpen: boolean) => {
+    if (open === undefined) setInternalOpen(nextOpen);
+    onOpenChange?.(nextOpen);
+  };
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
+      if ((e.target as Element).closest('[data-item-selector-toggle]')) return;
       if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
         setIsOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+  }, [open, onOpenChange]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsOpen(false);
+    };
+
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [isOpen, open, onOpenChange]);
+
+  useLayoutEffect(() => {
+    if (isOpen) searchInputRef.current?.focus({ preventScroll: true });
+  }, [isOpen]);
 
   const selectedItem = value?.type === 'item' ? data.items[value.ref] : null;
   const selectedTag = value?.type === 'tag' ? data.tags[value.ref] : null;
@@ -41,40 +73,59 @@ export function ItemSelector({
   const filteredItems = Object.values(data.items).filter(item =>
     !excludeItemIds.includes(item.id) &&
     (!allowedItemIds || allowedItemIds.includes(item.id)) &&
-    (item.name.toLowerCase().includes(searchText.toLowerCase()) ||
-      item.itemId.toLowerCase().includes(searchText.toLowerCase()))
+    matchesSearch(searchText, item.name, item.itemId)
   );
 
   const filteredTags = allowTags ? Object.values(data.tags).filter(tag =>
-    tag.name.toLowerCase().includes(searchText.toLowerCase())
+    matchesSearch(searchText, tag.name)
   ) : [];
 
+  const handleSelect = (selectedValue: { type: 'item' | 'tag'; ref: string }) => {
+    onChange(selectedValue);
+    if (!keepOpenAfterSelect) {
+      setIsOpen(false);
+      setSearchText('');
+    }
+  };
+
   return (
-    <div className="item-selector" ref={containerRef}>
-      <div className="selector-input" onClick={() => setIsOpen(!isOpen)}>
-        {value ? (
-          <div className="selected-value">
-            <span className="icon">{value.type === 'item' ? '📦' : '🏷️'}</span>
-            <span className="name">{selectedItem?.name || selectedTag?.name}</span>
-            {showItemIds && selectedItem && (
-              <span className="id">{selectedItem.itemId}</span>
-            )}
-          </div>
-        ) : (
-          <span className="placeholder">{placeholder}</span>
-        )}
-        <span className="arrow">{isOpen ? '▲' : '▼'}</span>
-      </div>
+    <div
+      className={`item-selector ${compactAddTrigger ? 'item-selector-compact-add' : ''} ${dropdownOnly ? 'item-selector-dropdown-only' : ''}`}
+      ref={containerRef}
+    >
+      {!dropdownOnly && (
+        <div
+          className={`selector-input ${compactAddTrigger ? 'selector-input-compact-add' : ''}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {value ? (
+            <div
+              className="selected-value"
+              data-entity-type={value.type}
+              data-entity-id={value.ref}
+            >
+              <span className="icon">{value.type === 'item' ? '📦' : '🏷️'}</span>
+              <span className="name">{selectedItem?.name || selectedTag?.name}</span>
+              {showItemIds && selectedItem && (
+                <span className="id">{selectedItem.itemId}</span>
+              )}
+            </div>
+          ) : (
+            <span className="placeholder">{compactAddTrigger ? `＋ ${placeholder}` : placeholder}</span>
+          )}
+          {!compactAddTrigger && <span className="arrow">{isOpen ? '▲' : '▼'}</span>}
+        </div>
+      )}
 
       {isOpen && (
         <div className="selector-dropdown">
           <input
+            ref={searchInputRef}
             type="text"
             className="selector-search"
             placeholder="搜索..."
             value={searchText}
             onChange={e => setSearchText(e.target.value)}
-            autoFocus
           />
           <div className="selector-list">
             {value && (
@@ -93,13 +144,9 @@ export function ItemSelector({
               <div
                 key={item.id}
                 className="selector-item"
-                onClick={() => {
-                  onChange({ type: 'item', ref: item.id });
-                  if (!keepOpenAfterSelect) {
-                    setIsOpen(false);
-                  }
-                  setSearchText('');
-                }}
+                data-entity-type="item"
+                data-entity-id={item.id}
+                onClick={() => handleSelect({ type: 'item', ref: item.id })}
               >
                 <span className="icon">📦</span>
                 <span className="name">{item.name}</span>
@@ -110,13 +157,9 @@ export function ItemSelector({
               <div
                 key={tag.id}
                 className="selector-item"
-                onClick={() => {
-                  onChange({ type: 'tag', ref: tag.id });
-                  if (!keepOpenAfterSelect) {
-                    setIsOpen(false);
-                  }
-                  setSearchText('');
-                }}
+                data-entity-type="tag"
+                data-entity-id={tag.id}
+                onClick={() => handleSelect({ type: 'tag', ref: tag.id })}
               >
                 <span className="icon">🏷️</span>
                 <span className="name">{tag.name}</span>

@@ -8,6 +8,7 @@ import { RecipeTree } from './components/RecipeManager/RecipeTree';
 import { ThemeToggle } from './components/common/ThemeToggle';
 import { GlobalNavigationHandler } from './components/common/GlobalNavigationHandler';
 import { UrlItemImporter } from './components/common/UrlItemImporter';
+import { ShortcutHelpDialog } from './components/common/ShortcutHelpDialog';
 import './App.css';
 
 export type TabType = 'items' | 'tags' | 'recipes' | 'tree';
@@ -26,6 +27,7 @@ function App() {
 
 function AppContent({ activeTab, setActiveTab }: { activeTab: TabType; setActiveTab: (tab: TabType) => void }) {
   const { recipeTreeTarget } = useNavigation();
+  const [showShortcutHelp, setShowShortcutHelp] = useState(false);
 
   // 监听配方树导航请求
   useEffect(() => {
@@ -65,6 +67,15 @@ function AppContent({ activeTab, setActiveTab }: { activeTab: TabType; setActive
             </div>
 
             <div className="app-header-right">
+              <button
+                type="button"
+                className="shortcut-help-button"
+                onClick={() => setShowShortcutHelp(true)}
+                title="查看快捷键"
+                aria-label="查看快捷键"
+              >
+                ⌨️
+              </button>
               <ThemeToggle />
             </div>
           </header>
@@ -76,8 +87,9 @@ function AppContent({ activeTab, setActiveTab }: { activeTab: TabType; setActive
             {activeTab === 'tree' && <RecipeTree />}
           </main>
 
-          <GlobalNavigationHandler />
+          <GlobalNavigationHandler shortcutsDisabled={showShortcutHelp} />
           <UrlItemImporter />
+          {showShortcutHelp && <ShortcutHelpDialog onClose={() => setShowShortcutHelp(false)} />}
         </div>
   );
 }

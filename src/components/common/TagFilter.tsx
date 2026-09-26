@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useApp } from '../../contexts/AppContext';
+import { matchesSearch } from '../../utils/searchMatcher';
 
 interface TagFilterProps {
   selectedTags: string[];
@@ -23,7 +24,7 @@ export function TagFilter({ selectedTags, onChange }: TagFilterProps) {
   }, []);
 
   const filteredTags = Object.values(data.tags).filter(tag =>
-    tag.name.toLowerCase().includes(searchText.toLowerCase())
+    matchesSearch(searchText, tag.name)
   );
 
   const toggleTag = (tagId: string) => {
@@ -48,7 +49,11 @@ export function TagFilter({ selectedTags, onChange }: TagFilterProps) {
     <div className="tag-filter" ref={containerRef}>
       <div className="tag-filter-input" onClick={() => setIsOpen(!isOpen)}>
         {selectedTags.length > 0 ? (
-          <div className="selected-tags">
+          <div
+            className="selected-tags"
+            data-entity-type={selectedTags.length === 1 ? 'tag' : undefined}
+            data-entity-id={selectedTags.length === 1 ? selectedTags[0] : undefined}
+          >
             <span className="icon">🏷️</span>
             <span className="tags-text">
               {selectedTags.length === 1 ? selectedTagNames : `${selectedTags.length} 个标签`}
@@ -83,6 +88,8 @@ export function TagFilter({ selectedTags, onChange }: TagFilterProps) {
                 <div
                   key={tag.id}
                   className={`tag-filter-item ${isSelected ? 'selected' : ''}`}
+                  data-entity-type="tag"
+                  data-entity-id={tag.id}
                   onClick={() => toggleTag(tag.id)}
                 >
                   <input

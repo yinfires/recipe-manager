@@ -8,22 +8,50 @@ import { ItemEditDialog } from '../ItemManager/ItemEditDialog';
 import { TagEditDialog } from '../TagManager/TagEditDialog';
 import { RecipeEditDialog } from '../RecipeManager/RecipeEditDialog';
 import { useState, useEffect } from 'react';
+import { Item, Recipe, Tag } from '../../types';
+import { getEntityTarget } from '../../utils/entityTarget';
+
+interface GlobalNavigationHandlerProps {
+  shortcutsDisabled?: boolean;
+}
 
 type DialogState =
-  | { type: 'quickMenu'; target: 'item' | 'tag' | 'recipe'; data: any }
-  | { type: 'itemDetail'; item: any; mode: 'source' | 'usage' | 'tags' }
-  | { type: 'tagDetail'; tag: any }
-  | { type: 'recipeDetail'; recipe: any }
-  | { type: 'itemEdit'; item: any }
-  | { type: 'tagEdit'; tag: any }
-  | { type: 'recipeEdit'; recipe: any };
+  | { type: 'quickMenu'; target: 'item' | 'tag' | 'recipe'; entityId: string }
+  | { type: 'itemDetail'; target: 'item' | 'tag'; entityId: string; mode: 'source' | 'usage' | 'tags' }
+  | { type: 'tagDetail'; tagId: string }
+  | { type: 'recipeDetail'; recipeId: string }
+  | { type: 'itemEdit'; itemId: string }
+  | { type: 'tagEdit'; tagId: string }
+  | { type: 'recipeCreate'; outputItemId: string }
+  | { type: 'recipeEdit'; recipeId: string };
 
-export function GlobalNavigationHandler() {
+export function GlobalNavigationHandler({ shortcutsDisabled = false }: GlobalNavigationHandlerProps) {
   const { data, setData } = useApp();
   const { selectedItem, selectedTag, selectedRecipe, setSelectedItem, setSelectedTag, setSelectedRecipe, setRecipeTreeTarget } = useNavigation();
   const [dialogHistory, setDialogHistory] = useState<DialogState[]>([]);
 
   const currentDialog = dialogHistory.length > 0 ? dialogHistory[dialogHistory.length - 1] : null;
+  const currentQuickMenuTarget = currentDialog?.type === 'quickMenu'
+    ? currentDialog.target === 'item'
+      ? data.items[currentDialog.entityId]
+      : currentDialog.target === 'tag'
+        ? data.tags[currentDialog.entityId]
+        : data.recipes[currentDialog.entityId]
+    : undefined;
+  const currentItemDetailTarget = currentDialog?.type === 'itemDetail'
+    ? currentDialog.target === 'item'
+      ? data.items[currentDialog.entityId]
+      : data.tags[currentDialog.entityId]
+    : undefined;
+  const currentTag = currentDialog?.type === 'tagDetail' || currentDialog?.type === 'tagEdit'
+    ? data.tags[currentDialog.tagId]
+    : undefined;
+  const currentRecipe = currentDialog?.type === 'recipeDetail' || currentDialog?.type === 'recipeEdit'
+    ? data.recipes[currentDialog.recipeId]
+    : undefined;
+  const currentItem = currentDialog?.type === 'itemEdit'
+    ? data.items[currentDialog.itemId]
+    : undefined;
 
   const pushDialog = (dialog: DialogState) => {
     setDialogHistory(prev => [...prev, dialog]);
@@ -37,7 +65,78 @@ export function GlobalNavigationHandler() {
     setDialogHistory([]);
   };
 
-  const handleItemSave = (item: any) => {
+  useEffect(() => {
+    let pointerX = -1;
+    let pointerY = -1;
+
+    const handlePointerMove = (event: PointerEvent) => {
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      const focused = event.target as HTMLElement | null;
+      const isEditable = focused?.matches('input, textarea, select, [contenteditable="true"]');
+      if (
+        shortcutsDisabled ||
+        isEditable ||
+        event.repeat ||
+        event.ctrlKey ||
+        event.altKey ||
+        event.metaKey ||
+        pointerX < 0 ||
+        pointerY < 0
+      ) return;
+
+      const target = getEntityTarget(document.elementFromPoint(pointerX, pointerY));
+      if (!target) return;
+
+      const key = event.key.toLowerCase();
+      let nextDialog: DialogState | null = null;
+
+      if ((key === 'r' || key === 'u') && target.type !== 'recipe') {
+        nextDialog = {
+          type: 'itemDetail',
+          target: target.type,
+          entityId: target.id,
+          mode: key === 'r' ? 'source' : 'usage'
+        };
+      } else if (key === 't' && target.type !== 'recipe') {
+        setRecipeTreeTarget({ id: target.id, type: target.type });
+        closeAllDialogs();
+        event.preventDefault();
+        return;
+      } else if (key === 'a' && target.type === 'item') {
+        nextDialog = { type: 'recipeCreate', outputItemId: target.id };
+      } else if (key === 'w') {
+        nextDialog = target.type === 'item'
+          ? { type: 'itemEdit', itemId: target.id }
+          : target.type === 'tag'
+            ? { type: 'tagEdit', tagId: target.id }
+            : { type: 'recipeEdit', recipeId: target.id };
+      } else if (key === 's') {
+        nextDialog = target.type === 'item'
+          ? { type: 'itemDetail', target: 'item', entityId: target.id, mode: 'tags' }
+          : target.type === 'tag'
+            ? { type: 'tagDetail', tagId: target.id }
+            : { type: 'recipeDetail', recipeId: target.id };
+      }
+
+      if (nextDialog) {
+        pushDialog(nextDialog);
+        event.preventDefault();
+      }
+    };
+
+    window.addEventListener('pointermove', handlePointerMove, { passive: true });
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('pointermove', handlePointerMove);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [shortcutsDisabled, setRecipeTreeTarget]);
+
+  const handleItemSave = (item: Item) => {
     setData(prev => {
       const oldItem = prev.items[item.id];
       const oldTags = oldItem?.tags || [];
@@ -53,7 +152,7 @@ export function GlobalNavigationHandler() {
       };
 
       // 批量更新标签
-      const updatedTags: Record<string, any> = {};
+      const updatedTags: Record<string, Tag> = {};
 
       // 从旧标签中移除此物品
       oldTags.forEach((tagId: string) => {
@@ -108,17 +207,17 @@ export function GlobalNavigationHandler() {
     closeAllDialogs();
   };
 
-  const handleTagSave = (tag: any) => {
+  const handleTagSave = (tag: Tag) => {
     setData(prev => {
       const oldTag = prev.tags[tag.id];
       const oldItems = oldTag?.items || [];
       const newItems = tag.items || [];
 
       // 批量构建更新
-      const updatedTags: Record<string, any> = {
+      const updatedTags: Record<string, Tag> = {
         [tag.id]: tag
       };
-      const updatedItems: Record<string, any> = {};
+      const updatedItems: Record<string, Item> = {};
 
       // 同步子标签的父标签引用
       tag.childTags.forEach((childId: string) => {
@@ -201,7 +300,7 @@ export function GlobalNavigationHandler() {
     closeAllDialogs();
   };
 
-  const handleRecipeSave = (recipe: any) => {
+  const handleRecipeSave = (recipe: Recipe) => {
     setData(prev => ({
       ...prev,
       recipes: {
@@ -223,170 +322,176 @@ export function GlobalNavigationHandler() {
   // 监听 selectedItem/selectedTag/selectedRecipe 的变化，转换为 dialog
   useEffect(() => {
     if (selectedItem) {
-      pushDialog({ type: 'quickMenu', target: 'item', data: selectedItem });
+      pushDialog({ type: 'quickMenu', target: 'item', entityId: selectedItem.id });
       setSelectedItem(null);
     }
   }, [selectedItem, setSelectedItem]);
 
   useEffect(() => {
     if (selectedTag) {
-      pushDialog({ type: 'quickMenu', target: 'tag', data: selectedTag });
+      pushDialog({ type: 'quickMenu', target: 'tag', entityId: selectedTag.id });
       setSelectedTag(null);
     }
   }, [selectedTag, setSelectedTag]);
 
   useEffect(() => {
     if (selectedRecipe) {
-      pushDialog({ type: 'quickMenu', target: 'recipe', data: selectedRecipe });
+      pushDialog({ type: 'quickMenu', target: 'recipe', entityId: selectedRecipe.id });
       setSelectedRecipe(null);
     }
   }, [selectedRecipe, setSelectedRecipe]);
 
   return (
     <>
-      {currentDialog?.type === 'quickMenu' && currentDialog.target === 'item' && (
+      {currentDialog?.type === 'quickMenu' && currentDialog.target === 'item' && currentQuickMenuTarget && (
         <QuickMenu
-          target={currentDialog.data}
+          target={currentQuickMenuTarget}
           type="item"
           onClose={closeAllDialogs}
           onBack={dialogHistory.length > 1 ? popDialog : undefined}
           onEdit={() => {
-            pushDialog({ type: 'itemEdit', item: currentDialog.data });
+            pushDialog({ type: 'itemEdit', itemId: currentDialog.entityId });
           }}
           onViewSource={() => {
-            pushDialog({ type: 'itemDetail', item: currentDialog.data, mode: 'source' });
+            pushDialog({ type: 'itemDetail', target: 'item', entityId: currentDialog.entityId, mode: 'source' });
+          }}
+          onAddSourceRecipe={() => {
+            pushDialog({ type: 'recipeCreate', outputItemId: currentDialog.entityId });
           }}
           onViewUsage={() => {
-            pushDialog({ type: 'itemDetail', item: currentDialog.data, mode: 'usage' });
+            pushDialog({ type: 'itemDetail', target: 'item', entityId: currentDialog.entityId, mode: 'usage' });
           }}
           onViewTags={() => {
-            pushDialog({ type: 'itemDetail', item: currentDialog.data, mode: 'tags' });
+            pushDialog({ type: 'itemDetail', target: 'item', entityId: currentDialog.entityId, mode: 'tags' });
           }}
           onViewRecipeTree={() => {
-            setRecipeTreeTarget({ id: currentDialog.data.id, type: 'item' });
+            setRecipeTreeTarget({ id: currentDialog.entityId, type: 'item' });
             closeAllDialogs();
           }}
         />
       )}
 
-      {currentDialog?.type === 'quickMenu' && currentDialog.target === 'tag' && (
+      {currentDialog?.type === 'quickMenu' && currentDialog.target === 'tag' && currentQuickMenuTarget && (
         <QuickMenu
-          target={currentDialog.data}
+          target={currentQuickMenuTarget}
           type="tag"
           onClose={closeAllDialogs}
           onBack={dialogHistory.length > 1 ? popDialog : undefined}
           onEdit={() => {
-            pushDialog({ type: 'tagEdit', tag: currentDialog.data });
+            pushDialog({ type: 'tagEdit', tagId: currentDialog.entityId });
           }}
           onViewDetail={() => {
-            pushDialog({ type: 'tagDetail', tag: currentDialog.data });
+            pushDialog({ type: 'tagDetail', tagId: currentDialog.entityId });
           }}
           onViewSource={() => {
-            pushDialog({ type: 'itemDetail', item: currentDialog.data, mode: 'source' });
+            pushDialog({ type: 'itemDetail', target: 'tag', entityId: currentDialog.entityId, mode: 'source' });
           }}
           onViewUsage={() => {
-            pushDialog({ type: 'itemDetail', item: currentDialog.data, mode: 'usage' });
+            pushDialog({ type: 'itemDetail', target: 'tag', entityId: currentDialog.entityId, mode: 'usage' });
           }}
           onViewRecipeTree={() => {
-            setRecipeTreeTarget({ id: currentDialog.data.id, type: 'tag' });
+            setRecipeTreeTarget({ id: currentDialog.entityId, type: 'tag' });
             closeAllDialogs();
           }}
         />
       )}
 
-      {currentDialog?.type === 'quickMenu' && currentDialog.target === 'recipe' && (
+      {currentDialog?.type === 'quickMenu' && currentDialog.target === 'recipe' && currentQuickMenuTarget && (
         <QuickMenu
-          target={currentDialog.data}
+          target={currentQuickMenuTarget}
           type="recipe"
           onClose={closeAllDialogs}
           onBack={dialogHistory.length > 1 ? popDialog : undefined}
           onEdit={() => {
-            pushDialog({ type: 'recipeEdit', recipe: currentDialog.data });
+            pushDialog({ type: 'recipeEdit', recipeId: currentDialog.entityId });
           }}
           onViewDetail={() => {
-            pushDialog({ type: 'recipeDetail', recipe: currentDialog.data });
+            pushDialog({ type: 'recipeDetail', recipeId: currentDialog.entityId });
           }}
         />
       )}
 
-      {currentDialog?.type === 'itemDetail' && (
+      {currentDialog?.type === 'itemDetail' && currentItemDetailTarget && (
         <ItemDetailDialog
-          item={currentDialog.item}
+          item={currentItemDetailTarget}
           mode={currentDialog.mode}
           onClose={closeAllDialogs}
           onBack={dialogHistory.length > 1 ? popDialog : undefined}
           onNavigateToItem={(itemId) => {
-            const item = data.items[itemId];
-            if (item) pushDialog({ type: 'quickMenu', target: 'item', data: item });
+            if (data.items[itemId]) pushDialog({ type: 'quickMenu', target: 'item', entityId: itemId });
           }}
           onNavigateToTag={(tagId) => {
-            const tag = data.tags[tagId];
-            if (tag) pushDialog({ type: 'quickMenu', target: 'tag', data: tag });
+            if (data.tags[tagId]) pushDialog({ type: 'quickMenu', target: 'tag', entityId: tagId });
           }}
           onNavigateToRecipe={(recipeId) => {
-            const recipe = data.recipes[recipeId];
-            if (recipe) pushDialog({ type: 'quickMenu', target: 'recipe', data: recipe });
+            if (data.recipes[recipeId]) pushDialog({ type: 'quickMenu', target: 'recipe', entityId: recipeId });
           }}
         />
       )}
 
-      {currentDialog?.type === 'tagDetail' && (
+      {currentDialog?.type === 'tagDetail' && currentTag && (
         <TagDetailDialog
-          tag={currentDialog.tag}
+          tag={currentTag}
           onClose={closeAllDialogs}
           onBack={dialogHistory.length > 1 ? popDialog : undefined}
           onNavigateToItem={(itemId) => {
-            const item = data.items[itemId];
-            if (item) pushDialog({ type: 'quickMenu', target: 'item', data: item });
+            if (data.items[itemId]) pushDialog({ type: 'quickMenu', target: 'item', entityId: itemId });
           }}
           onNavigateToTag={(tagId) => {
-            const tag = data.tags[tagId];
-            if (tag) pushDialog({ type: 'tagDetail', tag: tag });
+            if (data.tags[tagId]) pushDialog({ type: 'tagDetail', tagId });
           }}
         />
       )}
 
-      {currentDialog?.type === 'recipeDetail' && (
+      {currentDialog?.type === 'recipeDetail' && currentRecipe && (
         <RecipeDetailDialog
-          recipe={currentDialog.recipe}
+          recipe={currentRecipe}
           onClose={closeAllDialogs}
           onBack={dialogHistory.length > 1 ? popDialog : undefined}
           onNavigateToItem={(itemId) => {
-            const item = data.items[itemId];
-            if (item) pushDialog({ type: 'quickMenu', target: 'item', data: item });
+            if (data.items[itemId]) pushDialog({ type: 'quickMenu', target: 'item', entityId: itemId });
           }}
           onNavigateToTag={(tagId) => {
-            const tag = data.tags[tagId];
-            if (tag) pushDialog({ type: 'quickMenu', target: 'tag', data: tag });
+            if (data.tags[tagId]) pushDialog({ type: 'quickMenu', target: 'tag', entityId: tagId });
           }}
         />
       )}
 
-      {currentDialog?.type === 'itemEdit' && (
+      {currentDialog?.type === 'itemEdit' && currentItem && (
         <ItemEditDialog
-          item={currentDialog.item}
+          item={currentItem}
           onSave={handleItemSave}
-          onDelete={() => handleItemDelete(currentDialog.item.id)}
+          onDelete={() => handleItemDelete(currentDialog.itemId)}
           onCancel={popDialog}
           onClose={closeAllDialogs}
         />
       )}
 
-      {currentDialog?.type === 'tagEdit' && (
+      {currentDialog?.type === 'tagEdit' && currentTag && (
         <TagEditDialog
-          tag={currentDialog.tag}
+          tag={currentTag}
           onSave={handleTagSave}
-          onDelete={() => handleTagDelete(currentDialog.tag.id)}
+          onDelete={() => handleTagDelete(currentDialog.tagId)}
           onCancel={popDialog}
           onClose={closeAllDialogs}
         />
       )}
 
-      {currentDialog?.type === 'recipeEdit' && (
+      {currentDialog?.type === 'recipeEdit' && currentRecipe && (
         <RecipeEditDialog
-          recipe={currentDialog.recipe}
+          recipe={currentRecipe}
           onSave={handleRecipeSave}
-          onDelete={() => handleRecipeDelete(currentDialog.recipe.id)}
+          onDelete={() => handleRecipeDelete(currentDialog.recipeId)}
+          onCancel={popDialog}
+          onClose={closeAllDialogs}
+        />
+      )}
+
+      {currentDialog?.type === 'recipeCreate' && data.items[currentDialog.outputItemId] && (
+        <RecipeEditDialog
+          recipe={null}
+          initialOutputs={[{ type: 'item', ref: currentDialog.outputItemId, count: 1 }]}
+          onSave={handleRecipeSave}
           onCancel={popDialog}
           onClose={closeAllDialogs}
         />

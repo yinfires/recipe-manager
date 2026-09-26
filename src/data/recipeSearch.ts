@@ -1,4 +1,5 @@
 import { Recipe, AppData, RecipeSlot } from '../types';
+import { matchesSearch } from '../utils/searchMatcher';
 
 export interface RecipeSearchOptions {
   text?: string;           // 配方名称搜索
@@ -14,8 +15,7 @@ export class RecipeSearch {
 
     // 按名称搜索
     if (options.text) {
-      const lower = options.text.toLowerCase();
-      results = results.filter(r => r.name.toLowerCase().includes(lower));
+      results = results.filter(r => matchesSearch(options.text!, r.name));
     }
 
     // 按工作方块搜索

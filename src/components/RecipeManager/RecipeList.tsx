@@ -36,7 +36,7 @@ export function RecipeList() {
 
   return (
     <div className="recipe-list-container">
-      <div className="list-header">
+      <div className="list-header recipe-list-toolbar">
         <SearchInput
           placeholder="搜索配方名称..."
           onSearch={(text) => setSearchOptions({ ...searchOptions, text })}
@@ -52,7 +52,7 @@ export function RecipeList() {
 
       {showAdvancedSearch && (
         <div className="advanced-search">
-          <div className="search-row">
+          <div className="search-row advanced-search-field">
             <label>工作方块:</label>
             <ItemSelector
               value={searchOptions.workstation ? { type: 'item', ref: searchOptions.workstation } : undefined}
@@ -63,7 +63,7 @@ export function RecipeList() {
             />
           </div>
 
-          <div className="search-row">
+          <div className="search-row advanced-search-field">
             <label>输入物品:</label>
             <ItemSelector
               value={searchOptions.input ? { type: 'item', ref: searchOptions.input } : undefined}
@@ -73,7 +73,7 @@ export function RecipeList() {
             />
           </div>
 
-          <div className="search-row">
+          <div className="search-row advanced-search-field">
             <label>附加物品:</label>
             <ItemSelector
               value={searchOptions.attachment ? { type: 'item', ref: searchOptions.attachment } : undefined}
@@ -83,7 +83,7 @@ export function RecipeList() {
             />
           </div>
 
-          <div className="search-row">
+          <div className="search-row advanced-search-field">
             <label>输出物品:</label>
             <ItemSelector
               value={searchOptions.output ? { type: 'item', ref: searchOptions.output } : undefined}
@@ -94,7 +94,7 @@ export function RecipeList() {
           </div>
 
           <button
-            className="btn-secondary"
+            className="btn-secondary advanced-search-clear"
             onClick={() => setSearchOptions({})}
           >
             清空筛选
@@ -106,48 +106,98 @@ export function RecipeList() {
         {recipes.map(recipe => {
           const workstation = data.items[recipe.workstation];
           return (
-            <div key={recipe.id} className="recipe-card" onClick={() => setSelectedRecipe(recipe)}>
+            <div
+              key={recipe.id}
+              className="recipe-card"
+              data-entity-type="recipe"
+              data-entity-id={recipe.id}
+              onClick={() => setSelectedRecipe(recipe)}
+            >
               <div className="recipe-header">
-                <h3>{recipe.name}</h3>
+                <div className="recipe-title-block">
+                  <span className="recipe-card-eyebrow">配方</span>
+                  <h3>{recipe.name}</h3>
+                </div>
                 {workstation && (
-                  <ItemDisplay icon="📦" name={workstation.name} id={workstation.itemId} />
+                  <div className="recipe-workstation-badge">
+                    <span className="recipe-section-caption">工作方块</span>
+                    <ItemDisplay
+                      icon="📦"
+                      name={workstation.name}
+                      id={workstation.itemId}
+                      entityType="item"
+                      entityId={workstation.id}
+                    />
+                  </div>
                 )}
               </div>
               <div className="recipe-slots">
-                <div className="slot-group">
-                  <span className="slot-label">输入:</span>
-                  {recipe.inputs.map((slot, idx) => {
-                    const ref = slot.type === 'item' ? data.items[slot.ref] : data.tags[slot.ref];
-                    return ref ? (
-                      <span key={idx} className="slot-item">
-                        {slot.type === 'item' ? '📦' : '🏷️'} {ref.name} ×{slot.count}
-                      </span>
-                    ) : null;
-                  })}
-                </div>
-                {recipe.attachments.length > 0 && (
+                <div className="recipe-slot-section recipe-slot-inputs">
+                  <div className="recipe-slot-heading">
+                    <span>输入</span>
+                    <span className="slot-count-badge">{recipe.inputs.length}</span>
+                  </div>
                   <div className="slot-group">
-                    <span className="slot-label">附加:</span>
-                    {recipe.attachments.map((slot, idx) => {
+                    {recipe.inputs.length === 0 && <span className="slot-empty">无输入</span>}
+                    {recipe.inputs.map((slot, idx) => {
                       const ref = slot.type === 'item' ? data.items[slot.ref] : data.tags[slot.ref];
                       return ref ? (
-                        <span key={idx} className="slot-item">
+                        <span
+                          key={idx}
+                          className="slot-item"
+                          data-entity-type={slot.type}
+                          data-entity-id={slot.ref}
+                        >
                           {slot.type === 'item' ? '📦' : '🏷️'} {ref.name} ×{slot.count}
                         </span>
                       ) : null;
                     })}
                   </div>
+                </div>
+                {recipe.attachments.length > 0 && (
+                  <div className="recipe-slot-section recipe-slot-attachments">
+                    <div className="recipe-slot-heading">
+                      <span>附加</span>
+                      <span className="slot-count-badge">{recipe.attachments.length}</span>
+                    </div>
+                    <div className="slot-group">
+                      {recipe.attachments.map((slot, idx) => {
+                        const ref = slot.type === 'item' ? data.items[slot.ref] : data.tags[slot.ref];
+                        return ref ? (
+                          <span
+                            key={idx}
+                            className="slot-item"
+                            data-entity-type={slot.type}
+                            data-entity-id={slot.ref}
+                          >
+                            {slot.type === 'item' ? '📦' : '🏷️'} {ref.name} ×{slot.count}
+                          </span>
+                        ) : null;
+                      })}
+                    </div>
+                  </div>
                 )}
-                <div className="slot-group">
-                  <span className="slot-label">输出:</span>
-                  {recipe.outputs.map((slot, idx) => {
-                    const ref = slot.type === 'item' ? data.items[slot.ref] : data.tags[slot.ref];
-                    return ref ? (
-                      <span key={idx} className="slot-item">
-                        {slot.type === 'item' ? '📦' : '🏷️'} {ref.name} ×{slot.count}
-                      </span>
-                    ) : null;
-                  })}
+                <div className="recipe-slot-section recipe-slot-outputs">
+                  <div className="recipe-slot-heading">
+                    <span>输出</span>
+                    <span className="slot-count-badge">{recipe.outputs.length}</span>
+                  </div>
+                  <div className="slot-group">
+                    {recipe.outputs.length === 0 && <span className="slot-empty">无输出</span>}
+                    {recipe.outputs.map((slot, idx) => {
+                      const ref = slot.type === 'item' ? data.items[slot.ref] : data.tags[slot.ref];
+                      return ref ? (
+                        <span
+                          key={idx}
+                          className="slot-item"
+                          data-entity-type={slot.type}
+                          data-entity-id={slot.ref}
+                        >
+                          {slot.type === 'item' ? '📦' : '🏷️'} {ref.name} ×{slot.count}
+                        </span>
+                      ) : null;
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
