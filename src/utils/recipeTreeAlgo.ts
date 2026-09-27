@@ -90,17 +90,21 @@ export class RecipeTreeBuilder {
         Math.max(ownHeight(node), span(children.get(node.id) || [])));
       return heights.get(node.id)!;
     };
-    const place = (node: TreeNode, center: number, offset = 0) => {
-      node.x = node.level * 320 + offset;
+    const place = (node: TreeNode, center: number) => {
+      // A node's horizontal position is determined solely by its depth.  Recipe
+      // groups are already separated vertically; staggering them horizontally
+      // makes nodes at the same depth drift left/right and gives every recipe
+      // edge a different trunk x-coordinate, so shared sections cannot line up.
+      node.x = node.level * 320;
       node.y = center - ownHeight(node) / 2;
       node.row = center;
       (members.get(node.id) || []).forEach((member, i) => {
         member.x = node.x; member.y = node.y + 60 * (i + 1); member.row = member.y;
       });
       const list = children.get(node.id) || [];
-      // Nodes belonging to one recipe share a vertical center. Only separate
-      // recipe groups receive a horizontal offset, keeping each recipe's
-      // same-level inputs/outputs visually aligned.
+      // Nodes belonging to one recipe stay together vertically. Separate
+      // recipes use extra vertical space, while every node at this depth stays
+      // in the same horizontal column so their edge trunks can overlap cleanly.
       const groups = [...new Map(list.map(child => [child.branchId, child])).keys()]
         .map(branchId => list.filter(child => child.branchId === branchId));
       const groupGap = 48;
@@ -112,7 +116,7 @@ export class RecipeTreeBuilder {
         let childCursor = groupCursor;
         group.forEach((child, i) => {
           if (i) childCursor += gap(group[i - 1], child);
-          place(child, childCursor + measure(child) / 2, groups.length > 1 ? (groupIndex / (groups.length - 1) - 0.5) * 28 : 0);
+          place(child, childCursor + measure(child) / 2);
           childCursor += measure(child);
         });
         groupCursor += groupHeight + groupGap;
