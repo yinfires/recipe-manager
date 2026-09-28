@@ -1,8 +1,11 @@
 import { useEffect } from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { Item } from '../../types';
+import { getImportedItemCreatedAt } from '../../data/itemTimestamps';
 
-function isImportItem(value: unknown): value is Item {
+type ImportedItem = Omit<Item, 'createdAt'> & { createdAt?: string };
+
+function isImportItem(value: unknown): value is ImportedItem {
   if (!value || typeof value !== 'object') return false;
 
   const item = value as Partial<Item>;
@@ -14,7 +17,7 @@ function isImportItem(value: unknown): value is Item {
   );
 }
 
-function getImportItems(value: unknown): Item[] | null {
+function getImportItems(value: unknown): ImportedItem[] | null {
   if (isImportItem(value)) return [value];
   if (Array.isArray(value) && value.every(isImportItem)) return value;
   return null;
@@ -44,7 +47,8 @@ export function UrlItemImporter() {
         const items = prev.items || {};
         const nextItems = { ...items };
 
-        incomingItems.forEach(incoming => {
+        const importBaseTime = Date.now();
+        incomingItems.forEach((incoming, index) => {
           const itemId = incoming.itemId.trim();
           const alreadyExists = Object.values(nextItems).some(
             existing => existing.itemId.trim() === itemId
@@ -55,7 +59,11 @@ export function UrlItemImporter() {
 
           nextItems[incoming.id] = {
             ...incoming,
-            itemId
+            itemId,
+            createdAt: getImportedItemCreatedAt(
+              incoming.createdAt,
+              new Date(importBaseTime + index).toISOString()
+            )
           };
         });
 

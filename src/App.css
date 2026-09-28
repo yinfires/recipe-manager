@@ -265,9 +265,87 @@ body {
 /* 列表头部 */
 .list-header {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   align-items: center;
   margin-bottom: 24px;
+}
+
+.list-header > .search-input {
+  min-width: 240px;
+  flex: 1 1 300px;
+}
+
+.list-header > .btn-primary {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.item-sort-toolbar {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.sort-control-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sort-control-group + .sort-control-group {
+  padding-left: 6px;
+  border-left: 1px solid var(--border);
+}
+
+.sort-control-group label {
+  color: var(--text-dim);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sort-control-group select {
+  height: 30px;
+  min-width: 62px;
+  padding: 4px 22px 4px 7px;
+  background: var(--surface-3);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.sort-control-group select:hover,
+.sort-control-group select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.sort-direction-button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: var(--surface-3);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.sort-direction-button:hover,
+.sort-direction-button:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--surface-4);
 }
 
 .list-header .item-selector {
@@ -654,6 +732,22 @@ button {
 .list-header .tag-filter {
   width: 220px;
   flex-shrink: 0;
+}
+
+@media (max-width: 760px) {
+  .list-header > .search-input {
+    max-width: none;
+    flex-basis: 100%;
+  }
+
+  .list-header .tag-filter {
+    width: min(100%, 220px);
+  }
+
+  .item-sort-toolbar {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 /* 快捷菜单 */

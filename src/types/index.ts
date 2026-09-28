@@ -3,6 +3,7 @@ export interface Item {
   name: string;        // 显示名称
   itemId: string;      // Minecraft ID
   tags: string[];      // 所属标签 ID 列表
+  createdAt?: string;  // 创建时间（ISO 8601）；旧数据加载时补齐
   manualPrice?: number; // 手动覆盖单价
   autoPrice?: number;   // 自动计算单价
   processingFee?: ProcessingFee;

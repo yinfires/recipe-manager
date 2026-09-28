@@ -80,6 +80,7 @@ export function RecipeTree() {
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [expandedTags, setExpandedTags] = useState<Set<string>>(new Set());
   const [includeAttachments, setIncludeAttachments] = useState(true);
+  const [nodesLocked, setNodesLocked] = useState(true);
   const [controlsOpen, setControlsOpen] = useState(true);
   const [layoutRevision, setLayoutRevision] = useState(0);
   const flowInstance = useRef<ReactFlowInstance | null>(null);
@@ -286,6 +287,14 @@ export function RecipeTree() {
             />
             显示附加物品
           </label>
+          <label className="tree-attachments-toggle">
+            <input
+              type="checkbox"
+              checked={nodesLocked}
+              onChange={(event) => setNodesLocked(event.target.checked)}
+            />
+            锁定节点
+          </label>
         </div>
         </div>}
         <button
@@ -308,6 +317,7 @@ export function RecipeTree() {
             onNodesChange={onNodesChange}
             onEdgesChange={onEdgesChange}
             onNodeClick={handleNodeClick}
+            nodesDraggable={!nodesLocked}
             onInit={instance => { flowInstance.current = instance; }}
             connectionLineType={ConnectionLineType.SmoothStep}
             fitView

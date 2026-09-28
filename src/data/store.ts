@@ -1,6 +1,7 @@
 import { AppData, PersistedData } from '../types';
+import { normalizeAppDataTimestamps } from './itemTimestamps';
 
-export const DATA_SCHEMA_VERSION = 2;
+export const DATA_SCHEMA_VERSION = 3;
 export const LEGACY_STORAGE_KEY = 'recipe_manager_data';
 export const MIGRATION_MARKER_KEY = 'recipe_manager_file_migration_v2';
 export type SaveState = 'loading' | 'saved' | 'saving' | 'error' | 'readonly';
@@ -14,17 +15,21 @@ function emptyData(): AppData {
   return { items: {}, tags: {}, recipes: {} };
 }
 
-function normalizePersisted(value: unknown): PersistedData {
+export function normalizePersisted(value: unknown): PersistedData {
   const candidate = value as Partial<PersistedData> | null;
   const appData = candidate?.data as Partial<AppData> | undefined;
+  const updatedAt = typeof candidate?.updatedAt === 'string'
+    ? candidate.updatedAt
+    : new Date(0).toISOString();
+  const data = normalizeAppDataTimestamps({
+    items: appData?.items || {},
+    tags: appData?.tags || {},
+    recipes: appData?.recipes || {}
+  }, updatedAt);
   return {
-    schemaVersion: typeof candidate?.schemaVersion === 'number' ? candidate.schemaVersion : DATA_SCHEMA_VERSION,
-    updatedAt: typeof candidate?.updatedAt === 'string' ? candidate.updatedAt : new Date(0).toISOString(),
-    data: {
-      items: appData?.items || {},
-      tags: appData?.tags || {},
-      recipes: appData?.recipes || {}
-    }
+    schemaVersion: DATA_SCHEMA_VERSION,
+    updatedAt,
+    data
   };
 }
 
@@ -74,7 +79,10 @@ export const DataStore = {
       const saved = localStorage.getItem(LEGACY_STORAGE_KEY);
       if (!saved) return null;
       const value = JSON.parse(saved) as Partial<AppData>;
-      return { items: value.items || {}, tags: value.tags || {}, recipes: value.recipes || {} };
+      return normalizeAppDataTimestamps(
+        { items: value.items || {}, tags: value.tags || {}, recipes: value.recipes || {} },
+        new Date().toISOString()
+      );
     } catch {
       return null;
     }

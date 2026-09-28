@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 2,
-  "updatedAt": "2026-09-28T06:35:31.113Z",
+  "schemaVersion": 3,
+  "updatedAt": "2026-09-28T08:29:49.622Z",
   "data": {
     "items": {
       "item_1790124131145": {
@@ -10,7 +10,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 8
+        "manualPrice": 8,
+        "createdAt": "2026-09-28T06:26:48.113Z"
       },
       "item_1790125887206": {
         "id": "item_1790125887206",
@@ -20,7 +21,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 7
+        "manualPrice": 7,
+        "createdAt": "2026-09-28T06:26:49.113Z"
       },
       "item_1790126010461": {
         "id": "item_1790126010461",
@@ -30,7 +32,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 7
+        "manualPrice": 7,
+        "createdAt": "2026-09-28T06:26:50.113Z"
       },
       "item_1790126025786": {
         "id": "item_1790126025786",
@@ -40,7 +43,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 7
+        "manualPrice": 7,
+        "createdAt": "2026-09-28T06:26:51.113Z"
       },
       "item_1790126144727": {
         "id": "item_1790126144727",
@@ -49,7 +53,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 5
+        "manualPrice": 5,
+        "createdAt": "2026-09-28T06:26:52.113Z"
       },
       "item_1790126151178": {
         "id": "item_1790126151178",
@@ -58,7 +63,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 4
+        "manualPrice": 4,
+        "createdAt": "2026-09-28T06:26:53.113Z"
       },
       "item_1790128035425": {
         "id": "item_1790128035425",
@@ -67,7 +73,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 10
+        "manualPrice": 10,
+        "createdAt": "2026-09-28T06:26:54.113Z"
       },
       "item_1790128108725": {
         "id": "item_1790128108725",
@@ -78,6 +85,7 @@
           "tag_1790130836441"
         ],
         "manualPrice": 8,
+        "createdAt": "2026-09-28T06:26:55.113Z",
         "autoPrice": 4.6
       },
       "item_1790128122990": {
@@ -89,6 +97,7 @@
           "tag_1790130836441"
         ],
         "manualPrice": 8,
+        "createdAt": "2026-09-28T06:26:56.113Z",
         "autoPrice": 4.6
       },
       "item_1790128163987": {
@@ -99,7 +108,8 @@
           "tag_1790128260566",
           "tag_1790130836441"
         ],
-        "manualPrice": 10
+        "manualPrice": 10,
+        "createdAt": "2026-09-28T06:26:57.113Z"
       },
       "item_1790130683439": {
         "id": "item_1790130683439",
@@ -108,7 +118,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 9
+        "manualPrice": 9,
+        "createdAt": "2026-09-28T06:26:58.113Z"
       },
       "item_1790134179343": {
         "id": "item_1790134179343",
@@ -118,7 +129,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 8
+        "manualPrice": 8,
+        "createdAt": "2026-09-28T06:26:59.113Z"
       },
       "item_1790135106649": {
         "id": "item_1790135106649",
@@ -128,7 +140,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 8
+        "manualPrice": 8,
+        "createdAt": "2026-09-28T06:27:00.113Z"
       },
       "item_1790137148750": {
         "id": "item_1790137148750",
@@ -139,7 +152,8 @@
           "tag_1790135182492",
           "tag_1790135463743"
         ],
-        "manualPrice": 9
+        "manualPrice": 9,
+        "createdAt": "2026-09-28T06:27:01.113Z"
       },
       "item_1790138031487": {
         "id": "item_1790138031487",
@@ -150,7 +164,8 @@
           "tag_1790135182492",
           "tag_1790135463743"
         ],
-        "manualPrice": 11
+        "manualPrice": 11,
+        "createdAt": "2026-09-28T06:27:02.113Z"
       },
       "item_1790138361858": {
         "id": "item_1790138361858",
@@ -160,7 +175,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 8
+        "manualPrice": 8,
+        "createdAt": "2026-09-28T06:27:03.113Z"
       },
       "item_1790138417330": {
         "id": "item_1790138417330",
@@ -170,7 +186,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 8
+        "manualPrice": 8,
+        "createdAt": "2026-09-28T06:27:04.113Z"
       },
       "item_1790138531027": {
         "id": "item_1790138531027",
@@ -180,7 +197,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 9
+        "manualPrice": 9,
+        "createdAt": "2026-09-28T06:27:05.113Z"
       },
       "item_1790138660812": {
         "id": "item_1790138660812",
@@ -190,7 +208,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 10
+        "manualPrice": 10,
+        "createdAt": "2026-09-28T06:27:06.113Z"
       },
       "item_1790138675425": {
         "id": "item_1790138675425",
@@ -199,6 +218,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:27:07.113Z",
         "autoPrice": 9
       },
       "item_1790138757205": {
@@ -208,7 +228,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 10
+        "manualPrice": 10,
+        "createdAt": "2026-09-28T06:27:08.113Z"
       },
       "item_1790138879144": {
         "id": "item_1790138879144",
@@ -217,7 +238,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 24
+        "manualPrice": 24,
+        "createdAt": "2026-09-28T06:27:09.113Z"
       },
       "item_1790138974040": {
         "id": "item_1790138974040",
@@ -227,7 +249,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 7
+        "manualPrice": 7,
+        "createdAt": "2026-09-28T06:27:10.113Z"
       },
       "item_1790139066734": {
         "id": "item_1790139066734",
@@ -237,7 +260,8 @@
           "tag_1790130836441",
           "tag_1790135182492"
         ],
-        "manualPrice": 7
+        "manualPrice": 7,
+        "createdAt": "2026-09-28T06:27:11.113Z"
       },
       "item_1790139253176": {
         "id": "item_1790139253176",
@@ -247,7 +271,8 @@
           "tag_1790130836441",
           "tag_1790139245260"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:12.113Z"
       },
       "item_1790139430160": {
         "id": "item_1790139430160",
@@ -257,7 +282,8 @@
           "tag_1790130836441",
           "tag_1790139245260"
         ],
-        "manualPrice": 8
+        "manualPrice": 8,
+        "createdAt": "2026-09-28T06:27:13.113Z"
       },
       "item_1790140009664": {
         "id": "item_1790140009664",
@@ -266,7 +292,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 9
+        "manualPrice": 9,
+        "createdAt": "2026-09-28T06:27:14.113Z"
       },
       "item_1790140036153": {
         "id": "item_1790140036153",
@@ -275,7 +302,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 10
+        "manualPrice": 10,
+        "createdAt": "2026-09-28T06:27:15.113Z"
       },
       "item_1790140073708": {
         "id": "item_1790140073708",
@@ -284,7 +312,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:16.113Z"
       },
       "item_1790140447393": {
         "id": "item_1790140447393",
@@ -293,7 +322,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 14
+        "manualPrice": 14,
+        "createdAt": "2026-09-28T06:27:17.113Z"
       },
       "item_1790141723911": {
         "id": "item_1790141723911",
@@ -302,7 +332,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:18.113Z"
       },
       "item_1790141751973": {
         "id": "item_1790141751973",
@@ -311,7 +342,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 16
+        "manualPrice": 16,
+        "createdAt": "2026-09-28T06:27:19.113Z"
       },
       "item_1790141853911": {
         "id": "item_1790141853911",
@@ -320,7 +352,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 14
+        "manualPrice": 14,
+        "createdAt": "2026-09-28T06:27:20.113Z"
       },
       "item_1790141939382": {
         "id": "item_1790141939382",
@@ -329,7 +362,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 15
+        "manualPrice": 15,
+        "createdAt": "2026-09-28T06:27:21.113Z"
       },
       "item_1790141973599": {
         "id": "item_1790141973599",
@@ -338,7 +372,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 11
+        "manualPrice": 11,
+        "createdAt": "2026-09-28T06:27:22.113Z"
       },
       "item_1790141993088": {
         "id": "item_1790141993088",
@@ -347,7 +382,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 11
+        "manualPrice": 11,
+        "createdAt": "2026-09-28T06:27:23.113Z"
       },
       "item_1790142009787": {
         "id": "item_1790142009787",
@@ -356,7 +392,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:24.113Z"
       },
       "item_1790142054571": {
         "id": "item_1790142054571",
@@ -365,7 +402,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 22
+        "manualPrice": 22,
+        "createdAt": "2026-09-28T06:27:25.113Z"
       },
       "item_1790142068808": {
         "id": "item_1790142068808",
@@ -374,7 +412,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 22
+        "manualPrice": 22,
+        "createdAt": "2026-09-28T06:27:26.113Z"
       },
       "item_1790142085428": {
         "id": "item_1790142085428",
@@ -383,7 +422,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 16
+        "manualPrice": 16,
+        "createdAt": "2026-09-28T06:27:27.113Z"
       },
       "item_1790155533298": {
         "id": "item_1790155533298",
@@ -392,7 +432,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 14
+        "manualPrice": 14,
+        "createdAt": "2026-09-28T06:27:28.113Z"
       },
       "item_1790155582175": {
         "id": "item_1790155582175",
@@ -401,7 +442,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:29.113Z"
       },
       "item_1790155604936": {
         "id": "item_1790155604936",
@@ -410,7 +452,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 14
+        "manualPrice": 14,
+        "createdAt": "2026-09-28T06:27:30.113Z"
       },
       "item_1790155640667": {
         "id": "item_1790155640667",
@@ -419,7 +462,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 10
+        "manualPrice": 10,
+        "createdAt": "2026-09-28T06:27:31.113Z"
       },
       "item_1790155660361": {
         "id": "item_1790155660361",
@@ -428,7 +472,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 14
+        "manualPrice": 14,
+        "createdAt": "2026-09-28T06:27:32.113Z"
       },
       "item_1790155674872": {
         "id": "item_1790155674872",
@@ -437,7 +482,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 18
+        "manualPrice": 18,
+        "createdAt": "2026-09-28T06:27:33.113Z"
       },
       "item_1790155689801": {
         "id": "item_1790155689801",
@@ -446,7 +492,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 18
+        "manualPrice": 18,
+        "createdAt": "2026-09-28T06:27:34.113Z"
       },
       "minecraft_cod": {
         "id": "minecraft_cod",
@@ -456,7 +503,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:35.113Z"
       },
       "minecraft_salmon": {
         "id": "minecraft_salmon",
@@ -466,7 +514,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 14
+        "manualPrice": 14,
+        "createdAt": "2026-09-28T06:27:36.113Z"
       },
       "minecraft_pufferfish": {
         "id": "minecraft_pufferfish",
@@ -475,7 +524,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 18
+        "manualPrice": 18,
+        "createdAt": "2026-09-28T06:27:37.113Z"
       },
       "aquaculture_jellyfish___": {
         "id": "aquaculture_jellyfish___",
@@ -484,7 +534,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 16
+        "manualPrice": 16,
+        "createdAt": "2026-09-28T06:27:38.113Z"
       },
       "aquaculture_tambaqui______": {
         "id": "aquaculture_tambaqui______",
@@ -494,7 +545,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 15
+        "manualPrice": 15,
+        "createdAt": "2026-09-28T06:27:39.113Z"
       },
       "aquaculture_catfish___": {
         "id": "aquaculture_catfish___",
@@ -505,7 +557,8 @@
           "tag_1790176614117",
           "tag_1790176710978"
         ],
-        "manualPrice": 14
+        "manualPrice": 14,
+        "createdAt": "2026-09-28T06:27:40.113Z"
       },
       "aquaculture_perch____": {
         "id": "aquaculture_perch____",
@@ -515,7 +568,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:41.113Z"
       },
       "aquaculture_tuna____": {
         "id": "aquaculture_tuna____",
@@ -525,7 +579,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 20
+        "manualPrice": 20,
+        "createdAt": "2026-09-28T06:27:42.113Z"
       },
       "minecraft_milk_bucket___": {
         "id": "minecraft_milk_bucket___",
@@ -534,7 +589,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:43.113Z"
       },
       "youkaisfeasts_tea_leaves____": {
         "id": "youkaisfeasts_tea_leaves____",
@@ -543,7 +599,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 10
+        "manualPrice": 10,
+        "createdAt": "2026-09-28T06:27:44.113Z"
       },
       "minecraft_sugar_cane___": {
         "id": "minecraft_sugar_cane___",
@@ -552,7 +609,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 6
+        "manualPrice": 6,
+        "createdAt": "2026-09-28T06:27:45.113Z"
       },
       "kaleidoscope_chinesefood_salt__": {
         "id": "kaleidoscope_chinesefood_salt__",
@@ -561,7 +619,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 4
+        "manualPrice": 4,
+        "createdAt": "2026-09-28T06:27:46.113Z"
       },
       "minecraft_egg___": {
         "id": "minecraft_egg___",
@@ -570,7 +629,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 7
+        "manualPrice": 7,
+        "createdAt": "2026-09-28T06:27:47.113Z"
       },
       "minecraft_honey_bottle____": {
         "id": "minecraft_honey_bottle____",
@@ -579,7 +639,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:48.113Z"
       },
       "kaleidoscope_cookery_oil___": {
         "id": "kaleidoscope_cookery_oil___",
@@ -588,7 +649,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 10
+        "manualPrice": 10,
+        "createdAt": "2026-09-28T06:27:49.113Z"
       },
       "minecraft_bamboo___": {
         "id": "minecraft_bamboo___",
@@ -597,7 +659,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 4
+        "manualPrice": 4,
+        "createdAt": "2026-09-28T06:27:50.113Z"
       },
       "kaleidoscope_grilling_squid_tentacle____": {
         "id": "kaleidoscope_grilling_squid_tentacle____",
@@ -606,7 +669,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 15
+        "manualPrice": 15,
+        "createdAt": "2026-09-28T06:27:51.113Z"
       },
       "minecraft_water_bucket___": {
         "id": "minecraft_water_bucket___",
@@ -615,7 +679,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 0
+        "manualPrice": 0,
+        "createdAt": "2026-09-28T06:27:52.113Z"
       },
       "minecraft_lily_pad___": {
         "id": "minecraft_lily_pad___",
@@ -624,7 +689,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 5
+        "manualPrice": 5,
+        "createdAt": "2026-09-28T06:27:53.113Z"
       },
       "aquaculture_atlantic_herring______": {
         "id": "aquaculture_atlantic_herring______",
@@ -634,7 +700,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 11
+        "manualPrice": 11,
+        "createdAt": "2026-09-28T06:27:54.113Z"
       },
       "aquaculture_atlantic_halibut_______": {
         "id": "aquaculture_atlantic_halibut_______",
@@ -644,7 +711,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 18
+        "manualPrice": 18,
+        "createdAt": "2026-09-28T06:27:55.113Z"
       },
       "aquaculture_box_turtle___": {
         "id": "aquaculture_box_turtle___",
@@ -653,7 +721,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 24
+        "manualPrice": 24,
+        "createdAt": "2026-09-28T06:27:56.113Z"
       },
       "kaleidoscope_chinesefood_yellow_croaker____": {
         "id": "kaleidoscope_chinesefood_yellow_croaker____",
@@ -663,7 +732,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 14
+        "manualPrice": 14,
+        "createdAt": "2026-09-28T06:27:57.113Z"
       },
       "crabbersdelight_clam___": {
         "id": "crabbersdelight_clam___",
@@ -672,7 +742,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:27:58.113Z"
       },
       "collectorsreap_tiger_prawn_____": {
         "id": "collectorsreap_tiger_prawn_____",
@@ -681,7 +752,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 18
+        "manualPrice": 18,
+        "createdAt": "2026-09-28T06:27:59.113Z"
       },
       "collectorsreap_platinum_bass______": {
         "id": "collectorsreap_platinum_bass______",
@@ -691,7 +763,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 20
+        "manualPrice": 20,
+        "createdAt": "2026-09-28T06:28:00.113Z"
       },
       "youkaisfeasts_crab___": {
         "id": "youkaisfeasts_crab___",
@@ -700,7 +773,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 22
+        "manualPrice": 22,
+        "createdAt": "2026-09-28T06:28:01.113Z"
       },
       "youkaisfeasts_raw_lamprey_____": {
         "id": "youkaisfeasts_raw_lamprey_____",
@@ -710,7 +784,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 20
+        "manualPrice": 20,
+        "createdAt": "2026-09-28T06:28:02.113Z"
       },
       "kaleidoscope_grilling_sichuan_pepper___": {
         "id": "kaleidoscope_grilling_sichuan_pepper___",
@@ -719,7 +794,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 12
+        "manualPrice": 12,
+        "createdAt": "2026-09-28T06:28:03.113Z"
       },
       "farm_and_charm_crafting_bowl____": {
         "id": "farm_and_charm_crafting_bowl____",
@@ -732,7 +808,8 @@
           "fixedFee": 2,
           "rate": 0.01,
           "cap": 4
-        }
+        },
+        "createdAt": "2026-09-28T06:28:04.113Z"
       },
       "kaleidoscope_cookery_stockpot___": {
         "id": "kaleidoscope_cookery_stockpot___",
@@ -745,7 +822,8 @@
           "fixedFee": 2,
           "rate": 0.02,
           "cap": 4
-        }
+        },
+        "createdAt": "2026-09-28T06:28:05.113Z"
       },
       "kaleidoscope_cookery_pot___": {
         "id": "kaleidoscope_cookery_pot___",
@@ -758,7 +836,8 @@
           "fixedFee": 2,
           "rate": 0.02,
           "cap": 4
-        }
+        },
+        "createdAt": "2026-09-28T06:28:06.113Z"
       },
       "kaleidoscope_cookery_steamer___": {
         "id": "kaleidoscope_cookery_steamer___",
@@ -771,7 +850,8 @@
           "fixedFee": 4,
           "rate": 0.02,
           "cap": 8
-        }
+        },
+        "createdAt": "2026-09-28T06:28:07.113Z"
       },
       "minecraft_bowl__": {
         "id": "minecraft_bowl__",
@@ -779,7 +859,8 @@
         "itemId": "minecraft:bowl",
         "tags": [
           "tag_1790169485328"
-        ]
+        ],
+        "createdAt": "2026-09-28T06:28:08.113Z"
       },
       "minecraft_stick___": {
         "id": "minecraft_stick___",
@@ -793,7 +874,8 @@
           "fixedFee": 1,
           "rate": 0,
           "cap": 1
-        }
+        },
+        "createdAt": "2026-09-28T06:28:09.113Z"
       },
       "bakery_rolling_pin____": {
         "id": "bakery_rolling_pin____",
@@ -801,7 +883,8 @@
         "itemId": "bakery:rolling_pin",
         "tags": [
           "tag_1790169485328"
-        ]
+        ],
+        "createdAt": "2026-09-28T06:28:10.113Z"
       },
       "kaleidoscope_cookery_teapot___": {
         "id": "kaleidoscope_cookery_teapot___",
@@ -814,7 +897,8 @@
           "fixedFee": 3,
           "rate": 0.01,
           "cap": 6
-        }
+        },
+        "createdAt": "2026-09-28T06:28:11.113Z"
       },
       "kaleidoscope_cookery_bamboo_tray___": {
         "id": "kaleidoscope_cookery_bamboo_tray___",
@@ -827,7 +911,8 @@
           "fixedFee": 2,
           "rate": 0,
           "cap": 2
-        }
+        },
+        "createdAt": "2026-09-28T06:28:12.113Z"
       },
       "youkaisfeasts_cuisine_board____": {
         "id": "youkaisfeasts_cuisine_board____",
@@ -840,7 +925,8 @@
           "fixedFee": 3,
           "rate": 0.01,
           "cap": 6
-        }
+        },
+        "createdAt": "2026-09-28T06:28:13.113Z"
       },
       "youkaisfeasts_fermentation_tank____": {
         "id": "youkaisfeasts_fermentation_tank____",
@@ -853,7 +939,8 @@
           "fixedFee": 6,
           "rate": 0.03,
           "cap": 18
-        }
+        },
+        "createdAt": "2026-09-28T06:28:14.113Z"
       },
       "kaleidoscope_fragrantorchard_juicer____": {
         "id": "kaleidoscope_fragrantorchard_juicer____",
@@ -866,7 +953,8 @@
           "fixedFee": 3,
           "rate": 0.02,
           "cap": 7
-        }
+        },
+        "createdAt": "2026-09-28T06:28:15.113Z"
       },
       "kaleidoscope_tavern_barrel___": {
         "id": "kaleidoscope_tavern_barrel___",
@@ -879,7 +967,8 @@
           "fixedFee": 8,
           "rate": 0.04,
           "cap": 15
-        }
+        },
+        "createdAt": "2026-09-28T06:28:16.113Z"
       },
       "kaleidoscope_grilling_grill____": {
         "id": "kaleidoscope_grilling_grill____",
@@ -892,7 +981,8 @@
           "fixedFee": 3,
           "rate": 0.03,
           "cap": 10
-        }
+        },
+        "createdAt": "2026-09-28T06:28:17.113Z"
       },
       "kaleidoscope_world_liquor_freezer___": {
         "id": "kaleidoscope_world_liquor_freezer___",
@@ -905,7 +995,8 @@
           "fixedFee": 3,
           "rate": 0.02,
           "cap": 8
-        }
+        },
+        "createdAt": "2026-09-28T06:28:18.113Z"
       },
       "kaleidoscope_tavern_empty_bottle____": {
         "id": "kaleidoscope_tavern_empty_bottle____",
@@ -913,7 +1004,8 @@
         "itemId": "kaleidoscope_tavern:empty_bottle",
         "tags": [
           "tag_1790169485328"
-        ]
+        ],
+        "createdAt": "2026-09-28T06:28:19.113Z"
       },
       "kaleidoscope_tavern_empty_glassware____": {
         "id": "kaleidoscope_tavern_empty_glassware____",
@@ -921,7 +1013,8 @@
         "itemId": "kaleidoscope_tavern:empty_glassware",
         "tags": [
           "tag_1790169485328"
-        ]
+        ],
+        "createdAt": "2026-09-28T06:28:20.113Z"
       },
       "farmersdelight_ham___": {
         "id": "farmersdelight_ham___",
@@ -930,7 +1023,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 16
+        "manualPrice": 16,
+        "createdAt": "2026-09-28T06:28:21.113Z"
       },
       "minecraft_dried_kelp____": {
         "id": "minecraft_dried_kelp____",
@@ -939,6 +1033,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:22.113Z",
         "autoPrice": 7
       },
       "minecraft_melon_slice____": {
@@ -948,6 +1043,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:23.113Z",
         "autoPrice": 2.8
       },
       "farmersdelight_pumpkin_slice____": {
@@ -957,6 +1053,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:24.113Z",
         "autoPrice": 2.8
       },
       "farmersdelight_cutting_board___": {
@@ -970,7 +1067,8 @@
           "fixedFee": 1,
           "rate": 0,
           "cap": 1
-        }
+        },
+        "createdAt": "2026-09-28T06:28:25.113Z"
       },
       "minecraft_beetroot_soup____": {
         "id": "minecraft_beetroot_soup____",
@@ -979,6 +1077,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:26.113Z",
         "autoPrice": 23.4
       },
       "minecraft_mushroom_stew____": {
@@ -988,6 +1087,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:27.113Z",
         "autoPrice": 18.3
       },
       "aquaculturedelight_crispy_nori_kelp_Crispy_Nori": {
@@ -997,6 +1097,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:28.113Z",
         "autoPrice": 24.2
       },
       "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly": {
@@ -1006,6 +1107,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:29.113Z",
         "autoPrice": 24.7
       },
       "kaleidoscope_cookery_flour___": {
@@ -1015,6 +1117,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:30.113Z",
         "autoPrice": 4.5
       },
       "minecraft_sugar__": {
@@ -1024,6 +1127,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:31.113Z",
         "autoPrice": 1.8
       },
       "kaleidoscope_cookery_iron_kitchen_knife____": {
@@ -1032,7 +1136,8 @@
         "itemId": "kaleidoscope_cookery:iron_kitchen_knife",
         "tags": [
           "tag_1790169485328"
-        ]
+        ],
+        "createdAt": "2026-09-28T06:28:32.113Z"
       },
       "minecraft_rabbit_stew____": {
         "id": "minecraft_rabbit_stew____",
@@ -1041,6 +1146,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:33.113Z",
         "autoPrice": 26
       },
       "kaleidoscope_grilling_potato_slice____": {
@@ -1050,6 +1156,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:34.113Z",
         "autoPrice": 4
       },
       "kaleidoscope_cookery_raw_cut_small_meats______": {
@@ -1059,6 +1166,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:35.113Z",
         "autoPrice": 7.5
       },
       "kaleidoscope_grilling_carrot_dice_____": {
@@ -1068,6 +1176,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:36.113Z",
         "autoPrice": 4
       },
       "farm_and_charm_yeast___": {
@@ -1077,6 +1186,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:37.113Z",
         "autoPrice": 6.2
       },
       "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup": {
@@ -1086,6 +1196,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:38.113Z",
         "autoPrice": 47.5
       },
       "extradelight_sliced_onion____": {
@@ -1095,6 +1206,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:39.113Z",
         "autoPrice": 4
       },
       "extradelight_sliced_tomato____": {
@@ -1104,6 +1216,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:40.113Z",
         "autoPrice": 4.5
       },
       "farmersdelight_cabbage_leaf_____": {
@@ -1113,6 +1226,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:41.113Z",
         "autoPrice": 4.5
       },
       "farmersdelight_tomato_sauce____": {
@@ -1122,6 +1236,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:42.113Z",
         "autoPrice": 18.3
       },
       "aquaculturedelight_bass_stew_Bass_Stew": {
@@ -1131,6 +1246,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:43.113Z",
         "autoPrice": 27
       },
       "aquaculturedelight_halaszle_Halaszle": {
@@ -1140,6 +1256,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:44.113Z",
         "autoPrice": 62.7
       },
       "minecraft_bread___": {
@@ -1149,6 +1266,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:45.113Z",
         "autoPrice": 16.2
       },
       "farmersdelight_wheat_dough___": {
@@ -1158,6 +1276,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:46.113Z",
         "autoPrice": 12.8
       },
       "bakery_sweet_dough____": {
@@ -1167,6 +1286,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:47.113Z",
         "autoPrice": 21.7
       },
       "aquaculturedelight_fish_and_chips_Fish_and_Chips": {
@@ -1176,6 +1296,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:48.113Z",
         "autoPrice": 131.6
       },
       "extradelight_potato_sticks___": {
@@ -1185,6 +1306,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:49.113Z",
         "autoPrice": 5
       },
       "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch": {
@@ -1194,6 +1316,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:50.113Z",
         "autoPrice": 64.4
       },
       "extradelight_french_fries_____": {
@@ -1203,6 +1326,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:51.113Z",
         "autoPrice": 45.6
       },
       "kaleidoscope_grilling_oil_residue___": {
@@ -1212,6 +1336,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:52.113Z",
         "autoPrice": 37.7
       },
       "kaleidoscope_grilling_oil_cake___": {
@@ -1221,6 +1346,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:53.113Z",
         "autoPrice": 71.2
       },
       "kaleidoscope_grilling_oil_press____": {
@@ -1234,7 +1360,8 @@
           "fixedFee": 2,
           "rate": 0.03,
           "cap": 14
-        }
+        },
+        "createdAt": "2026-09-28T06:28:54.113Z"
       },
       "icecore_oven___": {
         "id": "icecore_oven___",
@@ -1247,7 +1374,8 @@
           "fixedFee": 3,
           "rate": 0.03,
           "cap": 10
-        }
+        },
+        "createdAt": "2026-09-28T06:28:55.113Z"
       },
       "kaleidoscope_grilling_canola_seeds____": {
         "id": "kaleidoscope_grilling_canola_seeds____",
@@ -1256,7 +1384,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 7
+        "manualPrice": 7,
+        "createdAt": "2026-09-28T06:28:56.113Z"
       },
       "kaleidoscope_grilling_canola_oil_bucket_____": {
         "id": "kaleidoscope_grilling_canola_oil_bucket_____",
@@ -1265,6 +1394,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:57.113Z",
         "autoPrice": 37.7
       },
       "kaleidoscope_grilling_canola_powder____": {
@@ -1274,6 +1404,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:28:58.113Z",
         "autoPrice": 8
       },
       "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti": {
@@ -1283,6 +1414,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:28:59.113Z",
         "autoPrice": 46.2
       },
       "kaleidoscope_cookery_raw_noodles____": {
@@ -1292,6 +1424,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:00.113Z",
         "autoPrice": 13.8
       },
       "farmersdelight_raw_pasta____": {
@@ -1301,6 +1434,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:01.113Z",
         "autoPrice": 13.8
       },
       "youkaisfeasts_raw_tuna______": {
@@ -1310,6 +1444,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:02.113Z",
         "autoPrice": 5.3
       },
       "youkaisfeasts_raw_tuna_slice_______": {
@@ -1319,6 +1454,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:03.113Z",
         "autoPrice": 3.2
       },
       "youkaisfeasts_otoro______": {
@@ -1328,6 +1464,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:04.113Z",
         "autoPrice": 10.5
       },
       "aquaculturedelight_buckling_Buckling": {
@@ -1337,6 +1474,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:05.113Z",
         "autoPrice": 29
       },
       "aquaculturedelight_baked_pollock_with_carrots_Baked_Pollock_with_Carrots": {
@@ -1346,6 +1484,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:06.113Z",
         "autoPrice": 30.1
       },
       "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce": {
@@ -1355,6 +1494,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:07.113Z",
         "autoPrice": 111.7
       },
       "extradelight_gherkin_item____": {
@@ -1364,6 +1504,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:08.113Z",
         "autoPrice": 28.9
       },
       "youkaisfeasts_pods___": {
@@ -1373,7 +1514,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 8
+        "manualPrice": 8,
+        "createdAt": "2026-09-28T06:29:09.113Z"
       },
       "youkaisfeasts_butter___": {
         "id": "youkaisfeasts_butter___",
@@ -1382,6 +1524,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:10.113Z",
         "autoPrice": 48.5
       },
       "youkaisfeasts_ice_cube___": {
@@ -1391,6 +1534,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:11.113Z",
         "autoPrice": 0.8
       },
       "youkaisfeasts_bowl_of_cream_____": {
@@ -1400,6 +1544,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:12.113Z",
         "autoPrice": 23
       },
       "youkaisfeasts_soy_sauce_bottle_____": {
@@ -1409,6 +1554,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:13.113Z",
         "autoPrice": 13
       },
       "youkaisfeasts_mayonnaise_bottle______": {
@@ -1418,6 +1564,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:14.113Z",
         "autoPrice": 32
       },
       "collectorsreap_lime_slice____": {
@@ -1427,6 +1574,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:15.113Z",
         "autoPrice": 6.5
       },
       "collectorsreap_limeade____": {
@@ -1436,6 +1584,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:16.113Z",
         "autoPrice": 9.6
       },
       "kaleidoscope_grilling_onion_powder____": {
@@ -1443,6 +1592,7 @@
         "name": "洋葱粉",
         "itemId": "kaleidoscope_grilling:onion_powder",
         "tags": [],
+        "createdAt": "2026-09-28T06:29:17.113Z",
         "autoPrice": 2.5
       },
       "farmersdelight_cooked_rice___": {
@@ -1452,6 +1602,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:18.113Z",
         "autoPrice": 12.2
       },
       "farmersdelight_rice___": {
@@ -1459,6 +1610,7 @@
         "name": "稻米",
         "itemId": "farmersdelight:rice",
         "tags": [],
+        "createdAt": "2026-09-28T06:29:19.113Z",
         "autoPrice": 10
       },
       "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish": {
@@ -1468,6 +1620,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:20.113Z",
         "autoPrice": 45.7
       },
       "aquaculturedelight_small_turtle_meat_Turtle_Meat_Slice": {
@@ -1477,6 +1630,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:21.113Z",
         "autoPrice": 12.5
       },
       "aquaculturedelight_rollmops_Rollmops": {
@@ -1486,6 +1640,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:22.113Z",
         "autoPrice": 65.9
       },
       "kaleidoscope_tavern_vinegar__": {
@@ -1495,6 +1650,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:23.113Z",
         "autoPrice": 11.2
       },
       "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui": {
@@ -1504,6 +1660,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:24.113Z",
         "autoPrice": 38.2
       },
       "extradelight_sliced_cucumber_item____": {
@@ -1513,6 +1670,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:25.113Z",
         "autoPrice": 8
       },
       "aquaculturedelight_catfish_barbecue_Catfish_Barbecue": {
@@ -1522,6 +1680,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:26.113Z",
         "autoPrice": 36.2
       },
       "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll": {
@@ -1531,6 +1690,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:27.113Z",
         "autoPrice": 40.2
       },
       "bakery_strawberry_jam_____": {
@@ -1540,6 +1700,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:28.113Z",
         "autoPrice": 26.3
       },
       "bakery_sweetberry_jam______": {
@@ -1549,6 +1710,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:29.113Z",
         "autoPrice": 20.2
       },
       "bakery_apple_jam_____": {
@@ -1558,6 +1720,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:30.113Z",
         "autoPrice": 14
       },
       "bakery_chocolate_jam_____": {
@@ -1567,6 +1730,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:31.113Z",
         "autoPrice": 37.7
       },
       "bakery_chocolate_truffle______": {
@@ -1576,6 +1740,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:32.113Z",
         "autoPrice": 10.6
       },
       "bakery_chocolate_box______": {
@@ -1585,6 +1750,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:33.113Z",
         "autoPrice": 87.6
       },
       "farm_and_charm_strawberry___": {
@@ -1594,7 +1760,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 11
+        "manualPrice": 11,
+        "createdAt": "2026-09-28T06:29:34.113Z"
       },
       "extradelight_sliced_apple____": {
         "id": "extradelight_sliced_apple____",
@@ -1603,6 +1770,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:35.113Z",
         "autoPrice": 5
       },
       "bakery_cake_dough_____": {
@@ -1612,6 +1780,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:36.113Z",
         "autoPrice": 38.5
       },
       "bakery_croissant_____": {
@@ -1621,6 +1790,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:37.113Z",
         "autoPrice": 191.7
       },
       "bakery_crusty_bread_____": {
@@ -1630,6 +1800,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:38.113Z",
         "autoPrice": 78.5
       },
       "bakery_bread______": {
@@ -1639,6 +1810,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:39.113Z",
         "autoPrice": 25.2
       },
       "bakery_baguette_____": {
@@ -1648,6 +1820,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:40.113Z",
         "autoPrice": 26.7
       },
       "bakery_toast_____": {
@@ -1657,6 +1830,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:41.113Z",
         "autoPrice": 97.8
       },
       "bakery_braided_bread_____": {
@@ -1666,6 +1840,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:42.113Z",
         "autoPrice": 113.6
       },
       "bakery_bun_____": {
@@ -1675,6 +1850,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:43.113Z",
         "autoPrice": 110.3
       },
       "bakery_strawberry_cake_____": {
@@ -1684,6 +1860,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:44.113Z",
         "autoPrice": 104.8
       },
       "bakery_sweetberry_cake______": {
@@ -1693,6 +1870,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:45.113Z",
         "autoPrice": 95.4
       },
       "bakery_chocolate_cake______": {
@@ -1702,6 +1880,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:46.113Z",
         "autoPrice": 116.1
       },
       "bakery_strawberry_glazed_cookie_______": {
@@ -1711,6 +1890,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:47.113Z",
         "autoPrice": 27.1
       },
       "bakery_sweetberry_glazed_cookie________": {
@@ -1720,6 +1900,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:48.113Z",
         "autoPrice": 102
       },
       "bakery_chocolate_glazed_cookie________": {
@@ -1729,6 +1910,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:49.113Z",
         "autoPrice": 120
       },
       "bakery_jam_roll____": {
@@ -1738,6 +1920,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:50.113Z",
         "autoPrice": 60.4
       },
       "bakery_cornet_______": {
@@ -1747,6 +1930,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:51.113Z",
         "autoPrice": 54
       },
       "collectorsreap_pomegranate_slice____": {
@@ -1756,6 +1940,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:52.113Z",
         "autoPrice": 3.8
       },
       "collectorsreap_lime_pie____": {
@@ -1765,6 +1950,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:53.113Z",
         "autoPrice": 114
       },
       "collectorsreap_portobello_quiche________": {
@@ -1774,6 +1960,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:54.113Z",
         "autoPrice": 122.7
       },
       "collectorsreap_lime_cake_____": {
@@ -1783,6 +1970,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:55.113Z",
         "autoPrice": 93.1
       },
       "collectorsreap_pomegranate_cake_____": {
@@ -1792,6 +1980,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:56.113Z",
         "autoPrice": 74.2
       },
       "collectorsreap_pink_dragon_fruit_cake________": {
@@ -1801,6 +1990,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:57.113Z",
         "autoPrice": 99.3
       },
       "collectorsreap_lucuma_cake______": {
@@ -1810,6 +2000,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:29:58.113Z",
         "autoPrice": 95.2
       },
       "farmersdelight_pie_crust_____": {
@@ -1819,6 +2010,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:29:59.113Z",
         "autoPrice": 79.2
       },
       "collectorsreap_pomegranate_custard_____": {
@@ -1828,6 +2020,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:00.113Z",
         "autoPrice": 32.8
       },
       "collectorsreap_lucuma_pudding______": {
@@ -1837,6 +2030,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:01.113Z",
         "autoPrice": 53.6
       },
       "collectorsreap_berry_limeade______": {
@@ -1846,6 +2040,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:02.113Z",
         "autoPrice": 34.4
       },
       "collectorsreap_pink_limeade______": {
@@ -1855,6 +2050,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:03.113Z",
         "autoPrice": 25.8
       },
       "collectorsreap_portobello_wrap____": {
@@ -1864,6 +2060,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:04.113Z",
         "autoPrice": 41.5
       },
       "collectorsreap_portobello_risotto_______": {
@@ -1873,6 +2070,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:05.113Z",
         "autoPrice": 38.7
       },
       "collectorsreap_portobello_pasta_____": {
@@ -1882,6 +2080,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:06.113Z",
         "autoPrice": 62
       },
       "collectorsreap_pomegranate_pork______": {
@@ -1891,6 +2090,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:07.113Z",
         "autoPrice": 39.5
       },
       "collectorsreap_deluxe_salad_____": {
@@ -1900,6 +2100,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:08.113Z",
         "autoPrice": 37.5
       },
       "collectorsreap_pink_noodles____": {
@@ -1909,6 +2110,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:09.113Z",
         "autoPrice": 46.7
       },
       "farmersdelight_mutton_chops____": {
@@ -1918,6 +2120,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:10.113Z",
         "autoPrice": 7.5
       },
       "kaleidoscope_cookery_raw_pork_belly_____": {
@@ -1927,6 +2130,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:11.113Z",
         "autoPrice": 13
       },
       "collectorsreap_lucuma_bread______": {
@@ -1936,6 +2140,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:12.113Z",
         "autoPrice": 39.7
       },
       "collectorsreap_candied_lime_____": {
@@ -1945,6 +2150,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:13.113Z",
         "autoPrice": 11.4
       },
       "collectorsreap_lime_cookie_____": {
@@ -1954,6 +2160,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:14.113Z",
         "autoPrice": 22
       },
       "collectorsreap_lime_popsicle_____": {
@@ -1963,6 +2170,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:15.113Z",
         "autoPrice": 23.7
       },
       "collectorsreap_honey_lime_chicken______": {
@@ -1972,6 +2180,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:16.113Z",
         "autoPrice": 43.1
       },
       "collectorsreap_mediterranean_salmon_______": {
@@ -1981,6 +2190,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:17.113Z",
         "autoPrice": 28.4
       },
       "collectorsreap_potato_fritters______": {
@@ -1990,6 +2200,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:18.113Z",
         "autoPrice": 61.5
       },
       "collectorsreap_cod_ceviche_____": {
@@ -1999,6 +2210,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:19.113Z",
         "autoPrice": 31.7
       },
       "youkaisfeasts_roe____": {
@@ -2008,6 +2220,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:20.113Z",
         "autoPrice": 7.5
       },
       "farmersdelight_salmon_slice_____": {
@@ -2017,6 +2230,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:21.113Z",
         "autoPrice": 3.8
       },
       "farmersdelight_cod_slice_____": {
@@ -2026,6 +2240,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:22.113Z",
         "autoPrice": 6.5
       },
       "farmersdelight_chicken_cuts_____": {
@@ -2035,6 +2250,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:23.113Z",
         "autoPrice": 2.8
       },
       "kaleidoscope_grilling_chicken_wing___": {
@@ -2044,6 +2260,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:24.113Z",
         "autoPrice": 5.5
       },
       "collectorsreap_salmon_wrapped_prawn_______": {
@@ -2053,6 +2270,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:25.113Z",
         "autoPrice": 46.3
       },
       "collectorsreap_chieftain_leg_____": {
@@ -2062,6 +2280,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:26.113Z",
         "autoPrice": 2.5
       },
       "collectorsreap_chieftain_crab_meat_____": {
@@ -2071,6 +2290,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:27.113Z",
         "autoPrice": 3.8
       },
       "collectorsreap_land_and_sea_burger____": {
@@ -2080,6 +2300,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:28.113Z",
         "autoPrice": 51.8
       },
       "collectorsreap_clam_meat_____": {
@@ -2089,6 +2310,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:29.113Z",
         "autoPrice": 6.5
       },
       "farmersdelight_minced_beef____": {
@@ -2098,6 +2320,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:30.113Z",
         "autoPrice": 7.5
       },
       "kaleidoscope_grilling_beef_chunks____": {
@@ -2107,6 +2330,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:31.113Z",
         "autoPrice": 4.3
       },
       "collectorsreap_buttered_legs_____": {
@@ -2116,6 +2340,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:32.113Z",
         "autoPrice": 62.9
       },
       "collectorsreap_crab_lasagna______": {
@@ -2125,6 +2350,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:33.113Z",
         "autoPrice": 76.6
       },
       "collectorsreap_prawn_ceviche_____": {
@@ -2134,6 +2360,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:34.113Z",
         "autoPrice": 72.8
       },
       "collectorsreap_prawn_po_boy_________": {
@@ -2143,6 +2370,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:35.113Z",
         "autoPrice": 57.3
       },
       "collectorsreap_clam_pasta_____": {
@@ -2152,6 +2380,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:36.113Z",
         "autoPrice": 62
       },
       "collectorsreap_sea_wrap____": {
@@ -2161,6 +2390,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:37.113Z",
         "autoPrice": 75.7
       },
       "collectorsreap_prawn_noodles_____": {
@@ -2170,6 +2400,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:38.113Z",
         "autoPrice": 48.7
       },
       "collectorsreap_fish_mix_____": {
@@ -2179,6 +2410,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:39.113Z",
         "autoPrice": 30.9
       },
       "collectorsreap_platinum_bass_slice_______": {
@@ -2188,6 +2420,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:40.113Z",
         "autoPrice": 5.3
       },
       "collectorsreap_crab_noodles____": {
@@ -2197,6 +2430,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:41.113Z",
         "autoPrice": 52.5
       },
       "collectorsreap_platinum_bass_head______": {
@@ -2206,6 +2440,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:42.113Z",
         "autoPrice": 10.5
       },
       "collectorsreap_chieftain_crab____": {
@@ -2215,6 +2450,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:43.113Z",
         "autoPrice": 24.2
       },
       "kaleidoscope_grilling_sweet_potato_powder____": {
@@ -2224,6 +2460,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:44.113Z",
         "autoPrice": 9
       },
       "kaleidoscope_cookery_raw_meatball____": {
@@ -2233,6 +2470,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:45.113Z",
         "autoPrice": 19.2
       },
       "kaleidoscope_cookery_donkey_burger_____": {
@@ -2242,6 +2480,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:46.113Z",
         "autoPrice": 79.3
       },
       "kaleidoscope_cookery_mantou___": {
@@ -2251,6 +2490,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:47.113Z",
         "autoPrice": 17.1
       },
       "kaleidoscope_cookery_baozi___": {
@@ -2260,6 +2500,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:48.113Z",
         "autoPrice": 39.8
       },
       "kaleidoscope_cookery_shengjian_mantou____": {
@@ -2269,6 +2510,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:49.113Z",
         "autoPrice": 42.6
       },
       "kaleidoscope_cookery_samsa____": {
@@ -2278,6 +2520,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:50.113Z",
         "autoPrice": 44
       },
       "kaleidoscope_cookery_meat_pie___": {
@@ -2287,6 +2530,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:51.113Z",
         "autoPrice": 37.8
       },
       "kaleidoscope_cookery_dumpling___": {
@@ -2296,6 +2540,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:52.113Z",
         "autoPrice": 37.8
       },
       "farmersdelight_bacon____": {
@@ -2305,6 +2550,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:53.113Z",
         "autoPrice": 7
       },
       "kaleidoscope_cookery_stuffed_dough_food_____": {
@@ -2314,6 +2560,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:54.113Z",
         "autoPrice": 35.1
       },
       "kaleidoscope_cookery_tea_egg____": {
@@ -2323,6 +2570,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:30:55.113Z",
         "autoPrice": 27.9
       },
       "youkaisfeasts_yellow_tea_leaves____": {
@@ -2332,6 +2580,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:56.113Z",
         "autoPrice": 16.2
       },
       "youkaisfeasts_black_tea_leaves____": {
@@ -2341,6 +2590,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:57.113Z",
         "autoPrice": 18.4
       },
       "youkaisfeasts_green_tea_leaves____": {
@@ -2350,6 +2600,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:58.113Z",
         "autoPrice": 14.2
       },
       "youkaisfeasts_oolong_tea_leaves_____": {
@@ -2359,6 +2610,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:30:59.113Z",
         "autoPrice": 14.2
       },
       "youkaisfeasts_white_tea_leaves____": {
@@ -2368,6 +2620,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:31:00.113Z",
         "autoPrice": 12
       },
       "youkaisfeasts_dark_tea_leaves____": {
@@ -2377,6 +2630,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:31:01.113Z",
         "autoPrice": 20.6
       },
       "kaleidoscope_cookery_sticky_candy____": {
@@ -2386,6 +2640,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:02.113Z",
         "autoPrice": 34.6
       },
       "kaleidoscope_cookery_sticky_rice_cake___": {
@@ -2395,6 +2650,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:03.113Z",
         "autoPrice": 16.3
       },
       "kaleidoscope_cookery_bamboo_tube_rice_____": {
@@ -2404,6 +2660,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:04.113Z",
         "autoPrice": 24.9
       },
       "kaleidoscope_cookery_raw_bamboo_tube_rice_____": {
@@ -2413,6 +2670,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:31:05.113Z",
         "autoPrice": 20.5
       },
       "kaleidoscope_cookery_zongzi____": {
@@ -2422,6 +2680,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:06.113Z",
         "autoPrice": 19.5
       },
       "kaleidoscope_cookery_raw_zongzi____": {
@@ -2431,6 +2690,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:31:07.113Z",
         "autoPrice": 17.2
       },
       "kaleidoscope_cookery_egg_fried_rice____": {
@@ -2440,6 +2700,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:08.113Z",
         "autoPrice": 28.7
       },
       "kaleidoscope_cookery_scramble_egg_with_tomatoes_____": {
@@ -2449,6 +2710,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:09.113Z",
         "autoPrice": 52.3
       },
       "kaleidoscope_cookery_braised_beef_____": {
@@ -2458,6 +2720,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:10.113Z",
         "autoPrice": 48.8
       },
       "kaleidoscope_cookery_stir_fried_pork_with_peppers_____": {
@@ -2467,6 +2730,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:11.113Z",
         "autoPrice": 82.6
       },
       "kaleidoscope_cookery_sweet_and_sour_pork_____": {
@@ -2476,6 +2740,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:12.113Z",
         "autoPrice": 41.3
       },
       "kaleidoscope_cookery_fish_flavored_shredded_pork_____": {
@@ -2485,6 +2750,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:13.113Z",
         "autoPrice": 78.5
       },
       "kaleidoscope_cookery_pork_bone_soup____": {
@@ -2494,6 +2760,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:14.113Z",
         "autoPrice": 14.8
       },
       "kaleidoscope_cookery_seafood_miso_soup______": {
@@ -2503,6 +2770,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:15.113Z",
         "autoPrice": 61.1
       },
       "kaleidoscope_cookery_lamb_and_radish_soup______": {
@@ -2512,6 +2780,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:16.113Z",
         "autoPrice": 36.7
       },
       "kaleidoscope_cookery_braised_beef_with_potatoes______": {
@@ -2521,6 +2790,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:17.113Z",
         "autoPrice": 55.8
       },
       "minecraft_bone___": {
@@ -2530,6 +2800,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:31:18.113Z",
         "autoPrice": 8.5
       },
       "kaleidoscope_nether_ham_slice____": {
@@ -2539,6 +2810,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:31:19.113Z",
         "autoPrice": 2.1
       },
       "youkaisfeasts_tofu___": {
@@ -2548,6 +2820,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:31:20.113Z",
         "autoPrice": 20.4
       },
       "kaleidoscope_cookery_wild_mushroom_rabbit_soup______": {
@@ -2557,6 +2830,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:21.113Z",
         "autoPrice": 45.4
       },
       "kaleidoscope_cookery_pufferfish_soup____": {
@@ -2566,6 +2840,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:22.113Z",
         "autoPrice": 75.2
       },
       "kaleidoscope_cookery_borscht____": {
@@ -2575,6 +2850,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:23.113Z",
         "autoPrice": 40.6
       },
       "kaleidoscope_cookery_beef_meatball_soup____": {
@@ -2584,6 +2860,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:24.113Z",
         "autoPrice": 62.1
       },
       "kaleidoscope_cookery_chicken_and_mushroom_stew______": {
@@ -2593,6 +2870,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:25.113Z",
         "autoPrice": 30.9
       },
       "kaleidoscope_cookery_laba_congee____": {
@@ -2602,6 +2880,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:26.113Z",
         "autoPrice": 66.7
       },
       "kaleidoscope_cookery_beef_noodle____": {
@@ -2611,6 +2890,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:27.113Z",
         "autoPrice": 36.1
       },
       "kaleidoscope_cookery_hui_noodle_____": {
@@ -2620,6 +2900,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:28.113Z",
         "autoPrice": 43.6
       },
       "kaleidoscope_cookery_udon_noodle____": {
@@ -2629,6 +2910,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:29.113Z",
         "autoPrice": 45.5
       },
       "kaleidoscope_cookery_hot_dry_noodles____": {
@@ -2638,6 +2920,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:30.113Z",
         "autoPrice": 70.1
       },
       "kaleidoscope_cookery_fondant_pie____": {
@@ -2647,6 +2930,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:31.113Z",
         "autoPrice": 124.2
       },
       "kaleidoscope_cookery_dongpo_pork____": {
@@ -2656,6 +2940,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:32.113Z",
         "autoPrice": 80.5
       },
       "kaleidoscope_cookery_spicy_chicken____": {
@@ -2665,6 +2950,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:33.113Z",
         "autoPrice": 73.4
       },
       "kaleidoscope_cookery_stargazy_pie______": {
@@ -2674,6 +2960,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:34.113Z",
         "autoPrice": 162.9
       },
       "kaleidoscope_cookery_frost_lamb_chop_____": {
@@ -2683,6 +2970,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:35.113Z",
         "autoPrice": 29.3
       },
       "kaleidoscope_cookery_candied_potato_____": {
@@ -2692,6 +2980,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:36.113Z",
         "autoPrice": 61.5
       },
       "kaleidoscope_cookery_spicy_rabbit_head_____": {
@@ -2701,6 +2990,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:37.113Z",
         "autoPrice": 97.7
       },
       "kaleidoscope_cookery_buddha_jumps_over_the_wall____": {
@@ -2710,6 +3000,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:38.113Z",
         "autoPrice": 62.1
       },
       "kaleidoscope_cookery_fried_caterpillar______": {
@@ -2719,6 +3010,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:39.113Z",
         "autoPrice": 83.3
       },
       "kaleidoscope_cookery_spicy_blood_stew____": {
@@ -2728,6 +3020,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:40.113Z",
         "autoPrice": 61
       },
       "kaleidoscope_cookery_oil_splashed_fish____": {
@@ -2737,6 +3030,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:41.113Z",
         "autoPrice": 69.3
       },
       "kaleidoscope_cookery_four_joy_meatball_soup______": {
@@ -2746,6 +3040,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:42.113Z",
         "autoPrice": 111.3
       },
       "kaleidoscope_cookery_stuffed_tiger_skin_pepper_______": {
@@ -2755,6 +3050,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:43.113Z",
         "autoPrice": 73.9
       },
       "kaleidoscope_cookery_braised_pork_ribs_____": {
@@ -2764,6 +3060,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:44.113Z",
         "autoPrice": 89.5
       },
       "kaleidoscope_cookery_dough_drop_soup____": {
@@ -2773,6 +3070,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:45.113Z",
         "autoPrice": 59.5
       },
       "kaleidoscope_cookery_numbing_spicy_chicken____": {
@@ -2782,6 +3080,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:46.113Z",
         "autoPrice": 67.7
       },
       "minecraft_pumpkin_pie____": {
@@ -2791,6 +3090,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:47.113Z",
         "autoPrice": 106.4
       },
       "kaleidoscope_cookery_fried_spring_roll____": {
@@ -2800,6 +3100,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:48.113Z",
         "autoPrice": 94.7
       },
       "kaleidoscope_cookery_caterpillar____": {
@@ -2809,7 +3110,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 14
+        "manualPrice": 14,
+        "createdAt": "2026-09-28T06:31:49.113Z"
       },
       "kaleidoscope_cookery_cold_cut_ham_slices______": {
         "id": "kaleidoscope_cookery_cold_cut_ham_slices______",
@@ -2818,6 +3120,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:50.113Z",
         "autoPrice": 20
       },
       "kaleidoscope_cookery_cold_roasted_meat____": {
@@ -2827,6 +3130,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:51.113Z",
         "autoPrice": 88.5
       },
       "youkaisfeasts_cucumber_slice____": {
@@ -2836,6 +3140,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:31:52.113Z",
         "autoPrice": 4.5
       },
       "kaleidoscope_cookery_tieguanyin____": {
@@ -2845,6 +3150,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:53.113Z",
         "autoPrice": 11.3
       },
       "kaleidoscope_cookery_biluochun____": {
@@ -2854,6 +3160,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:54.113Z",
         "autoPrice": 11.3
       },
       "kaleidoscope_cookery_oolong______": {
@@ -2863,6 +3170,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:55.113Z",
         "autoPrice": 6.7
       },
       "kaleidoscope_cookery_butter_tea____": {
@@ -2872,6 +3180,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:56.113Z",
         "autoPrice": 23
       },
       "kaleidoscope_cookery_sakura_fubuki____": {
@@ -2881,6 +3190,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:57.113Z",
         "autoPrice": 7.6
       },
       "kaleidoscope_chinesefood_dianhong_tea_____": {
@@ -2890,6 +3200,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:58.113Z",
         "autoPrice": 14.5
       },
       "kaleidoscope_cookery_barley_tea______": {
@@ -2899,6 +3210,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:31:59.113Z",
         "autoPrice": 10
       },
       "kaleidoscope_chinesefood_hk_milk_tea_______": {
@@ -2908,6 +3220,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:00.113Z",
         "autoPrice": 15.5
       },
       "kaleidoscope_cookery_tieguanyin_tea_bag______": {
@@ -2917,6 +3230,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:01.113Z",
         "autoPrice": 131.1
       },
       "kaleidoscope_cookery_biluochun_tea_bag______": {
@@ -2926,6 +3240,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:02.113Z",
         "autoPrice": 131.1
       },
       "kaleidoscope_cookery_oolong_tea_bag_______": {
@@ -2935,6 +3250,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:03.113Z",
         "autoPrice": 76.9
       },
       "kaleidoscope_cookery_butter_tea_bag______": {
@@ -2944,6 +3260,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:04.113Z",
         "autoPrice": 257.8
       },
       "kaleidoscope_cookery_sakura_fubuki_tea_bag______": {
@@ -2953,6 +3270,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:05.113Z",
         "autoPrice": 86.8
       },
       "kaleidoscope_chinesefood_dianhong_tea_bag_______": {
@@ -2962,6 +3280,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:06.113Z",
         "autoPrice": 169.3
       },
       "kaleidoscope_cookery_barley_tea_bag_______": {
@@ -2971,6 +3290,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:07.113Z",
         "autoPrice": 116.1
       },
       "minecraft_pink_petals______": {
@@ -2980,13 +3300,15 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 6
+        "manualPrice": 6,
+        "createdAt": "2026-09-28T06:32:08.113Z"
       },
       "kaleidoscope_cookery_empty_cup____": {
         "id": "kaleidoscope_cookery_empty_cup____",
         "name": "空茶杯",
         "itemId": "kaleidoscope_cookery:empty_cup",
-        "tags": []
+        "tags": [],
+        "createdAt": "2026-09-28T06:32:09.113Z"
       },
       "kaleidoscope_chinesefood_raw_steamed_rice_rolls____": {
         "id": "kaleidoscope_chinesefood_raw_steamed_rice_rolls____",
@@ -2995,6 +3317,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:10.113Z",
         "autoPrice": 44.4
       },
       "kaleidoscope_chinesefood_raw_bamboo_steamed_egg______": {
@@ -3004,6 +3327,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:11.113Z",
         "autoPrice": 20.2
       },
       "kaleidoscope_chinesefood_century_egg___": {
@@ -3013,6 +3337,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:12.113Z",
         "autoPrice": 22.5
       },
       "kaleidoscope_chinesefood_chinese_sauerkraut___": {
@@ -3022,6 +3347,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:13.113Z",
         "autoPrice": 26.3
       },
       "kaleidoscope_chinesefood_bamboo_steamed_egg_____": {
@@ -3031,6 +3357,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:14.113Z",
         "autoPrice": 24.6
       },
       "kaleidoscope_chinesefood_wonton_noodles____": {
@@ -3040,6 +3367,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:15.113Z",
         "autoPrice": 146.9
       },
       "kaleidoscope_chinesefood_sichuan_boiled_pork_slices_____": {
@@ -3049,6 +3377,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:16.113Z",
         "autoPrice": 52.8
       },
       "kaleidoscope_chinesefood_yangrou_paomo_____": {
@@ -3058,6 +3387,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:17.113Z",
         "autoPrice": 82.1
       },
       "kaleidoscope_chinesefood_sauerkraut_beef_noodles______": {
@@ -3067,6 +3397,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:18.113Z",
         "autoPrice": 87.7
       },
       "kaleidoscope_chinesefood_yellow_croaker_soup____": {
@@ -3076,6 +3407,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:19.113Z",
         "autoPrice": 34.1
       },
       "kaleidoscope_chinesefood_yellow_croaker_tofu_soup______": {
@@ -3085,6 +3417,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:20.113Z",
         "autoPrice": 71.2
       },
       "kaleidoscope_chinesefood_dry_pot_potatoes______": {
@@ -3094,6 +3427,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:21.113Z",
         "autoPrice": 52
       },
       "kaleidoscope_chinesefood_stuffed_eggplant_____": {
@@ -3103,6 +3437,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:22.113Z",
         "autoPrice": 69.8
       },
       "kaleidoscope_chinesefood_sichuan_wonton_____": {
@@ -3112,6 +3447,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:23.113Z",
         "autoPrice": 170.8
       },
       "kaleidoscope_chinesefood_big_plate_chicken____": {
@@ -3121,7 +3457,8 @@
         "tags": [
           "tag_1790175849511"
         ],
-        "autoPrice": 186.8
+        "createdAt": "2026-09-28T06:32:24.113Z",
+        "autoPrice": 38.3
       },
       "kaleidoscope_twilight_frozen_bun_____": {
         "id": "kaleidoscope_twilight_frozen_bun_____",
@@ -3130,6 +3467,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:25.113Z",
         "autoPrice": 20.4
       },
       "kaleidoscope_chinesefood_seaweed_egg_drop_soup______": {
@@ -3139,6 +3477,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:26.113Z",
         "autoPrice": 41.8
       },
       "kaleidoscope_chinesefood_tomato_egg_drop_soup______": {
@@ -3148,6 +3487,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:27.113Z",
         "autoPrice": 36.7
       },
       "kaleidoscope_chinesefood_century_egg_congee______": {
@@ -3157,6 +3497,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:28.113Z",
         "autoPrice": 88.9
       },
       "kaleidoscope_chinesefood_pumpkin_porridge____": {
@@ -3166,6 +3507,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:29.113Z",
         "autoPrice": 26.7
       },
       "kaleidoscope_chinesefood_douzhi____": {
@@ -3175,6 +3517,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:30.113Z",
         "autoPrice": 57.1
       },
       "kaleidoscope_chinesefood_beef_with_scrambled_eggs_____": {
@@ -3184,6 +3527,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:31.113Z",
         "autoPrice": 66.3
       },
       "kaleidoscope_chinesefood_yangzhou_fried_rice_____": {
@@ -3193,6 +3537,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:32.113Z",
         "autoPrice": 43.1
       },
       "kaleidoscope_chinesefood_steamed_rice_rolls___": {
@@ -3202,6 +3547,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:33.113Z",
         "autoPrice": 49.3
       },
       "kaleidoscope_chinesefood_stir_fried_three_fresh_vegetables____": {
@@ -3211,6 +3557,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:34.113Z",
         "autoPrice": 68.3
       },
       "kaleidoscope_chinesefood_red_rice_roll______": {
@@ -3220,6 +3567,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:35.113Z",
         "autoPrice": 50.7
       },
       "kaleidoscope_chinesefood_sichuan_boiled_fish____": {
@@ -3229,6 +3577,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:36.113Z",
         "autoPrice": 57.1
       },
       "minecraft_charcoal___": {
@@ -3238,7 +3587,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 5
+        "manualPrice": 5,
+        "createdAt": "2026-09-28T06:32:37.113Z"
       },
       "crabbersdelight_coconut_halve_Coconut_Halve": {
         "id": "crabbersdelight_coconut_halve_Coconut_Halve",
@@ -3247,6 +3597,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:32:38.113Z",
         "autoPrice": 8
       },
       "crabbersdelight_coconut_pudding_Coconut_Pudding": {
@@ -3256,6 +3607,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:39.113Z",
         "autoPrice": 47.6
       },
       "crabbersdelight_coconut_milk_Coconut_Milk": {
@@ -3265,6 +3617,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:40.113Z",
         "autoPrice": 22.9
       },
       "farmersdelight_apple_pie____": {
@@ -3274,6 +3627,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:41.113Z",
         "autoPrice": 103.7
       },
       "farmersdelight_sweet_berry_cheesecake_______": {
@@ -3283,6 +3637,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:42.113Z",
         "autoPrice": 117.1
       },
       "farmersdelight_chocolate_pie_____": {
@@ -3292,6 +3647,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:43.113Z",
         "autoPrice": 122.5
       },
       "farmersdelight_melon_popsicle_____": {
@@ -3301,6 +3657,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:44.113Z",
         "autoPrice": 12.4
       },
       "farmersdelight_glow_berry_custard_________": {
@@ -3310,6 +3667,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:45.113Z",
         "autoPrice": 36.5
       },
       "farmersdelight_fruit_salad_____": {
@@ -3319,6 +3677,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:46.113Z",
         "autoPrice": 20.8
       },
       "farmersdelight_mixed_salad_____": {
@@ -3328,6 +3687,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:47.113Z",
         "autoPrice": 29.8
       },
       "farmersdelight_egg_sandwich______": {
@@ -3337,6 +3697,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:48.113Z",
         "autoPrice": 32.8
       },
       "farmersdelight_chicken_sandwich______": {
@@ -3346,6 +3707,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:49.113Z",
         "autoPrice": 30.1
       },
       "farmersdelight_hamburger____": {
@@ -3355,6 +3717,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:50.113Z",
         "autoPrice": 39.4
       },
       "farmersdelight_bacon_sandwich______": {
@@ -3364,6 +3727,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:51.113Z",
         "autoPrice": 34.8
       },
       "farmersdelight_mutton_wrap_____": {
@@ -3373,6 +3737,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:52.113Z",
         "autoPrice": 34.8
       },
       "farmersdelight_stuffed_potato______": {
@@ -3382,6 +3747,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:53.113Z",
         "autoPrice": 40.3
       },
       "farmersdelight_salmon_roll_____": {
@@ -3391,6 +3757,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:54.113Z",
         "autoPrice": 9.6
       },
       "farmersdelight_cod_roll_____": {
@@ -3400,6 +3767,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:55.113Z",
         "autoPrice": 10.9
       },
       "farmersdelight_kelp_roll______": {
@@ -3409,6 +3777,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:56.113Z",
         "autoPrice": 49.7
       },
       "farmersdelight_pasta_with_meatballs_____": {
@@ -3418,6 +3787,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:57.113Z",
         "autoPrice": 81.6
       },
       "farmersdelight_pasta_with_mutton_chop_____": {
@@ -3427,6 +3797,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:58.113Z",
         "autoPrice": 49.5
       },
       "farmersdelight_mushroom_rice____": {
@@ -3436,6 +3807,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:32:59.113Z",
         "autoPrice": 51.2
       },
       "farmersdelight_roasted_mutton_chops____": {
@@ -3445,6 +3817,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:00.113Z",
         "autoPrice": 37.9
       },
       "farmersdelight_vegetable_noodles____": {
@@ -3454,6 +3827,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:01.113Z",
         "autoPrice": 44.1
       },
       "farmersdelight_ratatouille_____": {
@@ -3463,6 +3837,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:02.113Z",
         "autoPrice": 26.5
       },
       "farmersdelight_grilled_salmon_____": {
@@ -3472,6 +3847,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:03.113Z",
         "autoPrice": 25.8
       },
       "farmersdelight_honey_glazed_ham_block_____": {
@@ -3481,6 +3857,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:04.113Z",
         "autoPrice": 88.1
       },
       "farmersdelight_roast_chicken_block___": {
@@ -3490,6 +3867,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:05.113Z",
         "autoPrice": 48.9
       },
       "farmersdelight_stuffed_pumpkin_block_____": {
@@ -3499,6 +3877,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:06.113Z",
         "autoPrice": 71.6
       },
       "farmersdelight_shepherds_pie_block_____": {
@@ -3508,6 +3887,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:07.113Z",
         "autoPrice": 99.4
       },
       "farmersdelight_cabbage_rolls_____": {
@@ -3517,6 +3897,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:08.113Z",
         "autoPrice": 19.9
       },
       "youkaisfeasts_steamed_crab_____": {
@@ -3526,6 +3907,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:09.113Z",
         "autoPrice": 26.4
       },
       "youkaisfeasts_crab_meat___": {
@@ -3535,6 +3917,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:10.113Z",
         "autoPrice": 3.1
       },
       "youkaisfeasts_crab_roe___": {
@@ -3544,6 +3927,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:11.113Z",
         "autoPrice": 15.1
       },
       "youkaisfeasts_raw_venison_slice____": {
@@ -3553,6 +3937,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:12.113Z",
         "autoPrice": 9.5
       },
       "youkaisfeasts_raw_boarchop_bits______": {
@@ -3562,6 +3947,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:13.113Z",
         "autoPrice": 9.5
       },
       "youkaisfeasts_oily_bean_curd____": {
@@ -3571,6 +3957,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:14.113Z",
         "autoPrice": 61.3
       },
       "youkaisfeasts_imitation_crab____": {
@@ -3580,6 +3967,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:15.113Z",
         "autoPrice": 9.3
       },
       "youkaisfeasts_tamagoyaki____": {
@@ -3589,6 +3977,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:16.113Z",
         "autoPrice": 37.5
       },
       "youkaisfeasts_nattou___": {
@@ -3598,6 +3987,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:17.113Z",
         "autoPrice": 15.3
       },
       "youkaisfeasts_mochi___": {
@@ -3607,6 +3997,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:18.113Z",
         "autoPrice": 43.8
       },
       "youkaisfeasts_tsukimi_dango_____": {
@@ -3616,6 +4007,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:19.113Z",
         "autoPrice": 34.8
       },
       "youkaisfeasts_matcha_mochi_____": {
@@ -3625,6 +4017,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:20.113Z",
         "autoPrice": 49.1
       },
       "youkaisfeasts_sakura_mochi___": {
@@ -3634,6 +4027,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:21.113Z",
         "autoPrice": 24.7
       },
       "youkaisfeasts_matcha___": {
@@ -3643,6 +4037,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:22.113Z",
         "autoPrice": 15.2
       },
       "youkaisfeasts_yashouma_dango_____": {
@@ -3652,6 +4047,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:23.113Z",
         "autoPrice": 53
       },
       "youkaisfeasts_onigili___": {
@@ -3661,6 +4057,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:24.113Z",
         "autoPrice": 19.5
       },
       "youkaisfeasts_senbei___": {
@@ -3670,6 +4067,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:25.113Z",
         "autoPrice": 47.1
       },
       "youkaisfeasts_sekibankiyaki____": {
@@ -3679,6 +4077,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:26.113Z",
         "autoPrice": 71.9
       },
       "youkaisfeasts_yakumo_inari______": {
@@ -3688,6 +4087,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:27.113Z",
         "autoPrice": 214.1
       },
       "youkaisfeasts_raw_oyaki____": {
@@ -3697,6 +4097,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:28.113Z",
         "autoPrice": 51.8
       },
       "youkaisfeasts_pork_rice_ball_____": {
@@ -3706,6 +4107,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:29.113Z",
         "autoPrice": 37.4
       },
       "youkaisfeasts_kabayaki_____": {
@@ -3715,6 +4117,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:30.113Z",
         "autoPrice": 27.8
       },
       "youkaisfeasts_milk_popsicle_____": {
@@ -3724,6 +4127,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:31.113Z",
         "autoPrice": 16.1
       },
       "youkaisfeasts_big_popsicle_____": {
@@ -3733,6 +4137,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:32.113Z",
         "autoPrice": 6.3
       },
       "youkaisfeasts_shaved_ice_over_rice_______": {
@@ -3742,6 +4147,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:33.113Z",
         "autoPrice": 37.6
       },
       "youkaisfeasts_oyaki___": {
@@ -3749,6 +4155,7 @@
         "name": "御烧",
         "itemId": "youkaisfeasts:oyaki",
         "tags": [],
+        "createdAt": "2026-09-28T06:33:34.113Z",
         "autoPrice": 56.8
       },
       "youkaisfeasts_raw_lamprey_fillet______": {
@@ -3758,6 +4165,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:33:35.113Z",
         "autoPrice": 10.5
       },
       "youkaisfeasts_grilled_eel_over_rice____": {
@@ -3767,6 +4175,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:36.113Z",
         "autoPrice": 51
       },
       "youkaisfeasts_longevity_noodles____": {
@@ -3776,6 +4185,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:37.113Z",
         "autoPrice": 72.8
       },
       "youkaisfeasts_shirayuki___": {
@@ -3785,6 +4195,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:38.113Z",
         "autoPrice": 68.2
       },
       "youkaisfeasts_han_palace_____": {
@@ -3794,6 +4205,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:39.113Z",
         "autoPrice": 83.9
       },
       "youkaisfeasts_tuscan_salmon_______": {
@@ -3803,6 +4215,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:40.113Z",
         "autoPrice": 38.5
       },
       "youkaisfeasts_honey_glazed_cucumber_____": {
@@ -3812,6 +4225,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:41.113Z",
         "autoPrice": 48.4
       },
       "youkaisfeasts_lions_head____": {
@@ -3821,6 +4235,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:42.113Z",
         "autoPrice": 82.7
       },
       "youkaisfeasts_mapo_tofu_____": {
@@ -3830,6 +4245,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:43.113Z",
         "autoPrice": 96.6
       },
       "youkaisfeasts_udumbara_cake_____": {
@@ -3839,6 +4255,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:44.113Z",
         "autoPrice": 41.4
       },
       "youkaisfeasts_tobiko_gunkan_____": {
@@ -3848,6 +4265,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:45.113Z",
         "autoPrice": 15
       },
       "youkaisfeasts_seagrass_gunkan_____": {
@@ -3857,6 +4275,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:46.113Z",
         "autoPrice": 13.2
       },
       "youkaisfeasts_nattou_gunkan_____": {
@@ -3866,6 +4285,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:47.113Z",
         "autoPrice": 18.9
       },
       "youkaisfeasts_egg_nigiri_______": {
@@ -3875,6 +4295,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:48.113Z",
         "autoPrice": 30.1
       },
       "youkaisfeasts_lorelei_nigiri______": {
@@ -3884,6 +4305,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:49.113Z",
         "autoPrice": 25.2
       },
       "youkaisfeasts_tuna_nigiri_______": {
@@ -3893,6 +4315,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:50.113Z",
         "autoPrice": 9.3
       },
       "youkaisfeasts_otoro_nigiri_________": {
@@ -3902,6 +4325,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:51.113Z",
         "autoPrice": 13
       },
       "youkaisfeasts_shinnko_maki_____": {
@@ -3911,6 +4335,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:52.113Z",
         "autoPrice": 42.6
       },
       "youkaisfeasts_kappa_maki_____": {
@@ -3920,6 +4345,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:53.113Z",
         "autoPrice": 40.1
       },
       "youkaisfeasts_tekka_maki____": {
@@ -3929,6 +4355,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:54.113Z",
         "autoPrice": 38.8
       },
       "youkaisfeasts_egg_futomaki_____": {
@@ -3938,6 +4365,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:55.113Z",
         "autoPrice": 86.6
       },
       "youkaisfeasts_salmon_futomaki_____": {
@@ -3947,6 +4375,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:56.113Z",
         "autoPrice": 68.8
       },
       "youkaisfeasts_rainbow_futomaki_____": {
@@ -3956,6 +4385,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:33:57.113Z",
         "autoPrice": 81.7
       },
       "youkaisfeasts_california_roll____": {
@@ -3965,7 +4395,8 @@
         "tags": [
           "tag_1790175849511"
         ],
-        "autoPrice": 117.9
+        "createdAt": "2026-09-28T06:33:58.113Z",
+        "autoPrice": 93
       },
       "youkaisfeasts_roe_california_roll______": {
         "id": "youkaisfeasts_roe_california_roll______",
@@ -3974,7 +4405,8 @@
         "tags": [
           "tag_1790175849511"
         ],
-        "autoPrice": 131.5
+        "createdAt": "2026-09-28T06:33:59.113Z",
+        "autoPrice": 106.3
       },
       "youkaisfeasts_salmon_lover_roll____": {
         "id": "youkaisfeasts_salmon_lover_roll____",
@@ -3983,7 +4415,8 @@
         "tags": [
           "tag_1790175849511"
         ],
-        "autoPrice": 153.2
+        "createdAt": "2026-09-28T06:34:00.113Z",
+        "autoPrice": 127.8
       },
       "youkaisfeasts_volcano_roll______": {
         "id": "youkaisfeasts_volcano_roll______",
@@ -3992,7 +4425,8 @@
         "tags": [
           "tag_1790175849511"
         ],
-        "autoPrice": 153.2
+        "createdAt": "2026-09-28T06:34:01.113Z",
+        "autoPrice": 128
       },
       "youkaisfeasts_rainbow_roll______": {
         "id": "youkaisfeasts_rainbow_roll______",
@@ -4001,7 +4435,8 @@
         "tags": [
           "tag_1790175849511"
         ],
-        "autoPrice": 155.3
+        "createdAt": "2026-09-28T06:34:02.113Z",
+        "autoPrice": 130
       },
       "youkaisfeasts_tamagoyaki_slice______": {
         "id": "youkaisfeasts_tamagoyaki_slice______",
@@ -4010,6 +4445,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:34:03.113Z",
         "autoPrice": 12.8
       },
       "youkaisfeasts_mushroom_soup_______": {
@@ -4019,6 +4455,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:04.113Z",
         "autoPrice": 54
       },
       "youkaisfeasts_power_soup____": {
@@ -4028,6 +4465,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:05.113Z",
         "autoPrice": 66.3
       },
       "youkaisfeasts_potato_soup________": {
@@ -4037,6 +4475,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:06.113Z",
         "autoPrice": 53.1
       },
       "youkaisfeasts_signature_mushroom_stew______": {
@@ -4046,6 +4485,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:07.113Z",
         "autoPrice": 45.9
       },
       "youkaisfeasts_hokkaido_salmon_hotpot____": {
@@ -4055,6 +4495,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:08.113Z",
         "autoPrice": 75.1
       },
       "aquaculture_brown_shrooma____": {
@@ -4064,7 +4505,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 22
+        "manualPrice": 22,
+        "createdAt": "2026-09-28T06:34:09.113Z"
       },
       "aquaculture_red_shrooma____": {
         "id": "aquaculture_red_shrooma____",
@@ -4073,7 +4515,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 22
+        "manualPrice": 22,
+        "createdAt": "2026-09-28T06:34:10.113Z"
       },
       "youkaisfeasts_cold_tofu_____": {
         "id": "youkaisfeasts_cold_tofu_____",
@@ -4082,6 +4525,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:11.113Z",
         "autoPrice": 71.5
       },
       "youkaisfeasts_cumberland_loin______": {
@@ -4091,6 +4535,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:12.113Z",
         "autoPrice": 57.9
       },
       "youkaisfeasts_tomato_sauce_cod_____": {
@@ -4100,6 +4545,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:13.113Z",
         "autoPrice": 47.2
       },
       "youkaisfeasts_bamboo_mizuyokan______": {
@@ -4109,6 +4555,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:14.113Z",
         "autoPrice": 27.3
       },
       "youkaisfeasts_dried_fish____": {
@@ -4118,6 +4565,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:15.113Z",
         "autoPrice": 30.6
       },
       "youkaisfeasts_raw_imitation_bear_paw_____": {
@@ -4127,6 +4575,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:34:16.113Z",
         "autoPrice": 54
       },
       "youkaisfeasts_imitation_bear_paw____": {
@@ -4136,6 +4585,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:17.113Z",
         "autoPrice": 59.1
       },
       "youkaisfeasts_pastitsio_______": {
@@ -4145,6 +4595,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:18.113Z",
         "autoPrice": 112.9
       },
       "youkaisfeasts_sauce_grilled_fish____": {
@@ -4154,6 +4605,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:19.113Z",
         "autoPrice": 49.4
       },
       "youkaisfeasts_stinky_tofu____": {
@@ -4163,6 +4615,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:20.113Z",
         "autoPrice": 80.8
       },
       "youkaisfeasts_tofu_burger_____": {
@@ -4172,6 +4625,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:21.113Z",
         "autoPrice": 85
       },
       "youkaisfeasts_seven_colored_yokan_____": {
@@ -4181,6 +4635,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:22.113Z",
         "autoPrice": 94
       },
       "kaleidoscope_fragrantorchard_peach_of_immortality____": {
@@ -4190,6 +4645,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:23.113Z",
         "autoPrice": 36.9
       },
       "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______": {
@@ -4199,6 +4655,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:24.113Z",
         "autoPrice": 39.3
       },
       "kaleidoscope_fragrantorchard_apple_juice____": {
@@ -4208,6 +4665,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:25.113Z",
         "autoPrice": 5.9
       },
       "kaleidoscope_fragrantorchard_melon_juice____": {
@@ -4217,6 +4675,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:26.113Z",
         "autoPrice": 3.6
       },
       "kaleidoscope_fragrantorchard_grape_juice____": {
@@ -4226,6 +4685,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:27.113Z",
         "autoPrice": 13
       },
       "kaleidoscope_fragrantorchard_peach_juice____": {
@@ -4235,6 +4695,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:28.113Z",
         "autoPrice": 12
       },
       "kaleidoscope_fragrantorchard_pear_juice___": {
@@ -4244,6 +4705,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:29.113Z",
         "autoPrice": 12
       },
       "kaleidoscope_nether_roujiamo____": {
@@ -4253,6 +4715,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:30.113Z",
         "autoPrice": 35.8
       },
       "kaleidoscope_nether_chongqing_noodles_____": {
@@ -4262,6 +4725,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:31.113Z",
         "autoPrice": 57.4
       },
       "kaleidoscope_nether_luosifen____": {
@@ -4271,6 +4735,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:32.113Z",
         "autoPrice": 97.9
       },
       "kaleidoscope_nether_sauerkraut_fish____": {
@@ -4280,6 +4745,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:33.113Z",
         "autoPrice": 86.3
       },
       "kaleidoscope_nether_braised_pork_rice____": {
@@ -4289,6 +4755,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:34.113Z",
         "autoPrice": 98.1
       },
       "kaleidoscope_nether_corn_carrot_pork_rib_soup_________": {
@@ -4298,6 +4765,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:35.113Z",
         "autoPrice": 71.4
       },
       "kaleidoscope_nether_pepper_pork_belly_chicken_soup_______": {
@@ -4307,6 +4775,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:36.113Z",
         "autoPrice": 42.6
       },
       "kaleidoscope_nether_garlic_oysters_____": {
@@ -4316,6 +4785,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:37.113Z",
         "autoPrice": 38.7
       },
       "kaleidoscope_grilling_cold_houttuynia______": {
@@ -4325,6 +4795,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:38.113Z",
         "autoPrice": 55.5
       },
       "kaleidoscope_grilling_sugared_tomato_____": {
@@ -4334,6 +4805,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:39.113Z",
         "autoPrice": 17.5
       },
       "kaleidoscope_grilling_pepper_honey_____": {
@@ -4343,6 +4815,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:40.113Z",
         "autoPrice": 50.5
       },
       "kaleidoscope_grilling_roasted_sweet_potato____": {
@@ -4352,6 +4825,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:41.113Z",
         "autoPrice": 11.2
       },
       "kaleidoscope_grilling_green_chili_powder_____": {
@@ -4361,6 +4835,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:34:42.113Z",
         "autoPrice": 10
       },
       "kaleidoscope_grilling_minced_houttuynia_____": {
@@ -4370,6 +4845,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:34:43.113Z",
         "autoPrice": 11
       },
       "kaleidoscope_grilling_raw_sweet_potato_sheet____": {
@@ -4379,6 +4855,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:34:44.113Z",
         "autoPrice": 10
       },
       "kaleidoscope_grilling_green_pepper_squid_tentacles_______": {
@@ -4388,6 +4865,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:45.113Z",
         "autoPrice": 58.1
       },
       "kaleidoscope_grilling_braised_chicken_wings_____": {
@@ -4397,6 +4875,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:46.113Z",
         "autoPrice": 35.8
       },
       "kaleidoscope_grilling_sour_spicy_noodles____": {
@@ -4406,6 +4885,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:47.113Z",
         "autoPrice": 60.9
       },
       "kaleidoscope_grilling_red_sweet_potato_porridge_____": {
@@ -4415,6 +4895,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:48.113Z",
         "autoPrice": 32.6
       },
       "kaleidoscope_grilling_houttuynia_stir_fried_pork______": {
@@ -4424,6 +4905,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:49.113Z",
         "autoPrice": 62.2
       },
       "kaleidoscope_grilling_special_seasoning____": {
@@ -4433,13 +4915,15 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:34:50.113Z",
         "autoPrice": 76.2
       },
       "kaleidoscope_grilling_empty_seasoning_bottle____": {
         "id": "kaleidoscope_grilling_empty_seasoning_bottle____",
         "name": "调料瓶",
         "itemId": "kaleidoscope_grilling:empty_seasoning_bottle",
-        "tags": []
+        "tags": [],
+        "createdAt": "2026-09-28T06:34:51.113Z"
       },
       "kaleidoscope_grilling_raw_mantou_slice_____": {
         "id": "kaleidoscope_grilling_raw_mantou_slice_____",
@@ -4448,6 +4932,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:34:52.113Z",
         "autoPrice": 6
       },
       "kaleidoscope_grilling_raw_lamb_skewer_____": {
@@ -4457,6 +4942,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:34:53.113Z",
         "autoPrice": 26
       },
       "kaleidoscope_grilling_raw_gluten_skewer_____": {
@@ -4466,6 +4952,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:34:54.113Z",
         "autoPrice": 26.6
       },
       "kaleidoscope_grilling_grilled_lamb_skewer_____": {
@@ -4475,6 +4962,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:55.113Z",
         "autoPrice": 108.3
       },
       "kaleidoscope_grilling_grilled_gluten_skewer_____": {
@@ -4484,6 +4972,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:56.113Z",
         "autoPrice": 108.9
       },
       "kaleidoscope_grilling_grilled_beef_skewer_____": {
@@ -4493,6 +4982,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:57.113Z",
         "autoPrice": 102.7
       },
       "kaleidoscope_grilling_grilled_pork_belly_skewer______": {
@@ -4502,6 +4992,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:58.113Z",
         "autoPrice": 118.6
       },
       "kaleidoscope_grilling_grilled_mid_wing_skewer_____": {
@@ -4511,6 +5002,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:34:59.113Z",
         "autoPrice": 105.2
       },
       "kaleidoscope_grilling_grilled_squid_tentacle_skewer______": {
@@ -4520,6 +5012,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:00.113Z",
         "autoPrice": 128.9
       },
       "kaleidoscope_grilling_grilled_sweet_potato_sheet_skewer_____": {
@@ -4529,6 +5022,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:01.113Z",
         "autoPrice": 114.4
       },
       "kaleidoscope_grilling_grilled_potato_slice_skewer______": {
@@ -4538,6 +5032,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:02.113Z",
         "autoPrice": 94.9
       },
       "kaleidoscope_grilling_grilled_mushroom_skewer_____": {
@@ -4547,6 +5042,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:03.113Z",
         "autoPrice": 103.1
       },
       "kaleidoscope_grilling_raw_meat_and_bone_skewer_______": {
@@ -4556,6 +5052,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:04.113Z",
         "autoPrice": 24.5
       },
       "kaleidoscope_grilling_raw_bun_slice_skewer______": {
@@ -4565,6 +5062,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:05.113Z",
         "autoPrice": 19
       },
       "kaleidoscope_grilling_raw_beef_skewer_____": {
@@ -4574,6 +5072,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:06.113Z",
         "autoPrice": 20.6
       },
       "kaleidoscope_grilling_raw_pork_belly_skewer______": {
@@ -4583,6 +5082,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:07.113Z",
         "autoPrice": 36
       },
       "kaleidoscope_grilling_raw_mid_wing_skewer_____": {
@@ -4592,6 +5092,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:08.113Z",
         "autoPrice": 23
       },
       "kaleidoscope_grilling_raw_squid_tentacle_skewer______": {
@@ -4601,6 +5102,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:09.113Z",
         "autoPrice": 46
       },
       "kaleidoscope_grilling_raw_sweet_potato_sheet_skewer_____": {
@@ -4610,6 +5112,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:10.113Z",
         "autoPrice": 32
       },
       "kaleidoscope_grilling_raw_potato_slice_skewer______": {
@@ -4619,6 +5122,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:11.113Z",
         "autoPrice": 13
       },
       "kaleidoscope_grilling_raw_mushroom_skewer_____": {
@@ -4628,6 +5132,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:12.113Z",
         "autoPrice": 21
       },
       "kaleidoscope_grilling_grilled_meat_and_bone_skewer_______": {
@@ -4637,6 +5142,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:13.113Z",
         "autoPrice": 106.7
       },
       "kaleidoscope_grilling_grilled_bun_slice_skewer______": {
@@ -4646,6 +5152,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:14.113Z",
         "autoPrice": 101.1
       },
       "minecraft_baked_potato_____": {
@@ -4655,6 +5162,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:15.113Z",
         "autoPrice": 10.2
       },
       "minecraft_cooked_beef___": {
@@ -4664,6 +5172,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:16.113Z",
         "autoPrice": 16.3
       },
       "minecraft_cooked_porkchop____": {
@@ -4673,6 +5182,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:17.113Z",
         "autoPrice": 14.2
       },
       "kaleidoscope_cookery_fried_egg___": {
@@ -4682,6 +5192,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:18.113Z",
         "autoPrice": 9.1
       },
       "kaleidoscope_tavern_grape_bucket____": {
@@ -4691,6 +5202,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:19.113Z",
         "autoPrice": 52
       },
       "kaleidoscope_tavern_ice_grape_bucket_____": {
@@ -4700,6 +5212,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:20.113Z",
         "autoPrice": 92.8
       },
       "kaleidoscope_tavern_gold_grape_bucket______": {
@@ -4709,6 +5222,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:21.113Z",
         "autoPrice": 92.8
       },
       "kaleidoscope_tavern_green_grape_bucket______": {
@@ -4718,6 +5232,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:22.113Z",
         "autoPrice": 68.3
       },
       "kaleidoscope_tavern_sweet_berries_bucket_____": {
@@ -4727,6 +5242,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:23.113Z",
         "autoPrice": 35.6
       },
       "kaleidoscope_tavern_glow_berries_bucket______": {
@@ -4736,6 +5252,7 @@
         "tags": [
           "tag_1790252241364"
         ],
+        "createdAt": "2026-09-28T06:35:24.113Z",
         "autoPrice": 52
       },
       "kaleidoscope_tavern_wine____": {
@@ -4745,6 +5262,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:25.113Z",
         "autoPrice": 15.7
       },
       "kaleidoscope_tavern_sherry___": {
@@ -4754,6 +5272,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:26.113Z",
         "autoPrice": 35.9
       },
       "kaleidoscope_world_liquor_johnnie_walker_____": {
@@ -4763,6 +5282,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:27.113Z",
         "autoPrice": 21.4
       },
       "kaleidoscope_world_liquor_dassai___": {
@@ -4772,6 +5292,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:28.113Z",
         "autoPrice": 26
       },
       "kaleidoscope_tavern_red_queen____": {
@@ -4781,6 +5302,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:29.113Z",
         "autoPrice": 29.6
       },
       "kaleidoscope_world_liquor_strongbow____": {
@@ -4790,6 +5312,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:30.113Z",
         "autoPrice": 32.9
       },
       "kaleidoscope_world_liquor_pina_colada_________": {
@@ -4799,6 +5322,7 @@
         "tags": [
           "tag_1790175849511"
         ],
+        "createdAt": "2026-09-28T06:35:31.113Z",
         "autoPrice": 17.9
       }
     },
@@ -9951,7 +10475,7 @@
       "recipe_1790429426808": {
         "id": "recipe_1790429426808",
         "name": "水煎包",
-        "workstation": "kaleidoscope_cookery_stockpot___",
+        "workstation": "kaleidoscope_cookery_pot___",
         "inputs": [
           {
             "type": "item",
@@ -9959,13 +10483,7 @@
             "count": 1
           }
         ],
-        "attachments": [
-          {
-            "type": "item",
-            "ref": "kaleidoscope_cookery_pot___",
-            "count": 1
-          }
-        ],
+        "attachments": [],
         "outputs": [
           {
             "type": "item",
@@ -13215,13 +13733,13 @@
           },
           {
             "type": "item",
-            "ref": "kaleidoscope_cookery_stir_fried_pork_with_peppers_____",
-            "count": 2
+            "ref": "kaleidoscope_chinesefood_salt__",
+            "count": 1
           },
           {
             "type": "item",
-            "ref": "kaleidoscope_chinesefood_salt__",
-            "count": 1
+            "ref": "item_1790137148750",
+            "count": 2
           }
         ],
         "attachments": [
@@ -16563,7 +17081,7 @@
           },
           {
             "type": "item",
-            "ref": "youkaisfeasts_tamagoyaki____",
+            "ref": "youkaisfeasts_tamagoyaki_slice______",
             "count": 1
           },
           {

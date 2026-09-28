@@ -21,6 +21,7 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
     name: item?.name || '',
     itemId: item?.itemId || '',
     tags: item?.tags || [],
+    createdAt: item?.createdAt || new Date().toISOString(),
     manualPrice: item?.manualPrice,
     autoPrice: item?.autoPrice,
     processingFee: item?.processingFee
@@ -47,6 +48,7 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
         name: '',
         itemId: '',
         tags: [],
+        createdAt: new Date().toISOString(),
         manualPrice: undefined,
         autoPrice: undefined
       });
@@ -91,7 +93,11 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
       return;
     }
 
-    const nextItem = { ...formData, itemId };
+    const nextItem = {
+      ...formData,
+      itemId,
+      createdAt: item ? formData.createdAt : new Date().toISOString()
+    };
     if (manualPrice === undefined) {
       delete nextItem.manualPrice;
     } else {

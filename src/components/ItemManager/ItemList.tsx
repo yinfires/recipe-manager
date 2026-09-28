@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { useNavigation } from '../../contexts/NavigationContext';
 import { Item } from '../../types';
@@ -7,15 +7,136 @@ import { ItemDisplay } from '../common/ItemDisplay';
 import { TagFilter } from '../common/TagFilter';
 import { ItemEditDialog } from './ItemEditDialog';
 import { matchesSearch } from '../../utils/searchMatcher';
+import { loadItemFilterSettings, saveItemFilterSettings } from '../../utils/itemFilters';
+import {
+  ItemSortDirection,
+  ItemSortField,
+  ItemSortSettings,
+  changePrimarySortField,
+  loadItemSortSettings,
+  saveItemSortSettings,
+  sortItems
+} from '../../utils/itemSorting';
+
+const SORT_FIELD_LABELS: Record<ItemSortField, string> = {
+  createdAt: '时间',
+  price: '价格',
+  tags: '标签'
+};
+
+function DirectionButton({
+  direction,
+  label,
+  onChange
+}: {
+  direction: ItemSortDirection;
+  label: string;
+  onChange: (direction: ItemSortDirection) => void;
+}) {
+  const nextDirection = direction === 'asc' ? 'desc' : 'asc';
+  const directionText = direction === 'asc' ? '升序' : '降序';
+  return (
+    <button
+      type="button"
+      className="sort-direction-button"
+      onClick={() => onChange(nextDirection)}
+      title={`${label}：${directionText}，点击切换`}
+      aria-label={`${label}当前为${directionText}，点击切换`}
+    >
+      {direction === 'asc' ? '↑' : '↓'}
+    </button>
+  );
+}
+
+function ItemSortToolbar({
+  settings,
+  onChange
+}: {
+  settings: ItemSortSettings;
+  onChange: (settings: ItemSortSettings) => void;
+}) {
+  const availableSecondaryFields = (Object.keys(SORT_FIELD_LABELS) as ItemSortField[])
+    .filter(field => field !== settings.primaryField);
+
+  const changePrimaryField = (primaryField: ItemSortField) => {
+    onChange(changePrimarySortField(settings, primaryField));
+  };
+
+  return (
+    <div className="item-sort-toolbar" aria-label="物品排序工具栏">
+      <div className="sort-control-group">
+        <label htmlFor="item-primary-sort">主</label>
+        <select
+          id="item-primary-sort"
+          value={settings.primaryField}
+          onChange={event => changePrimaryField(event.target.value as ItemSortField)}
+          aria-label="主要排序字段"
+        >
+          {(Object.keys(SORT_FIELD_LABELS) as ItemSortField[]).map(field => (
+            <option key={field} value={field}>{SORT_FIELD_LABELS[field]}</option>
+          ))}
+        </select>
+        <DirectionButton
+          direction={settings.primaryDirection}
+          label="主要排序"
+          onChange={primaryDirection => onChange({ ...settings, primaryDirection })}
+        />
+      </div>
+
+      <div className="sort-control-group">
+        <label htmlFor="item-secondary-sort">次</label>
+        <select
+          id="item-secondary-sort"
+          value={settings.secondaryField || ''}
+          onChange={event => onChange({
+            ...settings,
+            secondaryField: event.target.value ? event.target.value as ItemSortField : null
+          })}
+          aria-label="次要排序字段"
+        >
+          <option value="">无</option>
+          {availableSecondaryFields.map(field => (
+            <option key={field} value={field}>{SORT_FIELD_LABELS[field]}</option>
+          ))}
+        </select>
+        {settings.secondaryField && (
+          <DirectionButton
+            direction={settings.secondaryDirection}
+            label="次要排序"
+            onChange={secondaryDirection => onChange({ ...settings, secondaryDirection })}
+          />
+        )}
+      </div>
+    </div>
+  );
+}
 
 export function ItemList() {
-  const { data, setData, isEditable } = useApp();
+  const { data, setData, isEditable, isLoading } = useApp();
   const { setSelectedItem } = useNavigation();
-  const [searchText, setSearchText] = useState('');
-  const [selectedTagIds, setSelectedTagIds] = useState<string[]>([]);
+  const initialFilters = useState(loadItemFilterSettings)[0];
+  const [searchText, setSearchText] = useState(initialFilters.searchText);
+  const [selectedTagIds, setSelectedTagIds] = useState(initialFilters.selectedTagIds);
   const [isCreating, setIsCreating] = useState(false);
+  const [sortSettings, setSortSettings] = useState(loadItemSortSettings);
 
-  const items = Object.values(data.items).filter(item => {
+  useEffect(() => {
+    saveItemSortSettings(sortSettings);
+  }, [sortSettings]);
+
+  useEffect(() => {
+    saveItemFilterSettings({ searchText, selectedTagIds });
+  }, [searchText, selectedTagIds]);
+
+  useEffect(() => {
+    if (isLoading) return;
+    setSelectedTagIds(current => {
+      const valid = current.filter(tagId => Boolean(data.tags[tagId]));
+      return valid.length === current.length ? current : valid;
+    });
+  }, [data.tags, isLoading]);
+
+  const filteredItems = Object.values(data.items).filter(item => {
     // 文本搜索过滤
     const matchesText = matchesSearch(searchText, item.name, item.itemId);
 
@@ -25,6 +146,7 @@ export function ItemList() {
 
     return matchesText && matchesTags;
   });
+  const items = sortItems(filteredItems, data.tags, sortSettings);
 
   const handleCreate = () => {
     setIsCreating(true);
@@ -64,11 +186,12 @@ export function ItemList() {
   return (
     <div className="item-list-container">
       <div className="list-header">
-        <SearchInput placeholder="搜索物品名称或ID..." onSearch={setSearchText} />
+        <SearchInput value={searchText} placeholder="搜索物品名称或ID..." onSearch={setSearchText} />
         <TagFilter
           selectedTags={selectedTagIds}
           onChange={setSelectedTagIds}
         />
+        <ItemSortToolbar settings={sortSettings} onChange={setSortSettings} />
         {isEditable && <button className="btn-primary" onClick={handleCreate}>+ 新建物品</button>}
       </div>
 
