@@ -9,13 +9,14 @@ import { RecipeEditDialog } from './RecipeEditDialog';
 import { ItemSelector } from '../common/ItemSelector';
 
 export function RecipeList() {
-  const { data, setData } = useApp();
+  const { data, setData, isEditable } = useApp();
   const { setSelectedRecipe } = useNavigation();
   const [searchOptions, setSearchOptions] = useState<RecipeSearchOptions>({});
   const [isCreating, setIsCreating] = useState(false);
   const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
-  const workstationTag = Object.values(data.tags).find(tag => tag.name === '工作方块');
-  const workstationItemIds = workstationTag?.items || [];
+  const workstationItemIds = [...new Set(Object.values(data.tags)
+    .filter(tag => tag.name.trim() === '工作方块')
+    .flatMap(tag => tag.items))];
 
   const recipes = RecipeSearch.search(data, searchOptions);
 
@@ -47,7 +48,7 @@ export function RecipeList() {
         >
           {showAdvancedSearch ? '收起筛选' : '高级筛选'}
         </button>
-        <button className="btn-primary" onClick={handleCreate}>+ 新建配方</button>
+        {isEditable && <button className="btn-primary" onClick={handleCreate}>+ 新建配方</button>}
       </div>
 
       {showAdvancedSearch && (
@@ -208,7 +209,7 @@ export function RecipeList() {
         )}
       </div>
 
-      {isCreating && (
+      {isEditable && isCreating && (
         <RecipeEditDialog
           recipe={null}
           onSave={handleSave}

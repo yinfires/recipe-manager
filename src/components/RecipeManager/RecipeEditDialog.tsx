@@ -4,6 +4,7 @@ import { useApp } from '../../contexts/AppContext';
 import { Recipe, RecipeSlot } from '../../types';
 import { ItemSelector } from '../common/ItemSelector';
 import { useBackdropClick } from '../common/useBackdropClick';
+import { isWorkstationItem, resolveProcessingFee } from '../../utils/processingFees';
 
 interface RecipeEditDialogProps {
   recipe: Recipe | null;
@@ -17,8 +18,9 @@ interface RecipeEditDialogProps {
 export function RecipeEditDialog({ recipe, initialOutputs = [], onSave, onDelete, onCancel, onClose }: RecipeEditDialogProps) {
   const { data } = useApp();
   const backdropClickHandlers = useBackdropClick(onCancel);
-  const workstationTag = Object.values(data.tags).find(tag => tag.name === '工作方块');
-  const workstationItemIds = workstationTag?.items || [];
+  const workstationItemIds = [...new Set(Object.values(data.tags)
+    .filter(tag => tag.name.trim() === '工作方块')
+    .flatMap(tag => tag.items))];
   const initialOutputsSignature = initialOutputs
     .map(slot => `${slot.type}:${slot.ref}:${slot.count}`)
     .join('|');
@@ -28,7 +30,8 @@ export function RecipeEditDialog({ recipe, initialOutputs = [], onSave, onDelete
     workstation: recipe?.workstation || '',
     inputs: recipe?.inputs || [],
     attachments: recipe?.attachments || [],
-    outputs: recipe?.outputs || initialOutputs.map(slot => ({ ...slot }))
+    outputs: recipe?.outputs || initialOutputs.map(slot => ({ ...slot })),
+    processingFeeOverride: recipe?.processingFeeOverride
   });
   const [openAddPicker, setOpenAddPicker] = useState<'inputs' | 'attachments' | 'outputs' | null>(null);
   const [pickerStyle, setPickerStyle] = useState<CSSProperties>({});
@@ -37,6 +40,28 @@ export function RecipeEditDialog({ recipe, initialOutputs = [], onSave, onDelete
     attachments: null,
     outputs: null
   });
+  const resolvedFee = resolveProcessingFee(data, formData);
+  const selectedWorkstationIsValid = !formData.workstation || isWorkstationItem(data, formData.workstation);
+
+  const setFeeOverride = (field: 'fixedFee' | 'rate' | 'cap', value: string) => {
+    const numeric = value === '' ? undefined : Number(value);
+    setFormData(current => ({
+      ...current,
+      processingFeeOverride: {
+        ...current.processingFeeOverride,
+        [field]: field === 'rate' && numeric !== undefined ? numeric / 100 : numeric
+      }
+    }));
+  };
+
+  const setFeeInheritance = (field: 'fixedFee' | 'rate', inherit: boolean) => {
+    setFormData(current => {
+      const nextOverride = { ...current.processingFeeOverride };
+      if (inherit) delete nextOverride[field];
+      else nextOverride[field] = 0;
+      return { ...current, processingFeeOverride: nextOverride };
+    });
+  };
 
   useEffect(() => {
     if (!recipe) {
@@ -46,7 +71,8 @@ export function RecipeEditDialog({ recipe, initialOutputs = [], onSave, onDelete
         workstation: '',
         inputs: [],
         attachments: [],
-        outputs: initialOutputs.map(slot => ({ ...slot }))
+        outputs: initialOutputs.map(slot => ({ ...slot })),
+        processingFeeOverride: undefined
       });
     }
   }, [recipe, initialOutputsSignature]);
@@ -117,6 +143,13 @@ export function RecipeEditDialog({ recipe, initialOutputs = [], onSave, onDelete
 
     if (formData.outputs.length === 0) {
       alert('至少需要一个输出物品');
+      return;
+    }
+
+    const override = formData.processingFeeOverride;
+    const ratePercent = override?.rate === undefined ? undefined : override.rate * 100;
+    if ([override?.fixedFee, override?.cap, ratePercent].some(value => value !== undefined && (value < 0 || Math.round(value * 10) !== value * 10))) {
+      alert('加工费、费率和上限必须是非负数，且最多保留 1 位小数');
       return;
     }
 
@@ -297,6 +330,50 @@ export function RecipeEditDialog({ recipe, initialOutputs = [], onSave, onDelete
                     allowTags={false}
                     allowedItemIds={workstationItemIds}
                   />
+                </div>
+              </div>
+              {!selectedWorkstationIsValid && (
+                <p className="processing-fee-warning">所选物品不再属于“工作方块”标签，本配方加工费按 0 计算。</p>
+              )}
+              <div className="recipe-processing-fee">
+                <div className="processing-fee-heading">
+                  <h3>工序加工费</h3>
+                  <p>最终采用：固定费 {resolvedFee.fixedFee}，费率 {resolvedFee.rate * 100}% ，上限 {resolvedFee.cap ?? '无限制'}</p>
+                </div>
+                <div className="processing-fee-grid">
+                  <div className="form-group">
+                    <label>固定费</label>
+                    <select value={formData.processingFeeOverride?.fixedFee === undefined ? 'inherit' : 'override'}
+                      onChange={e => setFeeInheritance('fixedFee', e.target.value === 'inherit')}>
+                      <option value="inherit">继承工作方块</option><option value="override">覆盖</option>
+                    </select>
+                    {formData.processingFeeOverride?.fixedFee !== undefined && (
+                      <input type="number" min="0" step="0.1" value={formData.processingFeeOverride.fixedFee}
+                        onChange={e => setFeeOverride('fixedFee', e.target.value)} />
+                    )}
+                  </div>
+                  <div className="form-group">
+                    <label>比例费率 (%)</label>
+                    <select value={formData.processingFeeOverride?.rate === undefined ? 'inherit' : 'override'}
+                      onChange={e => setFeeInheritance('rate', e.target.value === 'inherit')}>
+                      <option value="inherit">继承工作方块</option><option value="override">覆盖</option>
+                    </select>
+                    {formData.processingFeeOverride?.rate !== undefined && (
+                      <input type="number" min="0" step="0.1" value={formData.processingFeeOverride.rate * 100}
+                        onChange={e => setFeeOverride('rate', e.target.value)} />
+                    )}
+                  </div>
+                  <div className="form-group">
+                    <label>加工费上限</label>
+                    <select value={formData.processingFeeOverride?.capMode || 'inherit'}
+                      onChange={e => setFormData(current => ({ ...current, processingFeeOverride: { ...current.processingFeeOverride, capMode: e.target.value as 'inherit' | 'unlimited' | 'value' } }))}>
+                      <option value="inherit">继承工作方块</option><option value="unlimited">无限制</option><option value="value">指定数值</option>
+                    </select>
+                    {formData.processingFeeOverride?.capMode === 'value' && (
+                      <input type="number" min="0" step="0.1" value={formData.processingFeeOverride.cap ?? ''}
+                        onChange={e => setFeeOverride('cap', e.target.value)} />
+                    )}
+                  </div>
                 </div>
               </div>
             </section>

@@ -1,6 +1,6 @@
 # 配方管理系统
 
-一个用于管理 Minecraft 模组配方的可视化工具，支持物品、标签、配方管理及配方树可视化。
+用于管理 Minecraft 模组物品、标签、配方、价格与配方树的可视化工具。
 
 ## 功能特性
 
@@ -10,7 +10,7 @@
 - **高级搜索**：按工作方块、输入、附加、输出筛选配方
 - **拼音搜索**：所有名称搜索均支持中文、连续全拼和拼音首字母
 - **配方树可视化**：查看物品的获取路径或用途，支持缩放、拖拽
-- **数据自动保存**：所有数据存储在浏览器 LocalStorage，无需后端
+- **文件化数据**：本地编辑模式自动保存到仓库 JSON，生产网站读取只读快照
 
 ## 快速开始
 
@@ -80,21 +80,9 @@ npm run build
 - 点击右上角的键盘图标可随时查看全部快捷键
 - 配方树支持 Ctrl+滚轮缩放，Shift+滚轮平移
 
-## 数据导出/导入
+## 数据与维护文档
 
-数据存储在浏览器 LocalStorage 中，可通过以下方式备份：
-
-1. 打开浏览器开发者工具（F12）
-2. 进入 Console 标签
-3. 导出数据：
-   ```javascript
-   copy(localStorage.getItem('recipe_manager_data'))
-   ```
-4. 导入数据：
-   ```javascript
-   localStorage.setItem('recipe_manager_data', '粘贴你的数据')
-   location.reload()
-   ```
+本地开发模式将编辑内容保存到仓库中的 JSON 文件；生产构建为只读数据快照。完整说明请从 [维护文档索引](docs/index.md) 开始阅读。
 
 ## 技术栈
 
@@ -102,7 +90,7 @@ npm run build
 - TypeScript
 - Vite
 - React Flow（配方树可视化）
-- LocalStorage（数据持久化）
+- 仓库 JSON 文件（数据持久化）
 
 ## 许可证
 

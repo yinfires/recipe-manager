@@ -7,7 +7,7 @@ import { useBackdropClick } from '../common/useBackdropClick';
 
 interface ItemDetailDialogProps {
   item: Item | Tag;
-  mode: 'source' | 'usage' | 'tags';
+  mode: 'source' | 'usage' | 'detail';
   onClose: () => void;
   onBack?: () => void;
   onNavigateToItem?: (itemId: string) => void;
@@ -26,7 +26,7 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
   const usageRecipes = mode === 'usage'
     ? findRecipesForTarget(data, { type: targetType, id: item.id }, 'usage')
     : [];
-  const itemTags = mode === 'tags' && 'tags' in item
+  const itemTags = mode === 'detail' && 'tags' in item
     ? item.tags.map(tagId => data.tags[tagId]).filter(Boolean)
     : [];
 
@@ -191,7 +191,7 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
               {targetType === 'item' ? '📦' : '🏷️'} {item.name}
               {mode === 'source' && ' - 获取配方'}
               {mode === 'usage' && ' - 制作配方'}
-              {mode === 'tags' && ' - 所在标签'}
+              {mode === 'detail' && ' - 详情'}
             </h2>
             {showItemIds && 'itemId' in item && (
               <div className="item-id-display">{item.itemId}</div>
@@ -221,28 +221,62 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
             </div>
           )}
 
-          {mode === 'tags' && (
-            <div className="detail-content">
-              {itemTags.length > 0 ? (
-                <div className="tag-list">
-                  {itemTags.map(tag => (
-                    <div
-                      key={tag.id}
-                      className="tag-item-card"
-                      onClick={() => onNavigateToTag?.(tag.id)}
-                      {...entityDataAttributes({ type: 'tag', id: tag.id })}
-                    >
-                      <div className="tag-icon">🏷️</div>
-                      <div className="tag-info">
-                        <div className="tag-name">{tag.name}</div>
-                        <div className="tag-count">{tag.items.length} 个物品</div>
-                      </div>
+          {mode === 'detail' && 'itemId' in item && (
+            <div className="item-detail-summary">
+              <section className="item-detail-field">
+                <div className="item-detail-label">物品名称</div>
+                <div className="item-detail-value">{item.name}</div>
+              </section>
+
+              <section className="item-detail-field">
+                <div className="item-detail-label">物品 ID</div>
+                <div className="item-detail-value item-detail-code">{item.itemId}</div>
+              </section>
+
+              <section className="item-detail-field">
+                <div className="item-detail-label">价格</div>
+                {item.autoPrice === undefined && item.manualPrice === undefined ? (
+                  <div className="item-detail-value">无</div>
+                ) : (
+                  <div className="price-detail-list">
+                    <div>
+                      <span>自动计算价格</span>
+                      <strong>{item.autoPrice === undefined ? '无' : item.autoPrice}</strong>
                     </div>
-                  ))}
-                </div>
-              ) : (
-                <div className="empty-state">该物品不属于任何标签</div>
-              )}
+                    <div>
+                      <span>手动覆盖价格</span>
+                      <strong>{item.manualPrice === undefined ? '无' : item.manualPrice}</strong>
+                    </div>
+                    {item.manualPrice !== undefined && (
+                      <div className="price-active-note">当前采用手动覆盖价格</div>
+                    )}
+                  </div>
+                )}
+              </section>
+
+              <section className="item-detail-field">
+                <div className="item-detail-label">所在标签</div>
+                {itemTags.length > 0 ? (
+                  <div className="tag-list">
+                    {itemTags.map(tag => (
+                      <div
+                        key={tag.id}
+                        className="tag-item-card"
+                        onClick={() => onNavigateToTag?.(tag.id)}
+                        {...entityDataAttributes({ type: 'tag', id: tag.id })}
+                      >
+                        <div className="tag-icon">🏷️</div>
+                        <div className="tag-info">
+                          <div className="tag-name">{tag.name}</div>
+                          <div className="tag-count">{tag.items.length} 个物品</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="item-detail-value">无</div>
+                )}
+              </section>
             </div>
           )}
         </div>

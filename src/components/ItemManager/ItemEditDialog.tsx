@@ -20,9 +20,24 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
     id: item?.id || '',
     name: item?.name || '',
     itemId: item?.itemId || '',
-    tags: item?.tags || []
+    tags: item?.tags || [],
+    manualPrice: item?.manualPrice,
+    autoPrice: item?.autoPrice,
+    processingFee: item?.processingFee
   });
+  const [manualPriceInput, setManualPriceInput] = useState(
+    item?.manualPrice === undefined ? '' : String(item.manualPrice)
+  );
   const [tagSearchText, setTagSearchText] = useState('');
+  const isWorkstation = formData.tags.some(tagId => data.tags[tagId]?.name.trim() === '工作方块');
+
+  const updateProcessingFee = (field: 'fixedFee' | 'rate' | 'cap', value: string) => {
+    const next = value === '' ? undefined : Number(value);
+    setFormData(prev => ({
+      ...prev,
+      processingFee: { ...prev.processingFee, [field]: field === 'rate' && next !== undefined ? next / 100 : next }
+    }));
+  };
 
   useEffect(() => {
     if (!item) {
@@ -31,8 +46,11 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
         id: `item_${Date.now()}`,
         name: '',
         itemId: '',
-        tags: []
+        tags: [],
+        manualPrice: undefined,
+        autoPrice: undefined
       });
+      setManualPriceInput('');
     }
   }, [item]);
 
@@ -54,7 +72,32 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
       return;
     }
 
-    onSave({ ...formData, itemId });
+    const normalizedPriceText = manualPriceInput.trim();
+    if (normalizedPriceText && !/^\d+(?:\.\d)?$/.test(normalizedPriceText)) {
+      alert('手动覆盖价格必须是非负数，且最多保留 1 位小数');
+      return;
+    }
+
+    const manualPrice = normalizedPriceText === '' ? undefined : Number(normalizedPriceText);
+    if (manualPrice !== undefined && (!Number.isFinite(manualPrice) || manualPrice < 0)) {
+      alert('手动覆盖价格必须是非负数，且最多保留 1 位小数');
+      return;
+    }
+
+    const feeValues = [formData.processingFee?.fixedFee, formData.processingFee?.cap];
+    const ratePercent = formData.processingFee?.rate === undefined ? undefined : formData.processingFee.rate * 100;
+    if ([...feeValues, ratePercent].some(value => value !== undefined && (value < 0 || Math.round(value * 10) !== value * 10))) {
+      alert('加工费、费率和上限必须是非负数，且最多保留 1 位小数');
+      return;
+    }
+
+    const nextItem = { ...formData, itemId };
+    if (manualPrice === undefined) {
+      delete nextItem.manualPrice;
+    } else {
+      nextItem.manualPrice = manualPrice;
+    }
+    onSave(nextItem);
   };
 
   const handleToggleTag = (tagId: string) => {
@@ -102,6 +145,58 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
               placeholder="例如：minecraft:cooked_cod"
             />
           </div>
+
+          <div className="price-edit-grid">
+            <div className="form-group">
+              <label>自动计算价格</label>
+              <input
+                type="text"
+                value={formData.autoPrice === undefined ? '无' : String(formData.autoPrice)}
+                readOnly
+                className="price-readonly-input"
+                aria-label="自动计算价格"
+              />
+            </div>
+
+            <div className="form-group">
+              <label>手动覆盖价格</label>
+              <input
+                type="number"
+                min="0"
+                step="0.1"
+                value={manualPriceInput}
+                onChange={e => setManualPriceInput(e.target.value)}
+                placeholder="留空则使用自动计算价格"
+                aria-label="手动覆盖价格"
+              />
+            </div>
+          </div>
+
+          {isWorkstation && (
+            <section className="processing-fee-section">
+              <div className="processing-fee-heading">
+                <h3>默认加工费</h3>
+                <p>使用此工作方块的配方默认按整批收取，可在配方中覆盖。</p>
+              </div>
+              <div className="processing-fee-grid">
+                <div className="form-group">
+                  <label>固定费 / 批</label>
+                  <input type="number" min="0" step="0.1" value={formData.processingFee?.fixedFee ?? ''}
+                    onChange={e => updateProcessingFee('fixedFee', e.target.value)} placeholder="0" />
+                </div>
+                <div className="form-group">
+                  <label>比例费率 (%)</label>
+                  <input type="number" min="0" step="0.1" value={formData.processingFee?.rate === undefined ? '' : formData.processingFee.rate * 100}
+                    onChange={e => updateProcessingFee('rate', e.target.value)} placeholder="0" />
+                </div>
+                <div className="form-group">
+                  <label>加工费上限 / 批</label>
+                  <input type="number" min="0" step="0.1" value={formData.processingFee?.cap ?? ''}
+                    onChange={e => updateProcessingFee('cap', e.target.value)} placeholder="留空表示无限制" />
+                </div>
+              </div>
+            </section>
+          )}
 
           <div className="form-group">
             <label>所属标签 ({formData.tags.length} 个)</label>

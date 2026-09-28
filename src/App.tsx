@@ -9,6 +9,10 @@ import { ThemeToggle } from './components/common/ThemeToggle';
 import { GlobalNavigationHandler } from './components/common/GlobalNavigationHandler';
 import { UrlItemImporter } from './components/common/UrlItemImporter';
 import { ShortcutHelpDialog } from './components/common/ShortcutHelpDialog';
+import { PriceHelpDialog } from './components/common/PriceHelpDialog';
+import { DataStatusControls } from './components/common/DataStatusControls';
+import { LegacyMigrationDialog } from './components/common/LegacyMigrationDialog';
+import { useApp } from './contexts/AppContext';
 import './App.css';
 
 export type TabType = 'items' | 'tags' | 'recipes' | 'tree';
@@ -27,7 +31,9 @@ function App() {
 
 function AppContent({ activeTab, setActiveTab }: { activeTab: TabType; setActiveTab: (tab: TabType) => void }) {
   const { recipeTreeTarget } = useNavigation();
+  const { isLoading } = useApp();
   const [showShortcutHelp, setShowShortcutHelp] = useState(false);
+  const [showPriceHelp, setShowPriceHelp] = useState(false);
 
   // 监听配方树导航请求
   useEffect(() => {
@@ -67,6 +73,9 @@ function AppContent({ activeTab, setActiveTab }: { activeTab: TabType; setActive
             </div>
 
             <div className="app-header-right">
+              <DataStatusControls />
+              <button type="button" className="shortcut-help-button" onClick={() => setShowPriceHelp(true)}
+                title="查看费用计算" aria-label="查看费用计算">🧮</button>
               <button
                 type="button"
                 className="shortcut-help-button"
@@ -81,15 +90,18 @@ function AppContent({ activeTab, setActiveTab }: { activeTab: TabType; setActive
           </header>
 
           <main className="app-main">
-            {activeTab === 'items' && <ItemList />}
-            {activeTab === 'tags' && <TagList />}
-            {activeTab === 'recipes' && <RecipeList />}
-            {activeTab === 'tree' && <RecipeTree />}
+            {isLoading && <div className="empty-state">正在读取数据文件...</div>}
+            {!isLoading && activeTab === 'items' && <ItemList />}
+            {!isLoading && activeTab === 'tags' && <TagList />}
+            {!isLoading && activeTab === 'recipes' && <RecipeList />}
+            {!isLoading && activeTab === 'tree' && <RecipeTree />}
           </main>
 
-          <GlobalNavigationHandler shortcutsDisabled={showShortcutHelp} />
+          <GlobalNavigationHandler shortcutsDisabled={showShortcutHelp || showPriceHelp} />
           <UrlItemImporter />
           {showShortcutHelp && <ShortcutHelpDialog onClose={() => setShowShortcutHelp(false)} />}
+          {showPriceHelp && <PriceHelpDialog onClose={() => setShowPriceHelp(false)} />}
+          <LegacyMigrationDialog />
         </div>
   );
 }

@@ -8,7 +8,7 @@ import { TagEditDialog } from './TagEditDialog';
 import { matchesSearch } from '../../utils/searchMatcher';
 
 export function TagList() {
-  const { data, setData } = useApp();
+  const { data, setData, isEditable } = useApp();
   const { setSelectedTag } = useNavigation();
   const [searchText, setSearchText] = useState('');
   const [isCreating, setIsCreating] = useState(false);
@@ -70,7 +70,7 @@ export function TagList() {
     <div className="tag-list-container">
       <div className="list-header">
         <SearchInput placeholder="搜索标签名称..." onSearch={setSearchText} />
-        <button className="btn-primary" onClick={handleCreate}>+ 新建标签</button>
+        {isEditable && <button className="btn-primary" onClick={handleCreate}>+ 新建标签</button>}
       </div>
 
       <div className="tag-grid">
@@ -101,7 +101,7 @@ export function TagList() {
         )}
       </div>
 
-      {isCreating && (
+      {isEditable && isCreating && (
         <TagEditDialog
           tag={null}
           onSave={handleSave}

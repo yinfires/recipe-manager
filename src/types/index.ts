@@ -3,6 +3,22 @@ export interface Item {
   name: string;        // 显示名称
   itemId: string;      // Minecraft ID
   tags: string[];      // 所属标签 ID 列表
+  manualPrice?: number; // 手动覆盖单价
+  autoPrice?: number;   // 自动计算单价
+  processingFee?: ProcessingFee;
+}
+
+export interface ProcessingFee {
+  fixedFee?: number;
+  rate?: number;
+  cap?: number;
+}
+
+export interface ProcessingFeeOverride {
+  fixedFee?: number;
+  rate?: number;
+  capMode?: 'inherit' | 'unlimited' | 'value';
+  cap?: number;
 }
 
 export interface Tag {
@@ -26,12 +42,19 @@ export interface Recipe {
   inputs: RecipeSlot[];
   attachments: RecipeSlot[];
   outputs: RecipeSlot[];
+  processingFeeOverride?: ProcessingFeeOverride;
 }
 
 export interface AppData {
   items: Record<string, Item>;
   tags: Record<string, Tag>;
   recipes: Record<string, Recipe>;
+}
+
+export interface PersistedData {
+  schemaVersion: number;
+  updatedAt: string;
+  data: AppData;
 }
 
 export type ViewMode = 'source' | 'usage'; // 查看获取 | 查看制作

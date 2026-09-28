@@ -9,7 +9,7 @@ import { ItemEditDialog } from './ItemEditDialog';
 import { matchesSearch } from '../../utils/searchMatcher';
 
 export function ItemList() {
-  const { data, setData } = useApp();
+  const { data, setData, isEditable } = useApp();
   const { setSelectedItem } = useNavigation();
   const [searchText, setSearchText] = useState('');
   const [selectedTagIds, setSelectedTagIds] = useState<string[]>([]);
@@ -69,7 +69,7 @@ export function ItemList() {
           selectedTags={selectedTagIds}
           onChange={setSelectedTagIds}
         />
-        <button className="btn-primary" onClick={handleCreate}>+ 新建物品</button>
+        {isEditable && <button className="btn-primary" onClick={handleCreate}>+ 新建物品</button>}
       </div>
 
       <div className="item-grid">
@@ -95,7 +95,7 @@ export function ItemList() {
         )}
       </div>
 
-      {isCreating && (
+      {isEditable && isCreating && (
         <ItemEditDialog
           item={null}
           onSave={handleSave}

@@ -21,12 +21,17 @@ function getImportItems(value: unknown): Item[] | null {
 }
 
 export function UrlItemImporter() {
-  const { setData } = useApp();
+  const { setData, isEditable, isLoading } = useApp();
 
   useEffect(() => {
+    if (isLoading) return;
     const params = new URLSearchParams(window.location.search);
     const rawItem = params.get('rmitem');
     if (!rawItem) return;
+    if (!isEditable) {
+      alert('公开快照为只读模式，无法导入物品');
+      return;
+    }
 
     try {
       const incomingItems = getImportItems(JSON.parse(rawItem));
@@ -70,7 +75,7 @@ export function UrlItemImporter() {
     } catch {
       alert('物品导入链接解析失败');
     }
-  }, [setData]);
+  }, [isEditable, isLoading, setData]);
 
   return null;
 }

@@ -7,7 +7,7 @@ import { RecipeDetailDialog } from '../RecipeManager/RecipeDetailDialog';
 import { ItemEditDialog } from '../ItemManager/ItemEditDialog';
 import { TagEditDialog } from '../TagManager/TagEditDialog';
 import { RecipeEditDialog } from '../RecipeManager/RecipeEditDialog';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Item, Recipe, Tag } from '../../types';
 import { getEntityTarget } from '../../utils/entityTarget';
 
@@ -17,7 +17,7 @@ interface GlobalNavigationHandlerProps {
 
 type DialogState =
   | { type: 'quickMenu'; target: 'item' | 'tag' | 'recipe'; entityId: string }
-  | { type: 'itemDetail'; target: 'item' | 'tag'; entityId: string; mode: 'source' | 'usage' | 'tags' }
+  | { type: 'itemDetail'; target: 'item' | 'tag'; entityId: string; mode: 'source' | 'usage' | 'detail' }
   | { type: 'tagDetail'; tagId: string }
   | { type: 'recipeDetail'; recipeId: string }
   | { type: 'itemEdit'; itemId: string }
@@ -26,9 +26,10 @@ type DialogState =
   | { type: 'recipeEdit'; recipeId: string };
 
 export function GlobalNavigationHandler({ shortcutsDisabled = false }: GlobalNavigationHandlerProps) {
-  const { data, setData } = useApp();
+  const { data, setData, isEditable } = useApp();
   const { selectedItem, selectedTag, selectedRecipe, setSelectedItem, setSelectedTag, setSelectedRecipe, setRecipeTreeTarget } = useNavigation();
   const [dialogHistory, setDialogHistory] = useState<DialogState[]>([]);
+  const pointerPositionRef = useRef({ x: -1, y: -1 });
 
   const currentDialog = dialogHistory.length > 0 ? dialogHistory[dialogHistory.length - 1] : null;
   const currentQuickMenuTarget = currentDialog?.type === 'quickMenu'
@@ -66,20 +67,17 @@ export function GlobalNavigationHandler({ shortcutsDisabled = false }: GlobalNav
   };
 
   useEffect(() => {
-    let pointerX = -1;
-    let pointerY = -1;
-
     const handlePointerMove = (event: PointerEvent) => {
-      pointerX = event.clientX;
-      pointerY = event.clientY;
+      pointerPositionRef.current = { x: event.clientX, y: event.clientY };
     };
 
     const handleKeyDown = (event: KeyboardEvent) => {
       const focused = event.target as HTMLElement | null;
-      const isEditable = focused?.matches('input, textarea, select, [contenteditable="true"]');
+      const isEditingControl = focused?.matches('input, textarea, select, [contenteditable="true"]');
+      const { x: pointerX, y: pointerY } = pointerPositionRef.current;
       if (
         shortcutsDisabled ||
-        isEditable ||
+        isEditingControl ||
         event.repeat ||
         event.ctrlKey ||
         event.altKey ||
@@ -106,9 +104,9 @@ export function GlobalNavigationHandler({ shortcutsDisabled = false }: GlobalNav
         closeAllDialogs();
         event.preventDefault();
         return;
-      } else if (key === 'a' && target.type === 'item') {
+      } else if (key === 'a' && target.type === 'item' && isEditable) {
         nextDialog = { type: 'recipeCreate', outputItemId: target.id };
-      } else if (key === 'w') {
+      } else if (key === 'w' && isEditable) {
         nextDialog = target.type === 'item'
           ? { type: 'itemEdit', itemId: target.id }
           : target.type === 'tag'
@@ -116,7 +114,7 @@ export function GlobalNavigationHandler({ shortcutsDisabled = false }: GlobalNav
             : { type: 'recipeEdit', recipeId: target.id };
       } else if (key === 's') {
         nextDialog = target.type === 'item'
-          ? { type: 'itemDetail', target: 'item', entityId: target.id, mode: 'tags' }
+          ? { type: 'itemDetail', target: 'item', entityId: target.id, mode: 'detail' }
           : target.type === 'tag'
             ? { type: 'tagDetail', tagId: target.id }
             : { type: 'recipeDetail', recipeId: target.id };
@@ -134,7 +132,7 @@ export function GlobalNavigationHandler({ shortcutsDisabled = false }: GlobalNav
       window.removeEventListener('pointermove', handlePointerMove);
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [shortcutsDisabled, setRecipeTreeTarget]);
+  }, [shortcutsDisabled, setRecipeTreeTarget, isEditable]);
 
   const handleItemSave = (item: Item) => {
     setData(prev => {
@@ -349,20 +347,20 @@ export function GlobalNavigationHandler({ shortcutsDisabled = false }: GlobalNav
           type="item"
           onClose={closeAllDialogs}
           onBack={dialogHistory.length > 1 ? popDialog : undefined}
-          onEdit={() => {
+          onEdit={isEditable ? () => {
             pushDialog({ type: 'itemEdit', itemId: currentDialog.entityId });
+          } : undefined}
+          onViewDetail={() => {
+            pushDialog({ type: 'itemDetail', target: 'item', entityId: currentDialog.entityId, mode: 'detail' });
           }}
           onViewSource={() => {
             pushDialog({ type: 'itemDetail', target: 'item', entityId: currentDialog.entityId, mode: 'source' });
           }}
-          onAddSourceRecipe={() => {
+          onAddSourceRecipe={isEditable ? () => {
             pushDialog({ type: 'recipeCreate', outputItemId: currentDialog.entityId });
-          }}
+          } : undefined}
           onViewUsage={() => {
             pushDialog({ type: 'itemDetail', target: 'item', entityId: currentDialog.entityId, mode: 'usage' });
-          }}
-          onViewTags={() => {
-            pushDialog({ type: 'itemDetail', target: 'item', entityId: currentDialog.entityId, mode: 'tags' });
           }}
           onViewRecipeTree={() => {
             setRecipeTreeTarget({ id: currentDialog.entityId, type: 'item' });
@@ -377,9 +375,9 @@ export function GlobalNavigationHandler({ shortcutsDisabled = false }: GlobalNav
           type="tag"
           onClose={closeAllDialogs}
           onBack={dialogHistory.length > 1 ? popDialog : undefined}
-          onEdit={() => {
+          onEdit={isEditable ? () => {
             pushDialog({ type: 'tagEdit', tagId: currentDialog.entityId });
-          }}
+          } : undefined}
           onViewDetail={() => {
             pushDialog({ type: 'tagDetail', tagId: currentDialog.entityId });
           }}
@@ -402,9 +400,9 @@ export function GlobalNavigationHandler({ shortcutsDisabled = false }: GlobalNav
           type="recipe"
           onClose={closeAllDialogs}
           onBack={dialogHistory.length > 1 ? popDialog : undefined}
-          onEdit={() => {
+          onEdit={isEditable ? () => {
             pushDialog({ type: 'recipeEdit', recipeId: currentDialog.entityId });
-          }}
+          } : undefined}
           onViewDetail={() => {
             pushDialog({ type: 'recipeDetail', recipeId: currentDialog.entityId });
           }}

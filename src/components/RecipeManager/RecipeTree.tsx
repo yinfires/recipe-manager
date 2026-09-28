@@ -81,6 +81,7 @@ export function RecipeTree() {
   const [expandedTags, setExpandedTags] = useState<Set<string>>(new Set());
   const [includeAttachments, setIncludeAttachments] = useState(true);
   const [controlsOpen, setControlsOpen] = useState(true);
+  const [layoutRevision, setLayoutRevision] = useState(0);
   const flowInstance = useRef<ReactFlowInstance | null>(null);
 
   const handleNodeClick = useCallback((_event: React.MouseEvent, node: Node) => {
@@ -108,6 +109,7 @@ export function RecipeTree() {
     if (targets.length === 0 || modes.length === 0) {
       setNodes([]);
       setEdges([]);
+      setLayoutRevision(value => value + 1);
       return;
     }
 
@@ -167,6 +169,7 @@ export function RecipeTree() {
 
     setNodes(flowNodes);
     setEdges(flowEdges);
+    setLayoutRevision(value => value + 1);
   }, [data, targets, modes, expandedTags, includeAttachments, setNodes, setEdges]);
 
   const addTarget = (target: EntityTarget) => {
@@ -208,14 +211,15 @@ export function RecipeTree() {
     buildTree();
   }, [buildTree]);
 
-  // 展开标签或切换目标后，按最新节点边界重新适配视口，避免树被裁切。
+  // 仅在树结构改变时适配视口。节点选择和拖拽会改变 React Flow 的 nodes，
+  // 但不应重置用户当前排版和缩放位置。
   useEffect(() => {
     if (!flowInstance.current || nodes.length === 0) return;
     const frame = requestAnimationFrame(() => {
       flowInstance.current?.fitView({ padding: 0.2, minZoom: 0.05, maxZoom: 1, duration: 180 });
     });
     return () => cancelAnimationFrame(frame);
-  }, [nodes, edges]);
+  }, [layoutRevision]);
 
   return (
     <div className="recipe-tree-container">

@@ -7,7 +7,7 @@ interface QuickMenuProps {
   type: 'item' | 'tag' | 'recipe';
   onClose: () => void;
   onBack?: () => void;
-  onEdit: () => void;
+  onEdit?: () => void;
   onViewDetail?: () => void;
   onViewSource?: () => void;
   onViewUsage?: () => void;
@@ -87,12 +87,12 @@ export function QuickMenu({ target, type, onClose, onBack, onEdit, onViewDetail,
           <button className="dialog-close" onClick={onClose}>×</button>
         </div>
         <div className="menu-actions">
-          <button onClick={onEdit}>编辑</button>
+          {onEdit && <button onClick={onEdit}>编辑</button>}
           {onViewDetail && <button onClick={onViewDetail}>显示详情</button>}
           {onViewSource && <button onClick={onViewSource}>查看获取配方 →</button>}
           {type === 'item' && onAddSourceRecipe && <button onClick={onAddSourceRecipe}>添加获取配方</button>}
           {onViewUsage && <button onClick={onViewUsage}>查看制作配方 →</button>}
-          {type === 'item' && onViewTags && <button onClick={onViewTags}>查看所在标签</button>}
+          {type === 'item' && onViewTags && <button onClick={onViewTags}>显示详情</button>}
           {onViewRecipeTree && <button onClick={onViewRecipeTree}>查看配方树 →</button>}
           <hr />
           <button onClick={onBack || onClose}>返回</button>
