@@ -36,13 +36,15 @@ async function readJson(url: string, init?: RequestInit): Promise<unknown> {
 
 export const DataStore = {
   async load(): Promise<LoadedData> {
-    try {
-      const status = await readJson('/api/data/status') as { editable?: boolean };
-      if (status.editable) {
-        return { persisted: normalizePersisted(await readJson('/api/data')), editable: true };
+    if (import.meta.env.DEV) {
+      try {
+        const status = await readJson('/api/data/status') as { editable?: boolean };
+        if (status.editable) {
+          return { persisted: normalizePersisted(await readJson('/api/data')), editable: true };
+        }
+      } catch {
+        // 开发服务器 API 不可用时回退到公开快照，并保持只读。
       }
-    } catch {
-      // 生产静态站没有开发 API，继续读取公开快照。
     }
 
     try {

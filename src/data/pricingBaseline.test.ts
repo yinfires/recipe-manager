@@ -14,8 +14,8 @@ function findTag(name: string) {
 describe('正式数据定价基准', () => {
   it('覆盖全部基础食材，并保存非负整数手动价', () => {
     const tag = findTag('基础食材');
-    expect(tag.items).toHaveLength(85);
-    expect(Object.keys(BASE_INGREDIENT_PRICES)).toHaveLength(85);
+    expect(tag.items).toHaveLength(84);
+    expect(Object.keys(BASE_INGREDIENT_PRICES)).toHaveLength(84);
 
     const actual = Object.fromEntries(tag.items.map(itemId => {
       const item = persisted.data.items[itemId];

@@ -2,6 +2,8 @@
 
 用于管理 Minecraft 模组物品、标签、配方、价格与配方树的可视化工具。
 
+公开只读网站：[https://yinfires.github.io/recipe-manager/](https://yinfires.github.io/recipe-manager/)
+
 ## 功能特性
 
 - **物品管理**：创建、编辑、搜索物品，查看物品所属标签
@@ -35,6 +37,10 @@ npm run build
 ```
 
 构建完成后，直接打开 `dist/index.html` 即可使用（纯静态，无需服务器）。
+
+### 发布公开快照
+
+推送 `master` 分支后，GitHub Actions 会自动执行测试、构建并发布到 GitHub Pages。首次发布前，需要在仓库 `Settings → Pages` 中将发布来源设为 `GitHub Actions`。测试或构建失败时不会替换当前线上版本。
 
 ## 使用说明
 
