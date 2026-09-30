@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "test": "vitest run",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "classify-foods": "node scripts/apply-food-classification.mjs",
+    "check-food-classification": "node scripts/apply-food-classification.mjs --check"
   },
   "dependencies": {
     "pinyin-pro": "^3.29.4",

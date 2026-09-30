@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-28T08:29:49.622Z",
+  "updatedAt": "2026-09-30T03:22:54.517Z",
   "data": {
     "items": {
       "item_1790124131145": {
@@ -1075,7 +1075,9 @@
         "name": "甜菜汤",
         "itemId": "minecraft:beetroot_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:28:26.113Z",
         "autoPrice": 23.4
@@ -1085,7 +1087,12 @@
         "name": "蘑菇煲",
         "itemId": "minecraft:mushroom_stew",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:28:27.113Z",
         "autoPrice": 18.3
@@ -1095,7 +1102,8 @@
         "name": "脆海苔",
         "itemId": "aquaculturedelight:crispy_nori_kelp",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack"
         ],
         "createdAt": "2026-09-28T06:28:28.113Z",
         "autoPrice": 24.2
@@ -1105,7 +1113,12 @@
         "name": "水母果冻",
         "itemId": "aquaculturedelight:jellyfish_jelly",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:28:29.113Z",
         "autoPrice": 24.7
@@ -1144,7 +1157,12 @@
         "name": "兔肉煲",
         "itemId": "minecraft:rabbit_stew",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:28:33.113Z",
         "autoPrice": 26
@@ -1194,7 +1212,11 @@
         "name": "奇异鱼汤",
         "itemId": "aquaculturedelight:unusual_fish_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:28:38.113Z",
         "autoPrice": 47.5
@@ -1244,7 +1266,11 @@
         "name": "鲈鱼炖菜",
         "itemId": "aquaculturedelight:bass_stew",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:28:43.113Z",
         "autoPrice": 27
@@ -1254,7 +1280,12 @@
         "name": "匈牙利鱼汤",
         "itemId": "aquaculturedelight:halaszle",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:28:44.113Z",
         "autoPrice": 62.7
@@ -1264,7 +1295,9 @@
         "name": "面包",
         "itemId": "minecraft:bread",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:28:45.113Z",
         "autoPrice": 16.2
@@ -1294,7 +1327,11 @@
         "name": "炸鱼薯条",
         "itemId": "aquaculturedelight:fish_and_chips",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_form_fried"
         ],
         "createdAt": "2026-09-28T06:28:48.113Z",
         "autoPrice": 131.6
@@ -1314,7 +1351,12 @@
         "name": "酥炸鲈鱼",
         "itemId": "aquaculturedelight:crispy_fried_perch",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_fried"
         ],
         "createdAt": "2026-09-28T06:28:50.113Z",
         "autoPrice": 64.4
@@ -1324,7 +1366,9 @@
         "name": "法式薯条",
         "itemId": "extradelight:french_fries",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_form_fried"
         ],
         "createdAt": "2026-09-28T06:28:51.113Z",
         "autoPrice": 45.6
@@ -1412,7 +1456,12 @@
         "name": "金枪鱼意面",
         "itemId": "aquaculturedelight:tuna_spaghetti",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:28:59.113Z",
         "autoPrice": 46.2
@@ -1472,7 +1521,10 @@
         "name": "熏鲱鱼",
         "itemId": "aquaculturedelight:buckling",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:29:05.113Z",
         "autoPrice": 29
@@ -1482,7 +1534,10 @@
         "name": "胡萝卜烤鳕鱼",
         "itemId": "aquaculturedelight:baked_pollock_with_carrots",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:29:06.113Z",
         "autoPrice": 30.1
@@ -1492,7 +1547,12 @@
         "name": "塔塔酱比目鱼",
         "itemId": "aquaculturedelight:halibut_with_tartar_sauce",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:29:07.113Z",
         "autoPrice": 111.7
@@ -1600,7 +1660,10 @@
         "name": "米饭",
         "itemId": "farmersdelight:cooked_rice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:29:18.113Z",
         "autoPrice": 12.2
@@ -1618,7 +1681,9 @@
         "name": "龟肉料理",
         "itemId": "aquaculturedelight:turtle_meat_dish",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:29:20.113Z",
         "autoPrice": 45.7
@@ -1638,7 +1703,11 @@
         "name": "醋渍鲱鱼卷",
         "itemId": "aquaculturedelight:rollmops",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:29:22.113Z",
         "autoPrice": 65.9
@@ -1658,7 +1727,10 @@
         "name": "烤巨脂鱼",
         "itemId": "aquaculturedelight:roasted_tambaqui",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:29:24.113Z",
         "autoPrice": 38.2
@@ -1673,22 +1745,17 @@
         "createdAt": "2026-09-28T06:29:25.113Z",
         "autoPrice": 8
       },
-      "aquaculturedelight_catfish_barbecue_Catfish_Barbecue": {
-        "id": "aquaculturedelight_catfish_barbecue_Catfish_Barbecue",
-        "name": "鲶鱼烤串",
-        "itemId": "aquaculturedelight:catfish_barbecue",
-        "tags": [
-          "tag_1790175849511"
-        ],
-        "createdAt": "2026-09-28T06:29:26.113Z",
-        "autoPrice": 36.2
-      },
       "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll": {
         "id": "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
         "name": "炸鲈鱼寿司",
         "itemId": "aquaculturedelight:fried_perch_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_fried"
         ],
         "createdAt": "2026-09-28T06:29:27.113Z",
         "autoPrice": 40.2
@@ -1748,7 +1815,9 @@
         "name": "巧克力礼盒",
         "itemId": "bakery:chocolate_box",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:29:33.113Z",
         "autoPrice": 87.6
@@ -1788,7 +1857,11 @@
         "name": "牛角面包",
         "itemId": "bakery:croissant",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:37.113Z",
         "autoPrice": 191.7
@@ -1798,7 +1871,12 @@
         "name": "脆皮面包",
         "itemId": "bakery:crusty_bread",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:38.113Z",
         "autoPrice": 78.5
@@ -1808,7 +1886,10 @@
         "name": "烘焙师面包",
         "itemId": "bakery:bread",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:39.113Z",
         "autoPrice": 25.2
@@ -1818,7 +1899,9 @@
         "name": "法棍面包",
         "itemId": "bakery:baguette",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:40.113Z",
         "autoPrice": 26.7
@@ -1828,7 +1911,12 @@
         "name": "吐司面包",
         "itemId": "bakery:toast",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:41.113Z",
         "autoPrice": 97.8
@@ -1838,7 +1926,12 @@
         "name": "辫子面包",
         "itemId": "bakery:braided_bread",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:42.113Z",
         "autoPrice": 113.6
@@ -1848,7 +1941,12 @@
         "name": "小圆面包",
         "itemId": "bakery:bun",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:43.113Z",
         "autoPrice": 110.3
@@ -1858,7 +1956,13 @@
         "name": "草莓蛋糕",
         "itemId": "bakery:strawberry_cake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:44.113Z",
         "autoPrice": 104.8
@@ -1868,7 +1972,13 @@
         "name": "甜浆果蛋糕",
         "itemId": "bakery:sweetberry_cake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:45.113Z",
         "autoPrice": 95.4
@@ -1878,7 +1988,12 @@
         "name": "巧克力蛋糕",
         "itemId": "bakery:chocolate_cake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:46.113Z",
         "autoPrice": 116.1
@@ -1888,7 +2003,14 @@
         "name": "草莓釉面饼干",
         "itemId": "bakery:strawberry_glazed_cookie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:47.113Z",
         "autoPrice": 27.1
@@ -1898,7 +2020,14 @@
         "name": "甜浆果釉面饼干",
         "itemId": "bakery:sweetberry_glazed_cookie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:48.113Z",
         "autoPrice": 102
@@ -1908,7 +2037,13 @@
         "name": "巧克力釉面饼干",
         "itemId": "bakery:chocolate_glazed_cookie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:49.113Z",
         "autoPrice": 120
@@ -1918,7 +2053,13 @@
         "name": "果酱卷",
         "itemId": "bakery:jam_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:50.113Z",
         "autoPrice": 60.4
@@ -1928,7 +2069,13 @@
         "name": "填馅号角蛋糕",
         "itemId": "bakery:cornet",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:51.113Z",
         "autoPrice": 54
@@ -1948,7 +2095,14 @@
         "name": "青柠派",
         "itemId": "collectorsreap:lime_pie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:53.113Z",
         "autoPrice": 114
@@ -1958,7 +2112,13 @@
         "name": "双孢蘑菇乳蛋派",
         "itemId": "collectorsreap:portobello_quiche",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:54.113Z",
         "autoPrice": 122.7
@@ -1968,7 +2128,14 @@
         "name": "青柠蛋糕",
         "itemId": "collectorsreap:lime_cake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:55.113Z",
         "autoPrice": 93.1
@@ -1978,7 +2145,13 @@
         "name": "石榴蛋糕",
         "itemId": "collectorsreap:pomegranate_cake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:56.113Z",
         "autoPrice": 74.2
@@ -1988,7 +2161,13 @@
         "name": "红心火龙果蛋糕",
         "itemId": "collectorsreap:pink_dragon_fruit_cake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:57.113Z",
         "autoPrice": 99.3
@@ -1998,7 +2177,13 @@
         "name": "蛋黄果蛋糕",
         "itemId": "collectorsreap:lucuma_cake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:29:58.113Z",
         "autoPrice": 95.2
@@ -2018,7 +2203,11 @@
         "name": "石榴沙司",
         "itemId": "collectorsreap:pomegranate_custard",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:30:00.113Z",
         "autoPrice": 32.8
@@ -2028,7 +2217,11 @@
         "name": "蛋黄果布丁",
         "itemId": "collectorsreap:lucuma_pudding",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:30:01.113Z",
         "autoPrice": 53.6
@@ -2038,7 +2231,13 @@
         "name": "浆果青柠汁",
         "itemId": "collectorsreap:berry_limeade",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_refreshing",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:30:02.113Z",
         "autoPrice": 34.4
@@ -2048,7 +2247,13 @@
         "name": "粉红青柠汁",
         "itemId": "collectorsreap:pink_limeade",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_refreshing",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:30:03.113Z",
         "autoPrice": 25.8
@@ -2058,7 +2263,12 @@
         "name": "素手卷",
         "itemId": "collectorsreap:portobello_wrap",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:30:04.113Z",
         "autoPrice": 41.5
@@ -2068,7 +2278,14 @@
         "name": "双孢蘑菇炖饭",
         "itemId": "collectorsreap:portobello_risotto",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_dairy",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:30:05.113Z",
         "autoPrice": 38.7
@@ -2078,7 +2295,14 @@
         "name": "蘑菇意面",
         "itemId": "collectorsreap:portobello_pasta",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_dairy",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:30:06.113Z",
         "autoPrice": 62
@@ -2088,7 +2312,11 @@
         "name": "石榴猪肉炖",
         "itemId": "collectorsreap:pomegranate_pork",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:30:07.113Z",
         "autoPrice": 39.5
@@ -2098,7 +2326,12 @@
         "name": "豪华沙拉",
         "itemId": "collectorsreap:deluxe_salad",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:30:08.113Z",
         "autoPrice": 37.5
@@ -2108,7 +2341,10 @@
         "name": "粉红面",
         "itemId": "collectorsreap:pink_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:30:09.113Z",
         "autoPrice": 46.7
@@ -2138,7 +2374,11 @@
         "name": "蛋黄果面包",
         "itemId": "collectorsreap:lucuma_bread",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:30:12.113Z",
         "autoPrice": 39.7
@@ -2148,7 +2388,11 @@
         "name": "青柠蜜饯",
         "itemId": "collectorsreap:candied_lime",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:30:13.113Z",
         "autoPrice": 11.4
@@ -2158,7 +2402,14 @@
         "name": "青柠曲奇",
         "itemId": "collectorsreap:lime_cookie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:30:14.113Z",
         "autoPrice": 22
@@ -2168,7 +2419,12 @@
         "name": "青柠冰棍",
         "itemId": "collectorsreap:lime_popsicle",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:30:15.113Z",
         "autoPrice": 23.7
@@ -2178,7 +2434,14 @@
         "name": "蜜汁青柠鸡",
         "itemId": "collectorsreap:honey_lime_chicken",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:30:16.113Z",
         "autoPrice": 43.1
@@ -2188,7 +2451,11 @@
         "name": "地中海式鲑鱼",
         "itemId": "collectorsreap:mediterranean_salmon",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:30:17.113Z",
         "autoPrice": 28.4
@@ -2198,7 +2465,11 @@
         "name": "马铃薯炸饼",
         "itemId": "collectorsreap:potato_fritters",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_sour",
+          "tag_food_form_fried"
         ],
         "createdAt": "2026-09-28T06:30:18.113Z",
         "autoPrice": 61.5
@@ -2208,7 +2479,11 @@
         "name": "柠汁腌鱼",
         "itemId": "collectorsreap:cod_ceviche",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:30:19.113Z",
         "autoPrice": 31.7
@@ -2268,7 +2543,12 @@
         "name": "三文鱼裹鲜虾",
         "itemId": "collectorsreap:salmon_wrapped_prawn",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:30:25.113Z",
         "autoPrice": 46.3
@@ -2298,7 +2578,12 @@
         "name": "海陆堡",
         "itemId": "collectorsreap:land_and_sea_burger",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:30:28.113Z",
         "autoPrice": 51.8
@@ -2338,7 +2623,12 @@
         "name": "黄油蟹腿",
         "itemId": "collectorsreap:buttered_legs",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:30:32.113Z",
         "autoPrice": 62.9
@@ -2348,7 +2638,13 @@
         "name": "蟹肉千层面",
         "itemId": "collectorsreap:crab_lasagna",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_dairy",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:30:33.113Z",
         "autoPrice": 76.6
@@ -2358,7 +2654,11 @@
         "name": "酸柠腌虾",
         "itemId": "collectorsreap:prawn_ceviche",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:30:34.113Z",
         "autoPrice": 72.8
@@ -2368,7 +2668,10 @@
         "name": "穷小子鲜虾三明治",
         "itemId": "collectorsreap:prawn_po_boy",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:30:35.113Z",
         "autoPrice": 57.3
@@ -2378,7 +2681,13 @@
         "name": "蛤蜊意面",
         "itemId": "collectorsreap:clam_pasta",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_dairy",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:30:36.113Z",
         "autoPrice": 62
@@ -2388,7 +2697,11 @@
         "name": "海洋卷",
         "itemId": "collectorsreap:sea_wrap",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:30:37.113Z",
         "autoPrice": 75.7
@@ -2398,7 +2711,11 @@
         "name": "鲜虾炒面",
         "itemId": "collectorsreap:prawn_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:30:38.113Z",
         "autoPrice": 48.7
@@ -2408,7 +2725,11 @@
         "name": "鱼生拼盘",
         "itemId": "collectorsreap:fish_mix",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:30:39.113Z",
         "autoPrice": 30.9
@@ -2428,7 +2749,13 @@
         "name": "蟹肉面",
         "itemId": "collectorsreap:crab_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_dairy",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:30:41.113Z",
         "autoPrice": 52.5
@@ -2448,7 +2775,10 @@
         "name": "酋长蟹",
         "itemId": "collectorsreap:chieftain_crab",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:30:43.113Z",
         "autoPrice": 24.2
@@ -2478,7 +2808,13 @@
         "name": "驴肉火烧",
         "itemId": "kaleidoscope_cookery:donkey_burger",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:30:46.113Z",
         "autoPrice": 79.3
@@ -2488,7 +2824,9 @@
         "name": "馒头",
         "itemId": "kaleidoscope_cookery:mantou",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:30:47.113Z",
         "autoPrice": 17.1
@@ -2498,7 +2836,9 @@
         "name": "包子",
         "itemId": "kaleidoscope_cookery:baozi",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:30:48.113Z",
         "autoPrice": 39.8
@@ -2508,7 +2848,10 @@
         "name": "水煎包",
         "itemId": "kaleidoscope_cookery:shengjian_mantou",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain",
+          "tag_food_form_fried"
         ],
         "createdAt": "2026-09-28T06:30:49.113Z",
         "autoPrice": 42.6
@@ -2518,7 +2861,9 @@
         "name": "烤包子",
         "itemId": "kaleidoscope_cookery:samsa",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:30:50.113Z",
         "autoPrice": 44
@@ -2528,7 +2873,9 @@
         "name": "馅饼",
         "itemId": "kaleidoscope_cookery:meat_pie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:30:51.113Z",
         "autoPrice": 37.8
@@ -2538,7 +2885,9 @@
         "name": "饺子",
         "itemId": "kaleidoscope_cookery:dumpling",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:30:52.113Z",
         "autoPrice": 37.8
@@ -2568,7 +2917,8 @@
         "name": "茶叶蛋",
         "itemId": "kaleidoscope_cookery:tea_egg",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink"
         ],
         "createdAt": "2026-09-28T06:30:55.113Z",
         "autoPrice": 27.9
@@ -2638,7 +2988,9 @@
         "name": "牛皮糖",
         "itemId": "kaleidoscope_cookery:sticky_candy",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:31:02.113Z",
         "autoPrice": 34.6
@@ -2648,7 +3000,9 @@
         "name": "糍粑",
         "itemId": "kaleidoscope_cookery:sticky_rice_cake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:31:03.113Z",
         "autoPrice": 16.3
@@ -2658,7 +3012,8 @@
         "name": "熟竹筒饭",
         "itemId": "kaleidoscope_cookery:bamboo_tube_rice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple"
         ],
         "createdAt": "2026-09-28T06:31:04.113Z",
         "autoPrice": 24.9
@@ -2678,7 +3033,8 @@
         "name": "熟粽子",
         "itemId": "kaleidoscope_cookery:zongzi",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple"
         ],
         "createdAt": "2026-09-28T06:31:06.113Z",
         "autoPrice": 19.5
@@ -2698,7 +3054,9 @@
         "name": "蛋炒饭",
         "itemId": "kaleidoscope_cookery:egg_fried_rice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:31:08.113Z",
         "autoPrice": 28.7
@@ -2708,7 +3066,9 @@
         "name": "番茄炒蛋",
         "itemId": "kaleidoscope_cookery:scramble_egg_with_tomatoes",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:31:09.113Z",
         "autoPrice": 52.3
@@ -2718,7 +3078,11 @@
         "name": "红烧牛肉",
         "itemId": "kaleidoscope_cookery:braised_beef",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:10.113Z",
         "autoPrice": 48.8
@@ -2728,7 +3092,10 @@
         "name": "青椒炒肉",
         "itemId": "kaleidoscope_cookery:stir_fried_pork_with_peppers",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:31:11.113Z",
         "autoPrice": 82.6
@@ -2738,7 +3105,12 @@
         "name": "糖醋里脊",
         "itemId": "kaleidoscope_cookery:sweet_and_sour_pork",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:31:12.113Z",
         "autoPrice": 41.3
@@ -2748,7 +3120,15 @@
         "name": "鱼香肉丝",
         "itemId": "kaleidoscope_cookery:fish_flavored_shredded_pork",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:31:13.113Z",
         "autoPrice": 78.5
@@ -2758,7 +3138,9 @@
         "name": "大骨汤",
         "itemId": "kaleidoscope_cookery:pork_bone_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:14.113Z",
         "autoPrice": 14.8
@@ -2768,7 +3150,12 @@
         "name": "海鲜味噌汤",
         "itemId": "kaleidoscope_cookery:seafood_miso_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:15.113Z",
         "autoPrice": 61.1
@@ -2778,7 +3165,11 @@
         "name": "萝卜羊肉汤",
         "itemId": "kaleidoscope_cookery:lamb_and_radish_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:16.113Z",
         "autoPrice": 36.7
@@ -2788,7 +3179,11 @@
         "name": "土豆炖牛肉",
         "itemId": "kaleidoscope_cookery:braised_beef_with_potatoes",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:17.113Z",
         "autoPrice": 55.8
@@ -2828,7 +3223,12 @@
         "name": "野菌兔肉汤",
         "itemId": "kaleidoscope_cookery:wild_mushroom_rabbit_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:21.113Z",
         "autoPrice": 45.4
@@ -2838,7 +3238,11 @@
         "name": "河豚汤",
         "itemId": "kaleidoscope_cookery:pufferfish_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:22.113Z",
         "autoPrice": 75.2
@@ -2848,7 +3252,12 @@
         "name": "罗宋汤",
         "itemId": "kaleidoscope_cookery:borscht",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:23.113Z",
         "autoPrice": 40.6
@@ -2858,7 +3267,11 @@
         "name": "牛丸汤",
         "itemId": "kaleidoscope_cookery:beef_meatball_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:24.113Z",
         "autoPrice": 62.1
@@ -2868,7 +3281,11 @@
         "name": "小鸡炖蘑菇",
         "itemId": "kaleidoscope_cookery:chicken_and_mushroom_stew",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:31:25.113Z",
         "autoPrice": 30.9
@@ -2878,7 +3295,11 @@
         "name": "腊八粥",
         "itemId": "kaleidoscope_cookery:laba_congee",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:26.113Z",
         "autoPrice": 66.7
@@ -2888,7 +3309,10 @@
         "name": "牛肉面",
         "itemId": "kaleidoscope_cookery:beef_noodle",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:31:27.113Z",
         "autoPrice": 36.1
@@ -2898,7 +3322,12 @@
         "name": "羊肉烩面",
         "itemId": "kaleidoscope_cookery:hui_noodle",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:31:28.113Z",
         "autoPrice": 43.6
@@ -2908,7 +3337,10 @@
         "name": "乌冬面",
         "itemId": "kaleidoscope_cookery:udon_noodle",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:31:29.113Z",
         "autoPrice": 45.5
@@ -2918,7 +3350,10 @@
         "name": "热干面",
         "itemId": "kaleidoscope_cookery:hot_dry_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:31:30.113Z",
         "autoPrice": 70.1
@@ -2928,7 +3363,9 @@
         "name": "翻糖派",
         "itemId": "kaleidoscope_cookery:fondant_pie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:31:31.113Z",
         "autoPrice": 124.2
@@ -2938,7 +3375,12 @@
         "name": "东坡肉",
         "itemId": "kaleidoscope_cookery:dongpo_pork",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:32.113Z",
         "autoPrice": 80.5
@@ -2948,7 +3390,10 @@
         "name": "辣子鸡",
         "itemId": "kaleidoscope_cookery:spicy_chicken",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:31:33.113Z",
         "autoPrice": 73.4
@@ -2958,7 +3403,10 @@
         "name": "仰望星空派",
         "itemId": "kaleidoscope_cookery:stargazy_pie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:31:34.113Z",
         "autoPrice": 162.9
@@ -2968,7 +3416,11 @@
         "name": "凛冬羊排",
         "itemId": "kaleidoscope_cookery:frost_lamb_chop",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:31:35.113Z",
         "autoPrice": 29.3
@@ -2978,7 +3430,9 @@
         "name": "拔丝土豆",
         "itemId": "kaleidoscope_cookery:candied_potato",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:31:36.113Z",
         "autoPrice": 61.5
@@ -2988,7 +3442,11 @@
         "name": "麻辣兔头",
         "itemId": "kaleidoscope_cookery:spicy_rabbit_head",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:31:37.113Z",
         "autoPrice": 97.7
@@ -2998,7 +3456,13 @@
         "name": "佛跳墙",
         "itemId": "kaleidoscope_cookery:buddha_jumps_over_the_wall",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:38.113Z",
         "autoPrice": 62.1
@@ -3008,7 +3472,10 @@
         "name": "油炸猪儿虫",
         "itemId": "kaleidoscope_cookery:fried_caterpillar",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_form_fried"
         ],
         "createdAt": "2026-09-28T06:31:39.113Z",
         "autoPrice": 83.3
@@ -3018,7 +3485,13 @@
         "name": "毛血旺",
         "itemId": "kaleidoscope_cookery:spicy_blood_stew",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:40.113Z",
         "autoPrice": 61
@@ -3028,7 +3501,11 @@
         "name": "油泼鱼",
         "itemId": "kaleidoscope_cookery:oil_splashed_fish",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:31:41.113Z",
         "autoPrice": 69.3
@@ -3038,7 +3515,9 @@
         "name": "四喜丸子汤",
         "itemId": "kaleidoscope_cookery:four_joy_meatball_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:42.113Z",
         "autoPrice": 111.3
@@ -3048,17 +3527,25 @@
         "name": "虎皮青椒酿肉",
         "itemId": "kaleidoscope_cookery:stuffed_tiger_skin_pepper",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:31:43.113Z",
-        "autoPrice": 73.9
+        "autoPrice": 78.5
       },
       "kaleidoscope_cookery_braised_pork_ribs_____": {
         "id": "kaleidoscope_cookery_braised_pork_ribs_____",
         "name": "红烧排骨",
         "itemId": "kaleidoscope_cookery:braised_pork_ribs",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:44.113Z",
         "autoPrice": 89.5
@@ -3068,7 +3555,11 @@
         "name": "疙瘩汤",
         "itemId": "kaleidoscope_cookery:dough_drop_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_grain",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:45.113Z",
         "autoPrice": 59.5
@@ -3078,7 +3569,11 @@
         "name": "椒麻鸡",
         "itemId": "kaleidoscope_cookery:numbing_spicy_chicken",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:31:46.113Z",
         "autoPrice": 67.7
@@ -3088,7 +3583,12 @@
         "name": "南瓜派",
         "itemId": "minecraft:pumpkin_pie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:31:47.113Z",
         "autoPrice": 106.4
@@ -3098,7 +3598,10 @@
         "name": "炸春卷",
         "itemId": "kaleidoscope_cookery:fried_spring_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_form_fried"
         ],
         "createdAt": "2026-09-28T06:31:48.113Z",
         "autoPrice": 94.7
@@ -3118,7 +3621,10 @@
         "name": "冷切火腿片",
         "itemId": "kaleidoscope_cookery:cold_cut_ham_slices",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:31:50.113Z",
         "autoPrice": 20
@@ -3128,7 +3634,10 @@
         "name": "冷肉炙",
         "itemId": "kaleidoscope_cookery:cold_roasted_meat",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:31:51.113Z",
         "autoPrice": 88.5
@@ -3148,7 +3657,10 @@
         "name": "铁观音",
         "itemId": "kaleidoscope_cookery:tieguanyin",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_drink_bitter",
+          "tag_food_form_tea"
         ],
         "createdAt": "2026-09-28T06:31:53.113Z",
         "autoPrice": 11.3
@@ -3158,7 +3670,10 @@
         "name": "碧螺春",
         "itemId": "kaleidoscope_cookery:biluochun",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_drink_bitter",
+          "tag_food_form_tea"
         ],
         "createdAt": "2026-09-28T06:31:54.113Z",
         "autoPrice": 11.3
@@ -3168,7 +3683,10 @@
         "name": "冻顶乌龙茶",
         "itemId": "kaleidoscope_cookery:oolong",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_drink_bitter",
+          "tag_food_form_tea"
         ],
         "createdAt": "2026-09-28T06:31:55.113Z",
         "autoPrice": 6.7
@@ -3178,7 +3696,11 @@
         "name": "酥油茶",
         "itemId": "kaleidoscope_cookery:butter_tea",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_rich",
+          "tag_food_form_tea"
         ],
         "createdAt": "2026-09-28T06:31:56.113Z",
         "autoPrice": 23
@@ -3188,7 +3710,10 @@
         "name": "樱吹雪",
         "itemId": "kaleidoscope_cookery:sakura_fubuki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_drink_bitter",
+          "tag_food_form_tea"
         ],
         "createdAt": "2026-09-28T06:31:57.113Z",
         "autoPrice": 7.6
@@ -3198,7 +3723,10 @@
         "name": "云南滇红",
         "itemId": "kaleidoscope_chinesefood:dianhong_tea",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_drink_bitter",
+          "tag_food_form_tea"
         ],
         "createdAt": "2026-09-28T06:31:58.113Z",
         "autoPrice": 14.5
@@ -3208,7 +3736,10 @@
         "name": "麦香乌龙茶",
         "itemId": "kaleidoscope_cookery:barley_tea",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_drink_bitter",
+          "tag_food_form_tea"
         ],
         "createdAt": "2026-09-28T06:31:59.113Z",
         "autoPrice": 10
@@ -3218,7 +3749,12 @@
         "name": "港式丝袜奶茶",
         "itemId": "kaleidoscope_chinesefood:hk_milk_tea",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_drink_mellow",
+          "tag_food_form_tea"
         ],
         "createdAt": "2026-09-28T06:32:00.113Z",
         "autoPrice": 15.5
@@ -3355,7 +3891,9 @@
         "name": "竹筒蒸蛋",
         "itemId": "kaleidoscope_chinesefood:bamboo_steamed_egg",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:32:14.113Z",
         "autoPrice": 24.6
@@ -3365,7 +3903,9 @@
         "name": "云吞面",
         "itemId": "kaleidoscope_chinesefood:wonton_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:32:15.113Z",
         "autoPrice": 146.9
@@ -3375,7 +3915,10 @@
         "name": "水煮肉片",
         "itemId": "kaleidoscope_chinesefood:sichuan_boiled_pork_slices",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:32:16.113Z",
         "autoPrice": 52.8
@@ -3385,7 +3928,10 @@
         "name": "羊肉泡馍",
         "itemId": "kaleidoscope_chinesefood:yangrou_paomo",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:32:17.113Z",
         "autoPrice": 82.1
@@ -3395,7 +3941,12 @@
         "name": "酸菜牛肉面",
         "itemId": "kaleidoscope_chinesefood:sauerkraut_beef_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:32:18.113Z",
         "autoPrice": 87.7
@@ -3405,7 +3956,11 @@
         "name": "黄鱼汤",
         "itemId": "kaleidoscope_chinesefood:yellow_croaker_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:32:19.113Z",
         "autoPrice": 34.1
@@ -3415,7 +3970,10 @@
         "name": "黄鱼炖豆腐",
         "itemId": "kaleidoscope_chinesefood:yellow_croaker_tofu_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:32:20.113Z",
         "autoPrice": 71.2
@@ -3425,7 +3983,11 @@
         "name": "干锅土豆片",
         "itemId": "kaleidoscope_chinesefood:dry_pot_potatoes",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:32:21.113Z",
         "autoPrice": 52
@@ -3435,17 +3997,23 @@
         "name": "茄子酿肉",
         "itemId": "kaleidoscope_chinesefood:stuffed_eggplant",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:32:22.113Z",
-        "autoPrice": 69.8
+        "autoPrice": 74.4
       },
       "kaleidoscope_chinesefood_sichuan_wonton_____": {
         "id": "kaleidoscope_chinesefood_sichuan_wonton_____",
         "name": "麻辣抄手",
         "itemId": "kaleidoscope_chinesefood:sichuan_wonton",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:32:23.113Z",
         "autoPrice": 170.8
@@ -3455,7 +4023,11 @@
         "name": "大盘鸡",
         "itemId": "kaleidoscope_chinesefood:big_plate_chicken",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:32:24.113Z",
         "autoPrice": 38.3
@@ -3465,7 +4037,10 @@
         "name": "冰冻馒头",
         "itemId": "kaleidoscope_twilight:frozen_bun",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:32:25.113Z",
         "autoPrice": 20.4
@@ -3475,7 +4050,10 @@
         "name": "紫菜蛋花汤",
         "itemId": "kaleidoscope_chinesefood:seaweed_egg_drop_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_flavor_light",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:32:26.113Z",
         "autoPrice": 41.8
@@ -3485,7 +4063,9 @@
         "name": "番茄鸡蛋汤",
         "itemId": "kaleidoscope_chinesefood:tomato_egg_drop_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:32:27.113Z",
         "autoPrice": 36.7
@@ -3495,7 +4075,12 @@
         "name": "皮蛋瘦肉粥",
         "itemId": "kaleidoscope_chinesefood:century_egg_congee",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:32:28.113Z",
         "autoPrice": 88.9
@@ -3505,7 +4090,11 @@
         "name": "南瓜粥",
         "itemId": "kaleidoscope_chinesefood:pumpkin_porridge",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:32:29.113Z",
         "autoPrice": 26.7
@@ -3515,7 +4104,9 @@
         "name": "豆汁儿",
         "itemId": "kaleidoscope_chinesefood:douzhi",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian"
         ],
         "createdAt": "2026-09-28T06:32:30.113Z",
         "autoPrice": 57.1
@@ -3525,7 +4116,9 @@
         "name": "滑蛋牛肉",
         "itemId": "kaleidoscope_chinesefood:beef_with_scrambled_eggs",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:32:31.113Z",
         "autoPrice": 66.3
@@ -3535,7 +4128,10 @@
         "name": "扬州炒饭",
         "itemId": "kaleidoscope_chinesefood:yangzhou_fried_rice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:32:32.113Z",
         "autoPrice": 43.1
@@ -3545,7 +4141,9 @@
         "name": "肠粉",
         "itemId": "kaleidoscope_chinesefood:steamed_rice_rolls",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:32:33.113Z",
         "autoPrice": 49.3
@@ -3555,7 +4153,10 @@
         "name": "地三鲜",
         "itemId": "kaleidoscope_chinesefood:stir_fried_three_fresh_vegetables",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:32:34.113Z",
         "autoPrice": 68.3
@@ -3565,7 +4166,11 @@
         "name": "广式红米肠",
         "itemId": "kaleidoscope_chinesefood:red_rice_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:32:35.113Z",
         "autoPrice": 50.7
@@ -3575,7 +4180,11 @@
         "name": "水煮鱼",
         "itemId": "kaleidoscope_chinesefood:sichuan_boiled_fish",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:32:36.113Z",
         "autoPrice": 57.1
@@ -3605,7 +4214,13 @@
         "name": "椰子布丁",
         "itemId": "crabbersdelight:coconut_pudding",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:32:39.113Z",
         "autoPrice": 47.6
@@ -3615,7 +4230,12 @@
         "name": "椰奶",
         "itemId": "crabbersdelight:coconut_milk",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:32:40.113Z",
         "autoPrice": 22.9
@@ -3625,7 +4245,11 @@
         "name": "苹果派",
         "itemId": "farmersdelight:apple_pie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:32:41.113Z",
         "autoPrice": 103.7
@@ -3635,7 +4259,13 @@
         "name": "甜浆果芝士派",
         "itemId": "farmersdelight:sweet_berry_cheesecake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:32:42.113Z",
         "autoPrice": 117.1
@@ -3645,7 +4275,12 @@
         "name": "巧克力派",
         "itemId": "farmersdelight:chocolate_pie",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_form_baked"
         ],
         "createdAt": "2026-09-28T06:32:43.113Z",
         "autoPrice": 122.5
@@ -3655,7 +4290,11 @@
         "name": "西瓜冰棍",
         "itemId": "farmersdelight:melon_popsicle",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:32:44.113Z",
         "autoPrice": 12.4
@@ -3665,7 +4304,11 @@
         "name": "发光浆果蛋奶沙司",
         "itemId": "farmersdelight:glow_berry_custard",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:32:45.113Z",
         "autoPrice": 36.5
@@ -3675,7 +4318,11 @@
         "name": "水果沙拉",
         "itemId": "farmersdelight:fruit_salad",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:32:46.113Z",
         "autoPrice": 20.8
@@ -3685,7 +4332,10 @@
         "name": "混合沙拉",
         "itemId": "farmersdelight:mixed_salad",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:32:47.113Z",
         "autoPrice": 29.8
@@ -3695,7 +4345,8 @@
         "name": "夹蛋三明治",
         "itemId": "farmersdelight:egg_sandwich",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple"
         ],
         "createdAt": "2026-09-28T06:32:48.113Z",
         "autoPrice": 32.8
@@ -3705,7 +4356,9 @@
         "name": "鸡肉三明治",
         "itemId": "farmersdelight:chicken_sandwich",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:32:49.113Z",
         "autoPrice": 30.1
@@ -3715,7 +4368,9 @@
         "name": "汉堡包",
         "itemId": "farmersdelight:hamburger",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:32:50.113Z",
         "autoPrice": 39.4
@@ -3725,7 +4380,9 @@
         "name": "培根三明治",
         "itemId": "farmersdelight:bacon_sandwich",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:32:51.113Z",
         "autoPrice": 34.8
@@ -3735,7 +4392,10 @@
         "name": "羊肉卷饼",
         "itemId": "farmersdelight:mutton_wrap",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:32:52.113Z",
         "autoPrice": 34.8
@@ -3745,7 +4405,11 @@
         "name": "填馅马铃薯",
         "itemId": "farmersdelight:stuffed_potato",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:32:53.113Z",
         "autoPrice": 40.3
@@ -3755,7 +4419,12 @@
         "name": "鲑鱼寿司",
         "itemId": "farmersdelight:salmon_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:32:54.113Z",
         "autoPrice": 9.6
@@ -3765,7 +4434,12 @@
         "name": "鳕鱼寿司",
         "itemId": "farmersdelight:cod_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:32:55.113Z",
         "autoPrice": 10.9
@@ -3775,7 +4449,12 @@
         "name": "海带寿司卷",
         "itemId": "farmersdelight:kelp_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_dairy",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_light",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:32:56.113Z",
         "autoPrice": 49.7
@@ -3785,7 +4464,10 @@
         "name": "肉丸意面",
         "itemId": "farmersdelight:pasta_with_meatballs",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:32:57.113Z",
         "autoPrice": 81.6
@@ -3795,7 +4477,10 @@
         "name": "羊排意面",
         "itemId": "farmersdelight:pasta_with_mutton_chop",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:32:58.113Z",
         "autoPrice": 49.5
@@ -3805,7 +4490,12 @@
         "name": "蘑菇饭",
         "itemId": "farmersdelight:mushroom_rice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:32:59.113Z",
         "autoPrice": 51.2
@@ -3815,7 +4505,10 @@
         "name": "烤羊排",
         "itemId": "farmersdelight:roasted_mutton_chops",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:00.113Z",
         "autoPrice": 37.9
@@ -3825,7 +4518,13 @@
         "name": "蔬菜面",
         "itemId": "farmersdelight:vegetable_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:33:01.113Z",
         "autoPrice": 44.1
@@ -3835,7 +4534,10 @@
         "name": "蔬菜杂烩",
         "itemId": "farmersdelight:ratatouille",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:33:02.113Z",
         "autoPrice": 26.5
@@ -3845,7 +4547,12 @@
         "name": "香烤鲑鱼",
         "itemId": "farmersdelight:grilled_salmon",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:33:03.113Z",
         "autoPrice": 25.8
@@ -3855,7 +4562,13 @@
         "name": "蜜汁火腿",
         "itemId": "farmersdelight:honey_glazed_ham_block",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:04.113Z",
         "autoPrice": 88.1
@@ -3865,7 +4578,9 @@
         "name": "烤鸡",
         "itemId": "farmersdelight:roast_chicken_block",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:33:05.113Z",
         "autoPrice": 48.9
@@ -3875,7 +4590,14 @@
         "name": "填馅南瓜",
         "itemId": "farmersdelight:stuffed_pumpkin_block",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:33:06.113Z",
         "autoPrice": 71.6
@@ -3885,7 +4607,12 @@
         "name": "牧羊人派",
         "itemId": "farmersdelight:shepherds_pie_block",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:07.113Z",
         "autoPrice": 99.4
@@ -3895,7 +4622,8 @@
         "name": "卷心菜卷",
         "itemId": "farmersdelight:cabbage_rolls",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple"
         ],
         "createdAt": "2026-09-28T06:33:08.113Z",
         "autoPrice": 19.9
@@ -3905,7 +4633,11 @@
         "name": "清蒸螃蟹",
         "itemId": "youkaisfeasts:steamed_crab",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:33:09.113Z",
         "autoPrice": 26.4
@@ -3975,7 +4707,11 @@
         "name": "玉子烧",
         "itemId": "youkaisfeasts:tamagoyaki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:16.113Z",
         "autoPrice": 37.5
@@ -3995,7 +4731,11 @@
         "name": "麻薯",
         "itemId": "youkaisfeasts:mochi",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:18.113Z",
         "autoPrice": 43.8
@@ -4005,7 +4745,9 @@
         "name": "月见团子",
         "itemId": "youkaisfeasts:tsukimi_dango",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:33:19.113Z",
         "autoPrice": 34.8
@@ -4015,7 +4757,10 @@
         "name": "抹茶麻薯",
         "itemId": "youkaisfeasts:matcha_mochi",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:33:20.113Z",
         "autoPrice": 49.1
@@ -4025,7 +4770,9 @@
         "name": "樱饼",
         "itemId": "youkaisfeasts:sakura_mochi",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:33:21.113Z",
         "autoPrice": 24.7
@@ -4045,7 +4792,9 @@
         "name": "信州瘦马",
         "itemId": "youkaisfeasts:yashouma_dango",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:33:23.113Z",
         "autoPrice": 53
@@ -4055,7 +4804,9 @@
         "name": "饭团",
         "itemId": "youkaisfeasts:onigili",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:24.113Z",
         "autoPrice": 19.5
@@ -4065,7 +4816,9 @@
         "name": "仙贝",
         "itemId": "youkaisfeasts:senbei",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:33:25.113Z",
         "autoPrice": 47.1
@@ -4075,7 +4828,11 @@
         "name": "生首烧",
         "itemId": "youkaisfeasts:sekibankiyaki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:26.113Z",
         "autoPrice": 71.9
@@ -4085,7 +4842,10 @@
         "name": "八云豆包饭",
         "itemId": "youkaisfeasts:yakumo_inari",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:27.113Z",
         "autoPrice": 214.1
@@ -4105,7 +4865,10 @@
         "name": "猪肉饭团",
         "itemId": "youkaisfeasts:pork_rice_ball",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:29.113Z",
         "autoPrice": 37.4
@@ -4115,7 +4878,11 @@
         "name": "蒲烧鳗鱼",
         "itemId": "youkaisfeasts:kabayaki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:33:30.113Z",
         "autoPrice": 27.8
@@ -4125,7 +4892,12 @@
         "name": "牛奶冰棍",
         "itemId": "youkaisfeasts:milk_popsicle",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:33:31.113Z",
         "autoPrice": 16.1
@@ -4135,7 +4907,10 @@
         "name": "大冰棍儿",
         "itemId": "youkaisfeasts:big_popsicle",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:33:32.113Z",
         "autoPrice": 6.3
@@ -4145,7 +4920,12 @@
         "name": "儿童刨冰盖饭",
         "itemId": "youkaisfeasts:shaved_ice_over_rice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:33:33.113Z",
         "autoPrice": 37.6
@@ -4173,7 +4953,12 @@
         "name": "鳗鱼饭",
         "itemId": "youkaisfeasts:grilled_eel_over_rice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:33:36.113Z",
         "autoPrice": 51
@@ -4183,7 +4968,12 @@
         "name": "长寿面",
         "itemId": "youkaisfeasts:longevity_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:33:37.113Z",
         "autoPrice": 72.8
@@ -4193,7 +4983,10 @@
         "name": "白雪",
         "itemId": "youkaisfeasts:shirayuki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:33:38.113Z",
         "autoPrice": 68.2
@@ -4203,7 +4996,11 @@
         "name": "汉宫藏娇",
         "itemId": "youkaisfeasts:han_palace",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:33:39.113Z",
         "autoPrice": 83.9
@@ -4213,7 +5010,12 @@
         "name": "蔬菜奶油鲑鱼",
         "itemId": "youkaisfeasts:tuscan_salmon",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:40.113Z",
         "autoPrice": 38.5
@@ -4223,7 +5025,10 @@
         "name": "蜜渍黄瓜",
         "itemId": "youkaisfeasts:honey_glazed_cucumber",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:33:41.113Z",
         "autoPrice": 48.4
@@ -4233,7 +5038,9 @@
         "name": "红烧狮子头",
         "itemId": "kaleidoscope_nether:braised_lion_head",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:42.113Z",
         "autoPrice": 82.7
@@ -4243,7 +5050,10 @@
         "name": "麻婆豆腐",
         "itemId": "kaleidoscope_nether:mapo_tofu",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:33:43.113Z",
         "autoPrice": 96.6
@@ -4253,7 +5063,9 @@
         "name": "幻昙花羹",
         "itemId": "youkaisfeasts:udumbara_cake",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:33:44.113Z",
         "autoPrice": 41.4
@@ -4263,7 +5075,12 @@
         "name": "鱼籽军舰",
         "itemId": "youkaisfeasts:tobiko_gunkan",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:45.113Z",
         "autoPrice": 15
@@ -4273,7 +5090,9 @@
         "name": "海草军舰",
         "itemId": "youkaisfeasts:seagrass_gunkan",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:46.113Z",
         "autoPrice": 13.2
@@ -4283,7 +5102,9 @@
         "name": "纳豆军舰",
         "itemId": "youkaisfeasts:nattou_gunkan",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:47.113Z",
         "autoPrice": 18.9
@@ -4293,7 +5114,9 @@
         "name": "玉子烧握寿司",
         "itemId": "youkaisfeasts:egg_nigiri",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:48.113Z",
         "autoPrice": 30.1
@@ -4303,7 +5126,12 @@
         "name": "夜雀的手握",
         "itemId": "youkaisfeasts:lorelei_nigiri",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:49.113Z",
         "autoPrice": 25.2
@@ -4313,7 +5141,12 @@
         "name": "金枪鱼握寿司",
         "itemId": "youkaisfeasts:tuna_nigiri",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:50.113Z",
         "autoPrice": 9.3
@@ -4323,7 +5156,12 @@
         "name": "金枪鱼大腹握寿司",
         "itemId": "youkaisfeasts:otoro_nigiri",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:51.113Z",
         "autoPrice": 13
@@ -4333,7 +5171,9 @@
         "name": "新香细卷",
         "itemId": "youkaisfeasts:shinnko_maki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:52.113Z",
         "autoPrice": 42.6
@@ -4343,7 +5183,9 @@
         "name": "河童细卷",
         "itemId": "youkaisfeasts:kappa_maki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:53.113Z",
         "autoPrice": 40.1
@@ -4353,7 +5195,12 @@
         "name": "铁火卷",
         "itemId": "youkaisfeasts:tekka_maki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:54.113Z",
         "autoPrice": 38.8
@@ -4363,7 +5210,9 @@
         "name": "玉子太卷",
         "itemId": "youkaisfeasts:egg_futomaki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:55.113Z",
         "autoPrice": 86.6
@@ -4373,7 +5222,12 @@
         "name": "鲑鱼太卷",
         "itemId": "youkaisfeasts:salmon_futomaki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:56.113Z",
         "autoPrice": 68.8
@@ -4383,7 +5237,12 @@
         "name": "缤纷太卷",
         "itemId": "youkaisfeasts:rainbow_futomaki",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:57.113Z",
         "autoPrice": 81.7
@@ -4393,7 +5252,12 @@
         "name": "加州卷",
         "itemId": "youkaisfeasts:california_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:58.113Z",
         "autoPrice": 93
@@ -4403,7 +5267,11 @@
         "name": "蟹籽加州卷",
         "itemId": "youkaisfeasts:roe_california_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:59.113Z",
         "autoPrice": 106.3
@@ -4413,7 +5281,10 @@
         "name": "若鹭卷",
         "itemId": "youkaisfeasts:salmon_lover_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:34:00.113Z",
         "autoPrice": 127.8
@@ -4423,7 +5294,11 @@
         "name": "铁火加州卷",
         "itemId": "youkaisfeasts:volcano_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:34:01.113Z",
         "autoPrice": 128
@@ -4433,7 +5308,11 @@
         "name": "彩虹加州卷",
         "itemId": "youkaisfeasts:rainbow_roll",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:34:02.113Z",
         "autoPrice": 130
@@ -4453,7 +5332,14 @@
         "name": "奶油蘑菇浓汤",
         "itemId": "youkaisfeasts:mushroom_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:04.113Z",
         "autoPrice": 54
@@ -4463,7 +5349,11 @@
         "name": "力量汤",
         "itemId": "youkaisfeasts:power_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:05.113Z",
         "autoPrice": 66.3
@@ -4473,7 +5363,13 @@
         "name": "奶油马铃薯浓汤",
         "itemId": "youkaisfeasts:potato_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:06.113Z",
         "autoPrice": 53.1
@@ -4483,7 +5379,12 @@
         "name": "秘制鲜菌煲",
         "itemId": "youkaisfeasts:signature_mushroom_stew",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:07.113Z",
         "autoPrice": 45.9
@@ -4493,7 +5394,12 @@
         "name": "石狩锅",
         "itemId": "youkaisfeasts:hokkaido_salmon_hotpot",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:08.113Z",
         "autoPrice": 75.1
@@ -4523,7 +5429,11 @@
         "name": "冷奴豆腐",
         "itemId": "youkaisfeasts:cold_tofu",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_light",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:34:11.113Z",
         "autoPrice": 71.5
@@ -4533,7 +5443,9 @@
         "name": "坎伯兰猪腰",
         "itemId": "youkaisfeasts:cumberland_loin",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:34:12.113Z",
         "autoPrice": 57.9
@@ -4543,7 +5455,10 @@
         "name": "茄汁鳕鱼",
         "itemId": "youkaisfeasts:tomato_sauce_cod",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:34:13.113Z",
         "autoPrice": 47.2
@@ -4553,7 +5468,9 @@
         "name": "竹筒水羊羹",
         "itemId": "youkaisfeasts:bamboo_mizuyokan",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:34:14.113Z",
         "autoPrice": 27.3
@@ -4563,7 +5480,10 @@
         "name": "小鱼干",
         "itemId": "youkaisfeasts:dried_fish",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:34:15.113Z",
         "autoPrice": 30.6
@@ -4583,7 +5503,9 @@
         "name": "赛熊掌",
         "itemId": "youkaisfeasts:imitation_bear_paw",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:34:17.113Z",
         "autoPrice": 59.1
@@ -4593,7 +5515,12 @@
         "name": "地中海千层面",
         "itemId": "youkaisfeasts:pastitsio",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_dairy",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:34:18.113Z",
         "autoPrice": 112.9
@@ -4603,7 +5530,12 @@
         "name": "酱烧鱼",
         "itemId": "youkaisfeasts:sauce_grilled_fish",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:34:19.113Z",
         "autoPrice": 49.4
@@ -4613,7 +5545,12 @@
         "name": "臭豆腐",
         "itemId": "youkaisfeasts:stinky_tofu",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:34:20.113Z",
         "autoPrice": 80.8
@@ -4623,7 +5560,13 @@
         "name": "豆腐汉堡",
         "itemId": "youkaisfeasts:tofu_burger",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:34:21.113Z",
         "autoPrice": 85
@@ -4633,7 +5576,10 @@
         "name": "七色羊羹",
         "itemId": "youkaisfeasts:seven_colored_yokan",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:34:22.113Z",
         "autoPrice": 94
@@ -4643,7 +5589,10 @@
         "name": "蟠桃饭",
         "itemId": "kaleidoscope_fragrantorchard:peach_of_immortality",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:34:23.113Z",
         "autoPrice": 36.9
@@ -4653,7 +5602,11 @@
         "name": "冰糖炖雪梨",
         "itemId": "kaleidoscope_fragrantorchard:rock_sugar_pear_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:34:24.113Z",
         "autoPrice": 39.3
@@ -4663,7 +5616,12 @@
         "name": "苹果汁",
         "itemId": "kaleidoscope_fragrantorchard:apple_juice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:34:25.113Z",
         "autoPrice": 5.9
@@ -4673,7 +5631,12 @@
         "name": "西瓜汁",
         "itemId": "kaleidoscope_fragrantorchard:melon_juice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:34:26.113Z",
         "autoPrice": 3.6
@@ -4683,7 +5646,12 @@
         "name": "葡萄汁",
         "itemId": "kaleidoscope_fragrantorchard:grape_juice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:34:27.113Z",
         "autoPrice": 13
@@ -4693,7 +5661,12 @@
         "name": "桃子汁",
         "itemId": "kaleidoscope_fragrantorchard:peach_juice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:34:28.113Z",
         "autoPrice": 12
@@ -4703,7 +5676,12 @@
         "name": "梨汁",
         "itemId": "kaleidoscope_fragrantorchard:pear_juice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:34:29.113Z",
         "autoPrice": 12
@@ -4713,7 +5691,10 @@
         "name": "肉夹馍",
         "itemId": "kaleidoscope_nether:roujiamo",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:34:30.113Z",
         "autoPrice": 35.8
@@ -4723,7 +5704,11 @@
         "name": "重庆小面",
         "itemId": "kaleidoscope_nether:chongqing_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:34:31.113Z",
         "autoPrice": 57.4
@@ -4733,7 +5718,13 @@
         "name": "螺蛳粉",
         "itemId": "kaleidoscope_nether:luosifen",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:34:32.113Z",
         "autoPrice": 97.9
@@ -4743,7 +5734,12 @@
         "name": "酸菜鱼",
         "itemId": "kaleidoscope_nether:sauerkraut_fish",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:34:33.113Z",
         "autoPrice": 86.3
@@ -4753,7 +5749,11 @@
         "name": "卤肉饭",
         "itemId": "kaleidoscope_nether:braised_pork_rice",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:34:34.113Z",
         "autoPrice": 98.1
@@ -4763,7 +5763,11 @@
         "name": "玉米胡萝卜排骨汤",
         "itemId": "kaleidoscope_nether:corn_carrot_pork_rib_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:35.113Z",
         "autoPrice": 71.4
@@ -4773,7 +5777,12 @@
         "name": "胡椒猪肚鸡汤",
         "itemId": "kaleidoscope_nether:pepper_pork_belly_chicken_soup",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:36.113Z",
         "autoPrice": 42.6
@@ -4783,7 +5792,12 @@
         "name": "蒜蓉生蚝",
         "itemId": "kaleidoscope_nether:garlic_oysters",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:34:37.113Z",
         "autoPrice": 38.7
@@ -4793,7 +5807,12 @@
         "name": "凉拌折耳根",
         "itemId": "kaleidoscope_grilling:cold_houttuynia",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_light",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:34:38.113Z",
         "autoPrice": 55.5
@@ -4803,7 +5822,9 @@
         "name": "糖拌番茄",
         "itemId": "kaleidoscope_grilling:sugared_tomato",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:34:39.113Z",
         "autoPrice": 17.5
@@ -4813,7 +5834,10 @@
         "name": "花椒蜂蜜",
         "itemId": "kaleidoscope_grilling:pepper_honey",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:34:40.113Z",
         "autoPrice": 50.5
@@ -4823,7 +5847,9 @@
         "name": "烤红薯",
         "itemId": "kaleidoscope_grilling:roasted_sweet_potato",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian"
         ],
         "createdAt": "2026-09-28T06:34:41.113Z",
         "autoPrice": 11.2
@@ -4863,7 +5889,11 @@
         "name": "青椒炒鱿鱼须",
         "itemId": "kaleidoscope_grilling:green_pepper_squid_tentacles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:34:45.113Z",
         "autoPrice": 58.1
@@ -4873,7 +5903,11 @@
         "name": "红烧鸡翅",
         "itemId": "kaleidoscope_grilling:braised_chicken_wings",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:34:46.113Z",
         "autoPrice": 35.8
@@ -4883,7 +5917,11 @@
         "name": "酸辣粉",
         "itemId": "kaleidoscope_grilling:sour_spicy_noodles",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:34:47.113Z",
         "autoPrice": 60.9
@@ -4893,7 +5931,12 @@
         "name": "红苕稀饭",
         "itemId": "kaleidoscope_grilling:red_sweet_potato_porridge",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:48.113Z",
         "autoPrice": 32.6
@@ -4903,7 +5946,10 @@
         "name": "折耳根炒肉",
         "itemId": "kaleidoscope_grilling:houttuynia_stir_fried_pork",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_spicy"
         ],
         "createdAt": "2026-09-28T06:34:49.113Z",
         "autoPrice": 62.2
@@ -4960,7 +6006,10 @@
         "name": "烤羊肉串",
         "itemId": "kaleidoscope_grilling:grilled_lamb_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_meat",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:55.113Z",
         "autoPrice": 108.3
@@ -4970,7 +6019,9 @@
         "name": "烤面筋串",
         "itemId": "kaleidoscope_grilling:grilled_gluten_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:56.113Z",
         "autoPrice": 108.9
@@ -4980,7 +6031,10 @@
         "name": "烤牛肉串",
         "itemId": "kaleidoscope_grilling:grilled_beef_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_meat",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:57.113Z",
         "autoPrice": 102.7
@@ -4990,7 +6044,10 @@
         "name": "烤五花肉串",
         "itemId": "kaleidoscope_grilling:grilled_pork_belly_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_meat",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:58.113Z",
         "autoPrice": 118.6
@@ -5000,7 +6057,10 @@
         "name": "烤中翅串",
         "itemId": "kaleidoscope_grilling:grilled_mid_wing_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_meat",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:59.113Z",
         "autoPrice": 105.2
@@ -5010,7 +6070,11 @@
         "name": "烤鱿鱼须串",
         "itemId": "kaleidoscope_grilling:grilled_squid_tentacle_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:00.113Z",
         "autoPrice": 128.9
@@ -5020,7 +6084,9 @@
         "name": "烤苕皮串",
         "itemId": "kaleidoscope_grilling:grilled_sweet_potato_sheet_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:01.113Z",
         "autoPrice": 114.4
@@ -5030,7 +6096,9 @@
         "name": "烤土豆片串",
         "itemId": "kaleidoscope_grilling:grilled_potato_slice_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:02.113Z",
         "autoPrice": 94.9
@@ -5040,7 +6108,11 @@
         "name": "烤蘑菇串",
         "itemId": "kaleidoscope_grilling:grilled_mushroom_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_fungus",
+          "tag_food_flavor_umami",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:03.113Z",
         "autoPrice": 103.1
@@ -5140,7 +6212,10 @@
         "name": "烤骨肉相连串",
         "itemId": "kaleidoscope_grilling:grilled_meat_and_bone_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_snack",
+          "tag_food_ingredient_meat",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:13.113Z",
         "autoPrice": 106.7
@@ -5150,7 +6225,10 @@
         "name": "烤馒头片串",
         "itemId": "kaleidoscope_grilling:grilled_bun_slice_skewer",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_grain",
+          "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:14.113Z",
         "autoPrice": 101.1
@@ -5160,7 +6238,9 @@
         "name": "烤马铃薯",
         "itemId": "minecraft:baked_potato",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_vegetarian"
         ],
         "createdAt": "2026-09-28T06:35:15.113Z",
         "autoPrice": 10.2
@@ -5170,7 +6250,9 @@
         "name": "牛排",
         "itemId": "minecraft:cooked_beef",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:35:16.113Z",
         "autoPrice": 16.3
@@ -5180,7 +6262,9 @@
         "name": "熟猪排",
         "itemId": "minecraft:cooked_porkchop",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:35:17.113Z",
         "autoPrice": 14.2
@@ -5190,7 +6274,8 @@
         "name": "煎蛋",
         "itemId": "kaleidoscope_cookery:fried_egg",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_staple"
         ],
         "createdAt": "2026-09-28T06:35:18.113Z",
         "autoPrice": 9.1
@@ -5260,7 +6345,12 @@
         "name": "葡萄酒",
         "itemId": "kaleidoscope_tavern:wine",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_drink_dry",
+          "tag_food_form_alcohol"
         ],
         "createdAt": "2026-09-28T06:35:25.113Z",
         "autoPrice": 15.7
@@ -5270,7 +6360,11 @@
         "name": "雪莉",
         "itemId": "kaleidoscope_tavern:sherry",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_drink_dry",
+          "tag_food_form_alcohol"
         ],
         "createdAt": "2026-09-28T06:35:26.113Z",
         "autoPrice": 35.9
@@ -5280,7 +6374,12 @@
         "name": "尊尼获加",
         "itemId": "kaleidoscope_world_liquor:johnnie_walker",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_rich",
+          "tag_food_drink_dry",
+          "tag_food_form_alcohol"
         ],
         "createdAt": "2026-09-28T06:35:27.113Z",
         "autoPrice": 21.4
@@ -5290,7 +6389,11 @@
         "name": "獺祭",
         "itemId": "kaleidoscope_world_liquor:dassai",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_drink_dry",
+          "tag_food_form_alcohol"
         ],
         "createdAt": "2026-09-28T06:35:28.113Z",
         "autoPrice": 26
@@ -5300,7 +6403,12 @@
         "name": "红皇后",
         "itemId": "kaleidoscope_tavern:red_queen",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_flavor_sweet",
+          "tag_food_drink_mellow",
+          "tag_food_form_alcohol"
         ],
         "createdAt": "2026-09-28T06:35:29.113Z",
         "autoPrice": 29.6
@@ -5310,7 +6418,11 @@
         "name": "诗庄堡",
         "itemId": "kaleidoscope_world_liquor:strongbow",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_drink_mellow",
+          "tag_food_form_alcohol"
         ],
         "createdAt": "2026-09-28T06:35:30.113Z",
         "autoPrice": 32.9
@@ -5320,7 +6432,14 @@
         "name": "马利宝椰子朗姆酒",
         "itemId": "kaleidoscope_world_liquor:pina_colada",
         "tags": [
-          "tag_1790175849511"
+          "tag_1790175849511",
+          "tag_food_main_drink",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_drink_mellow",
+          "tag_food_form_alcohol"
         ],
         "createdAt": "2026-09-28T06:35:31.113Z",
         "autoPrice": 17.9
@@ -5467,7 +6586,6 @@
           "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish",
           "aquaculturedelight_rollmops_Rollmops",
           "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
-          "aquaculturedelight_catfish_barbecue_Catfish_Barbecue",
           "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
           "bakery_chocolate_box______",
           "bakery_croissant_____",
@@ -5740,7 +6858,35 @@
           "kaleidoscope_world_liquor_strongbow____",
           "kaleidoscope_world_liquor_pina_colada_________"
         ],
-        "childTags": [],
+        "childTags": [
+          "tag_food_main_staple",
+          "tag_food_main_drink",
+          "tag_food_main_snack",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_spicy",
+          "tag_food_flavor_sour",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_light",
+          "tag_food_flavor_rich",
+          "tag_food_flavor_refreshing",
+          "tag_food_drink_mellow",
+          "tag_food_drink_dry",
+          "tag_food_drink_bitter",
+          "tag_food_ingredient_meat",
+          "tag_food_ingredient_aquatic",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_ingredient_fungus",
+          "tag_food_ingredient_fruit",
+          "tag_food_ingredient_dairy",
+          "tag_food_ingredient_grain",
+          "tag_food_form_soup",
+          "tag_food_form_tea",
+          "tag_food_form_grilled",
+          "tag_food_form_fried",
+          "tag_food_form_raw",
+          "tag_food_form_baked",
+          "tag_food_form_alcohol"
+        ],
         "parentTags": []
       },
       "tag_1790252241364": {
@@ -5872,6 +7018,1405 @@
         ],
         "childTags": [],
         "parentTags": []
+      },
+      "tag_food_main_staple": {
+        "id": "tag_food_main_staple",
+        "name": "主食",
+        "items": [
+          "youkaisfeasts_yakumo_inari______",
+          "youkaisfeasts_shirayuki___",
+          "kaleidoscope_cookery_baozi___",
+          "youkaisfeasts_rainbow_futomaki_____",
+          "kaleidoscope_twilight_frozen_bun_____",
+          "youkaisfeasts_rainbow_roll______",
+          "kaleidoscope_chinesefood_steamed_rice_rolls___",
+          "kaleidoscope_nether_chongqing_noodles_____",
+          "youkaisfeasts_stinky_tofu____",
+          "aquaculturedelight_rollmops_Rollmops",
+          "kaleidoscope_cookery_pork_bone_soup____",
+          "kaleidoscope_chinesefood_big_plate_chicken____",
+          "kaleidoscope_cookery_egg_fried_rice____",
+          "kaleidoscope_chinesefood_stir_fried_three_fresh_vegetables____",
+          "youkaisfeasts_pastitsio_______",
+          "collectorsreap_mediterranean_salmon_______",
+          "kaleidoscope_cookery_dongpo_pork____",
+          "youkaisfeasts_tofu_burger_____",
+          "kaleidoscope_chinesefood_douzhi____",
+          "extradelight_french_fries_____",
+          "kaleidoscope_cookery_scramble_egg_with_tomatoes_____",
+          "kaleidoscope_chinesefood_tomato_egg_drop_soup______",
+          "youkaisfeasts_onigili___",
+          "collectorsreap_pink_noodles____",
+          "kaleidoscope_cookery_buddha_jumps_over_the_wall____",
+          "kaleidoscope_chinesefood_dry_pot_potatoes______",
+          "kaleidoscope_cookery_dough_drop_soup____",
+          "kaleidoscope_chinesefood_red_rice_roll______",
+          "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish",
+          "farmersdelight_salmon_roll_____",
+          "youkaisfeasts_salmon_futomaki_____",
+          "collectorsreap_clam_pasta_____",
+          "youkaisfeasts_seagrass_gunkan_____",
+          "farmersdelight_kelp_roll______",
+          "collectorsreap_land_and_sea_burger____",
+          "kaleidoscope_cookery_seafood_miso_soup______",
+          "collectorsreap_sea_wrap____",
+          "farmersdelight_hamburger____",
+          "youkaisfeasts_han_palace_____",
+          "collectorsreap_deluxe_salad_____",
+          "youkaisfeasts_kappa_maki_____",
+          "kaleidoscope_cookery_pufferfish_soup____",
+          "kaleidoscope_grilling_braised_chicken_wings_____",
+          "kaleidoscope_cookery_braised_beef_____",
+          "kaleidoscope_cookery_braised_pork_ribs_____",
+          "youkaisfeasts_lions_head____",
+          "kaleidoscope_grilling_red_sweet_potato_porridge_____",
+          "kaleidoscope_nether_pepper_pork_belly_chicken_soup_______",
+          "aquaculturedelight_baked_pollock_with_carrots_Baked_Pollock_with_Carrots",
+          "kaleidoscope_cookery_stuffed_tiger_skin_pepper_______",
+          "kaleidoscope_chinesefood_beef_with_scrambled_eggs_____",
+          "collectorsreap_buttered_legs_____",
+          "kaleidoscope_chinesefood_yellow_croaker_tofu_soup______",
+          "kaleidoscope_chinesefood_yellow_croaker_soup____",
+          "farmersdelight_mixed_salad_____",
+          "farmersdelight_chicken_sandwich______",
+          "youkaisfeasts_california_roll____",
+          "farmersdelight_egg_sandwich______",
+          "youkaisfeasts_tomato_sauce_cod_____",
+          "kaleidoscope_chinesefood_stuffed_eggplant_____",
+          "kaleidoscope_cookery_fried_egg___",
+          "youkaisfeasts_sauce_grilled_fish____",
+          "kaleidoscope_cookery_numbing_spicy_chicken____",
+          "kaleidoscope_cookery_dumpling___",
+          "youkaisfeasts_otoro_nigiri_________",
+          "youkaisfeasts_tuna_nigiri_______",
+          "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
+          "farmersdelight_cabbage_rolls_____",
+          "youkaisfeasts_cumberland_loin______",
+          "kaleidoscope_cookery_samsa____",
+          "kaleidoscope_grilling_roasted_sweet_potato____",
+          "farmersdelight_roast_chicken_block___",
+          "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
+          "minecraft_baked_potato_____",
+          "kaleidoscope_grilling_grilled_bun_slice_skewer______",
+          "farmersdelight_roasted_mutton_chops____",
+          "kaleidoscope_cookery_laba_congee____",
+          "kaleidoscope_cookery_spicy_chicken____",
+          "youkaisfeasts_cold_tofu_____",
+          "kaleidoscope_cookery_cold_cut_ham_slices______",
+          "kaleidoscope_cookery_cold_roasted_meat____",
+          "youkaisfeasts_power_soup____",
+          "kaleidoscope_grilling_cold_houttuynia______",
+          "kaleidoscope_cookery_frost_lamb_chop_____",
+          "aquaculturedelight_bass_stew_Bass_Stew",
+          "kaleidoscope_nether_braised_pork_rice____",
+          "kaleidoscope_cookery_donkey_burger_____",
+          "kaleidoscope_cookery_borscht____",
+          "kaleidoscope_cookery_lamb_and_radish_soup______",
+          "kaleidoscope_nether_luosifen____",
+          "kaleidoscope_chinesefood_sichuan_wonton_____",
+          "kaleidoscope_cookery_spicy_rabbit_head_____",
+          "youkaisfeasts_mapo_tofu_____",
+          "collectorsreap_potato_fritters______",
+          "kaleidoscope_cookery_mantou___",
+          "youkaisfeasts_grilled_eel_over_rice____",
+          "kaleidoscope_cookery_spicy_blood_stew____",
+          "farmersdelight_cooked_rice___",
+          "youkaisfeasts_signature_mushroom_stew______",
+          "farmersdelight_honey_glazed_ham_block_____",
+          "collectorsreap_honey_lime_chicken______",
+          "youkaisfeasts_honey_glazed_cucumber_____",
+          "minecraft_mushroom_stew____",
+          "farmersdelight_mushroom_rice____",
+          "collectorsreap_portobello_pasta_____",
+          "farmersdelight_shepherds_pie_block_____",
+          "youkaisfeasts_nattou_gunkan_____",
+          "youkaisfeasts_potato_soup________",
+          "youkaisfeasts_mushroom_soup_______",
+          "kaleidoscope_chinesefood_pumpkin_porridge____",
+          "collectorsreap_cod_ceviche_____",
+          "minecraft_cooked_beef___",
+          "kaleidoscope_cookery_beef_noodle____",
+          "kaleidoscope_cookery_beef_meatball_soup____",
+          "kaleidoscope_fragrantorchard_peach_of_immortality____",
+          "farmersdelight_bacon_sandwich______",
+          "kaleidoscope_chinesefood_century_egg_congee______",
+          "youkaisfeasts_kabayaki_____",
+          "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
+          "kaleidoscope_cookery_stir_fried_pork_with_peppers_____",
+          "kaleidoscope_grilling_green_pepper_squid_tentacles_______",
+          "youkaisfeasts_steamed_crab_____",
+          "collectorsreap_prawn_po_boy_________",
+          "collectorsreap_chieftain_crab____",
+          "kaleidoscope_cookery_hot_dry_noodles____",
+          "kaleidoscope_nether_roujiamo____",
+          "farmersdelight_pasta_with_meatballs_____",
+          "youkaisfeasts_salmon_lover_roll____",
+          "youkaisfeasts_imitation_bear_paw____",
+          "collectorsreap_salmon_wrapped_prawn_______",
+          "collectorsreap_pomegranate_pork______",
+          "youkaisfeasts_hokkaido_salmon_hotpot____",
+          "farmersdelight_vegetable_noodles____",
+          "youkaisfeasts_tuscan_salmon_______",
+          "farmersdelight_ratatouille_____",
+          "minecraft_cooked_porkchop____",
+          "kaleidoscope_cookery_bamboo_tube_rice_____",
+          "kaleidoscope_cookery_zongzi____",
+          "collectorsreap_portobello_risotto_______",
+          "collectorsreap_portobello_quiche________",
+          "farmersdelight_fruit_salad_____",
+          "kaleidoscope_cookery_shengjian_mantou____",
+          "kaleidoscope_chinesefood_sichuan_boiled_pork_slices_____",
+          "kaleidoscope_chinesefood_sichuan_boiled_fish____",
+          "kaleidoscope_cookery_four_joy_meatball_soup______",
+          "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
+          "collectorsreap_portobello_wrap____",
+          "kaleidoscope_chinesefood_sauerkraut_beef_noodles______",
+          "kaleidoscope_nether_sauerkraut_fish____",
+          "kaleidoscope_grilling_sour_spicy_noodles____",
+          "collectorsreap_prawn_ceviche_____",
+          "kaleidoscope_nether_garlic_oysters_____",
+          "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
+          "kaleidoscope_grilling_sugared_tomato_____",
+          "kaleidoscope_cookery_sweet_and_sour_pork_____",
+          "minecraft_beetroot_soup____",
+          "farmersdelight_stuffed_potato______",
+          "farmersdelight_stuffed_pumpkin_block_____",
+          "youkaisfeasts_volcano_roll______",
+          "youkaisfeasts_tekka_maki____",
+          "kaleidoscope_cookery_braised_beef_with_potatoes______",
+          "minecraft_rabbit_stew____",
+          "kaleidoscope_cookery_udon_noodle____",
+          "collectorsreap_prawn_noodles_____",
+          "kaleidoscope_cookery_meat_pie___",
+          "farmersdelight_grilled_salmon_____",
+          "kaleidoscope_cookery_chicken_and_mushroom_stew______",
+          "collectorsreap_crab_noodles____",
+          "collectorsreap_crab_lasagna______",
+          "youkaisfeasts_roe_california_roll______",
+          "youkaisfeasts_shinnko_maki_____",
+          "aquaculturedelight_halaszle_Halaszle",
+          "farmersdelight_cod_roll_____",
+          "aquaculturedelight_buckling_Buckling",
+          "kaleidoscope_chinesefood_yangzhou_fried_rice_____",
+          "farmersdelight_pasta_with_mutton_chop_____",
+          "kaleidoscope_cookery_hui_noodle_____",
+          "farmersdelight_mutton_wrap_____",
+          "kaleidoscope_chinesefood_yangrou_paomo_____",
+          "kaleidoscope_cookery_stargazy_pie______",
+          "kaleidoscope_cookery_wild_mushroom_rabbit_soup______",
+          "youkaisfeasts_lorelei_nigiri______",
+          "kaleidoscope_cookery_oil_splashed_fish____",
+          "kaleidoscope_cookery_fried_caterpillar______",
+          "collectorsreap_fish_mix_____",
+          "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
+          "youkaisfeasts_tobiko_gunkan_____",
+          "kaleidoscope_nether_corn_carrot_pork_rib_soup_________",
+          "youkaisfeasts_tamagoyaki____",
+          "youkaisfeasts_egg_nigiri_______",
+          "youkaisfeasts_egg_futomaki_____",
+          "kaleidoscope_chinesefood_wonton_noodles____",
+          "kaleidoscope_cookery_fried_spring_roll____",
+          "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
+          "aquaculturedelight_fish_and_chips_Fish_and_Chips",
+          "youkaisfeasts_longevity_noodles____",
+          "kaleidoscope_grilling_houttuynia_stir_fried_pork______",
+          "youkaisfeasts_pork_rice_ball_____",
+          "kaleidoscope_chinesefood_bamboo_steamed_egg_____",
+          "kaleidoscope_chinesefood_seaweed_egg_drop_soup______"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_main_drink": {
+        "id": "tag_food_main_drink",
+        "name": "饮品",
+        "items": [
+          "kaleidoscope_cookery_biluochun____",
+          "kaleidoscope_cookery_tea_egg____",
+          "collectorsreap_lucuma_pudding______",
+          "kaleidoscope_cookery_oolong______",
+          "farmersdelight_glow_berry_custard_________",
+          "collectorsreap_pink_limeade______",
+          "kaleidoscope_chinesefood_hk_milk_tea_______",
+          "kaleidoscope_tavern_red_queen____",
+          "collectorsreap_berry_limeade______",
+          "kaleidoscope_fragrantorchard_pear_juice___",
+          "kaleidoscope_world_liquor_pina_colada_________",
+          "kaleidoscope_cookery_barley_tea______",
+          "youkaisfeasts_matcha_mochi_____",
+          "kaleidoscope_fragrantorchard_apple_juice____",
+          "kaleidoscope_tavern_wine____",
+          "kaleidoscope_fragrantorchard_grape_juice____",
+          "kaleidoscope_world_liquor_strongbow____",
+          "collectorsreap_pomegranate_custard_____",
+          "kaleidoscope_cookery_butter_tea____",
+          "kaleidoscope_world_liquor_dassai___",
+          "kaleidoscope_fragrantorchard_peach_juice____",
+          "kaleidoscope_cookery_tieguanyin____",
+          "kaleidoscope_fragrantorchard_melon_juice____",
+          "kaleidoscope_tavern_sherry___",
+          "crabbersdelight_coconut_milk_Coconut_Milk",
+          "kaleidoscope_cookery_sakura_fubuki____",
+          "kaleidoscope_chinesefood_dianhong_tea_____",
+          "kaleidoscope_world_liquor_johnnie_walker_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_main_snack": {
+        "id": "tag_food_main_snack",
+        "name": "点心",
+        "items": [
+          "kaleidoscope_cookery_candied_potato_____",
+          "bakery_braided_bread_____",
+          "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______",
+          "bakery_strawberry_cake_____",
+          "bakery_strawberry_glazed_cookie_______",
+          "kaleidoscope_cookery_sticky_rice_cake___",
+          "aquaculturedelight_crispy_nori_kelp_Crispy_Nori",
+          "bakery_crusty_bread_____",
+          "youkaisfeasts_big_popsicle_____",
+          "collectorsreap_lucuma_cake______",
+          "collectorsreap_lucuma_bread______",
+          "youkaisfeasts_shaved_ice_over_rice_______",
+          "bakery_baguette_____",
+          "kaleidoscope_cookery_fondant_pie____",
+          "bakery_jam_roll____",
+          "bakery_bread______",
+          "collectorsreap_pink_dragon_fruit_cake________",
+          "kaleidoscope_grilling_pepper_honey_____",
+          "youkaisfeasts_udumbara_cake_____",
+          "kaleidoscope_grilling_grilled_meat_and_bone_skewer_______",
+          "kaleidoscope_grilling_grilled_gluten_skewer_____",
+          "kaleidoscope_grilling_grilled_mushroom_skewer_____",
+          "kaleidoscope_grilling_grilled_beef_skewer_____",
+          "kaleidoscope_grilling_grilled_sweet_potato_sheet_skewer_____",
+          "kaleidoscope_grilling_grilled_potato_slice_skewer______",
+          "kaleidoscope_grilling_grilled_pork_belly_skewer______",
+          "kaleidoscope_grilling_grilled_lamb_skewer_____",
+          "kaleidoscope_grilling_grilled_squid_tentacle_skewer______",
+          "kaleidoscope_grilling_grilled_mid_wing_skewer_____",
+          "youkaisfeasts_mochi___",
+          "minecraft_bread___",
+          "minecraft_pumpkin_pie____",
+          "bakery_croissant_____",
+          "youkaisfeasts_milk_popsicle_____",
+          "kaleidoscope_cookery_sticky_candy____",
+          "farmersdelight_apple_pie____",
+          "youkaisfeasts_seven_colored_yokan_____",
+          "bakery_chocolate_cake______",
+          "bakery_chocolate_box______",
+          "farmersdelight_chocolate_pie_____",
+          "bakery_chocolate_glazed_cookie________",
+          "collectorsreap_lime_popsicle_____",
+          "collectorsreap_lime_cake_____",
+          "collectorsreap_candied_lime_____",
+          "collectorsreap_lime_pie____",
+          "collectorsreap_lime_cookie_____",
+          "youkaisfeasts_sekibankiyaki____",
+          "collectorsreap_pomegranate_cake_____",
+          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
+          "bakery_sweetberry_cake______",
+          "bakery_sweetberry_glazed_cookie________",
+          "farmersdelight_sweet_berry_cheesecake_______",
+          "bakery_cornet_______",
+          "bakery_toast_____",
+          "farmersdelight_melon_popsicle_____",
+          "youkaisfeasts_senbei___",
+          "youkaisfeasts_dried_fish____",
+          "bakery_bun_____",
+          "youkaisfeasts_yashouma_dango_____",
+          "crabbersdelight_coconut_pudding_Coconut_Pudding",
+          "youkaisfeasts_sakura_mochi___",
+          "youkaisfeasts_tsukimi_dango_____",
+          "youkaisfeasts_bamboo_mizuyokan______"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_flavor_sweet": {
+        "id": "tag_food_flavor_sweet",
+        "name": "甜",
+        "items": [
+          "kaleidoscope_cookery_candied_potato_____",
+          "bakery_braided_bread_____",
+          "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______",
+          "bakery_strawberry_cake_____",
+          "bakery_strawberry_glazed_cookie_______",
+          "kaleidoscope_cookery_sticky_rice_cake___",
+          "bakery_crusty_bread_____",
+          "youkaisfeasts_big_popsicle_____",
+          "collectorsreap_lucuma_pudding______",
+          "collectorsreap_lucuma_cake______",
+          "collectorsreap_lucuma_bread______",
+          "kaleidoscope_cookery_dongpo_pork____",
+          "youkaisfeasts_tofu_burger_____",
+          "youkaisfeasts_shaved_ice_over_rice_______",
+          "farmersdelight_glow_berry_custard_________",
+          "kaleidoscope_cookery_scramble_egg_with_tomatoes_____",
+          "kaleidoscope_cookery_fondant_pie____",
+          "collectorsreap_pink_limeade______",
+          "kaleidoscope_chinesefood_hk_milk_tea_______",
+          "bakery_jam_roll____",
+          "collectorsreap_deluxe_salad_____",
+          "bakery_bread______",
+          "kaleidoscope_tavern_red_queen____",
+          "kaleidoscope_grilling_braised_chicken_wings_____",
+          "kaleidoscope_cookery_braised_pork_ribs_____",
+          "kaleidoscope_grilling_red_sweet_potato_porridge_____",
+          "collectorsreap_pink_dragon_fruit_cake________",
+          "kaleidoscope_grilling_pepper_honey_____",
+          "youkaisfeasts_udumbara_cake_____",
+          "collectorsreap_berry_limeade______",
+          "kaleidoscope_cookery_numbing_spicy_chicken____",
+          "kaleidoscope_cookery_laba_congee____",
+          "kaleidoscope_fragrantorchard_pear_juice___",
+          "kaleidoscope_cookery_frost_lamb_chop_____",
+          "kaleidoscope_cookery_donkey_burger_____",
+          "kaleidoscope_cookery_spicy_rabbit_head_____",
+          "youkaisfeasts_mochi___",
+          "kaleidoscope_world_liquor_pina_colada_________",
+          "youkaisfeasts_grilled_eel_over_rice____",
+          "farmersdelight_honey_glazed_ham_block_____",
+          "collectorsreap_honey_lime_chicken______",
+          "youkaisfeasts_honey_glazed_cucumber_____",
+          "youkaisfeasts_matcha_mochi_____",
+          "farmersdelight_shepherds_pie_block_____",
+          "minecraft_pumpkin_pie____",
+          "kaleidoscope_chinesefood_pumpkin_porridge____",
+          "youkaisfeasts_milk_popsicle_____",
+          "kaleidoscope_cookery_sticky_candy____",
+          "farmersdelight_apple_pie____",
+          "kaleidoscope_fragrantorchard_apple_juice____",
+          "kaleidoscope_tavern_wine____",
+          "kaleidoscope_fragrantorchard_grape_juice____",
+          "youkaisfeasts_kabayaki_____",
+          "youkaisfeasts_seven_colored_yokan_____",
+          "bakery_chocolate_cake______",
+          "bakery_chocolate_box______",
+          "farmersdelight_chocolate_pie_____",
+          "bakery_chocolate_glazed_cookie________",
+          "collectorsreap_lime_popsicle_____",
+          "collectorsreap_lime_cake_____",
+          "collectorsreap_candied_lime_____",
+          "collectorsreap_lime_pie____",
+          "collectorsreap_lime_cookie_____",
+          "collectorsreap_salmon_wrapped_prawn_______",
+          "youkaisfeasts_sekibankiyaki____",
+          "collectorsreap_pomegranate_cake_____",
+          "collectorsreap_pomegranate_custard_____",
+          "collectorsreap_pomegranate_pork______",
+          "farmersdelight_fruit_salad_____",
+          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
+          "kaleidoscope_grilling_sugared_tomato_____",
+          "kaleidoscope_cookery_sweet_and_sour_pork_____",
+          "kaleidoscope_fragrantorchard_peach_juice____",
+          "bakery_sweetberry_cake______",
+          "bakery_sweetberry_glazed_cookie________",
+          "farmersdelight_sweet_berry_cheesecake_______",
+          "bakery_cornet_______",
+          "farmersdelight_stuffed_pumpkin_block_____",
+          "kaleidoscope_cookery_braised_beef_with_potatoes______",
+          "bakery_toast_____",
+          "farmersdelight_melon_popsicle_____",
+          "kaleidoscope_fragrantorchard_melon_juice____",
+          "youkaisfeasts_senbei___",
+          "farmersdelight_grilled_salmon_____",
+          "bakery_bun_____",
+          "youkaisfeasts_yashouma_dango_____",
+          "crabbersdelight_coconut_milk_Coconut_Milk",
+          "crabbersdelight_coconut_pudding_Coconut_Pudding",
+          "youkaisfeasts_sakura_mochi___",
+          "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
+          "youkaisfeasts_tamagoyaki____",
+          "youkaisfeasts_tsukimi_dango_____",
+          "youkaisfeasts_bamboo_mizuyokan______"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_flavor_spicy": {
+        "id": "tag_food_flavor_spicy",
+        "name": "辣",
+        "items": [
+          "kaleidoscope_nether_chongqing_noodles_____",
+          "youkaisfeasts_stinky_tofu____",
+          "kaleidoscope_chinesefood_big_plate_chicken____",
+          "kaleidoscope_chinesefood_stir_fried_three_fresh_vegetables____",
+          "kaleidoscope_chinesefood_dry_pot_potatoes______",
+          "kaleidoscope_cookery_braised_beef_____",
+          "kaleidoscope_nether_pepper_pork_belly_chicken_soup_______",
+          "kaleidoscope_cookery_stuffed_tiger_skin_pepper_______",
+          "kaleidoscope_grilling_pepper_honey_____",
+          "youkaisfeasts_sauce_grilled_fish____",
+          "kaleidoscope_cookery_numbing_spicy_chicken____",
+          "kaleidoscope_cookery_spicy_chicken____",
+          "kaleidoscope_grilling_cold_houttuynia______",
+          "kaleidoscope_nether_braised_pork_rice____",
+          "kaleidoscope_cookery_donkey_burger_____",
+          "kaleidoscope_nether_luosifen____",
+          "kaleidoscope_chinesefood_sichuan_wonton_____",
+          "kaleidoscope_cookery_spicy_rabbit_head_____",
+          "youkaisfeasts_mapo_tofu_____",
+          "kaleidoscope_cookery_spicy_blood_stew____",
+          "kaleidoscope_cookery_stir_fried_pork_with_peppers_____",
+          "kaleidoscope_grilling_green_pepper_squid_tentacles_______",
+          "kaleidoscope_cookery_hot_dry_noodles____",
+          "kaleidoscope_chinesefood_sichuan_boiled_pork_slices_____",
+          "kaleidoscope_chinesefood_sichuan_boiled_fish____",
+          "kaleidoscope_chinesefood_sauerkraut_beef_noodles______",
+          "kaleidoscope_nether_sauerkraut_fish____",
+          "kaleidoscope_grilling_sour_spicy_noodles____",
+          "kaleidoscope_nether_garlic_oysters_____",
+          "aquaculturedelight_halaszle_Halaszle",
+          "kaleidoscope_cookery_oil_splashed_fish____",
+          "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
+          "kaleidoscope_grilling_houttuynia_stir_fried_pork______"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_flavor_sour": {
+        "id": "tag_food_flavor_sour",
+        "name": "酸",
+        "items": [
+          "bakery_strawberry_glazed_cookie_______",
+          "aquaculturedelight_rollmops_Rollmops",
+          "collectorsreap_mediterranean_salmon_______",
+          "kaleidoscope_cookery_dongpo_pork____",
+          "collectorsreap_pink_limeade______",
+          "collectorsreap_deluxe_salad_____",
+          "collectorsreap_berry_limeade______",
+          "kaleidoscope_cookery_donkey_burger_____",
+          "kaleidoscope_cookery_borscht____",
+          "kaleidoscope_nether_luosifen____",
+          "collectorsreap_potato_fritters______",
+          "collectorsreap_honey_lime_chicken______",
+          "collectorsreap_cod_ceviche_____",
+          "bakery_chocolate_glazed_cookie________",
+          "collectorsreap_lime_popsicle_____",
+          "collectorsreap_lime_cake_____",
+          "collectorsreap_candied_lime_____",
+          "collectorsreap_lime_pie____",
+          "collectorsreap_lime_cookie_____",
+          "collectorsreap_salmon_wrapped_prawn_______",
+          "kaleidoscope_chinesefood_sauerkraut_beef_noodles______",
+          "kaleidoscope_nether_sauerkraut_fish____",
+          "kaleidoscope_grilling_sour_spicy_noodles____",
+          "collectorsreap_prawn_ceviche_____",
+          "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
+          "kaleidoscope_cookery_sweet_and_sour_pork_____",
+          "bakery_sweetberry_glazed_cookie________",
+          "kaleidoscope_cookery_fish_flavored_shredded_pork_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_flavor_umami": {
+        "id": "tag_food_flavor_umami",
+        "name": "鲜",
+        "items": [
+          "youkaisfeasts_shirayuki___",
+          "youkaisfeasts_rainbow_futomaki_____",
+          "youkaisfeasts_rainbow_roll______",
+          "youkaisfeasts_stinky_tofu____",
+          "aquaculturedelight_rollmops_Rollmops",
+          "collectorsreap_mediterranean_salmon_______",
+          "youkaisfeasts_shaved_ice_over_rice_______",
+          "kaleidoscope_cookery_buddha_jumps_over_the_wall____",
+          "kaleidoscope_chinesefood_red_rice_roll______",
+          "farmersdelight_salmon_roll_____",
+          "youkaisfeasts_salmon_futomaki_____",
+          "collectorsreap_clam_pasta_____",
+          "collectorsreap_land_and_sea_burger____",
+          "kaleidoscope_cookery_seafood_miso_soup______",
+          "collectorsreap_sea_wrap____",
+          "youkaisfeasts_han_palace_____",
+          "kaleidoscope_cookery_pufferfish_soup____",
+          "kaleidoscope_nether_pepper_pork_belly_chicken_soup_______",
+          "aquaculturedelight_baked_pollock_with_carrots_Baked_Pollock_with_Carrots",
+          "collectorsreap_buttered_legs_____",
+          "kaleidoscope_chinesefood_yellow_croaker_tofu_soup______",
+          "kaleidoscope_chinesefood_yellow_croaker_soup____",
+          "youkaisfeasts_california_roll____",
+          "youkaisfeasts_tomato_sauce_cod_____",
+          "youkaisfeasts_sauce_grilled_fish____",
+          "youkaisfeasts_otoro_nigiri_________",
+          "youkaisfeasts_tuna_nigiri_______",
+          "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
+          "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
+          "kaleidoscope_grilling_grilled_mushroom_skewer_____",
+          "kaleidoscope_grilling_grilled_squid_tentacle_skewer______",
+          "youkaisfeasts_power_soup____",
+          "aquaculturedelight_bass_stew_Bass_Stew",
+          "kaleidoscope_cookery_borscht____",
+          "kaleidoscope_cookery_lamb_and_radish_soup______",
+          "kaleidoscope_nether_luosifen____",
+          "youkaisfeasts_grilled_eel_over_rice____",
+          "kaleidoscope_cookery_spicy_blood_stew____",
+          "youkaisfeasts_signature_mushroom_stew______",
+          "minecraft_mushroom_stew____",
+          "farmersdelight_mushroom_rice____",
+          "collectorsreap_portobello_pasta_____",
+          "youkaisfeasts_potato_soup________",
+          "youkaisfeasts_mushroom_soup_______",
+          "collectorsreap_cod_ceviche_____",
+          "kaleidoscope_cookery_beef_meatball_soup____",
+          "kaleidoscope_chinesefood_century_egg_congee______",
+          "youkaisfeasts_kabayaki_____",
+          "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
+          "kaleidoscope_grilling_green_pepper_squid_tentacles_______",
+          "youkaisfeasts_steamed_crab_____",
+          "collectorsreap_prawn_po_boy_________",
+          "collectorsreap_chieftain_crab____",
+          "youkaisfeasts_salmon_lover_roll____",
+          "collectorsreap_salmon_wrapped_prawn_______",
+          "youkaisfeasts_hokkaido_salmon_hotpot____",
+          "farmersdelight_vegetable_noodles____",
+          "youkaisfeasts_tuscan_salmon_______",
+          "collectorsreap_portobello_risotto_______",
+          "collectorsreap_portobello_quiche________",
+          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
+          "kaleidoscope_chinesefood_sichuan_boiled_fish____",
+          "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
+          "collectorsreap_portobello_wrap____",
+          "kaleidoscope_nether_sauerkraut_fish____",
+          "collectorsreap_prawn_ceviche_____",
+          "kaleidoscope_nether_garlic_oysters_____",
+          "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
+          "farmersdelight_stuffed_pumpkin_block_____",
+          "youkaisfeasts_volcano_roll______",
+          "youkaisfeasts_tekka_maki____",
+          "minecraft_rabbit_stew____",
+          "collectorsreap_prawn_noodles_____",
+          "farmersdelight_grilled_salmon_____",
+          "kaleidoscope_cookery_chicken_and_mushroom_stew______",
+          "youkaisfeasts_dried_fish____",
+          "collectorsreap_crab_noodles____",
+          "collectorsreap_crab_lasagna______",
+          "youkaisfeasts_roe_california_roll______",
+          "aquaculturedelight_halaszle_Halaszle",
+          "farmersdelight_cod_roll_____",
+          "aquaculturedelight_buckling_Buckling",
+          "kaleidoscope_cookery_hui_noodle_____",
+          "kaleidoscope_cookery_stargazy_pie______",
+          "kaleidoscope_cookery_wild_mushroom_rabbit_soup______",
+          "youkaisfeasts_lorelei_nigiri______",
+          "kaleidoscope_cookery_oil_splashed_fish____",
+          "collectorsreap_fish_mix_____",
+          "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
+          "youkaisfeasts_tobiko_gunkan_____",
+          "kaleidoscope_nether_corn_carrot_pork_rib_soup_________",
+          "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
+          "aquaculturedelight_fish_and_chips_Fish_and_Chips",
+          "youkaisfeasts_longevity_noodles____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_flavor_light": {
+        "id": "tag_food_flavor_light",
+        "name": "清淡",
+        "items": [
+          "farmersdelight_kelp_roll______",
+          "collectorsreap_deluxe_salad_____",
+          "farmersdelight_mixed_salad_____",
+          "youkaisfeasts_cold_tofu_____",
+          "kaleidoscope_grilling_cold_houttuynia______",
+          "farmersdelight_cooked_rice___",
+          "youkaisfeasts_steamed_crab_____",
+          "farmersdelight_vegetable_noodles____",
+          "farmersdelight_ratatouille_____",
+          "farmersdelight_fruit_salad_____",
+          "collectorsreap_portobello_wrap____",
+          "kaleidoscope_chinesefood_bamboo_steamed_egg_____",
+          "kaleidoscope_chinesefood_seaweed_egg_drop_soup______"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_flavor_rich": {
+        "id": "tag_food_flavor_rich",
+        "name": "浓郁",
+        "items": [
+          "bakery_braided_bread_____",
+          "bakery_strawberry_cake_____",
+          "bakery_strawberry_glazed_cookie_______",
+          "bakery_crusty_bread_____",
+          "kaleidoscope_chinesefood_big_plate_chicken____",
+          "collectorsreap_lucuma_cake______",
+          "youkaisfeasts_pastitsio_______",
+          "kaleidoscope_cookery_dongpo_pork____",
+          "youkaisfeasts_tofu_burger_____",
+          "kaleidoscope_cookery_buddha_jumps_over_the_wall____",
+          "kaleidoscope_chinesefood_dry_pot_potatoes______",
+          "bakery_jam_roll____",
+          "collectorsreap_clam_pasta_____",
+          "farmersdelight_kelp_roll______",
+          "kaleidoscope_grilling_braised_chicken_wings_____",
+          "kaleidoscope_cookery_braised_beef_____",
+          "kaleidoscope_cookery_braised_pork_ribs_____",
+          "youkaisfeasts_lions_head____",
+          "collectorsreap_pink_dragon_fruit_cake________",
+          "collectorsreap_buttered_legs_____",
+          "youkaisfeasts_sauce_grilled_fish____",
+          "youkaisfeasts_mochi___",
+          "kaleidoscope_world_liquor_pina_colada_________",
+          "kaleidoscope_cookery_spicy_blood_stew____",
+          "farmersdelight_honey_glazed_ham_block_____",
+          "collectorsreap_honey_lime_chicken______",
+          "collectorsreap_portobello_pasta_____",
+          "farmersdelight_shepherds_pie_block_____",
+          "youkaisfeasts_potato_soup________",
+          "youkaisfeasts_mushroom_soup_______",
+          "minecraft_pumpkin_pie____",
+          "bakery_croissant_____",
+          "youkaisfeasts_milk_popsicle_____",
+          "bakery_chocolate_cake______",
+          "farmersdelight_chocolate_pie_____",
+          "bakery_chocolate_glazed_cookie________",
+          "collectorsreap_lime_cake_____",
+          "collectorsreap_lime_pie____",
+          "collectorsreap_lime_cookie_____",
+          "youkaisfeasts_sekibankiyaki____",
+          "collectorsreap_pomegranate_cake_____",
+          "youkaisfeasts_tuscan_salmon_______",
+          "collectorsreap_portobello_risotto_______",
+          "collectorsreap_portobello_quiche________",
+          "kaleidoscope_cookery_butter_tea____",
+          "bakery_sweetberry_cake______",
+          "bakery_sweetberry_glazed_cookie________",
+          "farmersdelight_sweet_berry_cheesecake_______",
+          "bakery_cornet_______",
+          "farmersdelight_stuffed_potato______",
+          "kaleidoscope_cookery_braised_beef_with_potatoes______",
+          "bakery_toast_____",
+          "bakery_bun_____",
+          "collectorsreap_crab_noodles____",
+          "collectorsreap_crab_lasagna______",
+          "crabbersdelight_coconut_pudding_Coconut_Pudding",
+          "youkaisfeasts_tamagoyaki____",
+          "kaleidoscope_world_liquor_johnnie_walker_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_flavor_refreshing": {
+        "id": "tag_food_flavor_refreshing",
+        "name": "凉爽",
+        "items": [
+          "kaleidoscope_twilight_frozen_bun_____",
+          "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______",
+          "youkaisfeasts_big_popsicle_____",
+          "youkaisfeasts_shaved_ice_over_rice_______",
+          "collectorsreap_pink_limeade______",
+          "collectorsreap_berry_limeade______",
+          "youkaisfeasts_cold_tofu_____",
+          "kaleidoscope_cookery_cold_cut_ham_slices______",
+          "kaleidoscope_cookery_cold_roasted_meat____",
+          "kaleidoscope_fragrantorchard_pear_juice___",
+          "kaleidoscope_grilling_cold_houttuynia______",
+          "youkaisfeasts_milk_popsicle_____",
+          "kaleidoscope_fragrantorchard_apple_juice____",
+          "kaleidoscope_fragrantorchard_grape_juice____",
+          "collectorsreap_lime_popsicle_____",
+          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
+          "kaleidoscope_fragrantorchard_peach_juice____",
+          "farmersdelight_melon_popsicle_____",
+          "kaleidoscope_fragrantorchard_melon_juice____",
+          "crabbersdelight_coconut_pudding_Coconut_Pudding"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_drink_mellow": {
+        "id": "tag_food_drink_mellow",
+        "name": "甘",
+        "items": [
+          "collectorsreap_pink_limeade______",
+          "kaleidoscope_chinesefood_hk_milk_tea_______",
+          "kaleidoscope_tavern_red_queen____",
+          "collectorsreap_berry_limeade______",
+          "kaleidoscope_fragrantorchard_pear_juice___",
+          "kaleidoscope_world_liquor_pina_colada_________",
+          "kaleidoscope_fragrantorchard_apple_juice____",
+          "kaleidoscope_fragrantorchard_grape_juice____",
+          "kaleidoscope_world_liquor_strongbow____",
+          "kaleidoscope_fragrantorchard_peach_juice____",
+          "kaleidoscope_fragrantorchard_melon_juice____",
+          "crabbersdelight_coconut_milk_Coconut_Milk"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_drink_dry": {
+        "id": "tag_food_drink_dry",
+        "name": "辛",
+        "items": [
+          "kaleidoscope_tavern_wine____",
+          "kaleidoscope_world_liquor_dassai___",
+          "kaleidoscope_tavern_sherry___",
+          "kaleidoscope_world_liquor_johnnie_walker_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_drink_bitter": {
+        "id": "tag_food_drink_bitter",
+        "name": "苦",
+        "items": [
+          "kaleidoscope_cookery_biluochun____",
+          "kaleidoscope_cookery_oolong______",
+          "kaleidoscope_cookery_barley_tea______",
+          "kaleidoscope_cookery_tieguanyin____",
+          "kaleidoscope_cookery_sakura_fubuki____",
+          "kaleidoscope_chinesefood_dianhong_tea_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_ingredient_meat": {
+        "id": "tag_food_ingredient_meat",
+        "name": "肉食",
+        "items": [
+          "kaleidoscope_nether_chongqing_noodles_____",
+          "kaleidoscope_chinesefood_big_plate_chicken____",
+          "youkaisfeasts_pastitsio_______",
+          "kaleidoscope_cookery_dongpo_pork____",
+          "kaleidoscope_cookery_buddha_jumps_over_the_wall____",
+          "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish",
+          "collectorsreap_land_and_sea_burger____",
+          "farmersdelight_hamburger____",
+          "kaleidoscope_grilling_braised_chicken_wings_____",
+          "kaleidoscope_cookery_braised_beef_____",
+          "kaleidoscope_cookery_braised_pork_ribs_____",
+          "kaleidoscope_nether_pepper_pork_belly_chicken_soup_______",
+          "kaleidoscope_chinesefood_beef_with_scrambled_eggs_____",
+          "farmersdelight_chicken_sandwich______",
+          "kaleidoscope_cookery_numbing_spicy_chicken____",
+          "youkaisfeasts_cumberland_loin______",
+          "kaleidoscope_grilling_grilled_meat_and_bone_skewer_______",
+          "farmersdelight_roast_chicken_block___",
+          "kaleidoscope_grilling_grilled_beef_skewer_____",
+          "kaleidoscope_grilling_grilled_pork_belly_skewer______",
+          "farmersdelight_roasted_mutton_chops____",
+          "kaleidoscope_grilling_grilled_lamb_skewer_____",
+          "kaleidoscope_grilling_grilled_mid_wing_skewer_____",
+          "kaleidoscope_cookery_spicy_chicken____",
+          "kaleidoscope_cookery_cold_cut_ham_slices______",
+          "kaleidoscope_cookery_cold_roasted_meat____",
+          "youkaisfeasts_power_soup____",
+          "kaleidoscope_cookery_frost_lamb_chop_____",
+          "kaleidoscope_nether_braised_pork_rice____",
+          "kaleidoscope_cookery_donkey_burger_____",
+          "kaleidoscope_cookery_borscht____",
+          "kaleidoscope_cookery_lamb_and_radish_soup______",
+          "kaleidoscope_cookery_spicy_rabbit_head_____",
+          "youkaisfeasts_mapo_tofu_____",
+          "kaleidoscope_cookery_spicy_blood_stew____",
+          "farmersdelight_honey_glazed_ham_block_____",
+          "collectorsreap_honey_lime_chicken______",
+          "youkaisfeasts_honey_glazed_cucumber_____",
+          "farmersdelight_shepherds_pie_block_____",
+          "youkaisfeasts_potato_soup________",
+          "minecraft_cooked_beef___",
+          "kaleidoscope_cookery_beef_noodle____",
+          "kaleidoscope_cookery_beef_meatball_soup____",
+          "farmersdelight_bacon_sandwich______",
+          "kaleidoscope_chinesefood_century_egg_congee______",
+          "kaleidoscope_cookery_stir_fried_pork_with_peppers_____",
+          "kaleidoscope_nether_roujiamo____",
+          "farmersdelight_pasta_with_meatballs_____",
+          "youkaisfeasts_imitation_bear_paw____",
+          "collectorsreap_pomegranate_pork______",
+          "minecraft_cooked_porkchop____",
+          "kaleidoscope_chinesefood_sichuan_boiled_pork_slices_____",
+          "kaleidoscope_chinesefood_sauerkraut_beef_noodles______",
+          "kaleidoscope_cookery_sweet_and_sour_pork_____",
+          "farmersdelight_stuffed_potato______",
+          "kaleidoscope_cookery_braised_beef_with_potatoes______",
+          "minecraft_rabbit_stew____",
+          "kaleidoscope_cookery_udon_noodle____",
+          "kaleidoscope_cookery_chicken_and_mushroom_stew______",
+          "kaleidoscope_chinesefood_yangzhou_fried_rice_____",
+          "farmersdelight_pasta_with_mutton_chop_____",
+          "kaleidoscope_cookery_hui_noodle_____",
+          "farmersdelight_mutton_wrap_____",
+          "kaleidoscope_chinesefood_yangrou_paomo_____",
+          "kaleidoscope_cookery_wild_mushroom_rabbit_soup______",
+          "kaleidoscope_cookery_fried_caterpillar______",
+          "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
+          "kaleidoscope_nether_corn_carrot_pork_rib_soup_________",
+          "kaleidoscope_cookery_fried_spring_roll____",
+          "youkaisfeasts_longevity_noodles____",
+          "youkaisfeasts_pork_rice_ball_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_ingredient_aquatic": {
+        "id": "tag_food_ingredient_aquatic",
+        "name": "水产",
+        "items": [
+          "youkaisfeasts_shirayuki___",
+          "youkaisfeasts_rainbow_futomaki_____",
+          "youkaisfeasts_rainbow_roll______",
+          "aquaculturedelight_rollmops_Rollmops",
+          "collectorsreap_mediterranean_salmon_______",
+          "youkaisfeasts_shaved_ice_over_rice_______",
+          "kaleidoscope_chinesefood_red_rice_roll______",
+          "farmersdelight_salmon_roll_____",
+          "youkaisfeasts_salmon_futomaki_____",
+          "collectorsreap_clam_pasta_____",
+          "collectorsreap_land_and_sea_burger____",
+          "kaleidoscope_cookery_seafood_miso_soup______",
+          "collectorsreap_sea_wrap____",
+          "youkaisfeasts_han_palace_____",
+          "kaleidoscope_cookery_pufferfish_soup____",
+          "aquaculturedelight_baked_pollock_with_carrots_Baked_Pollock_with_Carrots",
+          "collectorsreap_buttered_legs_____",
+          "kaleidoscope_chinesefood_yellow_croaker_tofu_soup______",
+          "kaleidoscope_chinesefood_yellow_croaker_soup____",
+          "youkaisfeasts_california_roll____",
+          "youkaisfeasts_tomato_sauce_cod_____",
+          "youkaisfeasts_sauce_grilled_fish____",
+          "youkaisfeasts_otoro_nigiri_________",
+          "youkaisfeasts_tuna_nigiri_______",
+          "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
+          "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
+          "kaleidoscope_grilling_grilled_squid_tentacle_skewer______",
+          "aquaculturedelight_bass_stew_Bass_Stew",
+          "kaleidoscope_nether_luosifen____",
+          "youkaisfeasts_grilled_eel_over_rice____",
+          "collectorsreap_cod_ceviche_____",
+          "youkaisfeasts_kabayaki_____",
+          "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
+          "kaleidoscope_grilling_green_pepper_squid_tentacles_______",
+          "youkaisfeasts_steamed_crab_____",
+          "collectorsreap_prawn_po_boy_________",
+          "collectorsreap_chieftain_crab____",
+          "youkaisfeasts_salmon_lover_roll____",
+          "collectorsreap_salmon_wrapped_prawn_______",
+          "youkaisfeasts_hokkaido_salmon_hotpot____",
+          "youkaisfeasts_tuscan_salmon_______",
+          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
+          "kaleidoscope_chinesefood_sichuan_boiled_fish____",
+          "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
+          "kaleidoscope_nether_sauerkraut_fish____",
+          "collectorsreap_prawn_ceviche_____",
+          "kaleidoscope_nether_garlic_oysters_____",
+          "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
+          "youkaisfeasts_volcano_roll______",
+          "youkaisfeasts_tekka_maki____",
+          "collectorsreap_prawn_noodles_____",
+          "farmersdelight_grilled_salmon_____",
+          "youkaisfeasts_dried_fish____",
+          "collectorsreap_crab_noodles____",
+          "collectorsreap_crab_lasagna______",
+          "youkaisfeasts_roe_california_roll______",
+          "aquaculturedelight_halaszle_Halaszle",
+          "farmersdelight_cod_roll_____",
+          "aquaculturedelight_buckling_Buckling",
+          "kaleidoscope_cookery_stargazy_pie______",
+          "youkaisfeasts_lorelei_nigiri______",
+          "kaleidoscope_cookery_oil_splashed_fish____",
+          "collectorsreap_fish_mix_____",
+          "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
+          "youkaisfeasts_tobiko_gunkan_____",
+          "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
+          "aquaculturedelight_fish_and_chips_Fish_and_Chips"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_ingredient_vegetarian": {
+        "id": "tag_food_ingredient_vegetarian",
+        "name": "素食",
+        "items": [
+          "youkaisfeasts_yakumo_inari______",
+          "youkaisfeasts_stinky_tofu____",
+          "kaleidoscope_chinesefood_stir_fried_three_fresh_vegetables____",
+          "youkaisfeasts_tofu_burger_____",
+          "kaleidoscope_chinesefood_douzhi____",
+          "kaleidoscope_chinesefood_dry_pot_potatoes______",
+          "kaleidoscope_cookery_dough_drop_soup____",
+          "kaleidoscope_grilling_red_sweet_potato_porridge_____",
+          "kaleidoscope_cookery_stuffed_tiger_skin_pepper_______",
+          "farmersdelight_mixed_salad_____",
+          "kaleidoscope_chinesefood_stuffed_eggplant_____",
+          "kaleidoscope_grilling_roasted_sweet_potato____",
+          "minecraft_baked_potato_____",
+          "youkaisfeasts_cold_tofu_____",
+          "kaleidoscope_grilling_cold_houttuynia______",
+          "collectorsreap_potato_fritters______",
+          "youkaisfeasts_signature_mushroom_stew______",
+          "minecraft_mushroom_stew____",
+          "farmersdelight_mushroom_rice____",
+          "collectorsreap_portobello_pasta_____",
+          "youkaisfeasts_mushroom_soup_______",
+          "farmersdelight_vegetable_noodles____",
+          "farmersdelight_ratatouille_____",
+          "collectorsreap_portobello_risotto_______",
+          "collectorsreap_portobello_wrap____",
+          "farmersdelight_stuffed_pumpkin_block_____",
+          "kaleidoscope_grilling_houttuynia_stir_fried_pork______"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_ingredient_fungus": {
+        "id": "tag_food_ingredient_fungus",
+        "name": "菌类",
+        "items": [
+          "youkaisfeasts_stinky_tofu____",
+          "kaleidoscope_cookery_buddha_jumps_over_the_wall____",
+          "collectorsreap_land_and_sea_burger____",
+          "kaleidoscope_cookery_seafood_miso_soup______",
+          "youkaisfeasts_han_palace_____",
+          "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
+          "kaleidoscope_grilling_grilled_mushroom_skewer_____",
+          "aquaculturedelight_bass_stew_Bass_Stew",
+          "kaleidoscope_cookery_spicy_blood_stew____",
+          "youkaisfeasts_signature_mushroom_stew______",
+          "minecraft_mushroom_stew____",
+          "farmersdelight_mushroom_rice____",
+          "collectorsreap_portobello_pasta_____",
+          "youkaisfeasts_mushroom_soup_______",
+          "youkaisfeasts_hokkaido_salmon_hotpot____",
+          "farmersdelight_vegetable_noodles____",
+          "collectorsreap_portobello_risotto_______",
+          "collectorsreap_portobello_quiche________",
+          "collectorsreap_portobello_wrap____",
+          "farmersdelight_stuffed_pumpkin_block_____",
+          "minecraft_rabbit_stew____",
+          "kaleidoscope_cookery_chicken_and_mushroom_stew______",
+          "kaleidoscope_cookery_hui_noodle_____",
+          "kaleidoscope_cookery_wild_mushroom_rabbit_soup______",
+          "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
+          "youkaisfeasts_longevity_noodles____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_ingredient_fruit": {
+        "id": "tag_food_ingredient_fruit",
+        "name": "水果",
+        "items": [
+          "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______",
+          "bakery_strawberry_cake_____",
+          "bakery_strawberry_glazed_cookie_______",
+          "collectorsreap_lucuma_pudding______",
+          "collectorsreap_lucuma_cake______",
+          "collectorsreap_lucuma_bread______",
+          "youkaisfeasts_tofu_burger_____",
+          "farmersdelight_glow_berry_custard_________",
+          "collectorsreap_pink_noodles____",
+          "collectorsreap_pink_limeade______",
+          "bakery_jam_roll____",
+          "collectorsreap_deluxe_salad_____",
+          "kaleidoscope_tavern_red_queen____",
+          "collectorsreap_pink_dragon_fruit_cake________",
+          "collectorsreap_berry_limeade______",
+          "kaleidoscope_fragrantorchard_pear_juice___",
+          "kaleidoscope_cookery_frost_lamb_chop_____",
+          "kaleidoscope_world_liquor_pina_colada_________",
+          "farmersdelight_honey_glazed_ham_block_____",
+          "collectorsreap_honey_lime_chicken______",
+          "kaleidoscope_fragrantorchard_peach_of_immortality____",
+          "farmersdelight_apple_pie____",
+          "kaleidoscope_fragrantorchard_apple_juice____",
+          "kaleidoscope_tavern_wine____",
+          "kaleidoscope_fragrantorchard_grape_juice____",
+          "youkaisfeasts_seven_colored_yokan_____",
+          "collectorsreap_lime_popsicle_____",
+          "collectorsreap_lime_cake_____",
+          "collectorsreap_candied_lime_____",
+          "collectorsreap_lime_pie____",
+          "collectorsreap_lime_cookie_____",
+          "kaleidoscope_world_liquor_strongbow____",
+          "collectorsreap_pomegranate_cake_____",
+          "collectorsreap_pomegranate_custard_____",
+          "collectorsreap_pomegranate_pork______",
+          "farmersdelight_fruit_salad_____",
+          "kaleidoscope_world_liquor_dassai___",
+          "kaleidoscope_fragrantorchard_peach_juice____",
+          "bakery_sweetberry_cake______",
+          "bakery_sweetberry_glazed_cookie________",
+          "farmersdelight_sweet_berry_cheesecake_______",
+          "bakery_cornet_______",
+          "farmersdelight_stuffed_pumpkin_block_____",
+          "farmersdelight_melon_popsicle_____",
+          "kaleidoscope_fragrantorchard_melon_juice____",
+          "farmersdelight_grilled_salmon_____",
+          "kaleidoscope_tavern_sherry___",
+          "crabbersdelight_coconut_milk_Coconut_Milk",
+          "crabbersdelight_coconut_pudding_Coconut_Pudding",
+          "kaleidoscope_world_liquor_johnnie_walker_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_ingredient_dairy": {
+        "id": "tag_food_ingredient_dairy",
+        "name": "奶香",
+        "items": [
+          "bakery_braided_bread_____",
+          "bakery_strawberry_cake_____",
+          "bakery_strawberry_glazed_cookie_______",
+          "bakery_crusty_bread_____",
+          "collectorsreap_lucuma_pudding______",
+          "collectorsreap_lucuma_cake______",
+          "youkaisfeasts_pastitsio_______",
+          "youkaisfeasts_tofu_burger_____",
+          "farmersdelight_glow_berry_custard_________",
+          "kaleidoscope_chinesefood_hk_milk_tea_______",
+          "bakery_jam_roll____",
+          "collectorsreap_clam_pasta_____",
+          "farmersdelight_kelp_roll______",
+          "collectorsreap_pink_dragon_fruit_cake________",
+          "collectorsreap_buttered_legs_____",
+          "youkaisfeasts_mochi___",
+          "kaleidoscope_world_liquor_pina_colada_________",
+          "collectorsreap_portobello_pasta_____",
+          "youkaisfeasts_matcha_mochi_____",
+          "farmersdelight_shepherds_pie_block_____",
+          "youkaisfeasts_potato_soup________",
+          "youkaisfeasts_mushroom_soup_______",
+          "minecraft_pumpkin_pie____",
+          "bakery_croissant_____",
+          "youkaisfeasts_milk_popsicle_____",
+          "bakery_chocolate_cake______",
+          "farmersdelight_chocolate_pie_____",
+          "bakery_chocolate_glazed_cookie________",
+          "collectorsreap_lime_cake_____",
+          "collectorsreap_lime_pie____",
+          "collectorsreap_lime_cookie_____",
+          "youkaisfeasts_sekibankiyaki____",
+          "collectorsreap_pomegranate_cake_____",
+          "collectorsreap_pomegranate_custard_____",
+          "youkaisfeasts_tuscan_salmon_______",
+          "collectorsreap_portobello_risotto_______",
+          "collectorsreap_portobello_quiche________",
+          "kaleidoscope_cookery_butter_tea____",
+          "bakery_sweetberry_cake______",
+          "bakery_sweetberry_glazed_cookie________",
+          "farmersdelight_sweet_berry_cheesecake_______",
+          "bakery_cornet_______",
+          "farmersdelight_stuffed_potato______",
+          "bakery_toast_____",
+          "bakery_bun_____",
+          "collectorsreap_crab_noodles____",
+          "collectorsreap_crab_lasagna______",
+          "crabbersdelight_coconut_milk_Coconut_Milk",
+          "crabbersdelight_coconut_pudding_Coconut_Pudding",
+          "youkaisfeasts_tamagoyaki____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_ingredient_grain": {
+        "id": "tag_food_ingredient_grain",
+        "name": "米面",
+        "items": [
+          "youkaisfeasts_yakumo_inari______",
+          "kaleidoscope_cookery_baozi___",
+          "youkaisfeasts_rainbow_futomaki_____",
+          "kaleidoscope_twilight_frozen_bun_____",
+          "kaleidoscope_chinesefood_steamed_rice_rolls___",
+          "kaleidoscope_nether_chongqing_noodles_____",
+          "kaleidoscope_cookery_egg_fried_rice____",
+          "youkaisfeasts_pastitsio_______",
+          "youkaisfeasts_onigili___",
+          "collectorsreap_pink_noodles____",
+          "kaleidoscope_cookery_dough_drop_soup____",
+          "kaleidoscope_chinesefood_red_rice_roll______",
+          "farmersdelight_salmon_roll_____",
+          "youkaisfeasts_salmon_futomaki_____",
+          "collectorsreap_clam_pasta_____",
+          "youkaisfeasts_seagrass_gunkan_____",
+          "farmersdelight_kelp_roll______",
+          "collectorsreap_sea_wrap____",
+          "youkaisfeasts_kappa_maki_____",
+          "kaleidoscope_grilling_red_sweet_potato_porridge_____",
+          "kaleidoscope_cookery_stuffed_tiger_skin_pepper_______",
+          "youkaisfeasts_california_roll____",
+          "kaleidoscope_chinesefood_stuffed_eggplant_____",
+          "kaleidoscope_cookery_dumpling___",
+          "youkaisfeasts_otoro_nigiri_________",
+          "youkaisfeasts_tuna_nigiri_______",
+          "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
+          "kaleidoscope_cookery_samsa____",
+          "kaleidoscope_grilling_grilled_bun_slice_skewer______",
+          "farmersdelight_roasted_mutton_chops____",
+          "kaleidoscope_cookery_laba_congee____",
+          "kaleidoscope_nether_braised_pork_rice____",
+          "kaleidoscope_cookery_donkey_burger_____",
+          "kaleidoscope_nether_luosifen____",
+          "kaleidoscope_chinesefood_sichuan_wonton_____",
+          "kaleidoscope_cookery_mantou___",
+          "youkaisfeasts_grilled_eel_over_rice____",
+          "farmersdelight_cooked_rice___",
+          "farmersdelight_honey_glazed_ham_block_____",
+          "collectorsreap_honey_lime_chicken______",
+          "farmersdelight_mushroom_rice____",
+          "collectorsreap_portobello_pasta_____",
+          "youkaisfeasts_nattou_gunkan_____",
+          "kaleidoscope_chinesefood_pumpkin_porridge____",
+          "kaleidoscope_cookery_beef_noodle____",
+          "kaleidoscope_fragrantorchard_peach_of_immortality____",
+          "kaleidoscope_chinesefood_century_egg_congee______",
+          "kaleidoscope_cookery_hot_dry_noodles____",
+          "kaleidoscope_nether_roujiamo____",
+          "farmersdelight_pasta_with_meatballs_____",
+          "farmersdelight_vegetable_noodles____",
+          "collectorsreap_portobello_risotto_______",
+          "kaleidoscope_cookery_shengjian_mantou____",
+          "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
+          "kaleidoscope_chinesefood_sauerkraut_beef_noodles______",
+          "kaleidoscope_grilling_sour_spicy_noodles____",
+          "kaleidoscope_nether_garlic_oysters_____",
+          "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
+          "kaleidoscope_cookery_sweet_and_sour_pork_____",
+          "farmersdelight_stuffed_pumpkin_block_____",
+          "youkaisfeasts_tekka_maki____",
+          "kaleidoscope_cookery_udon_noodle____",
+          "collectorsreap_prawn_noodles_____",
+          "kaleidoscope_cookery_meat_pie___",
+          "collectorsreap_crab_noodles____",
+          "collectorsreap_crab_lasagna______",
+          "youkaisfeasts_shinnko_maki_____",
+          "farmersdelight_cod_roll_____",
+          "kaleidoscope_chinesefood_yangzhou_fried_rice_____",
+          "farmersdelight_pasta_with_mutton_chop_____",
+          "kaleidoscope_cookery_hui_noodle_____",
+          "farmersdelight_mutton_wrap_____",
+          "kaleidoscope_chinesefood_yangrou_paomo_____",
+          "youkaisfeasts_lorelei_nigiri______",
+          "youkaisfeasts_tobiko_gunkan_____",
+          "youkaisfeasts_egg_nigiri_______",
+          "youkaisfeasts_egg_futomaki_____",
+          "kaleidoscope_chinesefood_wonton_noodles____",
+          "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
+          "youkaisfeasts_longevity_noodles____",
+          "youkaisfeasts_pork_rice_ball_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_form_soup": {
+        "id": "tag_food_form_soup",
+        "name": "汤羹",
+        "items": [
+          "kaleidoscope_cookery_pork_bone_soup____",
+          "kaleidoscope_chinesefood_tomato_egg_drop_soup______",
+          "kaleidoscope_cookery_buddha_jumps_over_the_wall____",
+          "kaleidoscope_cookery_dough_drop_soup____",
+          "kaleidoscope_cookery_seafood_miso_soup______",
+          "kaleidoscope_cookery_pufferfish_soup____",
+          "kaleidoscope_grilling_red_sweet_potato_porridge_____",
+          "kaleidoscope_nether_pepper_pork_belly_chicken_soup_______",
+          "kaleidoscope_chinesefood_yellow_croaker_soup____",
+          "kaleidoscope_cookery_laba_congee____",
+          "youkaisfeasts_power_soup____",
+          "kaleidoscope_cookery_borscht____",
+          "kaleidoscope_cookery_lamb_and_radish_soup______",
+          "youkaisfeasts_signature_mushroom_stew______",
+          "minecraft_mushroom_stew____",
+          "youkaisfeasts_potato_soup________",
+          "youkaisfeasts_mushroom_soup_______",
+          "kaleidoscope_chinesefood_pumpkin_porridge____",
+          "kaleidoscope_cookery_beef_meatball_soup____",
+          "kaleidoscope_chinesefood_century_egg_congee______",
+          "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
+          "youkaisfeasts_hokkaido_salmon_hotpot____",
+          "kaleidoscope_cookery_four_joy_meatball_soup______",
+          "minecraft_beetroot_soup____",
+          "minecraft_rabbit_stew____",
+          "aquaculturedelight_halaszle_Halaszle",
+          "kaleidoscope_cookery_wild_mushroom_rabbit_soup______",
+          "kaleidoscope_nether_corn_carrot_pork_rib_soup_________",
+          "kaleidoscope_chinesefood_seaweed_egg_drop_soup______"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_form_tea": {
+        "id": "tag_food_form_tea",
+        "name": "茶饮",
+        "items": [
+          "kaleidoscope_cookery_biluochun____",
+          "kaleidoscope_cookery_oolong______",
+          "kaleidoscope_chinesefood_hk_milk_tea_______",
+          "kaleidoscope_cookery_barley_tea______",
+          "kaleidoscope_cookery_butter_tea____",
+          "kaleidoscope_cookery_tieguanyin____",
+          "kaleidoscope_cookery_sakura_fubuki____",
+          "kaleidoscope_chinesefood_dianhong_tea_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_form_grilled": {
+        "id": "tag_food_form_grilled",
+        "name": "烧烤",
+        "items": [
+          "kaleidoscope_grilling_grilled_meat_and_bone_skewer_______",
+          "kaleidoscope_grilling_grilled_bun_slice_skewer______",
+          "kaleidoscope_grilling_grilled_gluten_skewer_____",
+          "kaleidoscope_grilling_grilled_mushroom_skewer_____",
+          "kaleidoscope_grilling_grilled_beef_skewer_____",
+          "kaleidoscope_grilling_grilled_sweet_potato_sheet_skewer_____",
+          "kaleidoscope_grilling_grilled_potato_slice_skewer______",
+          "kaleidoscope_grilling_grilled_pork_belly_skewer______",
+          "kaleidoscope_grilling_grilled_lamb_skewer_____",
+          "kaleidoscope_grilling_grilled_squid_tentacle_skewer______",
+          "kaleidoscope_grilling_grilled_mid_wing_skewer_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_form_fried": {
+        "id": "tag_food_form_fried",
+        "name": "油炸",
+        "items": [
+          "extradelight_french_fries_____",
+          "collectorsreap_potato_fritters______",
+          "kaleidoscope_cookery_shengjian_mantou____",
+          "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
+          "kaleidoscope_cookery_fried_caterpillar______",
+          "kaleidoscope_cookery_fried_spring_roll____",
+          "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
+          "aquaculturedelight_fish_and_chips_Fish_and_Chips"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_form_raw": {
+        "id": "tag_food_form_raw",
+        "name": "生食",
+        "items": [
+          "youkaisfeasts_rainbow_futomaki_____",
+          "youkaisfeasts_rainbow_roll______",
+          "farmersdelight_salmon_roll_____",
+          "youkaisfeasts_salmon_futomaki_____",
+          "youkaisfeasts_california_roll____",
+          "youkaisfeasts_otoro_nigiri_________",
+          "youkaisfeasts_tuna_nigiri_______",
+          "youkaisfeasts_volcano_roll______",
+          "youkaisfeasts_tekka_maki____",
+          "youkaisfeasts_roe_california_roll______",
+          "farmersdelight_cod_roll_____",
+          "youkaisfeasts_lorelei_nigiri______",
+          "collectorsreap_fish_mix_____",
+          "youkaisfeasts_tobiko_gunkan_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_form_baked": {
+        "id": "tag_food_form_baked",
+        "name": "烘焙",
+        "items": [
+          "bakery_braided_bread_____",
+          "bakery_strawberry_cake_____",
+          "bakery_strawberry_glazed_cookie_______",
+          "bakery_crusty_bread_____",
+          "collectorsreap_lucuma_cake______",
+          "collectorsreap_lucuma_bread______",
+          "bakery_baguette_____",
+          "bakery_jam_roll____",
+          "bakery_bread______",
+          "collectorsreap_pink_dragon_fruit_cake________",
+          "minecraft_bread___",
+          "minecraft_pumpkin_pie____",
+          "bakery_croissant_____",
+          "farmersdelight_apple_pie____",
+          "bakery_chocolate_cake______",
+          "farmersdelight_chocolate_pie_____",
+          "bakery_chocolate_glazed_cookie________",
+          "collectorsreap_lime_cake_____",
+          "collectorsreap_lime_pie____",
+          "collectorsreap_lime_cookie_____",
+          "collectorsreap_pomegranate_cake_____",
+          "collectorsreap_portobello_quiche________",
+          "bakery_sweetberry_cake______",
+          "bakery_sweetberry_glazed_cookie________",
+          "farmersdelight_sweet_berry_cheesecake_______",
+          "bakery_cornet_______",
+          "bakery_toast_____",
+          "bakery_bun_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
+      },
+      "tag_food_form_alcohol": {
+        "id": "tag_food_form_alcohol",
+        "name": "酒类",
+        "items": [
+          "kaleidoscope_tavern_red_queen____",
+          "kaleidoscope_world_liquor_pina_colada_________",
+          "kaleidoscope_tavern_wine____",
+          "kaleidoscope_world_liquor_strongbow____",
+          "kaleidoscope_world_liquor_dassai___",
+          "kaleidoscope_tavern_sherry___",
+          "kaleidoscope_world_liquor_johnnie_walker_____"
+        ],
+        "childTags": [],
+        "parentTags": [
+          "tag_1790175849511"
+        ]
       }
     },
     "recipes": {
@@ -12427,7 +14972,7 @@
           },
           {
             "type": "item",
-            "ref": "kaleidoscope_cookery_flour___",
+            "ref": "kaleidoscope_grilling_sweet_potato_powder____",
             "count": 1
           }
         ],
@@ -13651,7 +16196,7 @@
           },
           {
             "type": "item",
-            "ref": "kaleidoscope_cookery_flour___",
+            "ref": "kaleidoscope_grilling_sweet_potato_powder____",
             "count": 1
           }
         ],
