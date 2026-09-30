@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-30T03:22:54.517Z",
+  "updatedAt": "2026-09-30T04:04:07.144Z",
   "data": {
     "items": {
       "item_1790124131145": {
@@ -5962,7 +5962,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:34:50.113Z",
-        "autoPrice": 76.2
+        "autoPrice": 4.8
       },
       "kaleidoscope_grilling_empty_seasoning_bottle____": {
         "id": "kaleidoscope_grilling_empty_seasoning_bottle____",
@@ -6012,7 +6012,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:55.113Z",
-        "autoPrice": 108.3
+        "autoPrice": 34.7
       },
       "kaleidoscope_grilling_grilled_gluten_skewer_____": {
         "id": "kaleidoscope_grilling_grilled_gluten_skewer_____",
@@ -6024,7 +6024,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:56.113Z",
-        "autoPrice": 108.9
+        "autoPrice": 35.3
       },
       "kaleidoscope_grilling_grilled_beef_skewer_____": {
         "id": "kaleidoscope_grilling_grilled_beef_skewer_____",
@@ -6037,7 +6037,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:57.113Z",
-        "autoPrice": 102.7
+        "autoPrice": 29.2
       },
       "kaleidoscope_grilling_grilled_pork_belly_skewer______": {
         "id": "kaleidoscope_grilling_grilled_pork_belly_skewer______",
@@ -6050,7 +6050,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:58.113Z",
-        "autoPrice": 118.6
+        "autoPrice": 45
       },
       "kaleidoscope_grilling_grilled_mid_wing_skewer_____": {
         "id": "kaleidoscope_grilling_grilled_mid_wing_skewer_____",
@@ -6063,7 +6063,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:34:59.113Z",
-        "autoPrice": 105.2
+        "autoPrice": 31.6
       },
       "kaleidoscope_grilling_grilled_squid_tentacle_skewer______": {
         "id": "kaleidoscope_grilling_grilled_squid_tentacle_skewer______",
@@ -6077,7 +6077,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:00.113Z",
-        "autoPrice": 128.9
+        "autoPrice": 55.3
       },
       "kaleidoscope_grilling_grilled_sweet_potato_sheet_skewer_____": {
         "id": "kaleidoscope_grilling_grilled_sweet_potato_sheet_skewer_____",
@@ -6089,7 +6089,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:01.113Z",
-        "autoPrice": 114.4
+        "autoPrice": 40.9
       },
       "kaleidoscope_grilling_grilled_potato_slice_skewer______": {
         "id": "kaleidoscope_grilling_grilled_potato_slice_skewer______",
@@ -6101,7 +6101,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:02.113Z",
-        "autoPrice": 94.9
+        "autoPrice": 21.3
       },
       "kaleidoscope_grilling_grilled_mushroom_skewer_____": {
         "id": "kaleidoscope_grilling_grilled_mushroom_skewer_____",
@@ -6115,7 +6115,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:03.113Z",
-        "autoPrice": 103.1
+        "autoPrice": 29.6
       },
       "kaleidoscope_grilling_raw_meat_and_bone_skewer_______": {
         "id": "kaleidoscope_grilling_raw_meat_and_bone_skewer_______",
@@ -6218,7 +6218,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:13.113Z",
-        "autoPrice": 106.7
+        "autoPrice": 33.2
       },
       "kaleidoscope_grilling_grilled_bun_slice_skewer______": {
         "id": "kaleidoscope_grilling_grilled_bun_slice_skewer______",
@@ -6231,7 +6231,7 @@
           "tag_food_form_grilled"
         ],
         "createdAt": "2026-09-28T06:35:14.113Z",
-        "autoPrice": 101.1
+        "autoPrice": 27.5
       },
       "minecraft_baked_potato_____": {
         "id": "minecraft_baked_potato_____",
@@ -21611,7 +21611,7 @@
           {
             "type": "item",
             "ref": "kaleidoscope_grilling_special_seasoning____",
-            "count": 1
+            "count": 16
           }
         ]
       },
