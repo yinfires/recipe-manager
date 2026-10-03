@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-03T06:30:12.464Z",
+  "updatedAt": "2026-10-03T08:05:26.560Z",
   "data": {
     "items": {
       "item_1790124131145": {
@@ -10109,47 +10109,6 @@
           {
             "type": "item",
             "ref": "extradelight_sliced_cucumber_item____",
-            "count": 1
-          }
-        ]
-      },
-      "recipe_1790401046240": {
-        "id": "recipe_1790401046240",
-        "name": "鲶鱼烤串",
-        "workstation": "kaleidoscope_cookery_pot___",
-        "inputs": [
-          {
-            "type": "item",
-            "ref": "aquaculture_catfish___",
-            "count": 1
-          },
-          {
-            "type": "item",
-            "ref": "farmersdelight_cabbage_leaf_____",
-            "count": 1
-          },
-          {
-            "type": "item",
-            "ref": "item_1790135106649",
-            "count": 1
-          },
-          {
-            "type": "item",
-            "ref": "item_1790126010461",
-            "count": 1
-          }
-        ],
-        "attachments": [
-          {
-            "type": "item",
-            "ref": "minecraft_stick___",
-            "count": 1
-          }
-        ],
-        "outputs": [
-          {
-            "type": "item",
-            "ref": "aquaculturedelight_catfish_barbecue_Catfish_Barbecue",
             "count": 1
           }
         ]

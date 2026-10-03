@@ -2,12 +2,12 @@
   "indexVersion": 1,
   "generatedFrom": {
     "schemaVersion": 3,
-    "updatedAt": "2026-10-03T06:30:12.464Z"
+    "updatedAt": "2026-10-03T08:05:26.560Z"
   },
   "counts": {
     "items": 523,
     "tags": 31,
-    "recipes": 411,
+    "recipes": 410,
     "finishedFoods": 291,
     "baseIngredients": 84,
     "workstations": 16
@@ -2963,7 +2963,6 @@
         "recipe_1790391488700",
         "recipe_1790398999034",
         "recipe_1790399494822",
-        "recipe_1790401046240",
         "recipe_1790419272087",
         "recipe_1790421146831",
         "recipe_1790422778385",
@@ -5545,78 +5544,6 @@
         "recipe_1790505313716",
         "recipe_1790511983453"
       ]
-    },
-    {
-      "id": "recipe_1790401046240",
-      "name": "鲶鱼烤串",
-      "workstation": {
-        "id": "kaleidoscope_cookery_pot___",
-        "name": "炒锅",
-        "itemId": "kaleidoscope_cookery:pot"
-      },
-      "inputs": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "aquaculture_catfish___",
-            "name": "鲶鱼",
-            "itemId": "aquaculture:catfish"
-          },
-          "count": 1
-        },
-        {
-          "type": "item",
-          "ref": {
-            "id": "farmersdelight_cabbage_leaf_____",
-            "name": "卷心菜叶",
-            "itemId": "farmersdelight:cabbage_leaf"
-          },
-          "count": 1
-        },
-        {
-          "type": "item",
-          "ref": {
-            "id": "item_1790135106649",
-            "name": "番茄",
-            "itemId": "kaleidoscope_cookery:tomato"
-          },
-          "count": 1
-        },
-        {
-          "type": "item",
-          "ref": {
-            "id": "item_1790126010461",
-            "name": "马铃薯",
-            "itemId": "minecraft:potato"
-          },
-          "count": 1
-        }
-      ],
-      "attachments": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "minecraft_stick___",
-            "name": "木棍",
-            "itemId": "minecraft:stick"
-          },
-          "count": 1
-        }
-      ],
-      "outputs": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "aquaculturedelight_catfish_barbecue_Catfish_Barbecue",
-            "name": "aquaculturedelight_catfish_barbecue_Catfish_Barbecue"
-          },
-          "count": 1
-        }
-      ],
-      "predecessorRecipeIds": [
-        "recipe_1790254951309"
-      ],
-      "successorRecipeIds": []
     },
     {
       "id": "recipe_1790401135475",
@@ -28877,7 +28804,6 @@
       "recipe_1790394878985",
       "recipe_1790398999034",
       "recipe_1790399494822",
-      "recipe_1790401046240",
       "recipe_1790419272087",
       "recipe_1790419696343",
       "recipe_1790420601268",
@@ -29203,8 +29129,7 @@
       "recipe_1790515737274"
     ],
     "aquaculture_catfish___": [
-      "recipe_1790257957334",
-      "recipe_1790401046240"
+      "recipe_1790257957334"
     ],
     "aquaculture_jellyfish___": [
       "recipe_1790249180602"
@@ -29270,7 +29195,6 @@
     ],
     "item_1790126010461": [
       "recipe_1790250932972",
-      "recipe_1790401046240",
       "recipe_1790473550324",
       "recipe_1790476030417",
       "recipe_1790501416389",
@@ -29351,7 +29275,6 @@
     "item_1790135106649": [
       "recipe_1790254936364",
       "recipe_1790255185404",
-      "recipe_1790401046240",
       "recipe_1790476030417"
     ],
     "item_1790137148750": [
@@ -29839,8 +29762,7 @@
       "recipe_1790526072834"
     ],
     "aquaculture_catfish___": [
-      "recipe_1790257957334",
-      "recipe_1790401046240"
+      "recipe_1790257957334"
     ],
     "aquaculture_jellyfish___": [
       "recipe_1790249180602"
@@ -30117,7 +30039,6 @@
       "recipe_1790299389967",
       "recipe_1790388362958",
       "recipe_1790388466494",
-      "recipe_1790401046240",
       "recipe_1790422612508",
       "recipe_1790422703353",
       "recipe_1790473550324",
@@ -30320,7 +30241,6 @@
       "recipe_1790391488700",
       "recipe_1790398999034",
       "recipe_1790399494822",
-      "recipe_1790401046240",
       "recipe_1790419272087",
       "recipe_1790421146831",
       "recipe_1790422778385",
@@ -30384,7 +30304,6 @@
       "recipe_1790257957334",
       "recipe_1790388466494",
       "recipe_1790390258720",
-      "recipe_1790401046240",
       "recipe_1790421146831",
       "recipe_1790422612508",
       "recipe_1790422778385",
@@ -33376,7 +33295,6 @@
       "aquaculturedelight_baked_pollock_with_carrots_Baked_Pollock_with_Carrots",
       "aquaculturedelight_bass_stew_Bass_Stew",
       "aquaculturedelight_buckling_Buckling",
-      "aquaculturedelight_catfish_barbecue_Catfish_Barbecue",
       "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
       "aquaculturedelight_crispy_nori_kelp_Crispy_Nori",
       "aquaculturedelight_fish_and_chips_Fish_and_Chips",
@@ -33901,7 +33819,6 @@
       "recipe_1790398999034",
       "recipe_1790399494822",
       "recipe_1790399677227",
-      "recipe_1790401046240",
       "recipe_1790401135475",
       "recipe_1790403267916",
       "recipe_1790403546864",
@@ -35295,36 +35212,6 @@
           "ref": "item_1790139066734",
           "matched": [
             "item_1790139066734"
-          ]
-        }
-      ],
-      "recipe_1790401046240": [
-        {
-          "type": "item",
-          "ref": "aquaculture_catfish___",
-          "matched": [
-            "aquaculture_catfish___"
-          ]
-        },
-        {
-          "type": "item",
-          "ref": "farmersdelight_cabbage_leaf_____",
-          "matched": [
-            "farmersdelight_cabbage_leaf_____"
-          ]
-        },
-        {
-          "type": "item",
-          "ref": "item_1790135106649",
-          "matched": [
-            "item_1790135106649"
-          ]
-        },
-        {
-          "type": "item",
-          "ref": "item_1790126010461",
-          "matched": [
-            "item_1790126010461"
           ]
         }
       ],

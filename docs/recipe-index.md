@@ -1,11 +1,11 @@
 # AI 配方与解锁规划索引
 
 > 本文件由 `public/data/recipe-manager.json` 自动生成，只读，不是正式数据源。
-> 源数据更新时间：2026-10-03T06:30:12.464Z；生成格式版本：1
+> 源数据更新时间：2026-10-03T08:05:26.560Z；生成格式版本：1
 
 ## 快速统计
 
-- 工作方块：16；基础食材：84；配方：411；成品菜：291
+- 工作方块：16；基础食材：84；配方：410；成品菜：291
 
 ## 查询约定
 
@@ -35,7 +35,7 @@
 | farmersdelight_cutting_board___ | 砧板 | 51 |
 | icecore_oven___ | 烤炉 | 31 |
 | kaleidoscope_cookery_bamboo_tray___ | 竹匾 | 3 |
-| kaleidoscope_cookery_pot___ | 炒锅 | 95 |
+| kaleidoscope_cookery_pot___ | 炒锅 | 94 |
 | kaleidoscope_cookery_steamer___ | 蒸笼 | 9 |
 | kaleidoscope_cookery_stockpot___ | 汤锅 | 94 |
 | kaleidoscope_cookery_teapot___ | 茶壶 | 8 |
@@ -56,7 +56,7 @@
 | aquaculture_atlantic_herring______ | 大西洋鲱鱼 | 3 |
 | aquaculture_box_turtle___ | 箱龟 | 1 |
 | aquaculture_brown_shrooma____ | 褐蕈鱼 | 1 |
-| aquaculture_catfish___ | 鲶鱼 | 2 |
+| aquaculture_catfish___ | 鲶鱼 | 1 |
 | aquaculture_jellyfish___ | 水母 | 1 |
 | aquaculture_perch____ | 河鲈鱼 | 4 |
 | aquaculture_red_shrooma____ | 红蕈鱼 | 1 |
@@ -69,7 +69,7 @@
 | farmersdelight_ham___ | 火腿 | 4 |
 | item_1790124131145 | 小麦 | 4 |
 | item_1790125887206 | 胡萝卜 | 9 |
-| item_1790126010461 | 马铃薯 | 9 |
+| item_1790126010461 | 马铃薯 | 8 |
 | item_1790126025786 | 甜菜根 | 7 |
 | item_1790126144727 | 海带 | 5 |
 | item_1790126151178 | 海草 | 3 |
@@ -79,7 +79,7 @@
 | item_1790128163987 | 双孢蘑菇 | 6 |
 | item_1790130683439 | 稻米穗 | 1 |
 | item_1790134179343 | 卷心菜 | 1 |
-| item_1790135106649 | 番茄 | 4 |
+| item_1790135106649 | 番茄 | 3 |
 | item_1790137148750 | 绿辣椒 | 22 |
 | item_1790138031487 | 红辣椒 | 28 |
 | item_1790138361858 | 红薯 | 3 |
@@ -139,7 +139,7 @@
 
 ## 材料可达闭包摘要
 
-在全部工作方块和基础食材可用时，按当前分析口径可达配方 389 个，成品菜 280 个；这不是正式配方总数。
+在全部工作方块和基础食材可用时，按当前分析口径可达配方 388 个，成品菜 280 个；这不是正式配方总数。
 
 完整配方、输入候选、输出、匹配追踪和配方链请读取同目录的 `public/data/recipe-index.json`。
 

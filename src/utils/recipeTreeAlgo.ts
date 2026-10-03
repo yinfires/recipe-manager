@@ -12,6 +12,10 @@ export interface TreeEdge { id: string; from: string; to: string; relation: 'rec
 interface BuildState { nodes: TreeNode[]; edges: TreeEdge[]; targets: Set<string>; expandedTags: Set<string>; sequence: number; branchSequence: number; }
 
 export class RecipeTreeBuilder {
+  private static targetExists(data: AppData, target: EntityTarget): boolean {
+    return target.type === 'item' ? !!data.items[target.id] : target.type === 'tag' ? !!data.tags[target.id] : false;
+  }
+
   static build(data: AppData, targets: EntityTarget[], modes: ViewMode[], expandedTags = new Set<string>(), includeAttachments = true): { nodes: TreeNode[]; edges: TreeEdge[] } {
     const uniqueTargets = targets.filter((target, index, list) => list.findIndex(t => t.type === target.type && t.id === target.id) === index);
     const state: BuildState = { nodes: [], edges: [], targets: new Set(uniqueTargets.map(t => `${t.type}:${t.id}`)), expandedTags, sequence: 0, branchSequence: 0 };
@@ -42,7 +46,8 @@ export class RecipeTreeBuilder {
       const branchId = `branch-${state.branchSequence++}`;
       const lane = state.branchSequence;
       const slots = mode === 'source' ? (includeAttachments ? [...recipe.inputs, ...recipe.attachments] : recipe.inputs) : recipe.outputs;
-      const uniqueSlots = slots.filter((slot, index) => slots.findIndex(candidate =>
+      const validSlots = slots.filter(slot => this.targetExists(data, { type: slot.type, id: slot.ref }));
+      const uniqueSlots = validSlots.filter((slot, index) => validSlots.findIndex(candidate =>
         candidate.type === slot.type && candidate.ref === slot.ref &&
         recipe.attachments.includes(candidate) === recipe.attachments.includes(slot)) === index);
       uniqueSlots.forEach((slot, slotIndex) => {

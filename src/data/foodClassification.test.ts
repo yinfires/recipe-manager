@@ -92,6 +92,24 @@ describe('成品菜分类正式数据', () => {
 
   it('不再保留已删除的鲶鱼烤串', () => {
     expect(Object.values(persisted.data.items).some(value => value.name === '鲶鱼烤串')).toBe(false);
+    expect(Object.values(persisted.data.recipes).some(value => value.name === '鲶鱼烤串')).toBe(false);
     expect(Object.values(persisted.data.tags).some(value => value.items.some(itemId => !persisted.data.items[itemId]))).toBe(false);
+  });
+
+  it('所有配方槽位都引用现存物品或标签', () => {
+    for (const recipe of Object.values(persisted.data.recipes)) {
+      for (const [field, slots] of Object.entries({
+        inputs: recipe.inputs,
+        attachments: recipe.attachments,
+        outputs: recipe.outputs
+      })) {
+        for (const slot of slots) {
+          const target = slot.type === 'item'
+            ? persisted.data.items[slot.ref]
+            : persisted.data.tags[slot.ref];
+          expect(target, `${recipe.name} (${recipe.id}) ${field}: ${slot.type}:${slot.ref}`).toBeDefined();
+        }
+      }
+    }
   });
 });

@@ -1,5 +1,14 @@
 # 维护记录
 
+## 2026-10-03（配方树悬空节点修复）
+
+- 修复查看木棍配方树时出现 `slot-branch-...` 英文内部节点 ID：成品“鲶鱼烤串”此前已按用户要求删除，但关联配方未同步清理，导致其不存在的输出引用被界面错误回退为节点 ID。
+- 从正式数据删除残留的“鲶鱼烤串”配方；全量扫描其余配方的输入、附加物和输出，未发现其他悬空引用。
+- 配方树构建器现在忽略不存在的物品或标签槽位，并新增正式数据引用完整性与树级回归测试，防止同类问题再次出现。
+- 主要文件范围：`public/data/recipe-manager.json`、`src/utils/recipeTreeAlgo.ts`、`src/utils/recipeTreeAlgo.test.ts`、`src/data/foodClassification.test.ts`、`docs/ui-behavior.md`、`docs/food-classification.md`。
+- 验证命令：`npm run classify-foods`、`npm run check-food-classification`、`npm run check-recipe-index`、`npm test`、`npm run build`、`git diff --check`。
+- 迁移注意：不涉及数据结构迁移；仅清理由已删除成品遗留的无效配方，派生配方索引需随正式数据重新生成。
+
 ## 2026-10-03（裂隙维度餐厅任务链设计 - 完整版）
 
 - 完成 `docs/quest-design.md` 完整版本，基于 `mainline-progression.md` 主线设计和 `recipe-index.json` 配方依赖数据。
