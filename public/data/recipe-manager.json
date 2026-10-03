@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 3,
-  "updatedAt": "2026-10-03T08:05:26.560Z",
+  "schemaVersion": 5,
+  "updatedAt": "2026-10-03T10:39:33.566Z",
   "data": {
     "items": {
       "item_1790124131145": {
@@ -216,9 +216,10 @@
         "name": "黄豆",
         "itemId": "youkaisfeasts:soybean",
         "tags": [
-          "tag_1790252241364"
+          "tag_1790130836441"
         ],
         "createdAt": "2026-09-28T06:27:07.113Z",
+        "manualPrice": 9,
         "autoPrice": 9
       },
       "item_1790138757205": {
@@ -1651,7 +1652,9 @@
         "id": "kaleidoscope_grilling_onion_powder____",
         "name": "洋葱粉",
         "itemId": "kaleidoscope_grilling:onion_powder",
-        "tags": [],
+        "tags": [
+          "tag_1790252241364"
+        ],
         "createdAt": "2026-09-28T06:29:17.113Z",
         "autoPrice": 2.5
       },
@@ -1672,8 +1675,11 @@
         "id": "farmersdelight_rice___",
         "name": "稻米",
         "itemId": "farmersdelight:rice",
-        "tags": [],
+        "tags": [
+          "tag_1790130836441"
+        ],
         "createdAt": "2026-09-28T06:29:19.113Z",
+        "manualPrice": 10,
         "autoPrice": 10
       },
       "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish": {
@@ -4934,7 +4940,10 @@
         "id": "youkaisfeasts_oyaki___",
         "name": "御烧",
         "itemId": "youkaisfeasts:oyaki",
-        "tags": [],
+        "tags": [
+          "tag_1790175849511",
+          "tag_food_main_staple"
+        ],
         "createdAt": "2026-09-28T06:33:34.113Z",
         "autoPrice": 56.8
       },
@@ -6533,7 +6542,9 @@
           "minecraft_pink_petals______",
           "minecraft_charcoal___",
           "aquaculture_red_shrooma____",
-          "aquaculture_brown_shrooma____"
+          "aquaculture_brown_shrooma____",
+          "farmersdelight_rice___",
+          "item_1790138675425"
         ],
         "childTags": [],
         "parentTags": []
@@ -6856,7 +6867,8 @@
           "kaleidoscope_world_liquor_dassai___",
           "kaleidoscope_tavern_red_queen____",
           "kaleidoscope_world_liquor_strongbow____",
-          "kaleidoscope_world_liquor_pina_colada_________"
+          "kaleidoscope_world_liquor_pina_colada_________",
+          "youkaisfeasts_oyaki___"
         ],
         "childTags": [
           "tag_food_main_staple",
@@ -6925,7 +6937,6 @@
           "youkaisfeasts_ice_cube___",
           "youkaisfeasts_butter___",
           "extradelight_gherkin_item____",
-          "item_1790138675425",
           "aquaculturedelight_small_turtle_meat_Turtle_Meat_Slice",
           "kaleidoscope_tavern_vinegar__",
           "extradelight_sliced_cucumber_item____",
@@ -7014,7 +7025,8 @@
           "kaleidoscope_tavern_gold_grape_bucket______",
           "kaleidoscope_tavern_green_grape_bucket______",
           "kaleidoscope_tavern_sweet_berries_bucket_____",
-          "kaleidoscope_tavern_glow_berries_bucket______"
+          "kaleidoscope_tavern_glow_berries_bucket______",
+          "kaleidoscope_grilling_onion_powder____"
         ],
         "childTags": [],
         "parentTags": []
@@ -7214,6 +7226,7 @@
           "youkaisfeasts_tamagoyaki____",
           "youkaisfeasts_egg_nigiri_______",
           "youkaisfeasts_egg_futomaki_____",
+          "youkaisfeasts_oyaki___",
           "kaleidoscope_chinesefood_wonton_noodles____",
           "kaleidoscope_cookery_fried_spring_roll____",
           "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
@@ -22646,6 +22659,29 @@
             "count": 16
           }
         ]
+      }
+    },
+    "unlockPlan": {
+      "stages": [
+        {
+          "id": "unlock_stage_1",
+          "name": "阶段1"
+        }
+      ],
+      "itemStages": {
+        "item_1790126010461": "unlock_stage_1",
+        "farmersdelight_rice___": "unlock_stage_1",
+        "minecraft_egg___": "unlock_stage_1",
+        "kaleidoscope_cookery_pot___": "unlock_stage_1",
+        "kaleidoscope_cookery_stockpot___": "unlock_stage_1",
+        "minecraft_bowl__": "unlock_stage_1",
+        "minecraft_water_bucket___": "unlock_stage_1",
+        "kaleidoscope_tavern_empty_bottle____": "unlock_stage_1",
+        "kaleidoscope_tavern_empty_glassware____": "unlock_stage_1",
+        "kaleidoscope_cookery_empty_cup____": "unlock_stage_1",
+        "kaleidoscope_cookery_fried_egg___": "unlock_stage_1",
+        "minecraft_baked_potato_____": "unlock_stage_1",
+        "farmersdelight_cooked_rice___": "unlock_stage_1"
       }
     }
   }

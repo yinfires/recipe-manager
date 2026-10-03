@@ -26,7 +26,8 @@ export function normalizeAppDataTimestamps(data: AppData, anchorTime: string): A
   return {
     items: normalizeItemTimestamps(data.items || {}, anchorTime),
     tags: data.tags || {},
-    recipes: data.recipes || {}
+    recipes: data.recipes || {},
+    unlockPlan: data.unlockPlan
   };
 }
 

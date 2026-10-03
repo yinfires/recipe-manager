@@ -40,7 +40,8 @@ function cloneWithoutAutoPrices(data: AppData): AppData {
   return {
     items,
     tags: data.tags || {},
-    recipes: data.recipes || {}
+    recipes: data.recipes || {},
+    unlockPlan: data.unlockPlan
   };
 }
 

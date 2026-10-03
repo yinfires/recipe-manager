@@ -25,7 +25,8 @@ function data(items: Item[], recipes: Recipe[], tags: AppData['tags'] = {}): App
   return {
     items: Object.fromEntries(items.map(value => [value.id, value])),
     tags,
-    recipes: Object.fromEntries(recipes.map(value => [value.id, value]))
+    recipes: Object.fromEntries(recipes.map(value => [value.id, value])),
+    unlockPlan: { stages: [{ id: 's1', name: '阶段1' }], itemStages: {} }
   };
 }
 

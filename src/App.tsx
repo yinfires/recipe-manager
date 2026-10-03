@@ -5,6 +5,7 @@ import { ItemList } from './components/ItemManager/ItemList';
 import { TagList } from './components/TagManager/TagList';
 import { RecipeList } from './components/RecipeManager/RecipeList';
 import { RecipeTree } from './components/RecipeManager/RecipeTree';
+import { UnlockPlanner } from './components/UnlockPlanner/UnlockPlanner';
 import { ThemeToggle } from './components/common/ThemeToggle';
 import { GlobalNavigationHandler } from './components/common/GlobalNavigationHandler';
 import { UrlItemImporter } from './components/common/UrlItemImporter';
@@ -15,7 +16,7 @@ import { LegacyMigrationDialog } from './components/common/LegacyMigrationDialog
 import { useApp } from './contexts/AppContext';
 import './App.css';
 
-export type TabType = 'items' | 'tags' | 'recipes' | 'tree';
+export type TabType = 'items' | 'tags' | 'recipes' | 'tree' | 'unlock';
 
 function App() {
   const [activeTab, setActiveTab] = useState<TabType>('items');
@@ -70,6 +71,9 @@ function AppContent({ activeTab, setActiveTab }: { activeTab: TabType; setActive
               >
                 配方树
               </button>
+              <button className={activeTab === 'unlock' ? 'active' : ''} onClick={() => setActiveTab('unlock')}>
+                解锁规划
+              </button>
             </div>
 
             <div className="app-header-right">
@@ -95,6 +99,7 @@ function AppContent({ activeTab, setActiveTab }: { activeTab: TabType; setActive
             {!isLoading && activeTab === 'tags' && <TagList />}
             {!isLoading && activeTab === 'recipes' && <RecipeList />}
             {!isLoading && activeTab === 'tree' && <RecipeTree />}
+            {!isLoading && activeTab === 'unlock' && <UnlockPlanner />}
           </main>
 
           <GlobalNavigationHandler shortcutsDisabled={showShortcutHelp || showPriceHelp} />

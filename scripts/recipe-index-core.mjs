@@ -99,7 +99,7 @@ export function buildRecipeIndex(persisted) {
 
   const allCraftable = craftability();
   return {
-    indexVersion: 1,
+    indexVersion: 3,
     generatedFrom: { schemaVersion: persisted.schemaVersion, updatedAt: persisted.updatedAt },
     counts: { items: Object.keys(data.items).length, tags: Object.keys(data.tags).length, recipes: recipes.length, finishedFoods: finished.size, baseIngredients: base.size, workstations: workstations.size },
     workstations: [...workstations].sort().map(itemInfo),
@@ -110,6 +110,7 @@ export function buildRecipeIndex(persisted) {
     recipeIdsByBaseIngredient: Object.fromEntries(Object.entries(byBaseIngredient).sort()),
     downstreamRecipeIdsByBaseIngredient: Object.fromEntries(Object.entries(downstreamRecipesByBase).sort()),
     finishedFoodIdsByBaseIngredient: Object.fromEntries(Object.entries(downstreamFoodsByBase).sort()),
+    unlockPlan: data.unlockPlan || { stages: [{ id: 'unlock_stage_1', name: '阶段1' }], itemStages: {} },
     allUnlockedScenario: { unlockedWorkstations: [...workstations].sort(), availableBaseIngredients: [...base].sort(), ...allCraftable }
   };
 }

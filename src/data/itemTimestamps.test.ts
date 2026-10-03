@@ -39,7 +39,7 @@ describe('item timestamps', () => {
     const result = normalizePersisted({
       schemaVersion: 2,
       updatedAt: '2026-01-01T00:00:00.000Z',
-      data: { items: { legacy: legacyItem('legacy') }, tags: {}, recipes: {} }
+      data: { items: { legacy: legacyItem('legacy') }, tags: {}, recipes: {}, unlockPlan: { stages: [{ id: 's1', name: '阶段1' }], itemStages: {} } }
     });
 
     expect(result.schemaVersion).toBe(DATA_SCHEMA_VERSION);

@@ -20,8 +20,15 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
+export function applyDataUpdate(previous: AppData, next: AppData): AppData {
+  const priceInputsChanged = previous.items !== next.items
+    || previous.tags !== next.tags
+    || previous.recipes !== next.recipes;
+  return priceInputsChanged ? recalculatePrices(next) : next;
+}
+
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [data, setRawData] = useState<AppData>({ items: {}, tags: {}, recipes: {} });
+  const [data, setRawData] = useState<AppData>({ items: {}, tags: {}, recipes: {}, unlockPlan: { stages: [{ id: 'unlock_stage_1', name: '阶段1' }], itemStages: {} } });
   const [isEditable, setIsEditable] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [saveState, setSaveState] = useState<SaveState>('loading');
@@ -52,7 +59,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     dirtyRef.current = true;
     setRawData(prev => {
       const next = typeof update === 'function' ? update(prev) : update;
-      return recalculatePrices(next);
+      return applyDataUpdate(prev, next);
     });
   }, [isEditable]);
 

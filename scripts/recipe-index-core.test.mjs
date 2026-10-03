@@ -54,5 +54,6 @@ describe('formal recipe index coverage', () => {
     expect(index.finishedFoods.map(item => item.id).sort()).toEqual(Object.values(data.tags).find(tag => tag.name === '成品菜').items.sort());
     expect(index.recipes.flatMap(recipe => [...recipe.inputs, ...recipe.attachments, ...recipe.outputs]).every(slot => slot.ref.id)).toBe(true);
     expect(index.allUnlockedScenario.craftableFinishedItems.length).toBeGreaterThan(0);
+    expect(index.unlockPlan.stages.length).toBeGreaterThan(0);
   });
 });

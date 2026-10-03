@@ -1,7 +1,8 @@
 import { AppData, PersistedData } from '../types';
 import { normalizeAppDataTimestamps } from './itemTimestamps';
+import { normalizeUnlockPlan } from '../utils/unlockPlan';
 
-export const DATA_SCHEMA_VERSION = 3;
+export const DATA_SCHEMA_VERSION = 5;
 export const LEGACY_STORAGE_KEY = 'recipe_manager_data';
 export const MIGRATION_MARKER_KEY = 'recipe_manager_file_migration_v2';
 export type SaveState = 'loading' | 'saved' | 'saving' | 'error' | 'readonly';
@@ -12,7 +13,7 @@ export interface LoadedData {
 }
 
 function emptyData(): AppData {
-  return { items: {}, tags: {}, recipes: {} };
+  return { items: {}, tags: {}, recipes: {}, unlockPlan: normalizeUnlockPlan(undefined, new Set()) };
 }
 
 export function normalizePersisted(value: unknown): PersistedData {
@@ -24,7 +25,8 @@ export function normalizePersisted(value: unknown): PersistedData {
   const data = normalizeAppDataTimestamps({
     items: appData?.items || {},
     tags: appData?.tags || {},
-    recipes: appData?.recipes || {}
+    recipes: appData?.recipes || {},
+    unlockPlan: normalizeUnlockPlan(appData?.unlockPlan, new Set(Object.keys(appData?.items || {})))
   }, updatedAt);
   return {
     schemaVersion: DATA_SCHEMA_VERSION,
@@ -80,7 +82,7 @@ export const DataStore = {
       if (!saved) return null;
       const value = JSON.parse(saved) as Partial<AppData>;
       return normalizeAppDataTimestamps(
-        { items: value.items || {}, tags: value.tags || {}, recipes: value.recipes || {} },
+        { items: value.items || {}, tags: value.tags || {}, recipes: value.recipes || {}, unlockPlan: normalizeUnlockPlan(value.unlockPlan, new Set(Object.keys(value.items || {}))) },
         new Date().toISOString()
       );
     } catch {

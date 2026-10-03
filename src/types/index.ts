@@ -50,6 +50,17 @@ export interface AppData {
   items: Record<string, Item>;
   tags: Record<string, Tag>;
   recipes: Record<string, Recipe>;
+  unlockPlan: UnlockPlan;
+}
+
+export interface UnlockStage {
+  id: string;
+  name: string;
+}
+
+export interface UnlockPlan {
+  stages: UnlockStage[];
+  itemStages: Record<string, string>;
 }
 
 export interface PersistedData {

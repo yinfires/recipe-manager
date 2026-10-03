@@ -2,7 +2,7 @@
 
 ## 唯一正式数据源
 
-正式数据位于 `public/data/recipe-manager.json`，包含 `schemaVersion`、`updatedAt` 和完整 `AppData`。生产构建会将其复制到 `dist/data/recipe-manager.json`。当前 schema v3 为每个物品保存 ISO 8601 格式的 `createdAt`，供创建时间排序使用。
+正式数据位于 `public/data/recipe-manager.json`，包含 `schemaVersion`、`updatedAt` 和完整 `AppData`。生产构建会将其复制到 `dist/data/recipe-manager.json`。当前 schema v5 保留物品 `createdAt`，并将 `unlockPlan` 简化为单套人工剧情解锁阶段和物品首次解锁阶段；工作方块也作为物品记录，配方不保存人工解锁状态。
 
 ## 本地编辑模式
 
@@ -32,5 +32,7 @@
 本地编辑模式会检查旧键 `recipe_manager_data`。如果旧浏览器数据和文件数据同时存在，迁移弹窗显示双方数量，先通过下载保存双方备份，再由用户明确选择是否以浏览器数据覆盖文件。迁移不会删除旧 LocalStorage。
 
 schema v2 及更早数据没有物品创建时间。加载时会以数据快照 `updatedAt` 为末项时间锚点，按照物品在 JSON 中的原有顺序，以一秒间隔回填稳定的近似 `createdAt`；该值用于保留旧数据的相对顺序，并不代表真实历史创建时间。正式数据升级前的快照保存在本地 `.data-backups/`。
+
+schema v3 及更早数据没有解锁规划。加载时会创建唯一的“阶段1”，所有物品保持未分配；不会根据任务文档自动分配阶段。schema v4 数据加载时会保留有效的物品阶段并忽略旧 `recipeStages`，因为配方不再人工分配。
 
 URL 导入会保留合法的 `createdAt`；缺失或非法时使用导入时刻补齐，同批物品通过毫秒偏移维持稳定先后顺序。物品排序偏好和搜索、标签筛选分别使用版本化 LocalStorage 键单独保存，不进入正式 JSON。

@@ -1,20 +1,21 @@
 # AI 配方与解锁规划索引
 
 > 本文件由 `public/data/recipe-manager.json` 自动生成，只读，不是正式数据源。
-> 源数据更新时间：2026-10-03T08:05:26.560Z；生成格式版本：1
+> 源数据更新时间：2026-10-03T10:39:33.566Z；生成格式版本：3
 
 ## 快速统计
 
-- 工作方块：16；基础食材：84；配方：410；成品菜：291
+- 工作方块：16；基础食材：86；配方：410；成品菜：292
 
 ## 查询约定
 
-- `recipes`：411 个配方的完整目录，适合分类、读取工作方块、输入、附件、输出和配方链；不要只读取闭包结果。
-- `finishedFoods`：291 个成品菜的完整目录；`allUnlockedScenario.craftableFinishedItems` 只是其中当前材料条件可达的子集。
+- `recipes`：410 个配方的完整目录，适合分类、读取工作方块、输入、附件、输出和配方链；不要只读取闭包结果。
+- `finishedFoods`：292 个成品菜的完整目录；`allUnlockedScenario.craftableFinishedItems` 只是其中当前材料条件可达的子集。
 - `recipeIdsByWorkstation[工作方块ID]`：该工作方块涉及的全部配方。
 - `recipeIdsByBaseIngredient[基础食材ID]`：直接引用该基础食材（或其标签）的配方。
 - `downstreamRecipeIdsByBaseIngredient[基础食材ID]` / `finishedFoodIdsByBaseIngredient[基础食材ID]`：沿输入关系得到的候选影响范围；只表示可能受该基础食材影响，不保证其他输入也已满足。
 - `allUnlockedScenario`：假设所有登记的工作方块和基础食材均可用时的材料可达闭包，用于解锁规划，不是全量配方目录。
+- `unlockPlan`：网页中人工保存的剧情阶段和物品首次解锁阶段；配方没有人工授权状态，只用于推导单步可制作物品。
 - 配方标签输入按“标签内任一成员可满足”计算，具体命中的成员记录在 `matches`。
 
 ## 三种结果的区别
@@ -67,6 +68,7 @@
 | crabbersdelight_clam___ | 蛤蜊 | 1 |
 | farm_and_charm_strawberry___ | 草莓 | 2 |
 | farmersdelight_ham___ | 火腿 | 4 |
+| farmersdelight_rice___ | 稻米 | 11 |
 | item_1790124131145 | 小麦 | 4 |
 | item_1790125887206 | 胡萝卜 | 9 |
 | item_1790126010461 | 马铃薯 | 8 |
@@ -86,6 +88,7 @@
 | item_1790138417330 | 茄子 | 2 |
 | item_1790138531027 | 玉米 | 4 |
 | item_1790138660812 | 折耳根 | 1 |
+| item_1790138675425 | 黄豆 | 9 |
 | item_1790138757205 | 红豆 | 9 |
 | item_1790138879144 | 幻昙花 | 2 |
 | item_1790138974040 | 洋葱 | 35 |
@@ -139,7 +142,7 @@
 
 ## 材料可达闭包摘要
 
-在全部工作方块和基础食材可用时，按当前分析口径可达配方 388 个，成品菜 280 个；这不是正式配方总数。
+在全部工作方块和基础食材可用时，按当前分析口径可达配方 388 个，成品菜 281 个；这不是正式配方总数。
 
-完整配方、输入候选、输出、匹配追踪和配方链请读取同目录的 `public/data/recipe-index.json`。
+完整配方、输入候选、输出、匹配追踪、配方链和人工 `unlockPlan` 请读取同目录的 `public/data/recipe-index.json`。`quest-design.md` 只供人工参考，不会自动覆盖阶段。
 

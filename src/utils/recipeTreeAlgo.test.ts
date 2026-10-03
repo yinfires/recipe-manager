@@ -19,7 +19,8 @@ const data: AppData = {
       inputs: [{ type: 'item', ref: 'stick', count: 1 }], attachments: [],
       outputs: [{ type: 'item', ref: 'missingDish', count: 1 }]
     }
-  }
+  },
+  unlockPlan: { stages: [{ id: 's1', name: '阶段1' }], itemStages: {} }
 };
 
 describe('RecipeTreeBuilder', () => {

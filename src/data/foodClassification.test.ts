@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import persistedJson from '../../public/data/recipe-manager.json';
 import { PersistedData } from '../types';
 
-const persisted = persistedJson as PersistedData;
+const persisted = persistedJson as unknown as PersistedData;
 const managedNames = [
   '主食', '饮品', '点心', '甜', '辣', '酸', '鲜', '清淡', '浓郁', '凉爽',
   '甘', '辛', '苦', '肉食', '水产', '素食', '菌类', '水果', '奶香', '米面',
@@ -26,6 +26,16 @@ function namesFor(name: string) {
 }
 
 describe('成品菜分类正式数据', () => {
+  it('保留 schema v5 的物品解锁规划', () => {
+    expect(persisted.schemaVersion).toBe(5);
+    expect(persisted.data.unlockPlan.stages).toEqual([{ id: 'unlock_stage_1', name: '阶段1' }]);
+    for (const [itemId, stageId] of Object.entries(persisted.data.unlockPlan.itemStages)) {
+      expect(persisted.data.items[itemId], itemId).toBeDefined();
+      expect(persisted.data.unlockPlan.stages.some(stage => stage.id === stageId), `${itemId}: ${stageId}`).toBe(true);
+    }
+    expect(Object.keys(persisted.data.unlockPlan)).toEqual(['stages', 'itemStages']);
+  });
+
   it('为每个现存成品菜设置恰好一个主类', () => {
     const finished = tag('成品菜');
     expect(finished.items.length).toBeGreaterThan(0);
