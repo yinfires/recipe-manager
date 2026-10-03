@@ -1,4 +1,5 @@
 import { copyFile, mkdir, readFile, rename, stat, writeFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { defineConfig, Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -63,6 +64,7 @@ function dataFilePlugin(): Plugin {
           await mkdir(path.dirname(dataPath), { recursive: true });
           await writeFile(tempPath, `${JSON.stringify(parsed, null, 2)}\n`, 'utf8');
           await rename(tempPath, dataPath);
+          execFileSync(process.execPath, [path.join(root, 'scripts/generate-recipe-index.mjs')], { cwd: root, stdio: 'pipe' });
           response.end(JSON.stringify(parsed));
         } catch (error) {
           response.statusCode = 500;

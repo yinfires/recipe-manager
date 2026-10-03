@@ -10,6 +10,9 @@
 
 保存采用同目录临时文件加原子替换。首次保存和每日首次保存前，旧文件会复制到 `.data-backups/`；该目录不提交到 Git。页面提供自动防抖保存、立即保存、重试和下载当前数据。
 
+每次本地 API 成功保存正式 JSON 后，会自动重建 `public/data/recipe-index.json` 和 `docs/recipe-index.md`。这两个文件是只读派生索引，不参与数据加载或编辑；构建时也会重建。使用 `npm run check-recipe-index` 可检查派生文件是否与正式 JSON 一致。AI 可直接读取 JSON，或用 `npm run query-recipe-index -- --workstations <逗号分隔ID> --ingredients <逗号分隔ID>` 试算；参数省略时使用全部登记项。此试算不记录存档进度或人工覆盖。
+
+
 ## 生产模式
 
 生产静态站从 Vite 基础路径下的 `data/recipe-manager.json` 读取，只读展示；生产构建不会请求本地开发 API。新建、编辑、删除与 URL 导入均不可用，公开 JSON 可以读取但没有任何远程写入接口。

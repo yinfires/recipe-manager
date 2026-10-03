@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run generate-recipe-index && tsc && vite build",
     "test": "vitest run",
     "preview": "vite preview",
     "classify-foods": "node scripts/apply-food-classification.mjs",
-    "check-food-classification": "node scripts/apply-food-classification.mjs --check"
+    "check-food-classification": "node scripts/apply-food-classification.mjs --check",
+    "generate-recipe-index": "node scripts/generate-recipe-index.mjs",
+    "check-recipe-index": "node scripts/generate-recipe-index.mjs --check",
+    "query-recipe-index": "node scripts/query-recipe-index.mjs"
   },
   "dependencies": {
     "pinyin-pro": "^3.29.4",

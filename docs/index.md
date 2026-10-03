@@ -3,9 +3,11 @@
 实现任务开始前先阅读本索引，再阅读对应主题。
 
 - [数据存储、迁移与发布](data-storage.md)
+- [AI 配方与解锁规划索引](recipe-index.md)
 - [价格与加工费计算](price-calculation.md)
 - [基础食材定价基准](pricing-baseline.md)
 - [成品菜分类与标签依据](food-classification.md)
 - [界面与权限行为](ui-behavior.md)
 - [裂隙维度餐厅主线设计](mainline-progression.md)
+- [裂隙维度餐厅任务链设计](quest-design.md) ⭐新增
 - [维护记录](maintenance-log.md)
