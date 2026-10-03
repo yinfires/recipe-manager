@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-30T04:04:07.144Z",
+  "updatedAt": "2026-10-02T04:38:59.481Z",
   "data": {
     "items": {
       "item_1790124131145": {
@@ -6243,7 +6243,7 @@
           "tag_food_ingredient_vegetarian"
         ],
         "createdAt": "2026-09-28T06:35:15.113Z",
-        "autoPrice": 10.2
+        "autoPrice": 9.1
       },
       "minecraft_cooked_beef___": {
         "id": "minecraft_cooked_beef___",
@@ -22244,7 +22244,7 @@
       "recipe_1790563397054": {
         "id": "recipe_1790563397054",
         "name": "烤马铃薯",
-        "workstation": "icecore_oven___",
+        "workstation": "kaleidoscope_cookery_pot___",
         "inputs": [
           {
             "type": "item",

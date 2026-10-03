@@ -7,4 +7,5 @@
 - [基础食材定价基准](pricing-baseline.md)
 - [成品菜分类与标签依据](food-classification.md)
 - [界面与权限行为](ui-behavior.md)
+- [裂隙维度餐厅主线设计](mainline-progression.md)
 - [维护记录](maintenance-log.md)
