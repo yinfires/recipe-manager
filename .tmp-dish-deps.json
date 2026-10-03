@@ -1,0 +1,7372 @@
+[
+ {
+  "id": "minecraft_beetroot_soup____",
+  "name": "甜菜汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "汤羹"
+  ],
+  "directInputs": [
+   "甜菜根"
+  ],
+  "base": {
+   "item_1790126025786": 1
+  }
+ },
+ {
+  "id": "minecraft_mushroom_stew____",
+  "name": "蘑菇煲",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "棕色蘑菇",
+   "红色蘑菇"
+  ],
+  "base": {
+   "aquaculture_brown_shrooma____": 1,
+   "aquaculture_red_shrooma____": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_crispy_nori_kelp_Crispy_Nori",
+  "name": "脆海苔",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "点心"
+  ],
+  "directInputs": [
+   "干海带",
+   "海草"
+  ],
+  "base": {
+   "item_1790126144727": 1,
+   "item_1790126151178": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
+  "name": "水母果冻",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水产",
+   "甜",
+   "鲜",
+   "凉爽"
+  ],
+  "directInputs": [
+   "水母",
+   "糖",
+   "面粉"
+  ],
+  "base": {
+   "aquaculture_jellyfish___": 1,
+   "minecraft_sugar_cane___": 1,
+   "item_1790124131145": 1
+  }
+ },
+ {
+  "id": "minecraft_rabbit_stew____",
+  "name": "兔肉煲",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "菌类",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "生切制小肉",
+   "土豆片",
+   "胡萝卜粒",
+   "棕色蘑菇"
+  ],
+  "base": {
+   "item_1790155660361": 1,
+   "item_1790126010461": 1,
+   "item_1790125887206": 1,
+   "aquaculture_brown_shrooma____": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
+  "name": "奇异鱼汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "番茄酱",
+   "大盖巨脂鲤",
+   "卷心菜叶",
+   "胡萝卜粒",
+   "南瓜片"
+  ],
+  "base": {
+   "item_1790135106649": 1,
+   "aquaculture_tambaqui______": 1,
+   "item_1790134179343": 1,
+   "item_1790125887206": 1,
+   "item_1790128035425": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_bass_stew_Bass_Stew",
+  "name": "鲈鱼炖菜",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "菌类",
+   "鲜"
+  ],
+  "directInputs": [
+   "河鲈鱼",
+   "卷心菜叶",
+   "棕色蘑菇"
+  ],
+  "base": {
+   "aquaculture_perch____": 1,
+   "item_1790134179343": 1,
+   "aquaculture_brown_shrooma____": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_halaszle_Halaszle",
+  "name": "匈牙利鱼汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "辣",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "番茄酱",
+   "面包",
+   "红辣椒",
+   "鲶鱼"
+  ],
+  "base": {
+   "item_1790135106649": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790138031487": 1,
+   "aquaculture_catfish___": 1
+  }
+ },
+ {
+  "id": "extradelight_french_fries_____",
+  "name": "法式薯条",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "油炸"
+  ],
+  "directInputs": [
+   "薯条"
+  ],
+  "base": {
+   "item_1790126010461": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
+  "name": "酥炸鲈鱼",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "油炸"
+  ],
+  "directInputs": [
+   "河鲈鱼",
+   "面粉",
+   "鸡蛋"
+  ],
+  "base": {
+   "aquaculture_perch____": 1,
+   "item_1790124131145": 1,
+   "minecraft_egg___": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_fish_and_chips_Fish_and_Chips",
+  "name": "炸鱼薯条",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜",
+   "油炸"
+  ],
+  "directInputs": [
+   "法式薯条",
+   "酥炸鲈鱼",
+   "番茄酱"
+  ],
+  "base": {
+   "item_1790126010461": 1,
+   "aquaculture_perch____": 1,
+   "item_1790124131145": 1,
+   "minecraft_egg___": 1,
+   "item_1790135106649": 1
+  }
+ },
+ {
+  "id": "minecraft_bread___",
+  "name": "面包",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "烘焙"
+  ],
+  "directInputs": [
+   "面团"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
+  "name": "金枪鱼意面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "菌类",
+   "米面",
+   "鲜"
+  ],
+  "directInputs": [
+   "生金枪鱼排片",
+   "番茄酱",
+   "生意面",
+   "棕色蘑菇"
+  ],
+  "base": {
+   "aquaculture_tuna____": 1,
+   "item_1790135106649": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "aquaculture_brown_shrooma____": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_buckling_Buckling",
+  "name": "熏鲱鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "大西洋鲱鱼",
+   "卷心菜叶",
+   "鸡蛋",
+   "盐"
+  ],
+  "base": {
+   "aquaculture_atlantic_herring______": 1,
+   "item_1790134179343": 1,
+   "minecraft_egg___": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_baked_pollock_with_carrots_Baked_Pollock_with_Carrots",
+  "name": "胡萝卜烤鳕鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "胡萝卜",
+   "生鳕鱼",
+   "卷心菜叶",
+   "盐"
+  ],
+  "base": {
+   "item_1790125887206": 1,
+   "minecraft_cod": 1,
+   "item_1790134179343": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
+  "name": "塔塔酱比目鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "酸",
+   "鲜"
+  ],
+  "directInputs": [
+   "大西洋比目鱼",
+   "瓶装蛋黄酱",
+   "腌黄瓜",
+   "柠檬汁",
+   "米饭",
+   "洋葱"
+  ],
+  "base": {
+   "aquaculture_atlantic_halibut_______": 1,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 3,
+   "minecraft_milk_bucket___": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "item_1790139066734": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790124131145": 1,
+   "item_1790130683439": 2,
+   "item_1790141723911": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "farmersdelight_cooked_rice___",
+  "name": "米饭",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面",
+   "清淡"
+  ],
+  "directInputs": [
+   "稻米"
+  ],
+  "base": {
+   "item_1790130683439": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish",
+  "name": "龟肉料理",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "龟肉片",
+   "胡萝卜",
+   "南瓜片",
+   "黄瓜片"
+  ],
+  "base": {
+   "aquaculture_box_turtle___": 1,
+   "item_1790125887206": 1,
+   "item_1790128035425": 1,
+   "item_1790139066734": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_rollmops_Rollmops",
+  "name": "醋渍鲱鱼卷",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "酸",
+   "鲜"
+  ],
+  "directInputs": [
+   "大西洋鲱鱼",
+   "醋",
+   "卷心菜叶",
+   "洋葱",
+   "腌黄瓜"
+  ],
+  "base": {
+   "aquaculture_atlantic_herring______": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "item_1790130683439": 2,
+   "minecraft_sugar_cane___": 2,
+   "item_1790134179343": 1,
+   "item_1790138974040": 1,
+   "item_1790139066734": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
+  "name": "烤巨脂鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "大盖巨脂鲤",
+   "卷心菜叶",
+   "玉米",
+   "洋葱"
+  ],
+  "base": {
+   "aquaculture_tambaqui______": 1,
+   "item_1790134179343": 1,
+   "item_1790138531027": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
+  "name": "炸鲈鱼寿司",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "油炸"
+  ],
+  "directInputs": [
+   "米饭",
+   "酥炸鲈鱼"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "aquaculture_perch____": 1,
+   "item_1790124131145": 1,
+   "minecraft_egg___": 1
+  }
+ },
+ {
+  "id": "bakery_chocolate_box______",
+  "name": "巧克力礼盒",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "松露巧克力"
+  ],
+  "base": {
+   "item_1790140073708": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "bakery_croissant_____",
+  "name": "牛角面包",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "盐",
+   "黄油",
+   "甜面团",
+   "奶桶"
+  ],
+  "base": {
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 3,
+   "minecraft_milk_bucket___": 2,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2
+  }
+ },
+ {
+  "id": "bakery_crusty_bread_____",
+  "name": "脆皮面包",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "面团",
+   "糖",
+   "盐",
+   "黄油",
+   "酵母"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 3,
+   "minecraft_sugar_cane___": 4,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_egg___": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "bakery_bread______",
+  "name": "烘焙师面包",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜",
+   "烘焙"
+  ],
+  "directInputs": [
+   "面团",
+   "鸡蛋",
+   "水桶",
+   "糖"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 2,
+   "minecraft_egg___": 1
+  }
+ },
+ {
+  "id": "bakery_baguette_____",
+  "name": "法棍面包",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "烘焙"
+  ],
+  "directInputs": [
+   "面团",
+   "盐",
+   "水桶",
+   "酵母"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 4,
+   "item_1790124131145": 3,
+   "minecraft_sugar_cane___": 2,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "bakery_toast_____",
+  "name": "吐司面包",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "甜面团",
+   "奶桶",
+   "糖",
+   "黄油",
+   "酵母"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 3,
+   "minecraft_sugar_cane___": 5,
+   "minecraft_egg___": 2,
+   "minecraft_milk_bucket___": 2
+  }
+ },
+ {
+  "id": "bakery_braided_bread_____",
+  "name": "辫子面包",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "甜面团",
+   "蜂蜜瓶",
+   "奶桶",
+   "酵母",
+   "黄油",
+   "鸡蛋"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 3,
+   "minecraft_sugar_cane___": 4,
+   "minecraft_egg___": 3,
+   "minecraft_honey_bottle____": 1,
+   "minecraft_milk_bucket___": 2
+  }
+ },
+ {
+  "id": "bakery_bun_____",
+  "name": "小圆面包",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "甜面团",
+   "奶桶",
+   "黄油",
+   "糖",
+   "盐",
+   "酵母",
+   "红豆"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 3,
+   "minecraft_sugar_cane___": 5,
+   "minecraft_egg___": 2,
+   "minecraft_milk_bucket___": 2,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790138757205": 1
+  }
+ },
+ {
+  "id": "bakery_strawberry_glazed_cookie_______",
+  "name": "草莓釉面饼干",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "酸",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "面粉",
+   "黄油",
+   "糖",
+   "鸡蛋",
+   "草莓果酱",
+   "柠檬汁"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 3,
+   "minecraft_milk_bucket___": 1,
+   "farm_and_charm_strawberry___": 1,
+   "item_1790141723911": 1
+  }
+ },
+ {
+  "id": "bakery_sweetberry_glazed_cookie________",
+  "name": "甜浆果釉面饼干",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "酸",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "面粉",
+   "黄油",
+   "糖",
+   "鸡蛋",
+   "甜浆果果酱",
+   "柠檬汁"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 3,
+   "minecraft_milk_bucket___": 1,
+   "item_1790139430160": 1,
+   "item_1790141723911": 1
+  }
+ },
+ {
+  "id": "bakery_chocolate_glazed_cookie________",
+  "name": "巧克力釉面饼干",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "酸",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "面粉",
+   "黄油",
+   "糖",
+   "鸡蛋",
+   "巧克力酱",
+   "柠檬汁"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 4,
+   "minecraft_milk_bucket___": 1,
+   "item_1790140073708": 1,
+   "item_1790141723911": 1
+  }
+ },
+ {
+  "id": "bakery_jam_roll____",
+  "name": "果酱卷",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "甜面团",
+   "甜浆果果酱",
+   "奶桶",
+   "糖"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 4,
+   "minecraft_egg___": 1,
+   "item_1790139430160": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "bakery_cornet_______",
+  "name": "填馅号角蛋糕",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "甜面团",
+   "苹果果酱",
+   "奶桶",
+   "糖"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 4,
+   "minecraft_egg___": 1,
+   "item_1790140009664": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "bakery_strawberry_cake_____",
+  "name": "草莓蛋糕",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "蛋糕面团",
+   "碗装奶油",
+   "草莓果酱",
+   "草莓"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 2,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 3,
+   "farm_and_charm_strawberry___": 2
+  }
+ },
+ {
+  "id": "bakery_sweetberry_cake______",
+  "name": "甜浆果蛋糕",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "蛋糕面团",
+   "碗装奶油",
+   "甜浆果果酱",
+   "甜浆果"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 2,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 3,
+   "item_1790139430160": 2
+  }
+ },
+ {
+  "id": "bakery_chocolate_cake______",
+  "name": "巧克力蛋糕",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "蛋糕面团",
+   "碗装奶油",
+   "巧克力酱",
+   "松露巧克力"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 2,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 5,
+   "item_1790140073708": 2
+  }
+ },
+ {
+  "id": "collectorsreap_lime_pie____",
+  "name": "青柠派",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "酸",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "馅饼酥皮",
+   "青柠片",
+   "糖",
+   "奶桶"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 3,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 2,
+   "item_1790141723911": 1
+  }
+ },
+ {
+  "id": "collectorsreap_portobello_quiche________",
+  "name": "双孢蘑菇乳蛋派",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "菌类",
+   "奶香",
+   "鲜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "馅饼酥皮",
+   "双孢蘑菇",
+   "鸡蛋",
+   "奶桶",
+   "洋葱片",
+   "胡萝卜粒"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 3,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790128163987": 1,
+   "item_1790138974040": 1,
+   "item_1790125887206": 1
+  }
+ },
+ {
+  "id": "collectorsreap_lime_cake_____",
+  "name": "青柠蛋糕",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "酸",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "蛋糕面团",
+   "碗装奶油",
+   "青柠片"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 2,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 2,
+   "item_1790141723911": 1
+  }
+ },
+ {
+  "id": "collectorsreap_pink_dragon_fruit_cake________",
+  "name": "红心火龙果蛋糕",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "蛋糕面团",
+   "碗装奶油",
+   "红心火龙果"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 2,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 2,
+   "item_1790141751973": 1
+  }
+ },
+ {
+  "id": "collectorsreap_pomegranate_cake_____",
+  "name": "石榴蛋糕",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "蛋糕面团",
+   "碗装奶油",
+   "石榴片"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 2,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 2,
+   "item_1790140447393": 1
+  }
+ },
+ {
+  "id": "collectorsreap_lucuma_cake______",
+  "name": "蛋黄果蛋糕",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "蛋糕面团",
+   "碗装奶油",
+   "蛋黄果"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 2,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 2,
+   "item_1790141853911": 1
+  }
+ },
+ {
+  "id": "collectorsreap_pomegranate_custard_____",
+  "name": "石榴沙司",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "奶香",
+   "甜"
+  ],
+  "directInputs": [
+   "奶桶",
+   "石榴片",
+   "鸡蛋",
+   "糖",
+   "冰块"
+  ],
+  "base": {
+   "minecraft_milk_bucket___": 1,
+   "item_1790140447393": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "collectorsreap_lucuma_pudding______",
+  "name": "蛋黄果布丁",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "奶香",
+   "甜"
+  ],
+  "directInputs": [
+   "奶桶",
+   "蛋黄果",
+   "鸡蛋",
+   "糖",
+   "冰块"
+  ],
+  "base": {
+   "minecraft_milk_bucket___": 1,
+   "item_1790141853911": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "collectorsreap_berry_limeade______",
+  "name": "浆果青柠汁",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甜",
+   "酸",
+   "凉爽",
+   "甘"
+  ],
+  "directInputs": [
+   "青柠片",
+   "甜浆果",
+   "糖",
+   "水桶"
+  ],
+  "base": {
+   "item_1790141723911": 1,
+   "item_1790139430160": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "collectorsreap_pink_limeade______",
+  "name": "粉红青柠汁",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甜",
+   "酸",
+   "凉爽",
+   "甘"
+  ],
+  "directInputs": [
+   "青柠片",
+   "石榴片",
+   "糖",
+   "水桶"
+  ],
+  "base": {
+   "item_1790141723911": 1,
+   "item_1790140447393": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "collectorsreap_portobello_wrap____",
+  "name": "素手卷",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "鲜",
+   "清淡"
+  ],
+  "directInputs": [
+   "双孢蘑菇",
+   "洋葱片",
+   "卷心菜叶",
+   "胡萝卜粒"
+  ],
+  "base": {
+   "item_1790128163987": 1,
+   "item_1790138974040": 1,
+   "item_1790134179343": 1,
+   "item_1790125887206": 1
+  }
+ },
+ {
+  "id": "collectorsreap_portobello_risotto_______",
+  "name": "双孢蘑菇炖饭",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "奶香",
+   "米面",
+   "鲜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "双孢蘑菇",
+   "稻米",
+   "洋葱片"
+  ],
+  "base": {
+   "item_1790128163987": 1,
+   "item_1790130683439": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "collectorsreap_portobello_pasta_____",
+  "name": "蘑菇意面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "奶香",
+   "米面",
+   "鲜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "双孢蘑菇",
+   "生意面",
+   "棕色蘑菇",
+   "洋葱片",
+   "碗装奶油"
+  ],
+  "base": {
+   "item_1790128163987": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 2,
+   "aquaculture_brown_shrooma____": 1,
+   "item_1790138974040": 1,
+   "minecraft_egg___": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "collectorsreap_pomegranate_pork______",
+  "name": "石榴猪肉炖",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "水果",
+   "甜"
+  ],
+  "directInputs": [
+   "生五花肉",
+   "蜂蜜瓶",
+   "石榴片",
+   "胡萝卜粒",
+   "洋葱片"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "minecraft_honey_bottle____": 1,
+   "item_1790140447393": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "collectorsreap_deluxe_salad_____",
+  "name": "豪华沙拉",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水果",
+   "甜",
+   "酸",
+   "清淡"
+  ],
+  "directInputs": [
+   "苹果片",
+   "卷心菜叶",
+   "西瓜片",
+   "石榴片",
+   "青柠片",
+   "番茄片",
+   "甜浆果"
+  ],
+  "base": {
+   "item_1790140009664": 1,
+   "item_1790134179343": 1,
+   "item_1790140036153": 1,
+   "item_1790140447393": 1,
+   "item_1790141723911": 1,
+   "item_1790135106649": 1,
+   "item_1790139430160": 1
+  }
+ },
+ {
+  "id": "collectorsreap_pink_noodles____",
+  "name": "粉红面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水果",
+   "米面"
+  ],
+  "directInputs": [
+   "红心火龙果",
+   "生意面",
+   "胡萝卜",
+   "甜菜根"
+  ],
+  "base": {
+   "item_1790141751973": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790125887206": 1,
+   "item_1790126025786": 1
+  }
+ },
+ {
+  "id": "collectorsreap_lucuma_bread______",
+  "name": "蛋黄果面包",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "甜",
+   "烘焙"
+  ],
+  "directInputs": [
+   "面团",
+   "蛋黄果",
+   "糖",
+   "鸡蛋"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 2,
+   "item_1790141853911": 1,
+   "minecraft_egg___": 1
+  }
+ },
+ {
+  "id": "collectorsreap_candied_lime_____",
+  "name": "青柠蜜饯",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "甜",
+   "酸"
+  ],
+  "directInputs": [
+   "青柠片",
+   "蜂蜜瓶"
+  ],
+  "base": {
+   "item_1790141723911": 1,
+   "minecraft_honey_bottle____": 1
+  }
+ },
+ {
+  "id": "collectorsreap_lime_cookie_____",
+  "name": "青柠曲奇",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "酸",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "面粉",
+   "黄油",
+   "糖",
+   "鸡蛋",
+   "青柠片",
+   "柠檬汁"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 2,
+   "minecraft_milk_bucket___": 1,
+   "item_1790141723911": 2
+  }
+ },
+ {
+  "id": "collectorsreap_lime_popsicle_____",
+  "name": "青柠冰棍",
+  "ws": "kaleidoscope_world_liquor_freezer___",
+  "wsName": "冰柜",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "甜",
+   "酸",
+   "凉爽"
+  ],
+  "directInputs": [
+   "水桶",
+   "青柠片",
+   "冰块"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790141723911": 1
+  }
+ },
+ {
+  "id": "collectorsreap_honey_lime_chicken______",
+  "name": "蜜汁青柠鸡",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "水果",
+   "米面",
+   "甜",
+   "酸",
+   "浓郁"
+  ],
+  "directInputs": [
+   "蜂蜜瓶",
+   "生鸡肉丁",
+   "青柠片",
+   "洋葱片",
+   "米饭"
+  ],
+  "base": {
+   "minecraft_honey_bottle____": 1,
+   "item_1790155640667": 1,
+   "item_1790141723911": 1,
+   "item_1790138974040": 1,
+   "item_1790130683439": 1
+  }
+ },
+ {
+  "id": "collectorsreap_mediterranean_salmon_______",
+  "name": "地中海式鲑鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "酸",
+   "鲜"
+  ],
+  "directInputs": [
+   "生鲑鱼片",
+   "土豆片",
+   "番茄片",
+   "洋葱片",
+   "柠檬汁"
+  ],
+  "base": {
+   "minecraft_salmon": 1,
+   "item_1790126010461": 1,
+   "item_1790135106649": 1,
+   "item_1790138974040": 1,
+   "item_1790141723911": 1
+  }
+ },
+ {
+  "id": "collectorsreap_potato_fritters______",
+  "name": "马铃薯炸饼",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "酸",
+   "油炸"
+  ],
+  "directInputs": [
+   "土豆片",
+   "洋葱",
+   "柠檬汁"
+  ],
+  "base": {
+   "item_1790126010461": 1,
+   "item_1790138974040": 1,
+   "item_1790141723911": 1
+  }
+ },
+ {
+  "id": "collectorsreap_cod_ceviche_____",
+  "name": "柠汁腌鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "酸",
+   "鲜"
+  ],
+  "directInputs": [
+   "生鳕鱼片",
+   "柠檬汁",
+   "卷心菜叶",
+   "番茄片",
+   "洋葱片"
+  ],
+  "base": {
+   "minecraft_cod": 1,
+   "item_1790141723911": 1,
+   "item_1790134179343": 1,
+   "item_1790135106649": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "collectorsreap_salmon_wrapped_prawn_______",
+  "name": "三文鱼裹鲜虾",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "甜",
+   "酸",
+   "鲜"
+  ],
+  "directInputs": [
+   "生黑虎虾",
+   "蜂蜜瓶",
+   "柠檬汁",
+   "生鲑鱼片"
+  ],
+  "base": {
+   "collectorsreap_tiger_prawn_____": 1,
+   "minecraft_honey_bottle____": 1,
+   "item_1790141723911": 1,
+   "minecraft_salmon": 1
+  }
+ },
+ {
+  "id": "collectorsreap_chieftain_crab____",
+  "name": "酋长蟹",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "螃蟹",
+   "胡萝卜粒",
+   "洋葱片",
+   "番茄片",
+   "干海带"
+  ],
+  "base": {
+   "youkaisfeasts_crab___": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 1,
+   "item_1790126144727": 1
+  }
+ },
+ {
+  "id": "collectorsreap_land_and_sea_burger____",
+  "name": "海陆堡",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "水产",
+   "菌类",
+   "鲜"
+  ],
+  "directInputs": [
+   "双孢蘑菇",
+   "牛肉馅",
+   "酋长蟹肉",
+   "番茄片",
+   "洋葱片",
+   "卷心菜叶"
+  ],
+  "base": {
+   "item_1790128163987": 1,
+   "item_1790155533298": 1,
+   "youkaisfeasts_crab___": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 2,
+   "item_1790135106649": 2,
+   "item_1790126144727": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "collectorsreap_buttered_legs_____",
+  "name": "黄油蟹腿",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "奶香",
+   "鲜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "酋长蟹腿",
+   "洋葱",
+   "黄油"
+  ],
+  "base": {
+   "youkaisfeasts_crab___": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 2,
+   "item_1790135106649": 1,
+   "item_1790126144727": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "collectorsreap_crab_lasagna______",
+  "name": "蟹肉千层面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "奶香",
+   "米面",
+   "鲜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "酋长蟹肉",
+   "碗装奶油",
+   "生意面",
+   "番茄酱"
+  ],
+  "base": {
+   "youkaisfeasts_crab___": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 2,
+   "item_1790126144727": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 2,
+   "minecraft_milk_bucket___": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2
+  }
+ },
+ {
+  "id": "collectorsreap_prawn_ceviche_____",
+  "name": "酸柠腌虾",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "酸",
+   "鲜"
+  ],
+  "directInputs": [
+   "生黑虎虾",
+   "青柠片",
+   "卷心菜叶",
+   "番茄片",
+   "洋葱",
+   "腌黄瓜"
+  ],
+  "base": {
+   "collectorsreap_tiger_prawn_____": 1,
+   "item_1790141723911": 1,
+   "item_1790134179343": 1,
+   "item_1790135106649": 1,
+   "item_1790138974040": 1,
+   "item_1790139066734": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790124131145": 1,
+   "item_1790130683439": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "collectorsreap_prawn_po_boy_________",
+  "name": "穷小子鲜虾三明治",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "生黑虎虾",
+   "鸡蛋",
+   "番茄片",
+   "卷心菜叶",
+   "洋葱片"
+  ],
+  "base": {
+   "collectorsreap_tiger_prawn_____": 1,
+   "minecraft_egg___": 1,
+   "item_1790135106649": 1,
+   "item_1790134179343": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "collectorsreap_clam_pasta_____",
+  "name": "蛤蜊意面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "奶香",
+   "米面",
+   "鲜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "海潮蛤肉",
+   "生意面",
+   "鸡蛋",
+   "碗装奶油",
+   "番茄片",
+   "洋葱片"
+  ],
+  "base": {
+   "crabbersdelight_clam___": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 2,
+   "minecraft_egg___": 2,
+   "minecraft_milk_bucket___": 1,
+   "item_1790135106649": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "collectorsreap_sea_wrap____",
+  "name": "海洋卷",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜"
+  ],
+  "directInputs": [
+   "酋长蟹肉",
+   "生黑虎虾",
+   "海潮蛤肉",
+   "生鲑鱼片",
+   "生鳕鱼片",
+   "干海带",
+   "米饭"
+  ],
+  "base": {
+   "youkaisfeasts_crab___": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 1,
+   "item_1790126144727": 2,
+   "collectorsreap_tiger_prawn_____": 1,
+   "crabbersdelight_clam___": 1,
+   "minecraft_salmon": 1,
+   "minecraft_cod": 1,
+   "item_1790130683439": 1
+  }
+ },
+ {
+  "id": "collectorsreap_prawn_noodles_____",
+  "name": "鲜虾炒面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜"
+  ],
+  "directInputs": [
+   "生黑虎虾",
+   "生意面",
+   "洋葱",
+   "干海带"
+  ],
+  "base": {
+   "collectorsreap_tiger_prawn_____": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790138974040": 1,
+   "item_1790126144727": 1
+  }
+ },
+ {
+  "id": "collectorsreap_fish_mix_____",
+  "name": "鱼生拼盘",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "生鲑鱼片",
+   "生鳕鱼片",
+   "生白金鲈鱼片",
+   "卷心菜叶",
+   "洋葱片",
+   "番茄片"
+  ],
+  "base": {
+   "minecraft_salmon": 1,
+   "minecraft_cod": 1,
+   "collectorsreap_platinum_bass______": 1,
+   "item_1790134179343": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 1
+  }
+ },
+ {
+  "id": "collectorsreap_crab_noodles____",
+  "name": "蟹肉面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "奶香",
+   "米面",
+   "鲜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "酋长蟹肉",
+   "生意面",
+   "碗装奶油",
+   "番茄片",
+   "洋葱片"
+  ],
+  "base": {
+   "youkaisfeasts_crab___": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 2,
+   "item_1790135106649": 2,
+   "item_1790126144727": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 2,
+   "minecraft_egg___": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_donkey_burger_____",
+  "name": "驴肉火烧",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面",
+   "甜",
+   "辣",
+   "酸"
+  ],
+  "directInputs": [
+   "绿辣椒",
+   "红辣椒",
+   "面团",
+   "瓶装酱油",
+   "盐",
+   "醋",
+   "糖",
+   "生五花肉"
+  ],
+  "base": {
+   "item_1790137148750": 1,
+   "item_1790138031487": 1,
+   "minecraft_water_bucket___": 4,
+   "item_1790124131145": 4,
+   "minecraft_sugar_cane___": 3,
+   "youkaisfeasts_pods___": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "item_1790130683439": 1,
+   "item_1790155582175": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_mantou___",
+  "name": "馒头",
+  "ws": "kaleidoscope_cookery_steamer___",
+  "wsName": "蒸笼",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "面团"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_baozi___",
+  "name": "包子",
+  "ws": "kaleidoscope_cookery_steamer___",
+  "wsName": "蒸笼",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "裹馅面食"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790155582175": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_shengjian_mantou____",
+  "name": "水煎包",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面",
+   "油炸"
+  ],
+  "directInputs": [
+   "包子"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790155582175": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_samsa____",
+  "name": "烤包子",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "包子"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790155582175": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_meat_pie___",
+  "name": "馅饼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "裹馅面食"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790155582175": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_dumpling___",
+  "name": "饺子",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "裹馅面食"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790155582175": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_tea_egg____",
+  "name": "茶叶蛋",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "饮品"
+  ],
+  "directInputs": [
+   "鸡蛋",
+   "红茶叶"
+  ],
+  "base": {
+   "minecraft_egg___": 1,
+   "youkaisfeasts_tea_leaves____": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_sticky_candy____",
+  "name": "牛皮糖",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "米饭",
+   "红薯粉",
+   "糖"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790138361858": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_sticky_rice_cake___",
+  "name": "糍粑",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "米饭",
+   "糖"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_bamboo_tube_rice_____",
+  "name": "熟竹筒饭",
+  "ws": "kaleidoscope_cookery_steamer___",
+  "wsName": "蒸笼",
+  "itemTags": [
+   "成品菜",
+   "主食"
+  ],
+  "directInputs": [
+   "生竹筒饭"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790155533298": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_zongzi____",
+  "name": "熟粽子",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食"
+  ],
+  "directInputs": [
+   "生粽子"
+  ],
+  "base": {
+   "minecraft_lily_pad___": 1,
+   "item_1790130683439": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_egg_fried_rice____",
+  "name": "蛋炒饭",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "鸡蛋",
+   "米饭"
+  ],
+  "base": {
+   "minecraft_egg___": 1,
+   "item_1790130683439": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_scramble_egg_with_tomatoes_____",
+  "name": "番茄炒蛋",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "甜"
+  ],
+  "directInputs": [
+   "番茄片",
+   "鸡蛋",
+   "糖",
+   "瓶装酱油"
+  ],
+  "base": {
+   "item_1790135106649": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_braised_beef_____",
+  "name": "红烧牛肉",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "辣",
+   "浓郁"
+  ],
+  "directInputs": [
+   "牛肉块",
+   "绿辣椒",
+   "瓶装酱油",
+   "红辣椒"
+  ],
+  "base": {
+   "item_1790155533298": 1,
+   "item_1790137148750": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790138031487": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_stir_fried_pork_with_peppers_____",
+  "name": "青椒炒肉",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "辣"
+  ],
+  "directInputs": [
+   "生五花肉",
+   "瓶装酱油",
+   "绿辣椒"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790137148750": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_sweet_and_sour_pork_____",
+  "name": "糖醋里脊",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面",
+   "甜",
+   "酸"
+  ],
+  "directInputs": [
+   "面粉",
+   "生培根",
+   "糖",
+   "醋"
+  ],
+  "base": {
+   "item_1790124131145": 2,
+   "item_1790155582175": 1,
+   "minecraft_sugar_cane___": 2,
+   "minecraft_water_bucket___": 1,
+   "item_1790130683439": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
+  "name": "鱼香肉丝",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "水产",
+   "菌类",
+   "甜",
+   "辣",
+   "酸",
+   "鲜"
+  ],
+  "directInputs": [
+   "生培根",
+   "绿辣椒",
+   "红辣椒",
+   "棕色蘑菇",
+   "糖",
+   "醋",
+   "瓶装酱油"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "item_1790137148750": 1,
+   "item_1790138031487": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "minecraft_sugar_cane___": 2,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_pork_bone_soup____",
+  "name": "大骨汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "汤羹"
+  ],
+  "directInputs": [
+   "骨头",
+   "盐"
+  ],
+  "base": {
+   "farmersdelight_ham___": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_seafood_miso_soup______",
+  "name": "海鲜味噌汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "菌类",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "生鲑鱼",
+   "卷心菜叶",
+   "豆腐",
+   "盐",
+   "洋葱",
+   "棕色蘑菇"
+  ],
+  "base": {
+   "minecraft_salmon": 1,
+   "item_1790134179343": 1,
+   "youkaisfeasts_pods___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790138974040": 1,
+   "aquaculture_brown_shrooma____": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_lamb_and_radish_soup______",
+  "name": "萝卜羊肉汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "生羊排",
+   "胡萝卜粒",
+   "洋葱",
+   "盐"
+  ],
+  "base": {
+   "item_1790155604936": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_braised_beef_with_potatoes______",
+  "name": "土豆炖牛肉",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "甜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "牛肉块",
+   "马铃薯",
+   "瓶装酱油",
+   "盐",
+   "糖"
+  ],
+  "base": {
+   "item_1790155533298": 1,
+   "item_1790126010461": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "minecraft_water_bucket___": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_wild_mushroom_rabbit_soup______",
+  "name": "野菌兔肉汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "菌类",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "生切制小肉",
+   "棕色蘑菇",
+   "盐"
+  ],
+  "base": {
+   "item_1790155660361": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_pufferfish_soup____",
+  "name": "河豚汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "河豚",
+   "豆腐",
+   "卷心菜叶",
+   "盐"
+  ],
+  "base": {
+   "minecraft_pufferfish": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790134179343": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_borscht____",
+  "name": "罗宋汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "酸",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "牛肉块",
+   "洋葱",
+   "番茄",
+   "马铃薯",
+   "胡萝卜",
+   "卷心菜叶"
+  ],
+  "base": {
+   "item_1790155533298": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 1,
+   "item_1790126010461": 1,
+   "item_1790125887206": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_beef_meatball_soup____",
+  "name": "牛丸汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "生丸子",
+   "牛肉馅",
+   "盐",
+   "卷心菜叶"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "item_1790138974040": 1,
+   "item_1790138361858": 1,
+   "minecraft_egg___": 1,
+   "item_1790155533298": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_chicken_and_mushroom_stew______",
+  "name": "小鸡炖蘑菇",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "菌类",
+   "鲜"
+  ],
+  "directInputs": [
+   "生鸡肉丁",
+   "鸡翅",
+   "棕色蘑菇",
+   "红色蘑菇",
+   "盐"
+  ],
+  "base": {
+   "item_1790155640667": 2,
+   "aquaculture_brown_shrooma____": 1,
+   "aquaculture_red_shrooma____": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_laba_congee____",
+  "name": "腊八粥",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面",
+   "甜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "稻米",
+   "黄豆",
+   "红豆",
+   "糖"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790138757205": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_beef_noodle____",
+  "name": "牛肉面",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "牛肉块",
+   "生面条",
+   "盐",
+   "洋葱"
+  ],
+  "base": {
+   "item_1790155533298": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_hui_noodle_____",
+  "name": "羊肉烩面",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "菌类",
+   "米面",
+   "鲜"
+  ],
+  "directInputs": [
+   "生羊排",
+   "生面条",
+   "洋葱",
+   "棕色蘑菇",
+   "卷心菜叶"
+  ],
+  "base": {
+   "item_1790155604936": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790138974040": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_udon_noodle____",
+  "name": "乌冬面",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "生面条",
+   "卷心菜叶",
+   "鸡蛋",
+   "瓶装酱油",
+   "牛肉块"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 3,
+   "minecraft_sugar_cane___": 1,
+   "item_1790134179343": 1,
+   "minecraft_egg___": 1,
+   "youkaisfeasts_pods___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790155533298": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_hot_dry_noodles____",
+  "name": "热干面",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面",
+   "辣"
+  ],
+  "directInputs": [
+   "生面条",
+   "红辣椒",
+   "瓶装酱油",
+   "洋葱"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 3,
+   "minecraft_sugar_cane___": 1,
+   "item_1790138031487": 1,
+   "youkaisfeasts_pods___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "minecraft_pumpkin_pie____",
+  "name": "南瓜派",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "馅饼酥皮",
+   "南瓜片",
+   "糖",
+   "奶桶"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 3,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 2,
+   "item_1790128035425": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_fondant_pie____",
+  "name": "翻糖派",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "南瓜派",
+   "蜂蜜瓶",
+   "糖"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 3,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 3,
+   "item_1790128035425": 1,
+   "minecraft_honey_bottle____": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_dongpo_pork____",
+  "name": "东坡肉",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "甜",
+   "酸",
+   "浓郁"
+  ],
+  "directInputs": [
+   "生五花肉",
+   "瓶装酱油",
+   "糖",
+   "醋",
+   "竹子"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 2,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 2,
+   "minecraft_sugar_cane___": 2,
+   "item_1790130683439": 1,
+   "minecraft_bamboo___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_spicy_chicken____",
+  "name": "辣子鸡",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "辣"
+  ],
+  "directInputs": [
+   "生鸡肉",
+   "红辣椒",
+   "红辣椒",
+   "红辣椒",
+   "绿辣椒",
+   "绿辣椒",
+   "绿辣椒"
+  ],
+  "base": {
+   "item_1790155640667": 1,
+   "item_1790138031487": 3,
+   "item_1790137148750": 3
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_stargazy_pie______",
+  "name": "仰望星空派",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "白金鲈鱼头",
+   "南瓜派"
+  ],
+  "base": {
+   "collectorsreap_platinum_bass______": 1,
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 3,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 2,
+   "item_1790128035425": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_frost_lamb_chop_____",
+  "name": "凛冬羊排",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "水果",
+   "甜"
+  ],
+  "directInputs": [
+   "生羊肉",
+   "冰块",
+   "甜浆果"
+  ],
+  "base": {
+   "item_1790155604936": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790139430160": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_candied_potato_____",
+  "name": "拔丝土豆",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "土豆片",
+   "糖",
+   "面粉",
+   "卷心菜叶"
+  ],
+  "base": {
+   "item_1790126010461": 1,
+   "minecraft_sugar_cane___": 1,
+   "item_1790124131145": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_spicy_rabbit_head_____",
+  "name": "麻辣兔头",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "甜",
+   "辣"
+  ],
+  "directInputs": [
+   "生兔肉",
+   "红辣椒",
+   "糖",
+   "盐",
+   "瓶装酱油"
+  ],
+  "base": {
+   "item_1790155660361": 1,
+   "item_1790138031487": 1,
+   "minecraft_sugar_cane___": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_buddha_jumps_over_the_wall____",
+  "name": "佛跳墙",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "菌类",
+   "鲜",
+   "浓郁",
+   "汤羹"
+  ],
+  "directInputs": [
+   "鸡蛋",
+   "卷心菜叶",
+   "海潮蛤肉",
+   "棕色蘑菇",
+   "竹子",
+   "鸡翅",
+   "大骨汤",
+   "火腿片"
+  ],
+  "base": {
+   "minecraft_egg___": 1,
+   "item_1790134179343": 1,
+   "crabbersdelight_clam___": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "minecraft_bamboo___": 1,
+   "item_1790155640667": 1,
+   "farmersdelight_ham___": 2,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_fried_caterpillar______",
+  "name": "油炸猪儿虫",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "油炸"
+  ],
+  "directInputs": [
+   "猪儿虫"
+  ],
+  "base": {
+   "kaleidoscope_cookery_caterpillar____": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_spicy_blood_stew____",
+  "name": "毛血旺",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "菌类",
+   "辣",
+   "鲜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "火腿片",
+   "生鸡肉丁",
+   "洋葱",
+   "红辣椒",
+   "棕色蘑菇"
+  ],
+  "base": {
+   "farmersdelight_ham___": 1,
+   "item_1790155640667": 1,
+   "item_1790138974040": 1,
+   "item_1790138031487": 1,
+   "aquaculture_brown_shrooma____": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_oil_splashed_fish____",
+  "name": "油泼鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "辣",
+   "鲜"
+  ],
+  "directInputs": [
+   "河鲈鱼",
+   "洋葱",
+   "绿辣椒",
+   "红辣椒"
+  ],
+  "base": {
+   "aquaculture_perch____": 1,
+   "item_1790138974040": 1,
+   "item_1790137148750": 1,
+   "item_1790138031487": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_four_joy_meatball_soup______",
+  "name": "四喜丸子汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "汤羹"
+  ],
+  "directInputs": [
+   "生丸子",
+   "卷心菜叶",
+   "盐",
+   "瓶装酱油"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "item_1790138974040": 1,
+   "item_1790138361858": 1,
+   "minecraft_egg___": 1,
+   "item_1790134179343": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_stuffed_tiger_skin_pepper_______",
+  "name": "虎皮青椒酿肉",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "米面",
+   "辣"
+  ],
+  "directInputs": [
+   "绿辣椒",
+   "生切制小肉",
+   "红薯粉"
+  ],
+  "base": {
+   "item_1790137148750": 1,
+   "item_1790155660361": 1,
+   "item_1790138361858": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_braised_pork_ribs_____",
+  "name": "红烧排骨",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "甜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "火腿",
+   "瓶装酱油",
+   "糖",
+   "洋葱"
+  ],
+  "base": {
+   "farmersdelight_ham___": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "minecraft_sugar_cane___": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_dough_drop_soup____",
+  "name": "疙瘩汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "米面",
+   "汤羹"
+  ],
+  "directInputs": [
+   "面粉",
+   "卷心菜叶",
+   "番茄片",
+   "豆腐"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "item_1790134179343": 1,
+   "item_1790135106649": 1,
+   "youkaisfeasts_pods___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_numbing_spicy_chicken____",
+  "name": "椒麻鸡",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "甜",
+   "辣"
+  ],
+  "directInputs": [
+   "生鸡肉丁",
+   "绿辣椒",
+   "红辣椒",
+   "瓶装酱油",
+   "糖",
+   "盐"
+  ],
+  "base": {
+   "item_1790155640667": 1,
+   "item_1790137148750": 1,
+   "item_1790138031487": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "minecraft_water_bucket___": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_fried_spring_roll____",
+  "name": "炸春卷",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "油炸"
+  ],
+  "directInputs": [
+   "面团",
+   "豆腐",
+   "生培根",
+   "黄瓜丝",
+   "卷心菜叶",
+   "胡萝卜粒"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790155582175": 1,
+   "item_1790139066734": 1,
+   "item_1790134179343": 1,
+   "item_1790125887206": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_cold_roasted_meat____",
+  "name": "冷肉炙",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "凉爽"
+  ],
+  "directInputs": [
+   "生牛肉",
+   "冰块"
+  ],
+  "base": {
+   "item_1790155533298": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_cold_cut_ham_slices______",
+  "name": "冷切火腿片",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "凉爽"
+  ],
+  "directInputs": [
+   "火腿片",
+   "冰块"
+  ],
+  "base": {
+   "farmersdelight_ham___": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_tieguanyin____",
+  "name": "铁观音",
+  "ws": "kaleidoscope_cookery_teapot___",
+  "wsName": "茶壶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "苦",
+   "茶饮"
+  ],
+  "directInputs": [
+   "铁观音茶包",
+   "水桶"
+  ],
+  "base": {
+   "youkaisfeasts_tea_leaves____": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_biluochun____",
+  "name": "碧螺春",
+  "ws": "kaleidoscope_cookery_teapot___",
+  "wsName": "茶壶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "苦",
+   "茶饮"
+  ],
+  "directInputs": [
+   "碧螺春茶包",
+   "水桶"
+  ],
+  "base": {
+   "youkaisfeasts_tea_leaves____": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_oolong______",
+  "name": "冻顶乌龙茶",
+  "ws": "kaleidoscope_cookery_teapot___",
+  "wsName": "茶壶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "苦",
+   "茶饮"
+  ],
+  "directInputs": [
+   "冻顶乌龙茶包",
+   "水桶"
+  ],
+  "base": {
+   "youkaisfeasts_tea_leaves____": 1,
+   "minecraft_water_bucket___": 2
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_butter_tea____",
+  "name": "酥油茶",
+  "ws": "kaleidoscope_cookery_teapot___",
+  "wsName": "茶壶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "奶香",
+   "浓郁",
+   "茶饮"
+  ],
+  "directInputs": [
+   "酥油茶茶包",
+   "奶桶"
+  ],
+  "base": {
+   "youkaisfeasts_tea_leaves____": 1,
+   "kaleidoscope_grilling_canola_seeds____": 1,
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_sakura_fubuki____",
+  "name": "樱吹雪",
+  "ws": "kaleidoscope_cookery_teapot___",
+  "wsName": "茶壶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "苦",
+   "茶饮"
+  ],
+  "directInputs": [
+   "樱吹雪茶包",
+   "水桶"
+  ],
+  "base": {
+   "youkaisfeasts_tea_leaves____": 1,
+   "minecraft_pink_petals______": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_dianhong_tea_____",
+  "name": "云南滇红",
+  "ws": "kaleidoscope_cookery_teapot___",
+  "wsName": "茶壶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "苦",
+   "茶饮"
+  ],
+  "directInputs": [
+   "云南滇红茶包",
+   "水桶"
+  ],
+  "base": {
+   "youkaisfeasts_tea_leaves____": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_barley_tea______",
+  "name": "麦香乌龙茶",
+  "ws": "kaleidoscope_cookery_teapot___",
+  "wsName": "茶壶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "苦",
+   "茶饮"
+  ],
+  "directInputs": [
+   "麦香乌龙茶包",
+   "水桶"
+  ],
+  "base": {
+   "youkaisfeasts_tea_leaves____": 1,
+   "item_1790124131145": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_hk_milk_tea_______",
+  "name": "港式丝袜奶茶",
+  "ws": "kaleidoscope_cookery_teapot___",
+  "wsName": "茶壶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "奶香",
+   "甜",
+   "甘",
+   "茶饮"
+  ],
+  "directInputs": [
+   "云南滇红茶包",
+   "奶桶"
+  ],
+  "base": {
+   "youkaisfeasts_tea_leaves____": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_bamboo_steamed_egg_____",
+  "name": "竹筒蒸蛋",
+  "ws": "kaleidoscope_cookery_steamer___",
+  "wsName": "蒸笼",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "清淡"
+  ],
+  "directInputs": [
+   "生竹筒蒸蛋"
+  ],
+  "base": {
+   "minecraft_egg___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_steamed_rice_rolls___",
+  "name": "肠粉",
+  "ws": "kaleidoscope_cookery_steamer___",
+  "wsName": "蒸笼",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "生肠粉"
+  ],
+  "base": {
+   "item_1790124131145": 2,
+   "minecraft_egg___": 1,
+   "youkaisfeasts_pods___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790134179343": 1,
+   "item_1790155582175": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_wonton_noodles____",
+  "name": "云吞面",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "裹馅面食",
+   "生面条",
+   "卷心菜叶",
+   "大骨汤"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 4,
+   "item_1790124131145": 4,
+   "minecraft_sugar_cane___": 2,
+   "item_1790155582175": 1,
+   "item_1790138974040": 1,
+   "item_1790134179343": 1,
+   "farmersdelight_ham___": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_sichuan_boiled_pork_slices_____",
+  "name": "水煮肉片",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "辣"
+  ],
+  "directInputs": [
+   "生培根",
+   "牛肉块",
+   "生羊排",
+   "红辣椒",
+   "卷心菜叶"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "item_1790155533298": 1,
+   "item_1790155604936": 1,
+   "item_1790138031487": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_yangrou_paomo_____",
+  "name": "羊肉泡馍",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "生羊排",
+   "馒头",
+   "大骨汤",
+   "洋葱"
+  ],
+  "base": {
+   "item_1790155604936": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "farmersdelight_ham___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_sauerkraut_beef_noodles______",
+  "name": "酸菜牛肉面",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面",
+   "辣",
+   "酸"
+  ],
+  "directInputs": [
+   "酸菜",
+   "牛肉块",
+   "生面条",
+   "绿辣椒"
+  ],
+  "base": {
+   "item_1790134179343": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 3,
+   "item_1790130683439": 1,
+   "minecraft_sugar_cane___": 2,
+   "item_1790155533298": 1,
+   "item_1790137148750": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_yellow_croaker_soup____",
+  "name": "黄鱼汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "黄花鱼",
+   "卷心菜叶",
+   "盐"
+  ],
+  "base": {
+   "kaleidoscope_chinesefood_yellow_croaker____": 1,
+   "item_1790134179343": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_yellow_croaker_tofu_soup______",
+  "name": "黄鱼炖豆腐",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "黄花鱼",
+   "豆腐",
+   "卷心菜叶",
+   "盐"
+  ],
+  "base": {
+   "kaleidoscope_chinesefood_yellow_croaker____": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790134179343": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_dry_pot_potatoes______",
+  "name": "干锅土豆片",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "辣",
+   "浓郁"
+  ],
+  "directInputs": [
+   "土豆片",
+   "绿辣椒",
+   "红辣椒",
+   "洋葱片",
+   "瓶装酱油"
+  ],
+  "base": {
+   "item_1790126010461": 1,
+   "item_1790137148750": 1,
+   "item_1790138031487": 1,
+   "item_1790138974040": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_stuffed_eggplant_____",
+  "name": "茄子酿肉",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "米面"
+  ],
+  "directInputs": [
+   "茄子",
+   "生切制小肉",
+   "红薯粉"
+  ],
+  "base": {
+   "item_1790138417330": 1,
+   "item_1790155660361": 1,
+   "item_1790138361858": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_sichuan_wonton_____",
+  "name": "麻辣抄手",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面",
+   "辣"
+  ],
+  "directInputs": [
+   "裹馅面食",
+   "红辣椒",
+   "卷心菜叶",
+   "瓶装酱油"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 3,
+   "minecraft_sugar_cane___": 1,
+   "item_1790155582175": 1,
+   "item_1790138974040": 1,
+   "item_1790138031487": 1,
+   "item_1790134179343": 1,
+   "youkaisfeasts_pods___": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_big_plate_chicken____",
+  "name": "大盘鸡",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "辣",
+   "浓郁"
+  ],
+  "directInputs": [
+   "生鸡肉丁",
+   "土豆片",
+   "盐",
+   "绿辣椒"
+  ],
+  "base": {
+   "item_1790155640667": 1,
+   "item_1790126010461": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790137148750": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_twilight_frozen_bun_____",
+  "name": "冰冻馒头",
+  "ws": "kaleidoscope_world_liquor_freezer___",
+  "wsName": "冰柜",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面",
+   "凉爽"
+  ],
+  "directInputs": [
+   "水桶",
+   "馒头"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_seaweed_egg_drop_soup______",
+  "name": "紫菜蛋花汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "清淡",
+   "汤羹"
+  ],
+  "directInputs": [
+   "干海带",
+   "鸡蛋",
+   "盐"
+  ],
+  "base": {
+   "item_1790126144727": 1,
+   "minecraft_egg___": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_tomato_egg_drop_soup______",
+  "name": "番茄鸡蛋汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "汤羹"
+  ],
+  "directInputs": [
+   "番茄片",
+   "鸡蛋",
+   "盐"
+  ],
+  "base": {
+   "item_1790135106649": 1,
+   "minecraft_egg___": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_century_egg_congee______",
+  "name": "皮蛋瘦肉粥",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "皮蛋",
+   "生五花肉",
+   "米饭",
+   "洋葱",
+   "盐"
+  ],
+  "base": {
+   "minecraft_egg___": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "minecraft_charcoal___": 1,
+   "item_1790155582175": 1,
+   "item_1790130683439": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_pumpkin_porridge____",
+  "name": "南瓜粥",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面",
+   "甜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "南瓜片",
+   "米饭",
+   "糖"
+  ],
+  "base": {
+   "item_1790128035425": 1,
+   "item_1790130683439": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_douzhi____",
+  "name": "豆汁儿",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食"
+  ],
+  "directInputs": [
+   "黄豆"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_beef_with_scrambled_eggs_____",
+  "name": "滑蛋牛肉",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "鸡蛋",
+   "牛肉馅",
+   "瓶装酱油",
+   "洋葱"
+  ],
+  "base": {
+   "minecraft_egg___": 1,
+   "item_1790155533298": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_yangzhou_fried_rice_____",
+  "name": "扬州炒饭",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "米饭",
+   "胡萝卜粒",
+   "鸡蛋",
+   "火腿片",
+   "黄瓜片",
+   "洋葱"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790125887206": 1,
+   "minecraft_egg___": 1,
+   "farmersdelight_ham___": 1,
+   "item_1790139066734": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_stir_fried_three_fresh_vegetables____",
+  "name": "地三鲜",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "辣"
+  ],
+  "directInputs": [
+   "马铃薯",
+   "茄子",
+   "绿辣椒",
+   "盐",
+   "瓶装酱油"
+  ],
+  "base": {
+   "item_1790126010461": 1,
+   "item_1790138417330": 1,
+   "item_1790137148750": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_red_rice_roll______",
+  "name": "广式红米肠",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜"
+  ],
+  "directInputs": [
+   "卷心菜叶",
+   "米饭",
+   "红薯粉",
+   "生黑虎虾",
+   "胡萝卜粒"
+  ],
+  "base": {
+   "item_1790134179343": 1,
+   "item_1790130683439": 1,
+   "item_1790138361858": 1,
+   "collectorsreap_tiger_prawn_____": 1,
+   "item_1790125887206": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_chinesefood_sichuan_boiled_fish____",
+  "name": "水煮鱼",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "辣",
+   "鲜"
+  ],
+  "directInputs": [
+   "生鳕鱼",
+   "红辣椒",
+   "卷心菜叶"
+  ],
+  "base": {
+   "minecraft_cod": 1,
+   "item_1790138031487": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "crabbersdelight_coconut_pudding_Coconut_Pudding",
+  "name": "椰子布丁",
+  "ws": "kaleidoscope_world_liquor_freezer___",
+  "wsName": "冰柜",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "凉爽"
+  ],
+  "directInputs": [
+   "奶桶",
+   "鸡蛋",
+   "糖",
+   "椰奶"
+  ],
+  "base": {
+   "minecraft_milk_bucket___": 2,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "item_1790141939382": 1
+  }
+ },
+ {
+  "id": "crabbersdelight_coconut_milk_Coconut_Milk",
+  "name": "椰奶",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "奶香",
+   "甜",
+   "甘"
+  ],
+  "directInputs": [
+   "椰子",
+   "奶桶"
+  ],
+  "base": {
+   "item_1790141939382": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "farmersdelight_apple_pie____",
+  "name": "苹果派",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "甜",
+   "烘焙"
+  ],
+  "directInputs": [
+   "馅饼酥皮",
+   "苹果片",
+   "糖"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 2,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 2,
+   "item_1790140009664": 1
+  }
+ },
+ {
+  "id": "farmersdelight_sweet_berry_cheesecake_______",
+  "name": "甜浆果芝士派",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "馅饼酥皮",
+   "甜浆果",
+   "糖",
+   "奶桶"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 3,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 2,
+   "item_1790139430160": 1
+  }
+ },
+ {
+  "id": "farmersdelight_chocolate_pie_____",
+  "name": "巧克力派",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁",
+   "烘焙"
+  ],
+  "directInputs": [
+   "馅饼酥皮",
+   "松露巧克力",
+   "糖",
+   "奶桶"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_milk_bucket___": 3,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 3,
+   "item_1790140073708": 1
+  }
+ },
+ {
+  "id": "farmersdelight_melon_popsicle_____",
+  "name": "西瓜冰棍",
+  "ws": "kaleidoscope_world_liquor_freezer___",
+  "wsName": "冰柜",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "甜",
+   "凉爽"
+  ],
+  "directInputs": [
+   "水桶",
+   "西瓜片",
+   "冰块"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790140036153": 1
+  }
+ },
+ {
+  "id": "farmersdelight_glow_berry_custard_________",
+  "name": "发光浆果蛋奶沙司",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "奶香",
+   "甜"
+  ],
+  "directInputs": [
+   "奶桶",
+   "发光浆果",
+   "鸡蛋",
+   "糖"
+  ],
+  "base": {
+   "minecraft_milk_bucket___": 1,
+   "item_1790139253176": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "farmersdelight_fruit_salad_____",
+  "name": "水果沙拉",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水果",
+   "甜",
+   "清淡"
+  ],
+  "directInputs": [
+   "南瓜片",
+   "西瓜片",
+   "苹果片",
+   "甜浆果"
+  ],
+  "base": {
+   "item_1790128035425": 1,
+   "item_1790140036153": 1,
+   "item_1790140009664": 1,
+   "item_1790139430160": 1
+  }
+ },
+ {
+  "id": "farmersdelight_mixed_salad_____",
+  "name": "混合沙拉",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "清淡"
+  ],
+  "directInputs": [
+   "卷心菜叶",
+   "马铃薯",
+   "甜菜根",
+   "番茄片"
+  ],
+  "base": {
+   "item_1790134179343": 1,
+   "item_1790126010461": 1,
+   "item_1790126025786": 1,
+   "item_1790135106649": 1
+  }
+ },
+ {
+  "id": "farmersdelight_egg_sandwich______",
+  "name": "夹蛋三明治",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食"
+  ],
+  "directInputs": [
+   "鸡蛋"
+  ],
+  "base": {
+   "minecraft_egg___": 1
+  }
+ },
+ {
+  "id": "farmersdelight_chicken_sandwich______",
+  "name": "鸡肉三明治",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "生鸡肉丁",
+   "卷心菜叶",
+   "胡萝卜粒"
+  ],
+  "base": {
+   "item_1790155640667": 1,
+   "item_1790134179343": 1,
+   "item_1790125887206": 1
+  }
+ },
+ {
+  "id": "farmersdelight_hamburger____",
+  "name": "汉堡包",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "牛肉馅",
+   "卷心菜叶",
+   "番茄片",
+   "洋葱片"
+  ],
+  "base": {
+   "item_1790155533298": 1,
+   "item_1790134179343": 1,
+   "item_1790135106649": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "farmersdelight_bacon_sandwich______",
+  "name": "培根三明治",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "生培根",
+   "卷心菜叶",
+   "番茄片"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "item_1790134179343": 1,
+   "item_1790135106649": 1
+  }
+ },
+ {
+  "id": "farmersdelight_mutton_wrap_____",
+  "name": "羊肉卷饼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "生羊排",
+   "卷心菜叶",
+   "洋葱片"
+  ],
+  "base": {
+   "item_1790155604936": 1,
+   "item_1790134179343": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "farmersdelight_stuffed_potato______",
+  "name": "填馅马铃薯",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "奶香",
+   "浓郁"
+  ],
+  "directInputs": [
+   "马铃薯",
+   "牛肉馅",
+   "碗装奶油"
+  ],
+  "base": {
+   "item_1790126010461": 1,
+   "item_1790155533298": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "farmersdelight_salmon_roll_____",
+  "name": "鲑鱼寿司",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "米饭",
+   "生鲑鱼片"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "minecraft_salmon": 1
+  }
+ },
+ {
+  "id": "farmersdelight_cod_roll_____",
+  "name": "鳕鱼寿司",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "米饭",
+   "生鳕鱼片"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "minecraft_cod": 1
+  }
+ },
+ {
+  "id": "farmersdelight_kelp_roll______",
+  "name": "海带寿司卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "奶香",
+   "米面",
+   "清淡",
+   "浓郁"
+  ],
+  "directInputs": [
+   "干海带",
+   "米饭",
+   "胡萝卜粒",
+   "碗装奶油"
+  ],
+  "base": {
+   "item_1790126144727": 1,
+   "item_1790130683439": 1,
+   "item_1790125887206": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_milk_bucket___": 1
+  }
+ },
+ {
+  "id": "farmersdelight_pasta_with_meatballs_____",
+  "name": "肉丸意面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "番茄酱",
+   "生丸子",
+   "生意面",
+   "牛肉馅"
+  ],
+  "base": {
+   "item_1790135106649": 1,
+   "item_1790155582175": 1,
+   "item_1790138974040": 1,
+   "item_1790138361858": 1,
+   "minecraft_egg___": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790155533298": 1
+  }
+ },
+ {
+  "id": "farmersdelight_pasta_with_mutton_chop_____",
+  "name": "羊排意面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "生羊排",
+   "生意面",
+   "番茄酱",
+   "洋葱"
+  ],
+  "base": {
+   "item_1790155604936": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790135106649": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "farmersdelight_mushroom_rice____",
+  "name": "蘑菇饭",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "米面",
+   "鲜"
+  ],
+  "directInputs": [
+   "米饭",
+   "棕色蘑菇",
+   "红色蘑菇",
+   "胡萝卜粒"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "aquaculture_red_shrooma____": 1,
+   "item_1790125887206": 1
+  }
+ },
+ {
+  "id": "farmersdelight_roasted_mutton_chops____",
+  "name": "烤羊排",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "生羊排",
+   "米饭",
+   "甜菜根",
+   "番茄片",
+   "盐"
+  ],
+  "base": {
+   "item_1790155604936": 1,
+   "item_1790130683439": 1,
+   "item_1790126025786": 1,
+   "item_1790135106649": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "farmersdelight_vegetable_noodles____",
+  "name": "蔬菜面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "米面",
+   "鲜",
+   "清淡"
+  ],
+  "directInputs": [
+   "棕色蘑菇",
+   "胡萝卜",
+   "卷心菜叶",
+   "生意面",
+   "黄瓜片"
+  ],
+  "base": {
+   "aquaculture_brown_shrooma____": 1,
+   "item_1790125887206": 1,
+   "item_1790134179343": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790139066734": 1
+  }
+ },
+ {
+  "id": "farmersdelight_grilled_salmon_____",
+  "name": "香烤鲑鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "水果",
+   "甜",
+   "鲜"
+  ],
+  "directInputs": [
+   "生鲑鱼片",
+   "甜浆果",
+   "洋葱",
+   "卷心菜叶"
+  ],
+  "base": {
+   "minecraft_salmon": 1,
+   "item_1790139430160": 1,
+   "item_1790138974040": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "farmersdelight_ratatouille_____",
+  "name": "蔬菜杂烩",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "清淡"
+  ],
+  "directInputs": [
+   "土豆片",
+   "洋葱片",
+   "番茄片",
+   "甜菜根",
+   "卷心菜叶"
+  ],
+  "base": {
+   "item_1790126010461": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 1,
+   "item_1790126025786": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "farmersdelight_honey_glazed_ham_block_____",
+  "name": "蜜汁火腿",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "水果",
+   "米面",
+   "甜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "火腿",
+   "蜂蜜瓶",
+   "米饭",
+   "甜浆果"
+  ],
+  "base": {
+   "farmersdelight_ham___": 1,
+   "minecraft_honey_bottle____": 1,
+   "item_1790130683439": 1,
+   "item_1790139430160": 1
+  }
+ },
+ {
+  "id": "farmersdelight_roast_chicken_block___",
+  "name": "烤鸡",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "生鸡肉",
+   "土豆片",
+   "胡萝卜",
+   "鸡蛋",
+   "洋葱"
+  ],
+  "base": {
+   "item_1790155640667": 1,
+   "item_1790126010461": 1,
+   "item_1790125887206": 1,
+   "minecraft_egg___": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "farmersdelight_stuffed_pumpkin_block_____",
+  "name": "填馅南瓜",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "水果",
+   "米面",
+   "甜",
+   "鲜"
+  ],
+  "directInputs": [
+   "米饭",
+   "甜浆果",
+   "玉米",
+   "胡萝卜粒",
+   "土豆片",
+   "卷心菜叶",
+   "洋葱片",
+   "棕色蘑菇",
+   "番茄片"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790139430160": 1,
+   "item_1790138531027": 1,
+   "item_1790125887206": 1,
+   "item_1790126010461": 1,
+   "item_1790134179343": 1,
+   "item_1790138974040": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "item_1790135106649": 1
+  }
+ },
+ {
+  "id": "farmersdelight_shepherds_pie_block_____",
+  "name": "牧羊人派",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "奶香",
+   "甜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "生羊排",
+   "蜂蜜瓶",
+   "碗装奶油",
+   "洋葱",
+   "土豆片"
+  ],
+  "base": {
+   "item_1790155604936": 1,
+   "minecraft_honey_bottle____": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_milk_bucket___": 1,
+   "item_1790138974040": 1,
+   "item_1790126010461": 1
+  }
+ },
+ {
+  "id": "farmersdelight_cabbage_rolls_____",
+  "name": "卷心菜卷",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食"
+  ],
+  "directInputs": [
+   "卷心菜叶",
+   "玉米",
+   "胡萝卜粒"
+  ],
+  "base": {
+   "item_1790134179343": 1,
+   "item_1790138531027": 1,
+   "item_1790125887206": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_steamed_crab_____",
+  "name": "清蒸螃蟹",
+  "ws": "kaleidoscope_cookery_steamer___",
+  "wsName": "蒸笼",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜",
+   "清淡"
+  ],
+  "directInputs": [
+   "螃蟹"
+  ],
+  "base": {
+   "youkaisfeasts_crab___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_tamagoyaki____",
+  "name": "玉子烧",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "奶香",
+   "甜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "鸡蛋",
+   "糖"
+  ],
+  "base": {
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_mochi___",
+  "name": "麻薯",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "红薯粉",
+   "稻米",
+   "红豆"
+  ],
+  "base": {
+   "item_1790138361858": 1,
+   "item_1790130683439": 1,
+   "item_1790138757205": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_tsukimi_dango_____",
+  "name": "月见团子",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "稻米",
+   "豆腐",
+   "糖"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_matcha_mochi_____",
+  "name": "抹茶麻薯",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "奶香",
+   "甜"
+  ],
+  "directInputs": [
+   "红薯粉",
+   "稻米",
+   "抹茶"
+  ],
+  "base": {
+   "item_1790138361858": 1,
+   "item_1790130683439": 1,
+   "youkaisfeasts_tea_leaves____": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_sakura_mochi___",
+  "name": "樱饼",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "面粉",
+   "糖",
+   "粉红色花簇",
+   "红豆"
+  ],
+  "base": {
+   "item_1790124131145": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_pink_petals______": 1,
+   "item_1790138757205": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_yashouma_dango_____",
+  "name": "信州瘦马",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "稻米",
+   "红豆",
+   "抹茶",
+   "糖",
+   "瓶装酱油"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790138757205": 1,
+   "youkaisfeasts_tea_leaves____": 1,
+   "minecraft_sugar_cane___": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_onigili___",
+  "name": "饭团",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "米饭",
+   "海带"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790126144727": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_senbei___",
+  "name": "仙贝",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "瓶装酱油",
+   "干海带",
+   "蜂蜜瓶",
+   "米饭"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790126144727": 1,
+   "minecraft_honey_bottle____": 1,
+   "item_1790130683439": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_sekibankiyaki____",
+  "name": "生首烧",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "稻米",
+   "黄油",
+   "红豆"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_milk_bucket___": 1,
+   "item_1790138757205": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_yakumo_inari______",
+  "name": "八云豆包饭",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "米面"
+  ],
+  "directInputs": [
+   "油豆腐",
+   "鸡蛋",
+   "胡萝卜",
+   "米饭"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 1,
+   "minecraft_egg___": 1,
+   "item_1790125887206": 1,
+   "item_1790130683439": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_pork_rice_ball_____",
+  "name": "猪肉饭团",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "生野猪肉丁",
+   "米饭",
+   "瓶装酱油"
+  ],
+  "base": {
+   "item_1790155689801": 1,
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_kabayaki_____",
+  "name": "蒲烧鳗鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "甜",
+   "鲜"
+  ],
+  "directInputs": [
+   "生八目鳗片",
+   "瓶装酱油",
+   "糖"
+  ],
+  "base": {
+   "youkaisfeasts_raw_lamprey_____": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_milk_popsicle_____",
+  "name": "牛奶冰棍",
+  "ws": "kaleidoscope_world_liquor_freezer___",
+  "wsName": "冰柜",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "奶香",
+   "甜",
+   "浓郁",
+   "凉爽"
+  ],
+  "directInputs": [
+   "奶桶",
+   "冰块"
+  ],
+  "base": {
+   "minecraft_milk_bucket___": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_big_popsicle_____",
+  "name": "大冰棍儿",
+  "ws": "kaleidoscope_world_liquor_freezer___",
+  "wsName": "冰柜",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜",
+   "凉爽"
+  ],
+  "directInputs": [
+   "水桶",
+   "冰块"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2
+  }
+ },
+ {
+  "id": "youkaisfeasts_shaved_ice_over_rice_______",
+  "name": "儿童刨冰盖饭",
+  "ws": "kaleidoscope_world_liquor_freezer___",
+  "wsName": "冰柜",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水产",
+   "甜",
+   "鲜",
+   "凉爽"
+  ],
+  "directInputs": [
+   "米饭",
+   "冰块",
+   "红豆",
+   "鳕鱼寿司"
+  ],
+  "base": {
+   "item_1790130683439": 2,
+   "minecraft_water_bucket___": 1,
+   "item_1790138757205": 1,
+   "minecraft_cod": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_grilled_eel_over_rice____",
+  "name": "鳗鱼饭",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "甜",
+   "鲜"
+  ],
+  "directInputs": [
+   "生八目鳗片",
+   "米饭",
+   "瓶装酱油",
+   "糖"
+  ],
+  "base": {
+   "youkaisfeasts_raw_lamprey_____": 1,
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_longevity_noodles____",
+  "name": "长寿面",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "菌类",
+   "米面",
+   "鲜"
+  ],
+  "directInputs": [
+   "生面条",
+   "洋葱",
+   "生五花肉",
+   "棕色蘑菇"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790138974040": 1,
+   "item_1790155582175": 1,
+   "aquaculture_brown_shrooma____": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_shirayuki___",
+  "name": "白雪",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "豆腐",
+   "海带",
+   "洋葱",
+   "河豚",
+   "生八目鳗片",
+   "盐"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 1,
+   "item_1790126144727": 1,
+   "item_1790138974040": 1,
+   "minecraft_pufferfish": 1,
+   "youkaisfeasts_raw_lamprey_____": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_han_palace_____",
+  "name": "汉宫藏娇",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "菌类",
+   "鲜"
+  ],
+  "directInputs": [
+   "生八目鳗",
+   "豆腐",
+   "洋葱",
+   "棕色蘑菇",
+   "卷心菜叶"
+  ],
+  "base": {
+   "youkaisfeasts_raw_lamprey_____": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790138974040": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_tuscan_salmon_______",
+  "name": "蔬菜奶油鲑鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "奶香",
+   "鲜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "生鲑鱼片",
+   "碗装奶油",
+   "卷心菜叶",
+   "番茄片"
+  ],
+  "base": {
+   "minecraft_salmon": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_milk_bucket___": 1,
+   "item_1790134179343": 1,
+   "item_1790135106649": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_honey_glazed_cucumber_____",
+  "name": "蜜渍黄瓜",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "甜"
+  ],
+  "directInputs": [
+   "黄瓜片",
+   "生鹿片",
+   "蜂蜜瓶"
+  ],
+  "base": {
+   "item_1790139066734": 1,
+   "item_1790155674872": 1,
+   "minecraft_honey_bottle____": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_lions_head____",
+  "name": "红烧狮子头",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "浓郁"
+  ],
+  "directInputs": [
+   "生丸子",
+   "瓶装酱油",
+   "卷心菜叶",
+   "胡萝卜粒"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "item_1790138974040": 1,
+   "item_1790138361858": 1,
+   "minecraft_egg___": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790134179343": 1,
+   "item_1790125887206": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_mapo_tofu_____",
+  "name": "麻婆豆腐",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "辣"
+  ],
+  "directInputs": [
+   "豆腐",
+   "红辣椒",
+   "生野猪肉丁"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 1,
+   "item_1790138031487": 1,
+   "item_1790155689801": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_udumbara_cake_____",
+  "name": "幻昙花羹",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "面团",
+   "幻昙花",
+   "糖"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 2,
+   "item_1790138879144": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_tobiko_gunkan_____",
+  "name": "鱼籽军舰",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "米饭",
+   "干海带",
+   "鲑鱼籽"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790126144727": 1,
+   "minecraft_salmon": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_seagrass_gunkan_____",
+  "name": "海草军舰",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "米饭",
+   "干海带",
+   "海草"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790126144727": 1,
+   "item_1790126151178": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_nattou_gunkan_____",
+  "name": "纳豆军舰",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "米饭",
+   "干海带",
+   "纳豆"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790126144727": 1,
+   "youkaisfeasts_pods___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_egg_nigiri_______",
+  "name": "玉子烧握寿司",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "米饭",
+   "玉子烧",
+   "干海带"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "item_1790126144727": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_lorelei_nigiri______",
+  "name": "夜雀的手握",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "米饭",
+   "蒲烧鳗鱼",
+   "干海带"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "youkaisfeasts_raw_lamprey_____": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "minecraft_sugar_cane___": 1,
+   "item_1790126144727": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_tuna_nigiri_______",
+  "name": "金枪鱼握寿司",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "米饭",
+   "生金枪鱼排片"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "aquaculture_tuna____": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_otoro_nigiri_________",
+  "name": "金枪鱼大腹握寿司",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "米饭",
+   "金枪鱼大腹"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "aquaculture_tuna____": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_shinnko_maki_____",
+  "name": "新香细卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "干海带",
+   "米饭",
+   "瓶装酱油",
+   "甜菜根"
+  ],
+  "base": {
+   "item_1790126144727": 1,
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790126025786": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_kappa_maki_____",
+  "name": "河童细卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "干海带",
+   "米饭",
+   "瓶装酱油",
+   "黄瓜丝"
+  ],
+  "base": {
+   "item_1790126144727": 1,
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790139066734": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_tekka_maki____",
+  "name": "铁火卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "干海带",
+   "米饭",
+   "瓶装酱油",
+   "生金枪鱼排片"
+  ],
+  "base": {
+   "item_1790126144727": 1,
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "aquaculture_tuna____": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_egg_futomaki_____",
+  "name": "玉子太卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面"
+  ],
+  "directInputs": [
+   "干海带",
+   "米饭",
+   "瓶装酱油",
+   "玉子烧切片"
+  ],
+  "base": {
+   "item_1790126144727": 1,
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_salmon_futomaki_____",
+  "name": "鲑鱼太卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "干海带",
+   "米饭",
+   "瓶装酱油",
+   "黄瓜丝",
+   "胡萝卜粒",
+   "蟹肉棒",
+   "生鲑鱼片"
+  ],
+  "base": {
+   "item_1790126144727": 2,
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790139066734": 1,
+   "item_1790125887206": 2,
+   "youkaisfeasts_crab___": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 1,
+   "item_1790138361858": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_salmon": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_rainbow_futomaki_____",
+  "name": "缤纷太卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "干海带",
+   "米饭",
+   "瓶装酱油",
+   "黄瓜丝",
+   "胡萝卜粒",
+   "玉子烧切片",
+   "蟹肉棒",
+   "生鲑鱼片"
+  ],
+  "base": {
+   "item_1790126144727": 2,
+   "item_1790130683439": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790139066734": 1,
+   "item_1790125887206": 2,
+   "minecraft_egg___": 2,
+   "minecraft_sugar_cane___": 2,
+   "youkaisfeasts_crab___": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 1,
+   "item_1790138361858": 1,
+   "minecraft_salmon": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_california_roll____",
+  "name": "加州卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "米饭",
+   "干海带",
+   "瓶装蛋黄酱",
+   "黄瓜丝",
+   "玉子烧切片",
+   "蟹肉棒"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790126144727": 2,
+   "minecraft_egg___": 4,
+   "minecraft_sugar_cane___": 4,
+   "minecraft_milk_bucket___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790139066734": 1,
+   "youkaisfeasts_crab___": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 1,
+   "item_1790138361858": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_roe_california_roll______",
+  "name": "蟹籽加州卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "加州卷",
+   "蟹籽"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790126144727": 3,
+   "minecraft_egg___": 4,
+   "minecraft_sugar_cane___": 4,
+   "minecraft_milk_bucket___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790139066734": 1,
+   "youkaisfeasts_crab___": 2,
+   "item_1790125887206": 2,
+   "item_1790138974040": 2,
+   "item_1790135106649": 2,
+   "item_1790138361858": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_salmon_lover_roll____",
+  "name": "若鹭卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "蟹籽加州卷",
+   "生鲑鱼片"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790126144727": 3,
+   "minecraft_egg___": 4,
+   "minecraft_sugar_cane___": 4,
+   "minecraft_milk_bucket___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790139066734": 1,
+   "youkaisfeasts_crab___": 2,
+   "item_1790125887206": 2,
+   "item_1790138974040": 2,
+   "item_1790135106649": 2,
+   "item_1790138361858": 1,
+   "minecraft_salmon": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_volcano_roll______",
+  "name": "铁火加州卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "加州卷",
+   "瓶装酱油",
+   "生金枪鱼排片",
+   "金枪鱼大腹",
+   "生金枪鱼排片"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790126144727": 2,
+   "minecraft_egg___": 4,
+   "minecraft_sugar_cane___": 4,
+   "minecraft_milk_bucket___": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "item_1790139066734": 1,
+   "youkaisfeasts_crab___": 1,
+   "item_1790125887206": 1,
+   "item_1790138974040": 1,
+   "item_1790135106649": 1,
+   "item_1790138361858": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "minecraft_water_bucket___": 1,
+   "aquaculture_tuna____": 3
+  }
+ },
+ {
+  "id": "youkaisfeasts_rainbow_roll______",
+  "name": "彩虹加州卷",
+  "ws": "youkaisfeasts_cuisine_board____",
+  "wsName": "料理台",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜",
+   "生食"
+  ],
+  "directInputs": [
+   "蟹籽加州卷",
+   "生鲑鱼片",
+   "生鳕鱼片",
+   "生金枪鱼排片"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790126144727": 3,
+   "minecraft_egg___": 4,
+   "minecraft_sugar_cane___": 4,
+   "minecraft_milk_bucket___": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "item_1790139066734": 1,
+   "youkaisfeasts_crab___": 2,
+   "item_1790125887206": 2,
+   "item_1790138974040": 2,
+   "item_1790135106649": 2,
+   "item_1790138361858": 1,
+   "minecraft_salmon": 1,
+   "minecraft_cod": 1,
+   "aquaculture_tuna____": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_mushroom_soup_______",
+  "name": "奶油蘑菇浓汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "奶香",
+   "鲜",
+   "浓郁",
+   "汤羹"
+  ],
+  "directInputs": [
+   "碗装奶油",
+   "棕色蘑菇",
+   "洋葱片"
+  ],
+  "base": {
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_milk_bucket___": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_power_soup____",
+  "name": "力量汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "瓶装酱油",
+   "黄豆",
+   "生野猪肉丁",
+   "生鹿片",
+   "海带",
+   "胡萝卜粒",
+   "番茄片",
+   "卷心菜叶",
+   "洋葱片"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 2,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790155689801": 1,
+   "item_1790155674872": 1,
+   "item_1790126144727": 1,
+   "item_1790125887206": 1,
+   "item_1790135106649": 1,
+   "item_1790134179343": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_potato_soup________",
+  "name": "奶油马铃薯浓汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "奶香",
+   "鲜",
+   "浓郁",
+   "汤羹"
+  ],
+  "directInputs": [
+   "碗装奶油",
+   "火腿片",
+   "马铃薯",
+   "洋葱片"
+  ],
+  "base": {
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_milk_bucket___": 1,
+   "farmersdelight_ham___": 1,
+   "item_1790126010461": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_signature_mushroom_stew______",
+  "name": "秘制鲜菌煲",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "瓶装酱油",
+   "棕色蘑菇",
+   "红色蘑菇",
+   "双孢蘑菇",
+   "盐"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 2,
+   "minecraft_water_bucket___": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "aquaculture_red_shrooma____": 1,
+   "item_1790128163987": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_hokkaido_salmon_hotpot____",
+  "name": "石狩锅",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "菌类",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "瓶装酱油",
+   "黄豆",
+   "豆腐",
+   "海带",
+   "胡萝卜粒",
+   "棕色蘑菇",
+   "卷心菜叶",
+   "土豆片",
+   "生鲑鱼片"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 3,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790126144727": 1,
+   "item_1790125887206": 1,
+   "aquaculture_brown_shrooma____": 1,
+   "item_1790134179343": 1,
+   "item_1790126010461": 1,
+   "minecraft_salmon": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_bamboo_mizuyokan______",
+  "name": "竹筒水羊羹",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜"
+  ],
+  "directInputs": [
+   "红豆",
+   "竹子",
+   "糖",
+   "红薯粉"
+  ],
+  "base": {
+   "item_1790138757205": 1,
+   "minecraft_bamboo___": 1,
+   "minecraft_sugar_cane___": 1,
+   "item_1790138361858": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_dried_fish____",
+  "name": "小鱼干",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "生鳕鱼片",
+   "卷心菜叶",
+   "盐"
+  ],
+  "base": {
+   "minecraft_cod": 1,
+   "item_1790134179343": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_imitation_bear_paw____",
+  "name": "赛熊掌",
+  "ws": "kaleidoscope_cookery_steamer___",
+  "wsName": "蒸笼",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "生赛熊掌"
+  ],
+  "base": {
+   "minecraft_bamboo___": 1,
+   "item_1790155689801": 1,
+   "item_1790155533298": 1,
+   "item_1790138974040": 1,
+   "youkaisfeasts_raw_lamprey_____": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_cold_tofu_____",
+  "name": "冷奴豆腐",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "清淡",
+   "凉爽"
+  ],
+  "directInputs": [
+   "豆腐",
+   "瓶装酱油",
+   "黄豆",
+   "卷心菜叶",
+   "冰块"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 3,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_cumberland_loin______",
+  "name": "坎伯兰猪腰",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "生野猪肉丁",
+   "番茄酱",
+   "瓶装酱油",
+   "卷心菜叶"
+  ],
+  "base": {
+   "item_1790155689801": 1,
+   "item_1790135106649": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_tomato_sauce_cod_____",
+  "name": "茄汁鳕鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "鲜"
+  ],
+  "directInputs": [
+   "生鳕鱼片",
+   "番茄酱",
+   "瓶装酱油"
+  ],
+  "base": {
+   "minecraft_cod": 1,
+   "item_1790135106649": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_pastitsio_______",
+  "name": "地中海千层面",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "奶香",
+   "米面",
+   "浓郁"
+  ],
+  "directInputs": [
+   "生意面",
+   "黄油",
+   "番茄酱",
+   "洋葱",
+   "牛肉馅"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 2,
+   "minecraft_egg___": 1,
+   "minecraft_milk_bucket___": 1,
+   "item_1790135106649": 1,
+   "item_1790138974040": 1,
+   "item_1790155533298": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_sauce_grilled_fish____",
+  "name": "酱烧鱼",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "辣",
+   "鲜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "瓶装酱油",
+   "卷心菜叶",
+   "洋葱",
+   "红辣椒",
+   "大西洋鲱鱼"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790134179343": 1,
+   "item_1790138974040": 1,
+   "item_1790138031487": 1,
+   "aquaculture_atlantic_herring______": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_stinky_tofu____",
+  "name": "臭豆腐",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "菌类",
+   "辣",
+   "鲜"
+  ],
+  "directInputs": [
+   "豆腐",
+   "红辣椒",
+   "瓶装酱油",
+   "卷心菜叶",
+   "棕色蘑菇"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 2,
+   "item_1790138031487": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790134179343": 1,
+   "aquaculture_brown_shrooma____": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_tofu_burger_____",
+  "name": "豆腐汉堡",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "豆腐",
+   "黄油",
+   "甜浆果",
+   "卷心菜叶"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 1,
+   "minecraft_egg___": 1,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_milk_bucket___": 1,
+   "item_1790139430160": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "youkaisfeasts_seven_colored_yokan_____",
+  "name": "七色羊羹",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "甜"
+  ],
+  "directInputs": [
+   "黄豆",
+   "红豆",
+   "葡萄",
+   "抹茶",
+   "幻昙花",
+   "红薯粉",
+   "桃子"
+  ],
+  "base": {
+   "youkaisfeasts_pods___": 1,
+   "item_1790138757205": 1,
+   "item_1790142009787": 1,
+   "youkaisfeasts_tea_leaves____": 1,
+   "item_1790138879144": 1,
+   "item_1790138361858": 1,
+   "item_1790141973599": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_fragrantorchard_peach_of_immortality____",
+  "name": "蟠桃饭",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水果",
+   "米面"
+  ],
+  "directInputs": [
+   "米饭",
+   "桃子"
+  ],
+  "base": {
+   "item_1790130683439": 1,
+   "item_1790141973599": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______",
+  "name": "冰糖炖雪梨",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水果",
+   "甜",
+   "凉爽"
+  ],
+  "directInputs": [
+   "糖",
+   "梨"
+  ],
+  "base": {
+   "minecraft_sugar_cane___": 1,
+   "item_1790141993088": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_fragrantorchard_apple_juice____",
+  "name": "苹果汁",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甜",
+   "凉爽",
+   "甘"
+  ],
+  "directInputs": [
+   "苹果片"
+  ],
+  "base": {
+   "item_1790140009664": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_fragrantorchard_melon_juice____",
+  "name": "西瓜汁",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甜",
+   "凉爽",
+   "甘"
+  ],
+  "directInputs": [
+   "西瓜片"
+  ],
+  "base": {
+   "item_1790140036153": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_fragrantorchard_grape_juice____",
+  "name": "葡萄汁",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甜",
+   "凉爽",
+   "甘"
+  ],
+  "directInputs": [
+   "葡萄"
+  ],
+  "base": {
+   "item_1790142009787": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_fragrantorchard_peach_juice____",
+  "name": "桃子汁",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甜",
+   "凉爽",
+   "甘"
+  ],
+  "directInputs": [
+   "桃子"
+  ],
+  "base": {
+   "item_1790141973599": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_fragrantorchard_pear_juice___",
+  "name": "梨汁",
+  "ws": "kaleidoscope_fragrantorchard_juicer____",
+  "wsName": "榨汁机",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甜",
+   "凉爽",
+   "甘"
+  ],
+  "directInputs": [
+   "梨"
+  ],
+  "base": {
+   "item_1790141993088": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_nether_roujiamo____",
+  "name": "肉夹馍",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面"
+  ],
+  "directInputs": [
+   "面团",
+   "牛肉馅"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790155533298": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_nether_chongqing_noodles_____",
+  "name": "重庆小面",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面",
+   "辣"
+  ],
+  "directInputs": [
+   "生培根",
+   "卷心菜叶",
+   "生面条",
+   "红辣椒"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "item_1790134179343": 1,
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "item_1790138031487": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_nether_luosifen____",
+  "name": "螺蛳粉",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "辣",
+   "酸",
+   "鲜"
+  ],
+  "directInputs": [
+   "生面条",
+   "绿辣椒",
+   "红辣椒",
+   "竹子",
+   "醋",
+   "生黑虎虾",
+   "鸡蛋"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 3,
+   "item_1790124131145": 3,
+   "minecraft_sugar_cane___": 2,
+   "item_1790137148750": 1,
+   "item_1790138031487": 1,
+   "minecraft_bamboo___": 1,
+   "item_1790130683439": 1,
+   "collectorsreap_tiger_prawn_____": 1,
+   "minecraft_egg___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_nether_sauerkraut_fish____",
+  "name": "酸菜鱼",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "辣",
+   "酸",
+   "鲜"
+  ],
+  "directInputs": [
+   "酸菜",
+   "河鲈鱼",
+   "干海带",
+   "红辣椒"
+  ],
+  "base": {
+   "item_1790134179343": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790124131145": 1,
+   "item_1790130683439": 1,
+   "minecraft_sugar_cane___": 1,
+   "aquaculture_perch____": 1,
+   "item_1790126144727": 1,
+   "item_1790138031487": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_nether_braised_pork_rice____",
+  "name": "卤肉饭",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "米面",
+   "辣"
+  ],
+  "directInputs": [
+   "生五花肉",
+   "鸡蛋",
+   "米饭",
+   "洋葱",
+   "瓶装酱油",
+   "绿辣椒"
+  ],
+  "base": {
+   "item_1790155582175": 1,
+   "minecraft_egg___": 1,
+   "item_1790130683439": 1,
+   "item_1790138974040": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790137148750": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_nether_corn_carrot_pork_rib_soup_________",
+  "name": "玉米胡萝卜排骨汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "玉米",
+   "胡萝卜",
+   "火腿",
+   "盐"
+  ],
+  "base": {
+   "item_1790138531027": 1,
+   "item_1790125887206": 1,
+   "farmersdelight_ham___": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_nether_pepper_pork_belly_chicken_soup_______",
+  "name": "胡椒猪肚鸡汤",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "辣",
+   "鲜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "绿辣椒",
+   "红辣椒",
+   "生五花肉",
+   "生鸡肉丁",
+   "盐"
+  ],
+  "base": {
+   "item_1790137148750": 1,
+   "item_1790138031487": 1,
+   "item_1790155582175": 1,
+   "item_1790155640667": 1,
+   "kaleidoscope_chinesefood_salt__": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_nether_garlic_oysters_____",
+  "name": "蒜蓉生蚝",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "米面",
+   "辣",
+   "鲜"
+  ],
+  "directInputs": [
+   "绿辣椒",
+   "洋葱粉",
+   "海潮蛤肉"
+  ],
+  "base": {
+   "item_1790137148750": 1,
+   "item_1790138974040": 1,
+   "crabbersdelight_clam___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_cold_houttuynia______",
+  "name": "凉拌折耳根",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "辣",
+   "清淡",
+   "凉爽"
+  ],
+  "directInputs": [
+   "折耳根沫",
+   "红辣椒",
+   "绿辣椒"
+  ],
+  "base": {
+   "item_1790138660812": 1,
+   "item_1790138031487": 1,
+   "item_1790137148750": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_sugared_tomato_____",
+  "name": "糖拌番茄",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "甜"
+  ],
+  "directInputs": [
+   "糖",
+   "番茄片"
+  ],
+  "base": {
+   "minecraft_sugar_cane___": 1,
+   "item_1790135106649": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_pepper_honey_____",
+  "name": "花椒蜂蜜",
+  "ws": "farm_and_charm_crafting_bowl____",
+  "wsName": "混合碗",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "甜",
+   "辣"
+  ],
+  "directInputs": [
+   "花椒",
+   "蜂蜜瓶"
+  ],
+  "base": {
+   "kaleidoscope_grilling_sichuan_pepper___": 1,
+   "minecraft_honey_bottle____": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_roasted_sweet_potato____",
+  "name": "烤红薯",
+  "ws": "icecore_oven___",
+  "wsName": "烤炉",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食"
+  ],
+  "directInputs": [
+   "红薯"
+  ],
+  "base": {
+   "item_1790138361858": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_green_pepper_squid_tentacles_______",
+  "name": "青椒炒鱿鱼须",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "水产",
+   "辣",
+   "鲜"
+  ],
+  "directInputs": [
+   "绿辣椒",
+   "鱿鱼须",
+   "洋葱"
+  ],
+  "base": {
+   "item_1790137148750": 1,
+   "kaleidoscope_grilling_squid_tentacle____": 1,
+   "item_1790138974040": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_braised_chicken_wings_____",
+  "name": "红烧鸡翅",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食",
+   "甜",
+   "浓郁"
+  ],
+  "directInputs": [
+   "鸡翅",
+   "瓶装酱油",
+   "糖"
+  ],
+  "base": {
+   "item_1790155640667": 1,
+   "youkaisfeasts_pods___": 1,
+   "item_1790124131145": 1,
+   "kaleidoscope_chinesefood_salt__": 1,
+   "minecraft_water_bucket___": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_sour_spicy_noodles____",
+  "name": "酸辣粉",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面",
+   "辣",
+   "酸"
+  ],
+  "directInputs": [
+   "醋",
+   "生苕皮",
+   "红辣椒",
+   "卷心菜叶"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 1,
+   "item_1790124131145": 1,
+   "item_1790130683439": 1,
+   "minecraft_sugar_cane___": 1,
+   "item_1790138361858": 1,
+   "item_1790138031487": 1,
+   "item_1790134179343": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_red_sweet_potato_porridge_____",
+  "name": "红苕稀饭",
+  "ws": "kaleidoscope_cookery_stockpot___",
+  "wsName": "汤锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "米面",
+   "甜",
+   "汤羹"
+  ],
+  "directInputs": [
+   "红薯",
+   "米饭",
+   "糖"
+  ],
+  "base": {
+   "item_1790138361858": 1,
+   "item_1790130683439": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_houttuynia_stir_fried_pork______",
+  "name": "折耳根炒肉",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食",
+   "辣"
+  ],
+  "directInputs": [
+   "折耳根沫",
+   "生切制小肉",
+   "红辣椒"
+  ],
+  "base": {
+   "item_1790138660812": 1,
+   "item_1790155660361": 1,
+   "item_1790138031487": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_lamb_skewer_____",
+  "name": "烤羊肉串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "肉食",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生羊肉串"
+  ],
+  "base": {
+   "item_1790155604936": 2,
+   "kaleidoscope_cookery_oil___": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_gluten_skewer_____",
+  "name": "烤面筋串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生面筋串"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_beef_skewer_____",
+  "name": "烤牛肉串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "肉食",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生牛肉串"
+  ],
+  "base": {
+   "item_1790155533298": 2,
+   "item_1790138031487": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_pork_belly_skewer______",
+  "name": "烤五花肉串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "肉食",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生五花肉串"
+  ],
+  "base": {
+   "item_1790155582175": 2,
+   "item_1790137148750": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_mid_wing_skewer_____",
+  "name": "烤中翅串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "肉食",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生中翅串"
+  ],
+  "base": {
+   "item_1790155640667": 2,
+   "item_1790138031487": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_squid_tentacle_skewer______",
+  "name": "烤鱿鱼须串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "水产",
+   "鲜",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生鱿鱼须串"
+  ],
+  "base": {
+   "kaleidoscope_grilling_squid_tentacle____": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_sweet_potato_sheet_skewer_____",
+  "name": "烤苕皮串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生苕皮串"
+  ],
+  "base": {
+   "item_1790138361858": 1,
+   "item_1790138660812": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_potato_slice_skewer______",
+  "name": "烤土豆片串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生土豆片串"
+  ],
+  "base": {
+   "item_1790126010461": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_mushroom_skewer_____",
+  "name": "烤蘑菇串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "菌类",
+   "鲜",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生蘑菇串"
+  ],
+  "base": {
+   "aquaculture_brown_shrooma____": 2,
+   "item_1790125887206": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_meat_and_bone_skewer_______",
+  "name": "烤骨肉相连串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "点心",
+   "肉食",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生骨肉相连串"
+  ],
+  "base": {
+   "item_1790155660361": 2,
+   "farmersdelight_ham___": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_grilling_grilled_bun_slice_skewer______",
+  "name": "烤馒头片串",
+  "ws": "kaleidoscope_grilling_grill____",
+  "wsName": "烧烤架",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "米面",
+   "烧烤"
+  ],
+  "directInputs": [
+   "生馒头片串"
+  ],
+  "base": {
+   "minecraft_water_bucket___": 2,
+   "item_1790124131145": 2,
+   "minecraft_sugar_cane___": 1,
+   "minecraft_stick___": 1
+  }
+ },
+ {
+  "id": "minecraft_baked_potato_____",
+  "name": "烤马铃薯",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "素食"
+  ],
+  "directInputs": [
+   "马铃薯"
+  ],
+  "base": {
+   "item_1790126010461": 1
+  }
+ },
+ {
+  "id": "minecraft_cooked_beef___",
+  "name": "牛排",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "生牛肉"
+  ],
+  "base": {
+   "item_1790155533298": 1
+  }
+ },
+ {
+  "id": "minecraft_cooked_porkchop____",
+  "name": "熟猪排",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食",
+   "肉食"
+  ],
+  "directInputs": [
+   "生猪排"
+  ],
+  "base": {
+   "item_1790155582175": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_cookery_fried_egg___",
+  "name": "煎蛋",
+  "ws": "kaleidoscope_cookery_pot___",
+  "wsName": "炒锅",
+  "itemTags": [
+   "成品菜",
+   "主食"
+  ],
+  "directInputs": [
+   "鸡蛋"
+  ],
+  "base": {
+   "minecraft_egg___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_tavern_wine____",
+  "name": "葡萄酒",
+  "ws": "kaleidoscope_tavern_barrel___",
+  "wsName": "酒桶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甜",
+   "辛",
+   "酒类"
+  ],
+  "directInputs": [
+   "葡萄桶",
+   "糖"
+  ],
+  "base": {
+   "item_1790142009787": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_tavern_sherry___",
+  "name": "雪莉",
+  "ws": "kaleidoscope_tavern_barrel___",
+  "wsName": "酒桶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "辛",
+   "酒类"
+  ],
+  "directInputs": [
+   "冰葡萄桶",
+   "冰块",
+   "梨"
+  ],
+  "base": {
+   "item_1790142054571": 1,
+   "minecraft_water_bucket___": 1,
+   "item_1790141993088": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_world_liquor_johnnie_walker_____",
+  "name": "尊尼获加",
+  "ws": "kaleidoscope_tavern_barrel___",
+  "wsName": "酒桶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "浓郁",
+   "辛",
+   "酒类"
+  ],
+  "directInputs": [
+   "黄金葡萄",
+   "小麦",
+   "甜菜根"
+  ],
+  "base": {
+   "item_1790142068808": 1,
+   "item_1790124131145": 1,
+   "item_1790126025786": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_world_liquor_dassai___",
+  "name": "獺祭",
+  "ws": "kaleidoscope_tavern_barrel___",
+  "wsName": "酒桶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "辛",
+   "酒类"
+  ],
+  "directInputs": [
+   "青提葡萄桶",
+   "竹子",
+   "海草"
+  ],
+  "base": {
+   "item_1790142085428": 1,
+   "minecraft_bamboo___": 1,
+   "item_1790126151178": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_tavern_red_queen____",
+  "name": "红皇后",
+  "ws": "kaleidoscope_tavern_barrel___",
+  "wsName": "酒桶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甜",
+   "甘",
+   "酒类"
+  ],
+  "directInputs": [
+   "甜浆果桶",
+   "红心火龙果",
+   "石榴片"
+  ],
+  "base": {
+   "item_1790139430160": 1,
+   "item_1790141751973": 1,
+   "item_1790140447393": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_world_liquor_strongbow____",
+  "name": "诗庄堡",
+  "ws": "kaleidoscope_tavern_barrel___",
+  "wsName": "酒桶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "甘",
+   "酒类"
+  ],
+  "directInputs": [
+   "发光浆果桶",
+   "苹果片",
+   "蛋黄果"
+  ],
+  "base": {
+   "item_1790139253176": 1,
+   "item_1790140009664": 1,
+   "item_1790141853911": 1
+  }
+ },
+ {
+  "id": "kaleidoscope_world_liquor_pina_colada_________",
+  "name": "马利宝椰子朗姆酒",
+  "ws": "kaleidoscope_tavern_barrel___",
+  "wsName": "酒桶",
+  "itemTags": [
+   "成品菜",
+   "饮品",
+   "水果",
+   "奶香",
+   "甜",
+   "浓郁",
+   "甘",
+   "酒类"
+  ],
+  "directInputs": [
+   "奶桶",
+   "半块椰子",
+   "甘蔗"
+  ],
+  "base": {
+   "minecraft_milk_bucket___": 1,
+   "item_1790141939382": 1,
+   "minecraft_sugar_cane___": 1
+  }
+ }
+]
