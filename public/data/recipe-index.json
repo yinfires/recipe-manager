@@ -2,14 +2,14 @@
   "indexVersion": 3,
   "generatedFrom": {
     "schemaVersion": 5,
-    "updatedAt": "2026-10-03T10:39:33.566Z"
+    "updatedAt": "2026-10-05T12:42:48.431Z"
   },
   "counts": {
-    "items": 523,
+    "items": 522,
     "tags": 31,
-    "recipes": 410,
+    "recipes": 409,
     "finishedFoods": 292,
-    "baseIngredients": 86,
+    "baseIngredients": 85,
     "workstations": 16
   },
   "workstations": [
@@ -509,11 +509,6 @@
       "id": "youkaisfeasts_crab___",
       "name": "螃蟹",
       "itemId": "youkaisfeasts:crab"
-    },
-    {
-      "id": "youkaisfeasts_pods___",
-      "name": "豆荚",
-      "itemId": "youkaisfeasts:pods"
     },
     {
       "id": "youkaisfeasts_raw_lamprey_____",
@@ -4370,50 +4365,6 @@
       ]
     },
     {
-      "id": "recipe_1790392879290",
-      "name": "黄豆",
-      "workstation": {
-        "id": "farmersdelight_cutting_board___",
-        "name": "砧板",
-        "itemId": "farmersdelight:cutting_board"
-      },
-      "inputs": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "youkaisfeasts_pods___",
-            "name": "豆荚",
-            "itemId": "youkaisfeasts:pods"
-          },
-          "count": 1
-        }
-      ],
-      "attachments": [],
-      "outputs": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "item_1790138675425",
-            "name": "黄豆",
-            "itemId": "youkaisfeasts:soybean"
-          },
-          "count": 1
-        }
-      ],
-      "predecessorRecipeIds": [],
-      "successorRecipeIds": [
-        "recipe_1790393466712",
-        "recipe_1790473190694",
-        "recipe_1790476567060",
-        "recipe_1790501085552",
-        "recipe_1790508386335",
-        "recipe_1790514346208",
-        "recipe_1790514518518",
-        "recipe_1790516318674",
-        "recipe_1790517887343"
-      ]
-    },
-    {
       "id": "recipe_1790392996051",
       "name": "洋葱粉",
       "workstation": {
@@ -4700,8 +4651,7 @@
         }
       ],
       "predecessorRecipeIds": [
-        "recipe_1790248528736",
-        "recipe_1790392879290"
+        "recipe_1790248528736"
       ],
       "successorRecipeIds": [
         "recipe_1790428839922",
@@ -12325,9 +12275,7 @@
           "count": 1
         }
       ],
-      "predecessorRecipeIds": [
-        "recipe_1790392879290"
-      ],
+      "predecessorRecipeIds": [],
       "successorRecipeIds": [
         "recipe_1790473212390",
         "recipe_1790475951336",
@@ -13137,7 +13085,6 @@
       ],
       "predecessorRecipeIds": [
         "recipe_1790248508299",
-        "recipe_1790392879290",
         "recipe_1790394299494"
       ],
       "successorRecipeIds": []
@@ -17407,9 +17354,7 @@
           "count": 1
         }
       ],
-      "predecessorRecipeIds": [
-        "recipe_1790392879290"
-      ],
+      "predecessorRecipeIds": [],
       "successorRecipeIds": []
     },
     {
@@ -20328,9 +20273,7 @@
           "count": 1
         }
       ],
-      "predecessorRecipeIds": [
-        "recipe_1790392879290"
-      ],
+      "predecessorRecipeIds": [],
       "successorRecipeIds": [
         "recipe_1790512673616"
       ]
@@ -23582,7 +23525,6 @@
         "recipe_1790254919905",
         "recipe_1790254936364",
         "recipe_1790254951309",
-        "recipe_1790392879290",
         "recipe_1790393466712",
         "recipe_1790507907547",
         "recipe_1790507984302"
@@ -23892,7 +23834,6 @@
         "recipe_1790250932972",
         "recipe_1790251223907",
         "recipe_1790254951309",
-        "recipe_1790392879290",
         "recipe_1790393466712",
         "recipe_1790422896799",
         "recipe_1790473190694",
@@ -24268,7 +24209,6 @@
       ],
       "predecessorRecipeIds": [
         "recipe_1790254951309",
-        "recipe_1790392879290",
         "recipe_1790393466712",
         "recipe_1790393692322",
         "recipe_1790473190694"
@@ -24946,7 +24886,6 @@
         }
       ],
       "predecessorRecipeIds": [
-        "recipe_1790392879290",
         "recipe_1790428181380",
         "recipe_1790509497099"
       ],
@@ -28737,7 +28676,6 @@
       "recipe_1790390132189",
       "recipe_1790390158076",
       "recipe_1790390218716",
-      "recipe_1790392879290",
       "recipe_1790392996051",
       "recipe_1790393025818",
       "recipe_1790394299494",
@@ -29748,9 +29686,6 @@
     "youkaisfeasts_crab___": [
       "recipe_1790426226148",
       "recipe_1790507855844"
-    ],
-    "youkaisfeasts_pods___": [
-      "recipe_1790392879290"
     ],
     "youkaisfeasts_raw_lamprey_____": [
       "recipe_1790510721057",
@@ -31640,73 +31575,6 @@
       "recipe_1790513968807",
       "recipe_1790514012080"
     ],
-    "youkaisfeasts_pods___": [
-      "recipe_1790392879290",
-      "recipe_1790393466712",
-      "recipe_1790428839922",
-      "recipe_1790471533931",
-      "recipe_1790471719280",
-      "recipe_1790472251743",
-      "recipe_1790472762874",
-      "recipe_1790473190694",
-      "recipe_1790473212390",
-      "recipe_1790473550324",
-      "recipe_1790475951336",
-      "recipe_1790476567060",
-      "recipe_1790476954803",
-      "recipe_1790477056687",
-      "recipe_1790480048333",
-      "recipe_1790481534274",
-      "recipe_1790483295561",
-      "recipe_1790484582704",
-      "recipe_1790484687541",
-      "recipe_1790484796972",
-      "recipe_1790485038273",
-      "recipe_1790498030934",
-      "recipe_1790499290328",
-      "recipe_1790500160828",
-      "recipe_1790500300778",
-      "recipe_1790500527930",
-      "recipe_1790501085552",
-      "recipe_1790501110033",
-      "recipe_1790501416389",
-      "recipe_1790508006111",
-      "recipe_1790508386335",
-      "recipe_1790509376677",
-      "recipe_1790509635504",
-      "recipe_1790509954457",
-      "recipe_1790510210154",
-      "recipe_1790510419417",
-      "recipe_1790510736636",
-      "recipe_1790511408116",
-      "recipe_1790511591443",
-      "recipe_1790511892133",
-      "recipe_1790512047345",
-      "recipe_1790512085158",
-      "recipe_1790512673616",
-      "recipe_1790512744070",
-      "recipe_1790512924231",
-      "recipe_1790512976170",
-      "recipe_1790513224612",
-      "recipe_1790513256140",
-      "recipe_1790513289398",
-      "recipe_1790513371547",
-      "recipe_1790513968807",
-      "recipe_1790514346208",
-      "recipe_1790514487810",
-      "recipe_1790514518518",
-      "recipe_1790516293199",
-      "recipe_1790516318674",
-      "recipe_1790516425174",
-      "recipe_1790516862560",
-      "recipe_1790516918084",
-      "recipe_1790517210619",
-      "recipe_1790517773725",
-      "recipe_1790517823967",
-      "recipe_1790517887343",
-      "recipe_1790522067535",
-      "recipe_1790522976107"
-    ],
     "youkaisfeasts_raw_lamprey_____": [
       "recipe_1790510721057",
       "recipe_1790510736636",
@@ -33404,66 +33272,6 @@
       "youkaisfeasts_steamed_crab_____",
       "youkaisfeasts_volcano_roll______"
     ],
-    "youkaisfeasts_pods___": [
-      "kaleidoscope_chinesefood_beef_with_scrambled_eggs_____",
-      "kaleidoscope_chinesefood_douzhi____",
-      "kaleidoscope_chinesefood_dry_pot_potatoes______",
-      "kaleidoscope_chinesefood_sichuan_wonton_____",
-      "kaleidoscope_chinesefood_steamed_rice_rolls___",
-      "kaleidoscope_chinesefood_stir_fried_three_fresh_vegetables____",
-      "kaleidoscope_chinesefood_yellow_croaker_tofu_soup______",
-      "kaleidoscope_cookery_braised_beef_____",
-      "kaleidoscope_cookery_braised_beef_with_potatoes______",
-      "kaleidoscope_cookery_braised_pork_ribs_____",
-      "kaleidoscope_cookery_dongpo_pork____",
-      "kaleidoscope_cookery_donkey_burger_____",
-      "kaleidoscope_cookery_dough_drop_soup____",
-      "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
-      "kaleidoscope_cookery_four_joy_meatball_soup______",
-      "kaleidoscope_cookery_fried_spring_roll____",
-      "kaleidoscope_cookery_hot_dry_noodles____",
-      "kaleidoscope_cookery_laba_congee____",
-      "kaleidoscope_cookery_numbing_spicy_chicken____",
-      "kaleidoscope_cookery_pufferfish_soup____",
-      "kaleidoscope_cookery_scramble_egg_with_tomatoes_____",
-      "kaleidoscope_cookery_seafood_miso_soup______",
-      "kaleidoscope_cookery_spicy_rabbit_head_____",
-      "kaleidoscope_cookery_stir_fried_pork_with_peppers_____",
-      "kaleidoscope_cookery_udon_noodle____",
-      "kaleidoscope_grilling_braised_chicken_wings_____",
-      "kaleidoscope_nether_braised_pork_rice____",
-      "youkaisfeasts_cold_tofu_____",
-      "youkaisfeasts_cumberland_loin______",
-      "youkaisfeasts_egg_futomaki_____",
-      "youkaisfeasts_grilled_eel_over_rice____",
-      "youkaisfeasts_han_palace_____",
-      "youkaisfeasts_hokkaido_salmon_hotpot____",
-      "youkaisfeasts_imitation_bear_paw____",
-      "youkaisfeasts_kabayaki_____",
-      "youkaisfeasts_kappa_maki_____",
-      "youkaisfeasts_lions_head____",
-      "youkaisfeasts_lorelei_nigiri______",
-      "youkaisfeasts_mapo_tofu_____",
-      "youkaisfeasts_nattou_gunkan_____",
-      "youkaisfeasts_pork_rice_ball_____",
-      "youkaisfeasts_power_soup____",
-      "youkaisfeasts_rainbow_futomaki_____",
-      "youkaisfeasts_salmon_futomaki_____",
-      "youkaisfeasts_sauce_grilled_fish____",
-      "youkaisfeasts_senbei___",
-      "youkaisfeasts_seven_colored_yokan_____",
-      "youkaisfeasts_shinnko_maki_____",
-      "youkaisfeasts_shirayuki___",
-      "youkaisfeasts_signature_mushroom_stew______",
-      "youkaisfeasts_stinky_tofu____",
-      "youkaisfeasts_tekka_maki____",
-      "youkaisfeasts_tofu_burger_____",
-      "youkaisfeasts_tomato_sauce_cod_____",
-      "youkaisfeasts_tsukimi_dango_____",
-      "youkaisfeasts_volcano_roll______",
-      "youkaisfeasts_yakumo_inari______",
-      "youkaisfeasts_yashouma_dango_____"
-    ],
     "youkaisfeasts_raw_lamprey_____": [
       "youkaisfeasts_grilled_eel_over_rice____",
       "youkaisfeasts_han_palace_____",
@@ -33613,7 +33421,6 @@
       "minecraft_sugar_cane___",
       "minecraft_water_bucket___",
       "youkaisfeasts_crab___",
-      "youkaisfeasts_pods___",
       "youkaisfeasts_raw_lamprey_____",
       "youkaisfeasts_tea_leaves____"
     ],
@@ -34048,7 +33855,6 @@
       "youkaisfeasts_otoro_nigiri_________",
       "youkaisfeasts_oyaki___",
       "youkaisfeasts_pastitsio_______",
-      "youkaisfeasts_pods___",
       "youkaisfeasts_pork_rice_ball_____",
       "youkaisfeasts_potato_soup________",
       "youkaisfeasts_power_soup____",
@@ -34137,7 +33943,6 @@
       "recipe_1790391344105",
       "recipe_1790391488700",
       "recipe_1790392801475",
-      "recipe_1790392879290",
       "recipe_1790392996051",
       "recipe_1790393025818",
       "recipe_1790393062029",
@@ -35346,15 +35151,6 @@
           "ref": "kaleidoscope_chinesefood_salt__",
           "matched": [
             "kaleidoscope_chinesefood_salt__"
-          ]
-        }
-      ],
-      "recipe_1790392879290": [
-        {
-          "type": "item",
-          "ref": "youkaisfeasts_pods___",
-          "matched": [
-            "youkaisfeasts_pods___"
           ]
         }
       ],

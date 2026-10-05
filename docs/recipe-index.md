@@ -1,15 +1,15 @@
 # AI 配方与解锁规划索引
 
 > 本文件由 `public/data/recipe-manager.json` 自动生成，只读，不是正式数据源。
-> 源数据更新时间：2026-10-03T10:39:33.566Z；生成格式版本：3
+> 源数据更新时间：2026-10-05T12:42:48.431Z；生成格式版本：3
 
 ## 快速统计
 
-- 工作方块：16；基础食材：86；配方：410；成品菜：292
+- 工作方块：16；基础食材：85；配方：409；成品菜：292
 
 ## 查询约定
 
-- `recipes`：410 个配方的完整目录，适合分类、读取工作方块、输入、附件、输出和配方链；不要只读取闭包结果。
+- `recipes`：409 个配方的完整目录，适合分类、读取工作方块、输入、附件、输出和配方链；不要只读取闭包结果。
 - `finishedFoods`：292 个成品菜的完整目录；`allUnlockedScenario.craftableFinishedItems` 只是其中当前材料条件可达的子集。
 - `recipeIdsByWorkstation[工作方块ID]`：该工作方块涉及的全部配方。
 - `recipeIdsByBaseIngredient[基础食材ID]`：直接引用该基础食材（或其标签）的配方。
@@ -33,7 +33,7 @@
 | ID | 名称 | 配方数 |
 |---|---|---:|
 | farm_and_charm_crafting_bowl____ | 混合碗 | 33 |
-| farmersdelight_cutting_board___ | 砧板 | 51 |
+| farmersdelight_cutting_board___ | 砧板 | 50 |
 | icecore_oven___ | 烤炉 | 31 |
 | kaleidoscope_cookery_bamboo_tray___ | 竹匾 | 3 |
 | kaleidoscope_cookery_pot___ | 炒锅 | 94 |
@@ -136,13 +136,12 @@
 | minecraft_sugar_cane___ | 甘蔗 | 2 |
 | minecraft_water_bucket___ | 水桶 | 21 |
 | youkaisfeasts_crab___ | 螃蟹 | 2 |
-| youkaisfeasts_pods___ | 豆荚 | 1 |
 | youkaisfeasts_raw_lamprey_____ | 生八目鳗 | 2 |
 | youkaisfeasts_tea_leaves____ | 生茶叶 | 2 |
 
 ## 材料可达闭包摘要
 
-在全部工作方块和基础食材可用时，按当前分析口径可达配方 388 个，成品菜 281 个；这不是正式配方总数。
+在全部工作方块和基础食材可用时，按当前分析口径可达配方 387 个，成品菜 281 个；这不是正式配方总数。
 
 完整配方、输入候选、输出、匹配追踪、配方链和人工 `unlockPlan` 请读取同目录的 `public/data/recipe-index.json`。`quest-design.md` 只供人工参考，不会自动覆盖阶段。
 
