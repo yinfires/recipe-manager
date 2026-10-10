@@ -2,14 +2,14 @@
   "indexVersion": 3,
   "generatedFrom": {
     "schemaVersion": 5,
-    "updatedAt": "2026-10-05T12:42:48.431Z"
+    "updatedAt": "2026-10-09T05:40:18.411Z"
   },
   "counts": {
-    "items": 522,
-    "tags": 31,
-    "recipes": 409,
-    "finishedFoods": 292,
-    "baseIngredients": 85,
+    "items": 518,
+    "tags": 32,
+    "recipes": 407,
+    "finishedFoods": 291,
+    "baseIngredients": 84,
     "workstations": 16
   },
   "workstations": [
@@ -119,11 +119,6 @@
       "id": "aquaculture_catfish___",
       "name": "鲶鱼",
       "itemId": "aquaculture:catfish"
-    },
-    {
-      "id": "aquaculture_jellyfish___",
-      "name": "水母",
-      "itemId": "aquaculture:jellyfish"
     },
     {
       "id": "aquaculture_perch____",
@@ -568,11 +563,6 @@
       "itemId": "aquaculturedelight:halibut_with_tartar_sauce"
     },
     {
-      "id": "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
-      "name": "水母果冻",
-      "itemId": "aquaculturedelight:jellyfish_jelly"
-    },
-    {
       "id": "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
       "name": "烤巨脂鱼",
       "itemId": "aquaculturedelight:roasted_tambaqui"
@@ -594,7 +584,7 @@
     },
     {
       "id": "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
-      "name": "奇异鱼汤",
+      "name": "巨脂鱼汤",
       "itemId": "aquaculturedelight:unusual_fish_soup"
     },
     {
@@ -618,11 +608,6 @@
       "itemId": "bakery:bun"
     },
     {
-      "id": "bakery_chocolate_box______",
-      "name": "巧克力礼盒",
-      "itemId": "bakery:chocolate_box"
-    },
-    {
       "id": "bakery_chocolate_cake______",
       "name": "巧克力蛋糕",
       "itemId": "bakery:chocolate_cake"
@@ -631,6 +616,11 @@
       "id": "bakery_chocolate_glazed_cookie________",
       "name": "巧克力釉面饼干",
       "itemId": "bakery:chocolate_glazed_cookie"
+    },
+    {
+      "id": "bakery_chocolate_truffle______",
+      "name": "松露巧克力",
+      "itemId": "bakery:chocolate_truffle"
     },
     {
       "id": "bakery_cornet_______",
@@ -2324,7 +2314,6 @@
       ],
       "predecessorRecipeIds": [],
       "successorRecipeIds": [
-        "recipe_1790249180602",
         "recipe_1790252609056",
         "recipe_1790257913323",
         "recipe_1790393194762",
@@ -2422,7 +2411,6 @@
       ],
       "predecessorRecipeIds": [],
       "successorRecipeIds": [
-        "recipe_1790249180602",
         "recipe_1790252609056",
         "recipe_1790257624341",
         "recipe_1790257913323",
@@ -2441,80 +2429,6 @@
         "recipe_1790498030934",
         "recipe_1790509509949"
       ]
-    },
-    {
-      "id": "recipe_1790249180602",
-      "name": "水母果冻",
-      "workstation": {
-        "id": "kaleidoscope_cookery_stockpot___",
-        "name": "汤锅",
-        "itemId": "kaleidoscope_cookery:stockpot"
-      },
-      "inputs": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "aquaculture_jellyfish___",
-            "name": "水母",
-            "itemId": "aquaculture:jellyfish"
-          },
-          "count": 1
-        },
-        {
-          "type": "item",
-          "ref": {
-            "id": "minecraft_sugar__",
-            "name": "糖",
-            "itemId": "minecraft:sugar"
-          },
-          "count": 1
-        },
-        {
-          "type": "item",
-          "ref": {
-            "id": "kaleidoscope_cookery_flour___",
-            "name": "面粉",
-            "itemId": "kaleidoscope_cookery:flour"
-          },
-          "count": 1
-        }
-      ],
-      "attachments": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "minecraft_water_bucket___",
-            "name": "水桶",
-            "itemId": "minecraft:water_bucket"
-          },
-          "count": 1
-        },
-        {
-          "type": "item",
-          "ref": {
-            "id": "minecraft_bowl__",
-            "name": "碗",
-            "itemId": "minecraft:bowl"
-          },
-          "count": 1
-        }
-      ],
-      "outputs": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
-            "name": "水母果冻",
-            "itemId": "aquaculturedelight:jellyfish_jelly"
-          },
-          "count": 1
-        }
-      ],
-      "predecessorRecipeIds": [
-        "recipe_1790248508299",
-        "recipe_1790248528736"
-      ],
-      "successorRecipeIds": []
     },
     {
       "id": "recipe_1790250932972",
@@ -3092,7 +3006,7 @@
     },
     {
       "id": "recipe_1790255253295",
-      "name": "奇异鱼汤",
+      "name": "巨脂鱼汤",
       "workstation": {
         "id": "kaleidoscope_cookery_stockpot___",
         "name": "汤锅",
@@ -3170,7 +3084,7 @@
           "type": "item",
           "ref": {
             "id": "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
-            "name": "奇异鱼汤",
+            "name": "巨脂鱼汤",
             "itemId": "aquaculturedelight:unusual_fish_soup"
           },
           "count": 1
@@ -3649,8 +3563,7 @@
           "type": "item",
           "ref": {
             "id": "kaleidoscope_grilling_oil_residue___",
-            "name": "油渣",
-            "itemId": "kaleidoscope_grilling:oil_residue"
+            "name": "kaleidoscope_grilling_oil_residue___"
           },
           "count": 1
         }
@@ -3658,9 +3571,7 @@
       "predecessorRecipeIds": [
         "recipe_1790388088210"
       ],
-      "successorRecipeIds": [
-        "recipe_1790486862646"
-      ]
+      "successorRecipeIds": []
     },
     {
       "id": "recipe_1790388362958",
@@ -4821,6 +4732,7 @@
         "recipe_1790485306955",
         "recipe_1790485322664",
         "recipe_1790486844815",
+        "recipe_1790502128889",
         "recipe_1790503297387",
         "recipe_1790510762237",
         "recipe_1790510792995",
@@ -5610,57 +5522,10 @@
         "recipe_1790248508299"
       ],
       "successorRecipeIds": [
-        "recipe_1790403546864",
         "recipe_1790403901193",
         "recipe_1790414263631",
         "recipe_1790503244041"
       ]
-    },
-    {
-      "id": "recipe_1790403546864",
-      "name": "巧克力礼盒",
-      "workstation": {
-        "id": "farm_and_charm_crafting_bowl____",
-        "name": "混合碗",
-        "itemId": "icecore:mixing_bowl"
-      },
-      "inputs": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "bakery_chocolate_truffle______",
-            "name": "松露巧克力",
-            "itemId": "bakery:chocolate_truffle"
-          },
-          "count": 8
-        }
-      ],
-      "attachments": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "minecraft_bowl__",
-            "name": "碗",
-            "itemId": "minecraft:bowl"
-          },
-          "count": 1
-        }
-      ],
-      "outputs": [
-        {
-          "type": "item",
-          "ref": {
-            "id": "bakery_chocolate_box______",
-            "name": "巧克力礼盒",
-            "itemId": "bakery:chocolate_box"
-          },
-          "count": 1
-        }
-      ],
-      "predecessorRecipeIds": [
-        "recipe_1790403267916"
-      ],
-      "successorRecipeIds": []
     },
     {
       "id": "recipe_1790403901193",
@@ -15649,9 +15514,9 @@
         {
           "type": "item",
           "ref": {
-            "id": "kaleidoscope_grilling_oil_residue___",
-            "name": "油渣",
-            "itemId": "kaleidoscope_grilling:oil_residue"
+            "id": "kaleidoscope_cookery_oil___",
+            "name": "油脂",
+            "itemId": "kaleidoscope_cookery:oil"
           },
           "count": 4
         }
@@ -15669,7 +15534,6 @@
         }
       ],
       "predecessorRecipeIds": [
-        "recipe_1790388317582",
         "recipe_1790430823972"
       ],
       "successorRecipeIds": [
@@ -17798,6 +17662,8 @@
       ],
       "predecessorRecipeIds": [],
       "successorRecipeIds": [
+        "recipe_1790502128889",
+        "recipe_1790502530326",
         "recipe_1790566548408"
       ]
     },
@@ -17840,9 +17706,18 @@
         {
           "type": "item",
           "ref": {
-            "id": "crabbersdelight_coconut_milk_Coconut_Milk",
-            "name": "椰奶",
-            "itemId": "crabbersdelight:coconut_milk"
+            "id": "crabbersdelight_coconut_halve_Coconut_Halve",
+            "name": "半块椰子",
+            "itemId": "crabbersdelight:coconut_halve"
+          },
+          "count": 2
+        },
+        {
+          "type": "item",
+          "ref": {
+            "id": "youkaisfeasts_ice_cube___",
+            "name": "冰块",
+            "itemId": "youkaisfeasts:ice_cube"
           },
           "count": 1
         }
@@ -17871,7 +17746,8 @@
       ],
       "predecessorRecipeIds": [
         "recipe_1790248508299",
-        "recipe_1790502530326"
+        "recipe_1790393692322",
+        "recipe_1790502074722"
       ],
       "successorRecipeIds": []
     },
@@ -17887,20 +17763,20 @@
         {
           "type": "item",
           "ref": {
-            "id": "item_1790141939382",
-            "name": "椰子",
-            "itemId": "crabbersdelight:coconut"
-          },
-          "count": 2
-        },
-        {
-          "type": "item",
-          "ref": {
             "id": "minecraft_milk_bucket___",
             "name": "奶桶",
             "itemId": "minecraft:milk_bucket"
           },
           "count": 1
+        },
+        {
+          "type": "item",
+          "ref": {
+            "id": "crabbersdelight_coconut_halve_Coconut_Halve",
+            "name": "半块椰子",
+            "itemId": "crabbersdelight:coconut_halve"
+          },
+          "count": 2
         }
       ],
       "attachments": [
@@ -17925,10 +17801,10 @@
           "count": 2
         }
       ],
-      "predecessorRecipeIds": [],
-      "successorRecipeIds": [
-        "recipe_1790502128889"
-      ]
+      "predecessorRecipeIds": [
+        "recipe_1790502074722"
+      ],
+      "successorRecipeIds": []
     },
     {
       "id": "recipe_1790503009780",
@@ -28633,7 +28509,6 @@
       "recipe_1790393194762",
       "recipe_1790393613888",
       "recipe_1790393735019",
-      "recipe_1790403546864",
       "recipe_1790405024355",
       "recipe_1790421146831",
       "recipe_1790427314237",
@@ -28859,7 +28734,6 @@
     "kaleidoscope_cookery_stockpot___": [
       "recipe_1790236712278",
       "recipe_1790247582092",
-      "recipe_1790249180602",
       "recipe_1790251232694",
       "recipe_1790255185404",
       "recipe_1790255253295",
@@ -29083,9 +28957,6 @@
     ],
     "aquaculture_catfish___": [
       "recipe_1790257957334"
-    ],
-    "aquaculture_jellyfish___": [
-      "recipe_1790249180602"
     ],
     "aquaculture_perch____": [
       "recipe_1790256063531",
@@ -29427,8 +29298,7 @@
       "recipe_1790566493795"
     ],
     "item_1790141939382": [
-      "recipe_1790502074722",
-      "recipe_1790502530326"
+      "recipe_1790502074722"
     ],
     "item_1790141973599": [
       "recipe_1790517887343",
@@ -29530,6 +29400,7 @@
       "recipe_1790481963497"
     ],
     "kaleidoscope_cookery_oil___": [
+      "recipe_1790486862646",
       "recipe_1790524794798"
     ],
     "kaleidoscope_grilling_canola_seeds____": [
@@ -29738,9 +29609,6 @@
     "aquaculture_catfish___": [
       "recipe_1790257957334"
     ],
-    "aquaculture_jellyfish___": [
-      "recipe_1790249180602"
-    ],
     "aquaculture_perch____": [
       "recipe_1790256063531",
       "recipe_1790388405078",
@@ -29888,7 +29756,6 @@
     ],
     "item_1790124131145": [
       "recipe_1790248528736",
-      "recipe_1790249180602",
       "recipe_1790252609056",
       "recipe_1790257624341",
       "recipe_1790257913323",
@@ -29968,9 +29835,7 @@
       "recipe_1790484687541",
       "recipe_1790484796972",
       "recipe_1790485038273",
-      "recipe_1790486542774",
       "recipe_1790486619842",
-      "recipe_1790486862646",
       "recipe_1790487038691",
       "recipe_1790498030934",
       "recipe_1790499227809",
@@ -30722,7 +30587,6 @@
     ],
     "item_1790140073708": [
       "recipe_1790403267916",
-      "recipe_1790403546864",
       "recipe_1790403901193",
       "recipe_1790413807017",
       "recipe_1790414263631",
@@ -31021,15 +30885,15 @@
       "recipe_1790481963497"
     ],
     "kaleidoscope_cookery_oil___": [
+      "recipe_1790486542774",
+      "recipe_1790486862646",
       "recipe_1790524794798",
       "recipe_1790524937454"
     ],
     "kaleidoscope_grilling_canola_seeds____": [
       "recipe_1790388051442",
       "recipe_1790388088210",
-      "recipe_1790388317582",
-      "recipe_1790486542774",
-      "recipe_1790486862646"
+      "recipe_1790388317582"
     ],
     "kaleidoscope_grilling_sichuan_pepper___": [
       "recipe_1790522846198",
@@ -31273,7 +31137,6 @@
     ],
     "minecraft_sugar_cane___": [
       "recipe_1790248508299",
-      "recipe_1790249180602",
       "recipe_1790252609056",
       "recipe_1790257624341",
       "recipe_1790257913323",
@@ -31290,7 +31153,6 @@
       "recipe_1790398716666",
       "recipe_1790398999034",
       "recipe_1790403267916",
-      "recipe_1790403546864",
       "recipe_1790403901193",
       "recipe_1790404145798",
       "recipe_1790404209104",
@@ -31506,6 +31368,7 @@
       "recipe_1790500724521",
       "recipe_1790501110033",
       "recipe_1790501416389",
+      "recipe_1790502128889",
       "recipe_1790503297387",
       "recipe_1790505047021",
       "recipe_1790505146382",
@@ -31653,9 +31516,6 @@
     "aquaculture_catfish___": [
       "aquaculturedelight_halaszle_Halaszle"
     ],
-    "aquaculture_jellyfish___": [
-      "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly"
-    ],
     "aquaculture_perch____": [
       "aquaculturedelight_bass_stew_Bass_Stew",
       "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
@@ -31793,7 +31653,6 @@
       "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
       "aquaculturedelight_halaszle_Halaszle",
       "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
-      "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
       "aquaculturedelight_rollmops_Rollmops",
       "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
       "bakery_baguette_____",
@@ -31846,7 +31705,6 @@
       "kaleidoscope_cookery_braised_beef_____",
       "kaleidoscope_cookery_braised_beef_with_potatoes______",
       "kaleidoscope_cookery_braised_pork_ribs_____",
-      "kaleidoscope_cookery_butter_tea____",
       "kaleidoscope_cookery_candied_potato_____",
       "kaleidoscope_cookery_dongpo_pork____",
       "kaleidoscope_cookery_donkey_burger_____",
@@ -32534,9 +32392,9 @@
       "kaleidoscope_fragrantorchard_melon_juice____"
     ],
     "item_1790140073708": [
-      "bakery_chocolate_box______",
       "bakery_chocolate_cake______",
       "bakery_chocolate_glazed_cookie________",
+      "bakery_chocolate_truffle______",
       "farmersdelight_chocolate_pie_____"
     ],
     "item_1790140447393": [
@@ -32796,11 +32654,10 @@
       "kaleidoscope_cookery_fried_caterpillar______"
     ],
     "kaleidoscope_cookery_oil___": [
+      "kaleidoscope_cookery_butter_tea____",
       "kaleidoscope_grilling_grilled_lamb_skewer_____"
     ],
-    "kaleidoscope_grilling_canola_seeds____": [
-      "kaleidoscope_cookery_butter_tea____"
-    ],
+    "kaleidoscope_grilling_canola_seeds____": [],
     "kaleidoscope_grilling_sichuan_pepper___": [
       "kaleidoscope_grilling_pepper_honey_____"
     ],
@@ -33018,16 +32875,15 @@
     "minecraft_sugar_cane___": [
       "aquaculturedelight_halaszle_Halaszle",
       "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
-      "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
       "aquaculturedelight_rollmops_Rollmops",
       "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
       "bakery_baguette_____",
       "bakery_braided_bread_____",
       "bakery_bread______",
       "bakery_bun_____",
-      "bakery_chocolate_box______",
       "bakery_chocolate_cake______",
       "bakery_chocolate_glazed_cookie________",
+      "bakery_chocolate_truffle______",
       "bakery_cornet_______",
       "bakery_croissant_____",
       "bakery_crusty_bread_____",
@@ -33169,6 +33025,7 @@
       "collectorsreap_portobello_pasta_____",
       "collectorsreap_prawn_ceviche_____",
       "collectorsreap_prawn_noodles_____",
+      "crabbersdelight_coconut_pudding_Coconut_Pudding",
       "farmersdelight_melon_popsicle_____",
       "farmersdelight_pasta_with_meatballs_____",
       "farmersdelight_pasta_with_mutton_chop_____",
@@ -33343,7 +33200,6 @@
       "aquaculture_box_turtle___",
       "aquaculture_brown_shrooma____",
       "aquaculture_catfish___",
-      "aquaculture_jellyfish___",
       "aquaculture_perch____",
       "aquaculture_red_shrooma____",
       "aquaculture_tambaqui______",
@@ -33430,7 +33286,6 @@
       "aquaculture_box_turtle___",
       "aquaculture_brown_shrooma____",
       "aquaculture_catfish___",
-      "aquaculture_jellyfish___",
       "aquaculture_perch____",
       "aquaculture_red_shrooma____",
       "aquaculture_tambaqui______",
@@ -33444,7 +33299,6 @@
       "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
       "aquaculturedelight_halaszle_Halaszle",
       "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
-      "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
       "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
       "aquaculturedelight_rollmops_Rollmops",
       "aquaculturedelight_small_turtle_meat_Turtle_Meat_Slice",
@@ -33457,7 +33311,6 @@
       "bakery_bread______",
       "bakery_bun_____",
       "bakery_cake_dough_____",
-      "bakery_chocolate_box______",
       "bakery_chocolate_cake______",
       "bakery_chocolate_glazed_cookie________",
       "bakery_chocolate_jam_____",
@@ -33912,7 +33765,6 @@
       "recipe_1790247784387",
       "recipe_1790248508299",
       "recipe_1790248528736",
-      "recipe_1790249180602",
       "recipe_1790250932972",
       "recipe_1790251201644",
       "recipe_1790251223907",
@@ -33962,7 +33814,6 @@
       "recipe_1790399677227",
       "recipe_1790401135475",
       "recipe_1790403267916",
-      "recipe_1790403546864",
       "recipe_1790403901193",
       "recipe_1790404145798",
       "recipe_1790404209104",
@@ -34302,7 +34153,6 @@
       "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
       "aquaculturedelight_halaszle_Halaszle",
       "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
-      "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
       "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
       "aquaculturedelight_rollmops_Rollmops",
       "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
@@ -34312,9 +34162,9 @@
       "bakery_braided_bread_____",
       "bakery_bread______",
       "bakery_bun_____",
-      "bakery_chocolate_box______",
       "bakery_chocolate_cake______",
       "bakery_chocolate_glazed_cookie________",
+      "bakery_chocolate_truffle______",
       "bakery_cornet_______",
       "bakery_croissant_____",
       "bakery_crusty_bread_____",
@@ -34659,29 +34509,6 @@
           "ref": "item_1790124131145",
           "matched": [
             "item_1790124131145"
-          ]
-        }
-      ],
-      "recipe_1790249180602": [
-        {
-          "type": "item",
-          "ref": "aquaculture_jellyfish___",
-          "matched": [
-            "aquaculture_jellyfish___"
-          ]
-        },
-        {
-          "type": "item",
-          "ref": "minecraft_sugar__",
-          "matched": [
-            "minecraft_sugar__"
-          ]
-        },
-        {
-          "type": "item",
-          "ref": "kaleidoscope_cookery_flour___",
-          "matched": [
-            "kaleidoscope_cookery_flour___"
           ]
         }
       ],
@@ -35377,15 +35204,6 @@
           "ref": "minecraft_sugar__",
           "matched": [
             "minecraft_sugar__"
-          ]
-        }
-      ],
-      "recipe_1790403546864": [
-        {
-          "type": "item",
-          "ref": "bakery_chocolate_truffle______",
-          "matched": [
-            "bakery_chocolate_truffle______"
           ]
         }
       ],
@@ -38544,9 +38362,9 @@
         },
         {
           "type": "item",
-          "ref": "kaleidoscope_grilling_oil_residue___",
+          "ref": "kaleidoscope_cookery_oil___",
           "matched": [
-            "kaleidoscope_grilling_oil_residue___"
+            "kaleidoscope_cookery_oil___"
           ]
         }
       ],
@@ -39294,19 +39112,56 @@
           ]
         }
       ],
-      "recipe_1790502530326": [
-        {
-          "type": "item",
-          "ref": "item_1790141939382",
-          "matched": [
-            "item_1790141939382"
-          ]
-        },
+      "recipe_1790502128889": [
         {
           "type": "item",
           "ref": "minecraft_milk_bucket___",
           "matched": [
             "minecraft_milk_bucket___"
+          ]
+        },
+        {
+          "type": "item",
+          "ref": "minecraft_egg___",
+          "matched": [
+            "minecraft_egg___"
+          ]
+        },
+        {
+          "type": "item",
+          "ref": "minecraft_sugar__",
+          "matched": [
+            "minecraft_sugar__"
+          ]
+        },
+        {
+          "type": "item",
+          "ref": "crabbersdelight_coconut_halve_Coconut_Halve",
+          "matched": [
+            "crabbersdelight_coconut_halve_Coconut_Halve"
+          ]
+        },
+        {
+          "type": "item",
+          "ref": "youkaisfeasts_ice_cube___",
+          "matched": [
+            "youkaisfeasts_ice_cube___"
+          ]
+        }
+      ],
+      "recipe_1790502530326": [
+        {
+          "type": "item",
+          "ref": "minecraft_milk_bucket___",
+          "matched": [
+            "minecraft_milk_bucket___"
+          ]
+        },
+        {
+          "type": "item",
+          "ref": "crabbersdelight_coconut_halve_Coconut_Halve",
+          "matched": [
+            "crabbersdelight_coconut_halve_Coconut_Halve"
           ]
         }
       ],
@@ -43231,36 +43086,6 @@
           "ref": "item_1790124131145",
           "matched": [
             "item_1790124131145"
-          ]
-        }
-      ],
-      "recipe_1790502128889": [
-        {
-          "type": "item",
-          "ref": "minecraft_milk_bucket___",
-          "matched": [
-            "minecraft_milk_bucket___"
-          ]
-        },
-        {
-          "type": "item",
-          "ref": "minecraft_egg___",
-          "matched": [
-            "minecraft_egg___"
-          ]
-        },
-        {
-          "type": "item",
-          "ref": "minecraft_sugar__",
-          "matched": [
-            "minecraft_sugar__"
-          ]
-        },
-        {
-          "type": "item",
-          "ref": "crabbersdelight_coconut_milk_Coconut_Milk",
-          "matched": [
-            "crabbersdelight_coconut_milk_Coconut_Milk"
           ]
         }
       ],

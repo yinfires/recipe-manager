@@ -1,16 +1,16 @@
 # AI 配方与解锁规划索引
 
 > 本文件由 `public/data/recipe-manager.json` 自动生成，只读，不是正式数据源。
-> 源数据更新时间：2026-10-05T12:42:48.431Z；生成格式版本：3
+> 源数据更新时间：2026-10-09T05:40:18.411Z；生成格式版本：3
 
 ## 快速统计
 
-- 工作方块：16；基础食材：85；配方：409；成品菜：292
+- 工作方块：16；基础食材：84；配方：407；成品菜：291
 
 ## 查询约定
 
-- `recipes`：409 个配方的完整目录，适合分类、读取工作方块、输入、附件、输出和配方链；不要只读取闭包结果。
-- `finishedFoods`：292 个成品菜的完整目录；`allUnlockedScenario.craftableFinishedItems` 只是其中当前材料条件可达的子集。
+- `recipes`：407 个配方的完整目录，适合分类、读取工作方块、输入、附件、输出和配方链；不要只读取闭包结果。
+- `finishedFoods`：291 个成品菜的完整目录；`allUnlockedScenario.craftableFinishedItems` 只是其中当前材料条件可达的子集。
 - `recipeIdsByWorkstation[工作方块ID]`：该工作方块涉及的全部配方。
 - `recipeIdsByBaseIngredient[基础食材ID]`：直接引用该基础食材（或其标签）的配方。
 - `downstreamRecipeIdsByBaseIngredient[基础食材ID]` / `finishedFoodIdsByBaseIngredient[基础食材ID]`：沿输入关系得到的候选影响范围；只表示可能受该基础食材影响，不保证其他输入也已满足。
@@ -32,13 +32,13 @@
 
 | ID | 名称 | 配方数 |
 |---|---|---:|
-| farm_and_charm_crafting_bowl____ | 混合碗 | 33 |
+| farm_and_charm_crafting_bowl____ | 混合碗 | 32 |
 | farmersdelight_cutting_board___ | 砧板 | 50 |
 | icecore_oven___ | 烤炉 | 31 |
 | kaleidoscope_cookery_bamboo_tray___ | 竹匾 | 3 |
 | kaleidoscope_cookery_pot___ | 炒锅 | 94 |
 | kaleidoscope_cookery_steamer___ | 蒸笼 | 9 |
-| kaleidoscope_cookery_stockpot___ | 汤锅 | 94 |
+| kaleidoscope_cookery_stockpot___ | 汤锅 | 93 |
 | kaleidoscope_cookery_teapot___ | 茶壶 | 8 |
 | kaleidoscope_fragrantorchard_juicer____ | 榨汁机 | 18 |
 | kaleidoscope_grilling_grill____ | 烧烤架 | 11 |
@@ -58,7 +58,6 @@
 | aquaculture_box_turtle___ | 箱龟 | 1 |
 | aquaculture_brown_shrooma____ | 褐蕈鱼 | 1 |
 | aquaculture_catfish___ | 鲶鱼 | 1 |
-| aquaculture_jellyfish___ | 水母 | 1 |
 | aquaculture_perch____ | 河鲈鱼 | 4 |
 | aquaculture_red_shrooma____ | 红蕈鱼 | 1 |
 | aquaculture_tambaqui______ | 大盖巨脂鲤 | 2 |
@@ -102,7 +101,7 @@
 | item_1790141723911 | 青柠 | 1 |
 | item_1790141751973 | 红心火龙果 | 3 |
 | item_1790141853911 | 蛋黄果 | 4 |
-| item_1790141939382 | 椰子 | 2 |
+| item_1790141939382 | 椰子 | 1 |
 | item_1790141973599 | 桃子 | 3 |
 | item_1790141993088 | 梨 | 3 |
 | item_1790142009787 | 葡萄 | 3 |
@@ -119,7 +118,7 @@
 | kaleidoscope_chinesefood_salt__ | 盐 | 37 |
 | kaleidoscope_chinesefood_yellow_croaker____ | 黄花鱼 | 2 |
 | kaleidoscope_cookery_caterpillar____ | 猪儿虫 | 1 |
-| kaleidoscope_cookery_oil___ | 油脂 | 1 |
+| kaleidoscope_cookery_oil___ | 油脂 | 2 |
 | kaleidoscope_grilling_canola_seeds____ | 油菜籽 | 1 |
 | kaleidoscope_grilling_sichuan_pepper___ | 花椒 | 2 |
 | kaleidoscope_grilling_squid_tentacle____ | 鱿鱼须 | 2 |
@@ -141,7 +140,7 @@
 
 ## 材料可达闭包摘要
 
-在全部工作方块和基础食材可用时，按当前分析口径可达配方 387 个，成品菜 281 个；这不是正式配方总数。
+在全部工作方块和基础食材可用时，按当前分析口径可达配方 385 个，成品菜 280 个；这不是正式配方总数。
 
 完整配方、输入候选、输出、匹配追踪、配方链和人工 `unlockPlan` 请读取同目录的 `public/data/recipe-index.json`。`quest-design.md` 只供人工参考，不会自动覆盖阶段。
 

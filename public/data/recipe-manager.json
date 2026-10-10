@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-10-05T12:42:48.431Z",
+  "updatedAt": "2026-10-09T05:40:18.411Z",
   "data": {
     "items": {
       "item_1790124131145": {
@@ -219,8 +219,7 @@
           "tag_1790130836441"
         ],
         "createdAt": "2026-09-28T06:27:07.113Z",
-        "manualPrice": 9,
-        "autoPrice": 9
+        "manualPrice": 9
       },
       "item_1790138757205": {
         "id": "item_1790138757205",
@@ -239,8 +238,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 24,
-        "createdAt": "2026-09-28T06:27:09.113Z"
+        "createdAt": "2026-09-28T06:27:09.113Z",
+        "manualPrice": 94
       },
       "item_1790138974040": {
         "id": "item_1790138974040",
@@ -493,8 +492,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 18,
-        "createdAt": "2026-09-28T06:27:34.113Z"
+        "createdAt": "2026-09-28T06:27:34.113Z",
+        "manualPrice": 47
       },
       "minecraft_cod": {
         "id": "minecraft_cod",
@@ -527,16 +526,6 @@
         ],
         "manualPrice": 18,
         "createdAt": "2026-09-28T06:27:37.113Z"
-      },
-      "aquaculture_jellyfish___": {
-        "id": "aquaculture_jellyfish___",
-        "name": "水母",
-        "itemId": "aquaculture:jellyfish",
-        "tags": [
-          "tag_1790130836441"
-        ],
-        "manualPrice": 16,
-        "createdAt": "2026-09-28T06:27:38.113Z"
       },
       "aquaculture_tambaqui______": {
         "id": "aquaculture_tambaqui______",
@@ -580,8 +569,8 @@
           "tag_1790130836441",
           "tag_1790176710978"
         ],
-        "manualPrice": 20,
-        "createdAt": "2026-09-28T06:27:42.113Z"
+        "createdAt": "2026-09-28T06:27:42.113Z",
+        "manualPrice": 65
       },
       "minecraft_milk_bucket___": {
         "id": "minecraft_milk_bucket___",
@@ -1024,8 +1013,8 @@
         "tags": [
           "tag_1790130836441"
         ],
-        "manualPrice": 16,
-        "createdAt": "2026-09-28T06:28:21.113Z"
+        "createdAt": "2026-09-28T06:28:21.113Z",
+        "manualPrice": 42
       },
       "minecraft_dried_kelp____": {
         "id": "minecraft_dried_kelp____",
@@ -1078,7 +1067,10 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_vegetarian",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:28:26.113Z",
         "autoPrice": 23.4
@@ -1093,7 +1085,8 @@
           "tag_food_ingredient_vegetarian",
           "tag_food_ingredient_fungus",
           "tag_food_flavor_umami",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:28:27.113Z",
         "autoPrice": 18.3
@@ -1104,25 +1097,14 @@
         "itemId": "aquaculturedelight:crispy_nori_kelp",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_snack"
+          "tag_food_main_snack",
+          "tag_food_flavor_light",
+          "tag_food_ingredient_vegetarian",
+          "tag_1791442729338",
+          "tag_food_ingredient_aquatic"
         ],
         "createdAt": "2026-09-28T06:28:28.113Z",
         "autoPrice": 24.2
-      },
-      "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly": {
-        "id": "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
-        "name": "水母果冻",
-        "itemId": "aquaculturedelight:jellyfish_jelly",
-        "tags": [
-          "tag_1790175849511",
-          "tag_food_main_snack",
-          "tag_food_ingredient_aquatic",
-          "tag_food_flavor_sweet",
-          "tag_food_flavor_umami",
-          "tag_food_flavor_refreshing"
-        ],
-        "createdAt": "2026-09-28T06:28:29.113Z",
-        "autoPrice": 24.7
       },
       "kaleidoscope_cookery_flour___": {
         "id": "kaleidoscope_cookery_flour___",
@@ -1210,14 +1192,16 @@
       },
       "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup": {
         "id": "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
-        "name": "奇异鱼汤",
+        "name": "巨脂鱼汤",
         "itemId": "aquaculturedelight:unusual_fish_soup",
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_flavor_umami",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_food_flavor_sour",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:28:38.113Z",
         "autoPrice": 47.5
@@ -1298,7 +1282,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_form_baked"
+          "tag_food_form_baked",
+          "tag_food_flavor_light",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:28:45.113Z",
         "autoPrice": 16.2
@@ -1332,10 +1318,11 @@
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_flavor_umami",
-          "tag_food_form_fried"
+          "tag_food_flavor_rich",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:28:48.113Z",
-        "autoPrice": 131.6
+        "autoPrice": 55.9
       },
       "extradelight_potato_sticks___": {
         "id": "extradelight_potato_sticks___",
@@ -1355,12 +1342,11 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
-          "tag_food_ingredient_grain",
           "tag_food_flavor_umami",
-          "tag_food_form_fried"
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:28:50.113Z",
-        "autoPrice": 64.4
+        "autoPrice": 27
       },
       "extradelight_french_fries_____": {
         "id": "extradelight_french_fries_____",
@@ -1369,20 +1355,11 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_form_fried"
+          "tag_food_ingredient_vegetarian",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:28:51.113Z",
-        "autoPrice": 45.6
-      },
-      "kaleidoscope_grilling_oil_residue___": {
-        "id": "kaleidoscope_grilling_oil_residue___",
-        "name": "油渣",
-        "itemId": "kaleidoscope_grilling:oil_residue",
-        "tags": [
-          "tag_1790252241364"
-        ],
-        "createdAt": "2026-09-28T06:28:52.113Z",
-        "autoPrice": 37.7
+        "autoPrice": 8.1
       },
       "kaleidoscope_grilling_oil_cake___": {
         "id": "kaleidoscope_grilling_oil_cake___",
@@ -1392,7 +1369,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:28:53.113Z",
-        "autoPrice": 71.2
+        "autoPrice": 0
       },
       "kaleidoscope_grilling_oil_press____": {
         "id": "kaleidoscope_grilling_oil_press____",
@@ -1440,7 +1417,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:28:57.113Z",
-        "autoPrice": 37.7
+        "autoPrice": 1
       },
       "kaleidoscope_grilling_canola_powder____": {
         "id": "kaleidoscope_grilling_canola_powder____",
@@ -1462,10 +1439,12 @@
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_fungus",
           "tag_food_ingredient_grain",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:28:59.113Z",
-        "autoPrice": 46.2
+        "autoPrice": 51.9
       },
       "kaleidoscope_cookery_raw_noodles____": {
         "id": "kaleidoscope_cookery_raw_noodles____",
@@ -1495,7 +1474,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:29:02.113Z",
-        "autoPrice": 5.3
+        "autoPrice": 16.5
       },
       "youkaisfeasts_raw_tuna_slice_______": {
         "id": "youkaisfeasts_raw_tuna_slice_______",
@@ -1505,7 +1484,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:29:03.113Z",
-        "autoPrice": 3.2
+        "autoPrice": 8.8
       },
       "youkaisfeasts_otoro______": {
         "id": "youkaisfeasts_otoro______",
@@ -1515,7 +1494,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:29:04.113Z",
-        "autoPrice": 10.5
+        "autoPrice": 33
       },
       "aquaculturedelight_buckling_Buckling": {
         "id": "aquaculturedelight_buckling_Buckling",
@@ -1538,7 +1517,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:29:06.113Z",
         "autoPrice": 30.1
@@ -1656,7 +1636,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_grain",
-          "tag_food_flavor_light"
+          "tag_food_flavor_light",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:29:18.113Z",
         "autoPrice": 12.2
@@ -1679,7 +1660,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:29:20.113Z",
         "autoPrice": 45.7
@@ -1726,7 +1709,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:29:24.113Z",
         "autoPrice": 38.2
@@ -1751,10 +1735,10 @@
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_grain",
           "tag_food_flavor_umami",
-          "tag_food_form_fried"
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:29:27.113Z",
-        "autoPrice": 40.2
+        "autoPrice": 21.3
       },
       "bakery_strawberry_jam_____": {
         "id": "bakery_strawberry_jam_____",
@@ -1801,22 +1785,13 @@
         "name": "松露巧克力",
         "itemId": "bakery:chocolate_truffle",
         "tags": [
-          "tag_1790252241364"
+          "tag_1790175849511",
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_dairy",
+          "tag_food_main_snack"
         ],
         "createdAt": "2026-09-28T06:29:32.113Z",
         "autoPrice": 10.6
-      },
-      "bakery_chocolate_box______": {
-        "id": "bakery_chocolate_box______",
-        "name": "巧克力礼盒",
-        "itemId": "bakery:chocolate_box",
-        "tags": [
-          "tag_1790175849511",
-          "tag_food_main_snack",
-          "tag_food_flavor_sweet"
-        ],
-        "createdAt": "2026-09-28T06:29:33.113Z",
-        "autoPrice": 87.6
       },
       "farm_and_charm_strawberry___": {
         "id": "farm_and_charm_strawberry___",
@@ -1857,7 +1832,8 @@
           "tag_food_main_snack",
           "tag_food_ingredient_dairy",
           "tag_food_flavor_rich",
-          "tag_food_form_baked"
+          "tag_food_form_baked",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:29:37.113Z",
         "autoPrice": 191.7
@@ -1897,7 +1873,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_form_baked"
+          "tag_food_form_baked",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:29:40.113Z",
         "autoPrice": 26.7
@@ -2109,12 +2086,12 @@
         "itemId": "collectorsreap:portobello_quiche",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_staple",
           "tag_food_ingredient_fungus",
           "tag_food_ingredient_dairy",
           "tag_food_flavor_umami",
           "tag_food_flavor_rich",
-          "tag_food_form_baked"
+          "tag_food_form_baked",
+          "tag_food_main_snack"
         ],
         "createdAt": "2026-09-28T06:29:54.113Z",
         "autoPrice": 122.7
@@ -2147,7 +2124,8 @@
           "tag_food_ingredient_dairy",
           "tag_food_flavor_sweet",
           "tag_food_flavor_rich",
-          "tag_food_form_baked"
+          "tag_food_form_baked",
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:29:56.113Z",
         "autoPrice": 74.2
@@ -2203,7 +2181,9 @@
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
           "tag_food_ingredient_dairy",
-          "tag_food_flavor_sweet"
+          "tag_food_drink_mellow",
+          "tag_food_flavor_refreshing",
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:30:00.113Z",
         "autoPrice": 32.8
@@ -2217,7 +2197,8 @@
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
           "tag_food_ingredient_dairy",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:30:01.113Z",
         "autoPrice": 53.6
@@ -2231,9 +2212,7 @@
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
           "tag_food_flavor_sweet",
-          "tag_food_flavor_sour",
-          "tag_food_flavor_refreshing",
-          "tag_food_drink_mellow"
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:30:02.113Z",
         "autoPrice": 34.4
@@ -2246,9 +2225,7 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
-          "tag_food_flavor_sweet",
           "tag_food_flavor_sour",
-          "tag_food_flavor_refreshing",
           "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:30:03.113Z",
@@ -2340,7 +2317,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_fruit",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:30:09.113Z",
         "autoPrice": 46.7
@@ -2418,7 +2396,6 @@
           "tag_1790175849511",
           "tag_food_main_snack",
           "tag_food_ingredient_fruit",
-          "tag_food_flavor_sweet",
           "tag_food_flavor_sour",
           "tag_food_flavor_refreshing"
         ],
@@ -2465,10 +2442,10 @@
           "tag_food_main_staple",
           "tag_food_ingredient_vegetarian",
           "tag_food_flavor_sour",
-          "tag_food_form_fried"
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:30:18.113Z",
-        "autoPrice": 61.5
+        "autoPrice": 24
       },
       "collectorsreap_cod_ceviche_____": {
         "id": "collectorsreap_cod_ceviche_____",
@@ -2579,7 +2556,8 @@
           "tag_food_ingredient_meat",
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_fungus",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:30:28.113Z",
         "autoPrice": 51.8
@@ -2622,9 +2600,9 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
-          "tag_food_ingredient_dairy",
           "tag_food_flavor_umami",
-          "tag_food_flavor_rich"
+          "tag_food_flavor_rich",
+          "tag_food_ingredient_dairy"
         ],
         "createdAt": "2026-09-28T06:30:32.113Z",
         "autoPrice": 62.9
@@ -2667,7 +2645,9 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_flavor_light",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:30:35.113Z",
         "autoPrice": 57.3
@@ -2697,7 +2677,8 @@
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_grain",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:30:37.113Z",
         "autoPrice": 75.7
@@ -2725,7 +2706,8 @@
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_flavor_umami",
-          "tag_food_form_raw"
+          "tag_food_form_raw",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:30:39.113Z",
         "autoPrice": 30.9
@@ -2810,7 +2792,8 @@
           "tag_food_ingredient_grain",
           "tag_food_flavor_sweet",
           "tag_food_flavor_spicy",
-          "tag_food_flavor_sour"
+          "tag_food_flavor_sour",
+          "tag_1791442773431"
         ],
         "createdAt": "2026-09-28T06:30:46.113Z",
         "autoPrice": 79.3
@@ -2822,7 +2805,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_1791442729338",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:30:47.113Z",
         "autoPrice": 17.1
@@ -2834,7 +2819,10 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_1791442729338",
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:30:48.113Z",
         "autoPrice": 39.8
@@ -2847,7 +2835,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_grain",
-          "tag_food_form_fried"
+          "tag_1791442729338",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:30:49.113Z",
         "autoPrice": 42.6
@@ -2859,7 +2848,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_ingredient_meat",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:30:50.113Z",
         "autoPrice": 44
@@ -2871,7 +2862,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_ingredient_meat",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:30:51.113Z",
         "autoPrice": 37.8
@@ -2883,7 +2876,10 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_light",
+          "tag_food_ingredient_meat",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:30:52.113Z",
         "autoPrice": 37.8
@@ -2914,7 +2910,9 @@
         "itemId": "kaleidoscope_cookery:tea_egg",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_drink"
+          "tag_1791442729338",
+          "tag_food_main_snack",
+          "tag_food_form_tea"
         ],
         "createdAt": "2026-09-28T06:30:55.113Z",
         "autoPrice": 27.9
@@ -2986,7 +2984,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:31:02.113Z",
         "autoPrice": 34.6
@@ -2998,7 +2997,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:31:03.113Z",
         "autoPrice": 16.3
@@ -3009,7 +3009,9 @@
         "itemId": "kaleidoscope_cookery:bamboo_tube_rice",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_staple"
+          "tag_food_main_staple",
+          "tag_food_flavor_light",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:31:04.113Z",
         "autoPrice": 24.9
@@ -3030,7 +3032,9 @@
         "itemId": "kaleidoscope_cookery:zongzi",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_staple"
+          "tag_food_main_staple",
+          "tag_food_flavor_light",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:31:06.113Z",
         "autoPrice": 19.5
@@ -3052,7 +3056,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:31:08.113Z",
         "autoPrice": 28.7
@@ -3064,7 +3069,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:31:09.113Z",
         "autoPrice": 52.3
@@ -3104,7 +3110,6 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_ingredient_grain",
           "tag_food_flavor_sweet",
           "tag_food_flavor_sour"
         ],
@@ -3136,10 +3141,12 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:14.113Z",
-        "autoPrice": 14.8
+        "autoPrice": 28
       },
       "kaleidoscope_cookery_seafood_miso_soup______": {
         "id": "kaleidoscope_cookery_seafood_miso_soup______",
@@ -3151,7 +3158,8 @@
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_fungus",
           "tag_food_flavor_umami",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:15.113Z",
         "autoPrice": 61.1
@@ -3192,7 +3200,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:31:18.113Z",
-        "autoPrice": 8.5
+        "autoPrice": 21.5
       },
       "kaleidoscope_nether_ham_slice____": {
         "id": "kaleidoscope_nether_ham_slice____",
@@ -3202,7 +3210,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:31:19.113Z",
-        "autoPrice": 2.1
+        "autoPrice": 5.4
       },
       "youkaisfeasts_tofu___": {
         "id": "youkaisfeasts_tofu___",
@@ -3308,7 +3316,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:31:27.113Z",
         "autoPrice": 36.1
@@ -3336,7 +3345,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:29.113Z",
         "autoPrice": 45.5
@@ -3361,7 +3371,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_ingredient_dairy"
         ],
         "createdAt": "2026-09-28T06:31:31.113Z",
         "autoPrice": 124.2
@@ -3402,7 +3414,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
-          "tag_food_flavor_umami"
+          "tag_1791442558597",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:34.113Z",
         "autoPrice": 162.9
@@ -3416,7 +3429,8 @@
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
           "tag_food_ingredient_fruit",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:31:35.113Z",
         "autoPrice": 29.3
@@ -3428,10 +3442,11 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_vegetarian"
         ],
         "createdAt": "2026-09-28T06:31:36.113Z",
-        "autoPrice": 61.5
+        "autoPrice": 24
       },
       "kaleidoscope_cookery_spicy_rabbit_head_____": {
         "id": "kaleidoscope_cookery_spicy_rabbit_head_____",
@@ -3461,7 +3476,7 @@
           "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:31:38.113Z",
-        "autoPrice": 62.1
+        "autoPrice": 78.9
       },
       "kaleidoscope_cookery_fried_caterpillar______": {
         "id": "kaleidoscope_cookery_fried_caterpillar______",
@@ -3471,10 +3486,11 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_form_fried"
+          "tag_1791514589381",
+          "tag_1791442558597"
         ],
         "createdAt": "2026-09-28T06:31:39.113Z",
-        "autoPrice": 83.3
+        "autoPrice": 45.9
       },
       "kaleidoscope_cookery_spicy_blood_stew____": {
         "id": "kaleidoscope_cookery_spicy_blood_stew____",
@@ -3490,7 +3506,7 @@
           "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:40.113Z",
-        "autoPrice": 61
+        "autoPrice": 67.7
       },
       "kaleidoscope_cookery_oil_splashed_fish____": {
         "id": "kaleidoscope_cookery_oil_splashed_fish____",
@@ -3513,7 +3529,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_food_flavor_umami",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:31:42.113Z",
         "autoPrice": 111.3
@@ -3525,9 +3543,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_vegetarian",
-          "tag_food_ingredient_grain",
-          "tag_food_flavor_spicy"
+          "tag_food_flavor_spicy",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:31:43.113Z",
         "autoPrice": 78.5
@@ -3544,7 +3561,7 @@
           "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:31:44.113Z",
-        "autoPrice": 89.5
+        "autoPrice": 193.8
       },
       "kaleidoscope_cookery_dough_drop_soup____": {
         "id": "kaleidoscope_cookery_dough_drop_soup____",
@@ -3597,10 +3614,11 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_form_fried"
+          "tag_1791514589381",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:31:48.113Z",
-        "autoPrice": 94.7
+        "autoPrice": 57.3
       },
       "kaleidoscope_cookery_caterpillar____": {
         "id": "kaleidoscope_cookery_caterpillar____",
@@ -3623,7 +3641,7 @@
           "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:31:50.113Z",
-        "autoPrice": 20
+        "autoPrice": 46.9
       },
       "kaleidoscope_cookery_cold_roasted_meat____": {
         "id": "kaleidoscope_cookery_cold_roasted_meat____",
@@ -3656,7 +3674,8 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_drink_bitter",
-          "tag_food_form_tea"
+          "tag_food_form_tea",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:31:53.113Z",
         "autoPrice": 11.3
@@ -3669,7 +3688,9 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_drink_bitter",
-          "tag_food_form_tea"
+          "tag_food_form_tea",
+          "tag_food_drink_mellow",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:31:54.113Z",
         "autoPrice": 11.3
@@ -3682,7 +3703,9 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_drink_bitter",
-          "tag_food_form_tea"
+          "tag_food_form_tea",
+          "tag_food_flavor_refreshing",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:31:55.113Z",
         "autoPrice": 6.7
@@ -3696,10 +3719,11 @@
           "tag_food_main_drink",
           "tag_food_ingredient_dairy",
           "tag_food_flavor_rich",
-          "tag_food_form_tea"
+          "tag_food_form_tea",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:31:56.113Z",
-        "autoPrice": 23
+        "autoPrice": 13.6
       },
       "kaleidoscope_cookery_sakura_fubuki____": {
         "id": "kaleidoscope_cookery_sakura_fubuki____",
@@ -3708,8 +3732,10 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_drink",
-          "tag_food_drink_bitter",
-          "tag_food_form_tea"
+          "tag_food_form_tea",
+          "tag_food_flavor_sweet",
+          "tag_food_drink_mellow",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:31:57.113Z",
         "autoPrice": 7.6
@@ -3722,7 +3748,8 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_drink_bitter",
-          "tag_food_form_tea"
+          "tag_food_form_tea",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:31:58.113Z",
         "autoPrice": 14.5
@@ -3735,7 +3762,9 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_drink_bitter",
-          "tag_food_form_tea"
+          "tag_food_form_tea",
+          "tag_food_drink_mellow",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:31:59.113Z",
         "autoPrice": 10
@@ -3793,7 +3822,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:32:04.113Z",
-        "autoPrice": 257.8
+        "autoPrice": 146.4
       },
       "kaleidoscope_cookery_sakura_fubuki_tea_bag______": {
         "id": "kaleidoscope_cookery_sakura_fubuki_tea_bag______",
@@ -3901,10 +3930,12 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_rich",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:32:15.113Z",
-        "autoPrice": 146.9
+        "autoPrice": 160.1
       },
       "kaleidoscope_chinesefood_sichuan_boiled_pork_slices_____": {
         "id": "kaleidoscope_chinesefood_sichuan_boiled_pork_slices_____",
@@ -3927,10 +3958,12 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_rich",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:32:17.113Z",
-        "autoPrice": 82.1
+        "autoPrice": 95.5
       },
       "kaleidoscope_chinesefood_sauerkraut_beef_noodles______": {
         "id": "kaleidoscope_chinesefood_sauerkraut_beef_noodles______",
@@ -3995,8 +4028,7 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_vegetarian",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:32:22.113Z",
         "autoPrice": 74.4
@@ -4061,7 +4093,10 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_food_flavor_rich",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour"
         ],
         "createdAt": "2026-09-28T06:32:27.113Z",
         "autoPrice": 36.7
@@ -4102,7 +4137,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_vegetarian"
+          "tag_food_ingredient_vegetarian",
+          "tag_1791442558597",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:32:30.113Z",
         "autoPrice": 57.1
@@ -4114,7 +4151,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:32:31.113Z",
         "autoPrice": 66.3
@@ -4130,7 +4168,7 @@
           "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:32:32.113Z",
-        "autoPrice": 43.1
+        "autoPrice": 46.5
       },
       "kaleidoscope_chinesefood_steamed_rice_rolls___": {
         "id": "kaleidoscope_chinesefood_steamed_rice_rolls___",
@@ -4139,7 +4177,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:32:33.113Z",
         "autoPrice": 49.3
@@ -4215,11 +4254,10 @@
           "tag_food_ingredient_fruit",
           "tag_food_ingredient_dairy",
           "tag_food_flavor_sweet",
-          "tag_food_flavor_rich",
           "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:32:39.113Z",
-        "autoPrice": 47.6
+        "autoPrice": 41.4
       },
       "crabbersdelight_coconut_milk_Coconut_Milk": {
         "id": "crabbersdelight_coconut_milk_Coconut_Milk",
@@ -4230,11 +4268,10 @@
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
           "tag_food_ingredient_dairy",
-          "tag_food_flavor_sweet",
-          "tag_food_drink_mellow"
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:32:40.113Z",
-        "autoPrice": 22.9
+        "autoPrice": 15.8
       },
       "farmersdelight_apple_pie____": {
         "id": "farmersdelight_apple_pie____",
@@ -4342,7 +4379,9 @@
         "itemId": "farmersdelight:egg_sandwich",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_staple"
+          "tag_food_main_staple",
+          "tag_food_flavor_light",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:32:48.113Z",
         "autoPrice": 32.8
@@ -4354,7 +4393,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_light",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:32:49.113Z",
         "autoPrice": 30.1
@@ -4366,7 +4407,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_light",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:32:50.113Z",
         "autoPrice": 39.4
@@ -4378,7 +4421,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_light",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:32:51.113Z",
         "autoPrice": 34.8
@@ -4391,7 +4436,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:32:52.113Z",
         "autoPrice": 34.8
@@ -4463,7 +4509,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:32:57.113Z",
         "autoPrice": 81.6
@@ -4476,7 +4523,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:32:58.113Z",
         "autoPrice": 49.5
@@ -4567,7 +4615,7 @@
           "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:04.113Z",
-        "autoPrice": 88.1
+        "autoPrice": 114.4
       },
       "farmersdelight_roast_chicken_block___": {
         "id": "farmersdelight_roast_chicken_block___",
@@ -4576,7 +4624,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:33:05.113Z",
         "autoPrice": 48.9
@@ -4619,7 +4668,10 @@
         "itemId": "farmersdelight:cabbage_rolls",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_staple"
+          "tag_food_main_staple",
+          "tag_1791442729338",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:33:08.113Z",
         "autoPrice": 19.9
@@ -4676,7 +4728,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:33:13.113Z",
-        "autoPrice": 9.5
+        "autoPrice": 24
       },
       "youkaisfeasts_oily_bean_curd____": {
         "id": "youkaisfeasts_oily_bean_curd____",
@@ -4686,7 +4738,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:33:14.113Z",
-        "autoPrice": 61.3
+        "autoPrice": 23.8
       },
       "youkaisfeasts_imitation_crab____": {
         "id": "youkaisfeasts_imitation_crab____",
@@ -4731,7 +4783,8 @@
           "tag_food_main_snack",
           "tag_food_ingredient_dairy",
           "tag_food_flavor_sweet",
-          "tag_food_flavor_rich"
+          "tag_food_flavor_rich",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:18.113Z",
         "autoPrice": 43.8
@@ -4743,7 +4796,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:19.113Z",
         "autoPrice": 34.8
@@ -4756,7 +4810,8 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_ingredient_dairy",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:20.113Z",
         "autoPrice": 49.1
@@ -4768,7 +4823,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:21.113Z",
         "autoPrice": 24.7
@@ -4790,7 +4846,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:23.113Z",
         "autoPrice": 53
@@ -4802,7 +4860,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_1791442729338",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:33:24.113Z",
         "autoPrice": 19.5
@@ -4814,7 +4874,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:25.113Z",
         "autoPrice": 47.1
@@ -4828,7 +4889,8 @@
           "tag_food_main_snack",
           "tag_food_ingredient_dairy",
           "tag_food_flavor_sweet",
-          "tag_food_flavor_rich"
+          "tag_food_flavor_rich",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:26.113Z",
         "autoPrice": 71.9
@@ -4841,10 +4903,11 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_vegetarian",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:33:27.113Z",
-        "autoPrice": 214.1
+        "autoPrice": 101.6
       },
       "youkaisfeasts_raw_oyaki____": {
         "id": "youkaisfeasts_raw_oyaki____",
@@ -4864,10 +4927,12 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_rich",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:33:29.113Z",
-        "autoPrice": 37.4
+        "autoPrice": 52.2
       },
       "youkaisfeasts_kabayaki_____": {
         "id": "youkaisfeasts_kabayaki_____",
@@ -4878,7 +4943,8 @@
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_flavor_sweet",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:30.113Z",
         "autoPrice": 27.8
@@ -4905,8 +4971,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet",
-          "tag_food_flavor_refreshing"
+          "tag_food_flavor_refreshing",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:33:32.113Z",
         "autoPrice": 6.3
@@ -4917,11 +4983,13 @@
         "itemId": "youkaisfeasts:shaved_ice_over_rice",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_snack",
           "tag_food_ingredient_aquatic",
           "tag_food_flavor_sweet",
+          "tag_food_flavor_refreshing",
+          "tag_food_ingredient_grain",
+          "tag_food_main_staple",
           "tag_food_flavor_umami",
-          "tag_food_flavor_refreshing"
+          "tag_food_form_raw"
         ],
         "createdAt": "2026-09-28T06:33:33.113Z",
         "autoPrice": 37.6
@@ -4932,7 +5000,9 @@
         "itemId": "youkaisfeasts:oyaki",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_staple"
+          "tag_food_main_staple",
+          "tag_food_flavor_light",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:33:34.113Z",
         "autoPrice": 56.8
@@ -4985,7 +5055,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:33:38.113Z",
         "autoPrice": 68.2
@@ -4999,7 +5070,8 @@
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_fungus",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:33:39.113Z",
         "autoPrice": 83.9
@@ -5039,7 +5111,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_flavor_rich"
+          "tag_food_flavor_rich",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:33:42.113Z",
         "autoPrice": 82.7
@@ -5051,11 +5124,12 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
+          "tag_food_flavor_spicy",
           "tag_food_ingredient_meat",
-          "tag_food_flavor_spicy"
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:33:43.113Z",
-        "autoPrice": 96.6
+        "autoPrice": 111.2
       },
       "youkaisfeasts_udumbara_cake_____": {
         "id": "youkaisfeasts_udumbara_cake_____",
@@ -5064,10 +5138,11 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:33:44.113Z",
-        "autoPrice": 41.4
+        "autoPrice": 112.6
       },
       "youkaisfeasts_tobiko_gunkan_____": {
         "id": "youkaisfeasts_tobiko_gunkan_____",
@@ -5091,7 +5166,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_ingredient_aquatic",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:33:46.113Z",
         "autoPrice": 13.2
@@ -5103,7 +5180,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:47.113Z",
         "autoPrice": 18.9
@@ -5115,7 +5193,10 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_ingredient_dairy"
         ],
         "createdAt": "2026-09-28T06:33:48.113Z",
         "autoPrice": 30.1
@@ -5130,7 +5211,8 @@
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_grain",
           "tag_food_flavor_umami",
-          "tag_food_form_raw"
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:33:49.113Z",
         "autoPrice": 25.2
@@ -5145,10 +5227,11 @@
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_grain",
           "tag_food_flavor_umami",
-          "tag_food_form_raw"
+          "tag_food_form_raw",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:33:50.113Z",
-        "autoPrice": 9.3
+        "autoPrice": 12.1
       },
       "youkaisfeasts_otoro_nigiri_________": {
         "id": "youkaisfeasts_otoro_nigiri_________",
@@ -5160,10 +5243,11 @@
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_grain",
           "tag_food_flavor_umami",
-          "tag_food_form_raw"
+          "tag_food_form_raw",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:33:51.113Z",
-        "autoPrice": 13
+        "autoPrice": 24.3
       },
       "youkaisfeasts_shinnko_maki_____": {
         "id": "youkaisfeasts_shinnko_maki_____",
@@ -5172,7 +5256,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:33:52.113Z",
         "autoPrice": 42.6
@@ -5184,7 +5270,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_ingredient_vegetarian",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:33:53.113Z",
         "autoPrice": 40.1
@@ -5199,10 +5287,11 @@
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_grain",
           "tag_food_flavor_umami",
-          "tag_food_form_raw"
+          "tag_food_form_raw",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:33:54.113Z",
-        "autoPrice": 38.8
+        "autoPrice": 44.4
       },
       "youkaisfeasts_egg_futomaki_____": {
         "id": "youkaisfeasts_egg_futomaki_____",
@@ -5211,7 +5300,10 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_rich",
+          "tag_food_ingredient_dairy"
         ],
         "createdAt": "2026-09-28T06:33:55.113Z",
         "autoPrice": 86.6
@@ -5255,8 +5347,7 @@
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_grain",
-          "tag_food_flavor_umami",
-          "tag_food_form_raw"
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:33:58.113Z",
         "autoPrice": 93
@@ -5270,7 +5361,8 @@
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_flavor_umami",
-          "tag_food_form_raw"
+          "tag_food_form_raw",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:33:59.113Z",
         "autoPrice": 106.3
@@ -5283,7 +5375,9 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_form_raw",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:34:00.113Z",
         "autoPrice": 127.8
@@ -5297,10 +5391,12 @@
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_flavor_umami",
-          "tag_food_form_raw"
+          "tag_food_form_raw",
+          "tag_food_ingredient_grain",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:34:01.113Z",
-        "autoPrice": 128
+        "autoPrice": 162.1
       },
       "youkaisfeasts_rainbow_roll______": {
         "id": "youkaisfeasts_rainbow_roll______",
@@ -5311,10 +5407,12 @@
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
           "tag_food_flavor_umami",
-          "tag_food_form_raw"
+          "tag_food_form_raw",
+          "tag_food_ingredient_grain",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:34:02.113Z",
-        "autoPrice": 130
+        "autoPrice": 135.6
       },
       "youkaisfeasts_tamagoyaki_slice______": {
         "id": "youkaisfeasts_tamagoyaki_slice______",
@@ -5352,10 +5450,12 @@
           "tag_food_main_staple",
           "tag_food_ingredient_meat",
           "tag_food_flavor_umami",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_1791442723408",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:34:05.113Z",
-        "autoPrice": 66.3
+        "autoPrice": 81.1
       },
       "youkaisfeasts_potato_soup________": {
         "id": "youkaisfeasts_potato_soup________",
@@ -5371,7 +5471,7 @@
           "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:06.113Z",
-        "autoPrice": 53.1
+        "autoPrice": 56.5
       },
       "youkaisfeasts_signature_mushroom_stew______": {
         "id": "youkaisfeasts_signature_mushroom_stew______",
@@ -5383,7 +5483,8 @@
           "tag_food_ingredient_vegetarian",
           "tag_food_ingredient_fungus",
           "tag_food_flavor_umami",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:34:07.113Z",
         "autoPrice": 45.9
@@ -5398,7 +5499,8 @@
           "tag_food_ingredient_aquatic",
           "tag_food_ingredient_fungus",
           "tag_food_flavor_umami",
-          "tag_food_form_soup"
+          "tag_food_form_soup",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:34:08.113Z",
         "autoPrice": 75.1
@@ -5444,10 +5546,12 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_1791442723408",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:34:12.113Z",
-        "autoPrice": 57.9
+        "autoPrice": 87.5
       },
       "youkaisfeasts_tomato_sauce_cod_____": {
         "id": "youkaisfeasts_tomato_sauce_cod_____",
@@ -5457,7 +5561,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_aquatic",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_flavor_rich"
         ],
         "createdAt": "2026-09-28T06:34:13.113Z",
         "autoPrice": 47.2
@@ -5469,7 +5574,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:34:14.113Z",
         "autoPrice": 27.3
@@ -5480,9 +5586,9 @@
         "itemId": "youkaisfeasts:dried_fish",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_snack",
           "tag_food_ingredient_aquatic",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_food_main_staple"
         ],
         "createdAt": "2026-09-28T06:34:15.113Z",
         "autoPrice": 30.6
@@ -5495,7 +5601,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:34:16.113Z",
-        "autoPrice": 54
+        "autoPrice": 68.7
       },
       "youkaisfeasts_imitation_bear_paw____": {
         "id": "youkaisfeasts_imitation_bear_paw____",
@@ -5504,10 +5610,13 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_food_flavor_rich",
+          "tag_1791442723408",
+          "tag_food_flavor_umami"
         ],
         "createdAt": "2026-09-28T06:34:17.113Z",
-        "autoPrice": 59.1
+        "autoPrice": 74.1
       },
       "youkaisfeasts_pastitsio_______": {
         "id": "youkaisfeasts_pastitsio_______",
@@ -5549,7 +5658,8 @@
           "tag_food_ingredient_vegetarian",
           "tag_food_ingredient_fungus",
           "tag_food_flavor_spicy",
-          "tag_food_flavor_umami"
+          "tag_food_flavor_umami",
+          "tag_1791442558597"
         ],
         "createdAt": "2026-09-28T06:34:20.113Z",
         "autoPrice": 80.8
@@ -5578,10 +5688,12 @@
           "tag_1790175849511",
           "tag_food_main_snack",
           "tag_food_ingredient_fruit",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_ingredient_vegetarian",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:34:22.113Z",
-        "autoPrice": 94
+        "autoPrice": 164.2
       },
       "kaleidoscope_fragrantorchard_peach_of_immortality____": {
         "id": "kaleidoscope_fragrantorchard_peach_of_immortality____",
@@ -5591,7 +5703,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_fruit",
-          "tag_food_ingredient_grain"
+          "tag_food_ingredient_grain",
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:34:23.113Z",
         "autoPrice": 36.9
@@ -5602,10 +5715,10 @@
         "itemId": "kaleidoscope_fragrantorchard:rock_sugar_pear_soup",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_snack",
           "tag_food_ingredient_fruit",
           "tag_food_flavor_sweet",
-          "tag_food_flavor_refreshing"
+          "tag_food_main_staple",
+          "tag_food_drink_mellow"
         ],
         "createdAt": "2026-09-28T06:34:24.113Z",
         "autoPrice": 39.3
@@ -5618,9 +5731,7 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
-          "tag_food_flavor_sweet",
-          "tag_food_flavor_refreshing",
-          "tag_food_drink_mellow"
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:34:25.113Z",
         "autoPrice": 5.9
@@ -5633,9 +5744,7 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
-          "tag_food_flavor_sweet",
-          "tag_food_flavor_refreshing",
-          "tag_food_drink_mellow"
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:34:26.113Z",
         "autoPrice": 3.6
@@ -5648,9 +5757,7 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
-          "tag_food_flavor_sweet",
-          "tag_food_flavor_refreshing",
-          "tag_food_drink_mellow"
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:34:27.113Z",
         "autoPrice": 13
@@ -5663,9 +5770,7 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
-          "tag_food_flavor_sweet",
-          "tag_food_flavor_refreshing",
-          "tag_food_drink_mellow"
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:34:28.113Z",
         "autoPrice": 12
@@ -5678,9 +5783,7 @@
           "tag_1790175849511",
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
-          "tag_food_flavor_sweet",
-          "tag_food_flavor_refreshing",
-          "tag_food_drink_mellow"
+          "tag_food_flavor_sweet"
         ],
         "createdAt": "2026-09-28T06:34:29.113Z",
         "autoPrice": 12
@@ -5769,7 +5872,7 @@
           "tag_food_form_soup"
         ],
         "createdAt": "2026-09-28T06:34:35.113Z",
-        "autoPrice": 71.4
+        "autoPrice": 124
       },
       "kaleidoscope_nether_pepper_pork_belly_chicken_soup_______": {
         "id": "kaleidoscope_nether_pepper_pork_belly_chicken_soup_______",
@@ -5810,8 +5913,7 @@
           "tag_food_main_staple",
           "tag_food_ingredient_vegetarian",
           "tag_food_flavor_spicy",
-          "tag_food_flavor_light",
-          "tag_food_flavor_refreshing"
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:34:38.113Z",
         "autoPrice": 55.5
@@ -5823,7 +5925,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_flavor_sweet"
+          "tag_food_flavor_sweet",
+          "tag_food_flavor_sour",
+          "tag_food_ingredient_vegetarian"
         ],
         "createdAt": "2026-09-28T06:34:39.113Z",
         "autoPrice": 17.5
@@ -5848,7 +5952,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_vegetarian"
+          "tag_food_ingredient_vegetarian",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:34:41.113Z",
         "autoPrice": 11.2
@@ -5947,8 +6052,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_vegetarian",
-          "tag_food_flavor_spicy"
+          "tag_food_flavor_spicy",
+          "tag_food_ingredient_meat"
         ],
         "createdAt": "2026-09-28T06:34:49.113Z",
         "autoPrice": 62.2
@@ -6008,7 +6113,8 @@
           "tag_1790175849511",
           "tag_food_main_snack",
           "tag_food_ingredient_meat",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:34:55.113Z",
         "autoPrice": 34.7
@@ -6020,7 +6126,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381",
+          "tag_food_ingredient_grain"
         ],
         "createdAt": "2026-09-28T06:34:56.113Z",
         "autoPrice": 35.3
@@ -6033,7 +6141,8 @@
           "tag_1790175849511",
           "tag_food_main_snack",
           "tag_food_ingredient_meat",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:34:57.113Z",
         "autoPrice": 29.2
@@ -6046,7 +6155,8 @@
           "tag_1790175849511",
           "tag_food_main_snack",
           "tag_food_ingredient_meat",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:34:58.113Z",
         "autoPrice": 45
@@ -6059,7 +6169,8 @@
           "tag_1790175849511",
           "tag_food_main_snack",
           "tag_food_ingredient_meat",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:34:59.113Z",
         "autoPrice": 31.6
@@ -6073,7 +6184,8 @@
           "tag_food_main_snack",
           "tag_food_ingredient_aquatic",
           "tag_food_flavor_umami",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:35:00.113Z",
         "autoPrice": 55.3
@@ -6085,7 +6197,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381",
+          "tag_food_ingredient_vegetarian"
         ],
         "createdAt": "2026-09-28T06:35:01.113Z",
         "autoPrice": 40.9
@@ -6097,7 +6211,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_snack",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381",
+          "tag_food_ingredient_vegetarian"
         ],
         "createdAt": "2026-09-28T06:35:02.113Z",
         "autoPrice": 21.3
@@ -6111,7 +6227,8 @@
           "tag_food_main_snack",
           "tag_food_ingredient_fungus",
           "tag_food_flavor_umami",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:35:03.113Z",
         "autoPrice": 29.6
@@ -6124,7 +6241,7 @@
           "tag_1790252241364"
         ],
         "createdAt": "2026-09-28T06:35:04.113Z",
-        "autoPrice": 24.5
+        "autoPrice": 37.5
       },
       "kaleidoscope_grilling_raw_bun_slice_skewer______": {
         "id": "kaleidoscope_grilling_raw_bun_slice_skewer______",
@@ -6214,10 +6331,11 @@
           "tag_1790175849511",
           "tag_food_main_snack",
           "tag_food_ingredient_meat",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:35:13.113Z",
-        "autoPrice": 33.2
+        "autoPrice": 46.6
       },
       "kaleidoscope_grilling_grilled_bun_slice_skewer______": {
         "id": "kaleidoscope_grilling_grilled_bun_slice_skewer______",
@@ -6227,7 +6345,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_ingredient_grain",
-          "tag_food_form_grilled"
+          "tag_food_form_grilled",
+          "tag_1791514589381"
         ],
         "createdAt": "2026-09-28T06:35:14.113Z",
         "autoPrice": 27.5
@@ -6239,7 +6358,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_vegetarian"
+          "tag_food_ingredient_vegetarian",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:35:15.113Z",
         "autoPrice": 9.1
@@ -6251,7 +6371,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:35:16.113Z",
         "autoPrice": 16.3
@@ -6263,7 +6384,8 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_staple",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:35:17.113Z",
         "autoPrice": 14.2
@@ -6274,7 +6396,8 @@
         "itemId": "kaleidoscope_cookery:fried_egg",
         "tags": [
           "tag_1790175849511",
-          "tag_food_main_staple"
+          "tag_food_main_staple",
+          "tag_1791442729338"
         ],
         "createdAt": "2026-09-28T06:35:18.113Z",
         "autoPrice": 9.1
@@ -6361,9 +6484,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_drink",
-          "tag_food_ingredient_fruit",
           "tag_food_drink_dry",
-          "tag_food_form_alcohol"
+          "tag_food_form_alcohol",
+          "tag_food_flavor_refreshing"
         ],
         "createdAt": "2026-09-28T06:35:26.113Z",
         "autoPrice": 35.9
@@ -6375,10 +6498,10 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_drink",
-          "tag_food_ingredient_fruit",
           "tag_food_flavor_rich",
           "tag_food_drink_dry",
-          "tag_food_form_alcohol"
+          "tag_food_form_alcohol",
+          "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:35:27.113Z",
         "autoPrice": 21.4
@@ -6390,9 +6513,9 @@
         "tags": [
           "tag_1790175849511",
           "tag_food_main_drink",
-          "tag_food_ingredient_fruit",
           "tag_food_drink_dry",
-          "tag_food_form_alcohol"
+          "tag_food_form_alcohol",
+          "tag_food_flavor_light"
         ],
         "createdAt": "2026-09-28T06:35:28.113Z",
         "autoPrice": 26
@@ -6407,7 +6530,8 @@
           "tag_food_ingredient_fruit",
           "tag_food_flavor_sweet",
           "tag_food_drink_mellow",
-          "tag_food_form_alcohol"
+          "tag_food_form_alcohol",
+          "tag_food_drink_dry"
         ],
         "createdAt": "2026-09-28T06:35:29.113Z",
         "autoPrice": 29.6
@@ -6421,7 +6545,8 @@
           "tag_food_main_drink",
           "tag_food_ingredient_fruit",
           "tag_food_drink_mellow",
-          "tag_food_form_alcohol"
+          "tag_food_form_alcohol",
+          "tag_food_drink_dry"
         ],
         "createdAt": "2026-09-28T06:35:30.113Z",
         "autoPrice": 32.9
@@ -6438,7 +6563,8 @@
           "tag_food_flavor_sweet",
           "tag_food_flavor_rich",
           "tag_food_drink_mellow",
-          "tag_food_form_alcohol"
+          "tag_food_form_alcohol",
+          "tag_food_drink_dry"
         ],
         "createdAt": "2026-09-28T06:35:31.113Z",
         "autoPrice": 17.9
@@ -6498,7 +6624,6 @@
           "minecraft_cod",
           "minecraft_salmon",
           "minecraft_pufferfish",
-          "aquaculture_jellyfish___",
           "aquaculture_tambaqui______",
           "aquaculture_catfish___",
           "aquaculture_perch____",
@@ -6569,7 +6694,6 @@
           "minecraft_beetroot_soup____",
           "minecraft_mushroom_stew____",
           "aquaculturedelight_crispy_nori_kelp_Crispy_Nori",
-          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
           "minecraft_rabbit_stew____",
           "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
           "aquaculturedelight_bass_stew_Bass_Stew",
@@ -6587,7 +6711,6 @@
           "aquaculturedelight_rollmops_Rollmops",
           "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
           "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
-          "bakery_chocolate_box______",
           "bakery_croissant_____",
           "bakery_crusty_bread_____",
           "bakery_bread______",
@@ -6857,7 +6980,8 @@
           "kaleidoscope_tavern_red_queen____",
           "kaleidoscope_world_liquor_strongbow____",
           "kaleidoscope_world_liquor_pina_colada_________",
-          "youkaisfeasts_oyaki___"
+          "youkaisfeasts_oyaki___",
+          "bakery_chocolate_truffle______"
         ],
         "childTags": [
           "tag_food_main_staple",
@@ -6882,11 +7006,8 @@
           "tag_food_ingredient_grain",
           "tag_food_form_soup",
           "tag_food_form_tea",
-          "tag_food_form_grilled",
-          "tag_food_form_fried",
           "tag_food_form_raw",
-          "tag_food_form_baked",
-          "tag_food_form_alcohol"
+          "tag_food_form_baked"
         ],
         "parentTags": []
       },
@@ -6910,7 +7031,6 @@
           "farmersdelight_wheat_dough___",
           "bakery_sweet_dough____",
           "extradelight_potato_sticks___",
-          "kaleidoscope_grilling_oil_residue___",
           "kaleidoscope_grilling_oil_cake___",
           "kaleidoscope_grilling_canola_oil_bucket_____",
           "kaleidoscope_grilling_canola_powder____",
@@ -6930,7 +7050,6 @@
           "kaleidoscope_tavern_vinegar__",
           "extradelight_sliced_cucumber_item____",
           "collectorsreap_limeade____",
-          "bakery_chocolate_truffle______",
           "bakery_chocolate_jam_____",
           "bakery_apple_jam_____",
           "bakery_sweetberry_jam______",
@@ -7163,7 +7282,6 @@
           "kaleidoscope_cookery_bamboo_tube_rice_____",
           "kaleidoscope_cookery_zongzi____",
           "collectorsreap_portobello_risotto_______",
-          "collectorsreap_portobello_quiche________",
           "farmersdelight_fruit_salad_____",
           "kaleidoscope_cookery_shengjian_mantou____",
           "kaleidoscope_chinesefood_sichuan_boiled_pork_slices_____",
@@ -7224,7 +7342,10 @@
           "kaleidoscope_grilling_houttuynia_stir_fried_pork______",
           "youkaisfeasts_pork_rice_ball_____",
           "kaleidoscope_chinesefood_bamboo_steamed_egg_____",
-          "kaleidoscope_chinesefood_seaweed_egg_drop_soup______"
+          "kaleidoscope_chinesefood_seaweed_egg_drop_soup______",
+          "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______",
+          "youkaisfeasts_shaved_ice_over_rice_______",
+          "youkaisfeasts_dried_fish____"
         ],
         "childTags": [],
         "parentTags": [
@@ -7236,7 +7357,6 @@
         "name": "饮品",
         "items": [
           "kaleidoscope_cookery_biluochun____",
-          "kaleidoscope_cookery_tea_egg____",
           "collectorsreap_lucuma_pudding______",
           "kaleidoscope_cookery_oolong______",
           "farmersdelight_glow_berry_custard_________",
@@ -7275,7 +7395,6 @@
         "items": [
           "kaleidoscope_cookery_candied_potato_____",
           "bakery_braided_bread_____",
-          "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______",
           "bakery_strawberry_cake_____",
           "bakery_strawberry_glazed_cookie_______",
           "kaleidoscope_cookery_sticky_rice_cake___",
@@ -7284,7 +7403,6 @@
           "youkaisfeasts_big_popsicle_____",
           "collectorsreap_lucuma_cake______",
           "collectorsreap_lucuma_bread______",
-          "youkaisfeasts_shaved_ice_over_rice_______",
           "bakery_baguette_____",
           "kaleidoscope_cookery_fondant_pie____",
           "bakery_jam_roll____",
@@ -7311,7 +7429,6 @@
           "farmersdelight_apple_pie____",
           "youkaisfeasts_seven_colored_yokan_____",
           "bakery_chocolate_cake______",
-          "bakery_chocolate_box______",
           "farmersdelight_chocolate_pie_____",
           "bakery_chocolate_glazed_cookie________",
           "collectorsreap_lime_popsicle_____",
@@ -7321,7 +7438,6 @@
           "collectorsreap_lime_cookie_____",
           "youkaisfeasts_sekibankiyaki____",
           "collectorsreap_pomegranate_cake_____",
-          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
           "bakery_sweetberry_cake______",
           "bakery_sweetberry_glazed_cookie________",
           "farmersdelight_sweet_berry_cheesecake_______",
@@ -7329,13 +7445,15 @@
           "bakery_toast_____",
           "farmersdelight_melon_popsicle_____",
           "youkaisfeasts_senbei___",
-          "youkaisfeasts_dried_fish____",
           "bakery_bun_____",
           "youkaisfeasts_yashouma_dango_____",
           "crabbersdelight_coconut_pudding_Coconut_Pudding",
           "youkaisfeasts_sakura_mochi___",
           "youkaisfeasts_tsukimi_dango_____",
-          "youkaisfeasts_bamboo_mizuyokan______"
+          "youkaisfeasts_bamboo_mizuyokan______",
+          "bakery_chocolate_truffle______",
+          "collectorsreap_portobello_quiche________",
+          "kaleidoscope_cookery_tea_egg____"
         ],
         "childTags": [],
         "parentTags": [
@@ -7353,7 +7471,6 @@
           "bakery_strawberry_glazed_cookie_______",
           "kaleidoscope_cookery_sticky_rice_cake___",
           "bakery_crusty_bread_____",
-          "youkaisfeasts_big_popsicle_____",
           "collectorsreap_lucuma_pudding______",
           "collectorsreap_lucuma_cake______",
           "collectorsreap_lucuma_bread______",
@@ -7363,7 +7480,6 @@
           "farmersdelight_glow_berry_custard_________",
           "kaleidoscope_cookery_scramble_egg_with_tomatoes_____",
           "kaleidoscope_cookery_fondant_pie____",
-          "collectorsreap_pink_limeade______",
           "kaleidoscope_chinesefood_hk_milk_tea_______",
           "bakery_jam_roll____",
           "collectorsreap_deluxe_salad_____",
@@ -7401,10 +7517,8 @@
           "youkaisfeasts_kabayaki_____",
           "youkaisfeasts_seven_colored_yokan_____",
           "bakery_chocolate_cake______",
-          "bakery_chocolate_box______",
           "farmersdelight_chocolate_pie_____",
           "bakery_chocolate_glazed_cookie________",
-          "collectorsreap_lime_popsicle_____",
           "collectorsreap_lime_cake_____",
           "collectorsreap_candied_lime_____",
           "collectorsreap_lime_pie____",
@@ -7412,10 +7526,8 @@
           "collectorsreap_salmon_wrapped_prawn_______",
           "youkaisfeasts_sekibankiyaki____",
           "collectorsreap_pomegranate_cake_____",
-          "collectorsreap_pomegranate_custard_____",
           "collectorsreap_pomegranate_pork______",
           "farmersdelight_fruit_salad_____",
-          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
           "kaleidoscope_grilling_sugared_tomato_____",
           "kaleidoscope_cookery_sweet_and_sour_pork_____",
           "kaleidoscope_fragrantorchard_peach_juice____",
@@ -7438,7 +7550,17 @@
           "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
           "youkaisfeasts_tamagoyaki____",
           "youkaisfeasts_tsukimi_dango_____",
-          "youkaisfeasts_bamboo_mizuyokan______"
+          "youkaisfeasts_bamboo_mizuyokan______",
+          "kaleidoscope_chinesefood_tomato_egg_drop_soup______",
+          "minecraft_beetroot_soup____",
+          "bakery_chocolate_truffle______",
+          "bakery_croissant_____",
+          "collectorsreap_pink_noodles____",
+          "kaleidoscope_cookery_sakura_fubuki____",
+          "youkaisfeasts_egg_nigiri_______",
+          "youkaisfeasts_lorelei_nigiri______",
+          "youkaisfeasts_egg_futomaki_____",
+          "kaleidoscope_fragrantorchard_peach_of_immortality____"
         ],
         "childTags": [],
         "parentTags": [
@@ -7519,7 +7641,13 @@
           "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
           "kaleidoscope_cookery_sweet_and_sour_pork_____",
           "bakery_sweetberry_glazed_cookie________",
-          "kaleidoscope_cookery_fish_flavored_shredded_pork_____"
+          "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
+          "kaleidoscope_cookery_scramble_egg_with_tomatoes_____",
+          "kaleidoscope_chinesefood_tomato_egg_drop_soup______",
+          "kaleidoscope_grilling_sugared_tomato_____",
+          "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
+          "collectorsreap_pomegranate_cake_____",
+          "collectorsreap_pomegranate_custard_____"
         ],
         "childTags": [],
         "parentTags": [
@@ -7590,7 +7718,6 @@
           "youkaisfeasts_tuscan_salmon_______",
           "collectorsreap_portobello_risotto_______",
           "collectorsreap_portobello_quiche________",
-          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
           "kaleidoscope_chinesefood_sichuan_boiled_fish____",
           "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
           "collectorsreap_portobello_wrap____",
@@ -7613,7 +7740,6 @@
           "farmersdelight_cod_roll_____",
           "aquaculturedelight_buckling_Buckling",
           "kaleidoscope_cookery_hui_noodle_____",
-          "kaleidoscope_cookery_stargazy_pie______",
           "kaleidoscope_cookery_wild_mushroom_rabbit_soup______",
           "youkaisfeasts_lorelei_nigiri______",
           "kaleidoscope_cookery_oil_splashed_fish____",
@@ -7623,7 +7749,16 @@
           "kaleidoscope_nether_corn_carrot_pork_rib_soup_________",
           "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
           "aquaculturedelight_fish_and_chips_Fish_and_Chips",
-          "youkaisfeasts_longevity_noodles____"
+          "youkaisfeasts_longevity_noodles____",
+          "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish",
+          "kaleidoscope_cookery_pork_bone_soup____",
+          "kaleidoscope_cookery_beef_noodle____",
+          "kaleidoscope_cookery_four_joy_meatball_soup______",
+          "kaleidoscope_chinesefood_wonton_noodles____",
+          "kaleidoscope_chinesefood_yangrou_paomo_____",
+          "kaleidoscope_chinesefood_beef_with_scrambled_eggs_____",
+          "farmersdelight_roast_chicken_block___",
+          "youkaisfeasts_imitation_bear_paw____"
         ],
         "childTags": [],
         "parentTags": [
@@ -7646,7 +7781,39 @@
           "farmersdelight_fruit_salad_____",
           "collectorsreap_portobello_wrap____",
           "kaleidoscope_chinesefood_bamboo_steamed_egg_____",
-          "kaleidoscope_chinesefood_seaweed_egg_drop_soup______"
+          "kaleidoscope_chinesefood_seaweed_egg_drop_soup______",
+          "aquaculturedelight_crispy_nori_kelp_Crispy_Nori",
+          "bakery_baguette_____",
+          "minecraft_bread___",
+          "aquaculturedelight_baked_pollock_with_carrots_Baked_Pollock_with_Carrots",
+          "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish",
+          "collectorsreap_prawn_po_boy_________",
+          "collectorsreap_land_and_sea_burger____",
+          "collectorsreap_sea_wrap____",
+          "collectorsreap_fish_mix_____",
+          "kaleidoscope_cookery_mantou___",
+          "kaleidoscope_cookery_baozi___",
+          "kaleidoscope_cookery_dumpling___",
+          "kaleidoscope_cookery_bamboo_tube_rice_____",
+          "kaleidoscope_cookery_zongzi____",
+          "kaleidoscope_cookery_barley_tea______",
+          "kaleidoscope_cookery_sakura_fubuki____",
+          "kaleidoscope_cookery_biluochun____",
+          "kaleidoscope_cookery_tieguanyin____",
+          "kaleidoscope_chinesefood_steamed_rice_rolls___",
+          "farmersdelight_egg_sandwich______",
+          "farmersdelight_chicken_sandwich______",
+          "farmersdelight_hamburger____",
+          "farmersdelight_bacon_sandwich______",
+          "farmersdelight_cabbage_rolls_____",
+          "youkaisfeasts_onigili___",
+          "youkaisfeasts_yakumo_inari______",
+          "youkaisfeasts_oyaki___",
+          "youkaisfeasts_seagrass_gunkan_____",
+          "youkaisfeasts_kappa_maki_____",
+          "youkaisfeasts_shinnko_maki_____",
+          "youkaisfeasts_bamboo_mizuyokan______",
+          "kaleidoscope_world_liquor_dassai___"
         ],
         "childTags": [],
         "parentTags": [
@@ -7712,9 +7879,34 @@
           "bakery_bun_____",
           "collectorsreap_crab_noodles____",
           "collectorsreap_crab_lasagna______",
-          "crabbersdelight_coconut_pudding_Coconut_Pudding",
           "youkaisfeasts_tamagoyaki____",
-          "kaleidoscope_world_liquor_johnnie_walker_____"
+          "kaleidoscope_world_liquor_johnnie_walker_____",
+          "kaleidoscope_chinesefood_tomato_egg_drop_soup______",
+          "kaleidoscope_cookery_fondant_pie____",
+          "kaleidoscope_cookery_stargazy_pie______",
+          "aquaculturedelight_fish_and_chips_Fish_and_Chips",
+          "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
+          "kaleidoscope_cookery_pork_bone_soup____",
+          "kaleidoscope_cookery_seafood_miso_soup______",
+          "kaleidoscope_cookery_udon_noodle____",
+          "kaleidoscope_chinesefood_wonton_noodles____",
+          "kaleidoscope_chinesefood_yangrou_paomo_____",
+          "kaleidoscope_chinesefood_douzhi____",
+          "farmersdelight_pasta_with_meatballs_____",
+          "farmersdelight_pasta_with_mutton_chop_____",
+          "youkaisfeasts_yashouma_dango_____",
+          "youkaisfeasts_pork_rice_ball_____",
+          "youkaisfeasts_kabayaki_____",
+          "youkaisfeasts_nattou_gunkan_____",
+          "youkaisfeasts_egg_nigiri_______",
+          "youkaisfeasts_lorelei_nigiri______",
+          "youkaisfeasts_egg_futomaki_____",
+          "youkaisfeasts_power_soup____",
+          "youkaisfeasts_signature_mushroom_stew______",
+          "youkaisfeasts_hokkaido_salmon_hotpot____",
+          "youkaisfeasts_cumberland_loin______",
+          "youkaisfeasts_tomato_sauce_cod_____",
+          "youkaisfeasts_imitation_bear_paw____"
         ],
         "childTags": [],
         "parentTags": [
@@ -7726,25 +7918,20 @@
         "name": "凉爽",
         "items": [
           "kaleidoscope_twilight_frozen_bun_____",
-          "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______",
           "youkaisfeasts_big_popsicle_____",
           "youkaisfeasts_shaved_ice_over_rice_______",
-          "collectorsreap_pink_limeade______",
-          "collectorsreap_berry_limeade______",
           "youkaisfeasts_cold_tofu_____",
           "kaleidoscope_cookery_cold_cut_ham_slices______",
           "kaleidoscope_cookery_cold_roasted_meat____",
-          "kaleidoscope_fragrantorchard_pear_juice___",
-          "kaleidoscope_grilling_cold_houttuynia______",
           "youkaisfeasts_milk_popsicle_____",
-          "kaleidoscope_fragrantorchard_apple_juice____",
-          "kaleidoscope_fragrantorchard_grape_juice____",
           "collectorsreap_lime_popsicle_____",
-          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
-          "kaleidoscope_fragrantorchard_peach_juice____",
           "farmersdelight_melon_popsicle_____",
-          "kaleidoscope_fragrantorchard_melon_juice____",
-          "crabbersdelight_coconut_pudding_Coconut_Pudding"
+          "crabbersdelight_coconut_pudding_Coconut_Pudding",
+          "collectorsreap_pomegranate_custard_____",
+          "collectorsreap_lucuma_pudding______",
+          "kaleidoscope_cookery_frost_lamb_chop_____",
+          "kaleidoscope_cookery_oolong______",
+          "kaleidoscope_tavern_sherry___"
         ],
         "childTags": [],
         "parentTags": [
@@ -7758,15 +7945,16 @@
           "collectorsreap_pink_limeade______",
           "kaleidoscope_chinesefood_hk_milk_tea_______",
           "kaleidoscope_tavern_red_queen____",
-          "collectorsreap_berry_limeade______",
-          "kaleidoscope_fragrantorchard_pear_juice___",
           "kaleidoscope_world_liquor_pina_colada_________",
-          "kaleidoscope_fragrantorchard_apple_juice____",
-          "kaleidoscope_fragrantorchard_grape_juice____",
           "kaleidoscope_world_liquor_strongbow____",
-          "kaleidoscope_fragrantorchard_peach_juice____",
-          "kaleidoscope_fragrantorchard_melon_juice____",
-          "crabbersdelight_coconut_milk_Coconut_Milk"
+          "collectorsreap_pomegranate_custard_____",
+          "kaleidoscope_fragrantorchard_rock_sugar_pear_soup______",
+          "kaleidoscope_cookery_biluochun____",
+          "kaleidoscope_cookery_oolong______",
+          "kaleidoscope_cookery_butter_tea____",
+          "kaleidoscope_cookery_barley_tea______",
+          "kaleidoscope_chinesefood_dianhong_tea_____",
+          "kaleidoscope_cookery_sakura_fubuki____"
         ],
         "childTags": [],
         "parentTags": [
@@ -7780,7 +7968,10 @@
           "kaleidoscope_tavern_wine____",
           "kaleidoscope_world_liquor_dassai___",
           "kaleidoscope_tavern_sherry___",
-          "kaleidoscope_world_liquor_johnnie_walker_____"
+          "kaleidoscope_world_liquor_johnnie_walker_____",
+          "kaleidoscope_tavern_red_queen____",
+          "kaleidoscope_world_liquor_strongbow____",
+          "kaleidoscope_world_liquor_pina_colada_________"
         ],
         "childTags": [],
         "parentTags": [
@@ -7795,7 +7986,6 @@
           "kaleidoscope_cookery_oolong______",
           "kaleidoscope_cookery_barley_tea______",
           "kaleidoscope_cookery_tieguanyin____",
-          "kaleidoscope_cookery_sakura_fubuki____",
           "kaleidoscope_chinesefood_dianhong_tea_____"
         ],
         "childTags": [],
@@ -7812,7 +8002,6 @@
           "youkaisfeasts_pastitsio_______",
           "kaleidoscope_cookery_dongpo_pork____",
           "kaleidoscope_cookery_buddha_jumps_over_the_wall____",
-          "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish",
           "collectorsreap_land_and_sea_burger____",
           "farmersdelight_hamburger____",
           "kaleidoscope_grilling_braised_chicken_wings_____",
@@ -7840,7 +8029,6 @@
           "kaleidoscope_cookery_borscht____",
           "kaleidoscope_cookery_lamb_and_radish_soup______",
           "kaleidoscope_cookery_spicy_rabbit_head_____",
-          "youkaisfeasts_mapo_tofu_____",
           "kaleidoscope_cookery_spicy_blood_stew____",
           "farmersdelight_honey_glazed_ham_block_____",
           "collectorsreap_honey_lime_chicken______",
@@ -7877,7 +8065,19 @@
           "kaleidoscope_nether_corn_carrot_pork_rib_soup_________",
           "kaleidoscope_cookery_fried_spring_roll____",
           "youkaisfeasts_longevity_noodles____",
-          "youkaisfeasts_pork_rice_ball_____"
+          "youkaisfeasts_pork_rice_ball_____",
+          "kaleidoscope_cookery_baozi___",
+          "kaleidoscope_cookery_shengjian_mantou____",
+          "kaleidoscope_cookery_samsa____",
+          "kaleidoscope_cookery_meat_pie___",
+          "kaleidoscope_cookery_dumpling___",
+          "kaleidoscope_cookery_four_joy_meatball_soup______",
+          "kaleidoscope_cookery_stuffed_tiger_skin_pepper_______",
+          "kaleidoscope_chinesefood_stuffed_eggplant_____",
+          "youkaisfeasts_oyaki___",
+          "youkaisfeasts_lions_head____",
+          "youkaisfeasts_mapo_tofu_____",
+          "kaleidoscope_grilling_houttuynia_stir_fried_pork______"
         ],
         "childTags": [],
         "parentTags": [
@@ -7929,7 +8129,6 @@
           "collectorsreap_salmon_wrapped_prawn_______",
           "youkaisfeasts_hokkaido_salmon_hotpot____",
           "youkaisfeasts_tuscan_salmon_______",
-          "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
           "kaleidoscope_chinesefood_sichuan_boiled_fish____",
           "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
           "kaleidoscope_nether_sauerkraut_fish____",
@@ -7954,7 +8153,10 @@
           "kaleidoscope_cookery_fish_flavored_shredded_pork_____",
           "youkaisfeasts_tobiko_gunkan_____",
           "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
-          "aquaculturedelight_fish_and_chips_Fish_and_Chips"
+          "aquaculturedelight_fish_and_chips_Fish_and_Chips",
+          "aquaculturedelight_crispy_nori_kelp_Crispy_Nori",
+          "aquaculturedelight_turtle_meat_dish_Turtle_Meat_Dish",
+          "youkaisfeasts_seagrass_gunkan_____"
         ],
         "childTags": [],
         "parentTags": [
@@ -7973,9 +8175,7 @@
           "kaleidoscope_chinesefood_dry_pot_potatoes______",
           "kaleidoscope_cookery_dough_drop_soup____",
           "kaleidoscope_grilling_red_sweet_potato_porridge_____",
-          "kaleidoscope_cookery_stuffed_tiger_skin_pepper_______",
           "farmersdelight_mixed_salad_____",
-          "kaleidoscope_chinesefood_stuffed_eggplant_____",
           "kaleidoscope_grilling_roasted_sweet_potato____",
           "minecraft_baked_potato_____",
           "youkaisfeasts_cold_tofu_____",
@@ -7991,7 +8191,17 @@
           "collectorsreap_portobello_risotto_______",
           "collectorsreap_portobello_wrap____",
           "farmersdelight_stuffed_pumpkin_block_____",
-          "kaleidoscope_grilling_houttuynia_stir_fried_pork______"
+          "kaleidoscope_grilling_sugared_tomato_____",
+          "aquaculturedelight_crispy_nori_kelp_Crispy_Nori",
+          "minecraft_beetroot_soup____",
+          "extradelight_french_fries_____",
+          "kaleidoscope_cookery_candied_potato_____",
+          "kaleidoscope_grilling_grilled_potato_slice_skewer______",
+          "farmersdelight_cabbage_rolls_____",
+          "youkaisfeasts_shinnko_maki_____",
+          "youkaisfeasts_kappa_maki_____",
+          "youkaisfeasts_seven_colored_yokan_____",
+          "kaleidoscope_grilling_grilled_sweet_potato_sheet_skewer_____"
         ],
         "childTags": [],
         "parentTags": [
@@ -8074,7 +8284,6 @@
           "collectorsreap_pomegranate_custard_____",
           "collectorsreap_pomegranate_pork______",
           "farmersdelight_fruit_salad_____",
-          "kaleidoscope_world_liquor_dassai___",
           "kaleidoscope_fragrantorchard_peach_juice____",
           "bakery_sweetberry_cake______",
           "bakery_sweetberry_glazed_cookie________",
@@ -8084,10 +8293,8 @@
           "farmersdelight_melon_popsicle_____",
           "kaleidoscope_fragrantorchard_melon_juice____",
           "farmersdelight_grilled_salmon_____",
-          "kaleidoscope_tavern_sherry___",
           "crabbersdelight_coconut_milk_Coconut_Milk",
-          "crabbersdelight_coconut_pudding_Coconut_Pudding",
-          "kaleidoscope_world_liquor_johnnie_walker_____"
+          "crabbersdelight_coconut_pudding_Coconut_Pudding"
         ],
         "childTags": [],
         "parentTags": [
@@ -8147,7 +8354,11 @@
           "collectorsreap_crab_lasagna______",
           "crabbersdelight_coconut_milk_Coconut_Milk",
           "crabbersdelight_coconut_pudding_Coconut_Pudding",
-          "youkaisfeasts_tamagoyaki____"
+          "youkaisfeasts_tamagoyaki____",
+          "kaleidoscope_cookery_fondant_pie____",
+          "bakery_chocolate_truffle______",
+          "youkaisfeasts_egg_nigiri_______",
+          "youkaisfeasts_egg_futomaki_____"
         ],
         "childTags": [],
         "parentTags": [
@@ -8178,9 +8389,7 @@
           "collectorsreap_sea_wrap____",
           "youkaisfeasts_kappa_maki_____",
           "kaleidoscope_grilling_red_sweet_potato_porridge_____",
-          "kaleidoscope_cookery_stuffed_tiger_skin_pepper_______",
           "youkaisfeasts_california_roll____",
-          "kaleidoscope_chinesefood_stuffed_eggplant_____",
           "kaleidoscope_cookery_dumpling___",
           "youkaisfeasts_otoro_nigiri_________",
           "youkaisfeasts_tuna_nigiri_______",
@@ -8211,12 +8420,10 @@
           "farmersdelight_vegetable_noodles____",
           "collectorsreap_portobello_risotto_______",
           "kaleidoscope_cookery_shengjian_mantou____",
-          "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
           "kaleidoscope_chinesefood_sauerkraut_beef_noodles______",
           "kaleidoscope_grilling_sour_spicy_noodles____",
           "kaleidoscope_nether_garlic_oysters_____",
           "aquaculturedelight_halibut_with_tartar_sauce_Halibut_with_Tartar_Sauce",
-          "kaleidoscope_cookery_sweet_and_sour_pork_____",
           "farmersdelight_stuffed_pumpkin_block_____",
           "youkaisfeasts_tekka_maki____",
           "kaleidoscope_cookery_udon_noodle____",
@@ -8238,7 +8445,25 @@
           "kaleidoscope_chinesefood_wonton_noodles____",
           "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
           "youkaisfeasts_longevity_noodles____",
-          "youkaisfeasts_pork_rice_ball_____"
+          "youkaisfeasts_pork_rice_ball_____",
+          "kaleidoscope_cookery_sticky_candy____",
+          "kaleidoscope_cookery_sticky_rice_cake___",
+          "kaleidoscope_cookery_bamboo_tube_rice_____",
+          "kaleidoscope_cookery_zongzi____",
+          "kaleidoscope_cookery_fried_spring_roll____",
+          "youkaisfeasts_senbei___",
+          "youkaisfeasts_yashouma_dango_____",
+          "youkaisfeasts_sakura_mochi___",
+          "youkaisfeasts_matcha_mochi_____",
+          "youkaisfeasts_tsukimi_dango_____",
+          "youkaisfeasts_mochi___",
+          "youkaisfeasts_sekibankiyaki____",
+          "youkaisfeasts_shaved_ice_over_rice_______",
+          "youkaisfeasts_roe_california_roll______",
+          "youkaisfeasts_salmon_lover_roll____",
+          "youkaisfeasts_volcano_roll______",
+          "youkaisfeasts_rainbow_roll______",
+          "kaleidoscope_grilling_grilled_gluten_skewer_____"
         ],
         "childTags": [],
         "parentTags": [
@@ -8277,7 +8502,9 @@
           "aquaculturedelight_halaszle_Halaszle",
           "kaleidoscope_cookery_wild_mushroom_rabbit_soup______",
           "kaleidoscope_nether_corn_carrot_pork_rib_soup_________",
-          "kaleidoscope_chinesefood_seaweed_egg_drop_soup______"
+          "kaleidoscope_chinesefood_seaweed_egg_drop_soup______",
+          "youkaisfeasts_shirayuki___",
+          "youkaisfeasts_han_palace_____"
         ],
         "childTags": [],
         "parentTags": [
@@ -8286,7 +8513,7 @@
       },
       "tag_food_form_tea": {
         "id": "tag_food_form_tea",
-        "name": "茶饮",
+        "name": "茶香",
         "items": [
           "kaleidoscope_cookery_biluochun____",
           "kaleidoscope_cookery_oolong______",
@@ -8295,46 +8522,8 @@
           "kaleidoscope_cookery_butter_tea____",
           "kaleidoscope_cookery_tieguanyin____",
           "kaleidoscope_cookery_sakura_fubuki____",
-          "kaleidoscope_chinesefood_dianhong_tea_____"
-        ],
-        "childTags": [],
-        "parentTags": [
-          "tag_1790175849511"
-        ]
-      },
-      "tag_food_form_grilled": {
-        "id": "tag_food_form_grilled",
-        "name": "烧烤",
-        "items": [
-          "kaleidoscope_grilling_grilled_meat_and_bone_skewer_______",
-          "kaleidoscope_grilling_grilled_bun_slice_skewer______",
-          "kaleidoscope_grilling_grilled_gluten_skewer_____",
-          "kaleidoscope_grilling_grilled_mushroom_skewer_____",
-          "kaleidoscope_grilling_grilled_beef_skewer_____",
-          "kaleidoscope_grilling_grilled_sweet_potato_sheet_skewer_____",
-          "kaleidoscope_grilling_grilled_potato_slice_skewer______",
-          "kaleidoscope_grilling_grilled_pork_belly_skewer______",
-          "kaleidoscope_grilling_grilled_lamb_skewer_____",
-          "kaleidoscope_grilling_grilled_squid_tentacle_skewer______",
-          "kaleidoscope_grilling_grilled_mid_wing_skewer_____"
-        ],
-        "childTags": [],
-        "parentTags": [
-          "tag_1790175849511"
-        ]
-      },
-      "tag_food_form_fried": {
-        "id": "tag_food_form_fried",
-        "name": "油炸",
-        "items": [
-          "extradelight_french_fries_____",
-          "collectorsreap_potato_fritters______",
-          "kaleidoscope_cookery_shengjian_mantou____",
-          "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
-          "kaleidoscope_cookery_fried_caterpillar______",
-          "kaleidoscope_cookery_fried_spring_roll____",
-          "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
-          "aquaculturedelight_fish_and_chips_Fish_and_Chips"
+          "kaleidoscope_chinesefood_dianhong_tea_____",
+          "kaleidoscope_cookery_tea_egg____"
         ],
         "childTags": [],
         "parentTags": [
@@ -8349,16 +8538,16 @@
           "youkaisfeasts_rainbow_roll______",
           "farmersdelight_salmon_roll_____",
           "youkaisfeasts_salmon_futomaki_____",
-          "youkaisfeasts_california_roll____",
           "youkaisfeasts_otoro_nigiri_________",
           "youkaisfeasts_tuna_nigiri_______",
           "youkaisfeasts_volcano_roll______",
           "youkaisfeasts_tekka_maki____",
           "youkaisfeasts_roe_california_roll______",
           "farmersdelight_cod_roll_____",
-          "youkaisfeasts_lorelei_nigiri______",
           "collectorsreap_fish_mix_____",
-          "youkaisfeasts_tobiko_gunkan_____"
+          "youkaisfeasts_tobiko_gunkan_____",
+          "youkaisfeasts_salmon_lover_roll____",
+          "youkaisfeasts_shaved_ice_over_rice_______"
         ],
         "childTags": [],
         "parentTags": [
@@ -8403,22 +8592,102 @@
           "tag_1790175849511"
         ]
       },
-      "tag_food_form_alcohol": {
-        "id": "tag_food_form_alcohol",
-        "name": "酒类",
+      "tag_1791442558597": {
+        "id": "tag_1791442558597",
+        "name": "猎奇",
         "items": [
-          "kaleidoscope_tavern_red_queen____",
-          "kaleidoscope_world_liquor_pina_colada_________",
-          "kaleidoscope_tavern_wine____",
-          "kaleidoscope_world_liquor_strongbow____",
-          "kaleidoscope_world_liquor_dassai___",
-          "kaleidoscope_tavern_sherry___",
+          "kaleidoscope_cookery_stargazy_pie______",
+          "kaleidoscope_cookery_fried_caterpillar______",
+          "kaleidoscope_chinesefood_douzhi____",
+          "youkaisfeasts_stinky_tofu____"
+        ],
+        "childTags": [],
+        "parentTags": []
+      },
+      "tag_1791442723408": {
+        "id": "tag_1791442723408",
+        "name": "珍稀",
+        "items": [
+          "aquaculturedelight_unusual_fish_soup_Unusual_Fish_Soup",
+          "aquaculturedelight_tuna_spaghetti_Tuna_Spaghetti",
+          "aquaculturedelight_roasted_tambaqui_Roasted_Tambaqui",
+          "youkaisfeasts_pork_rice_ball_____",
+          "youkaisfeasts_udumbara_cake_____",
+          "youkaisfeasts_mapo_tofu_____",
+          "youkaisfeasts_tuna_nigiri_______",
+          "youkaisfeasts_otoro_nigiri_________",
+          "youkaisfeasts_tekka_maki____",
+          "youkaisfeasts_rainbow_roll______",
+          "youkaisfeasts_volcano_roll______",
+          "youkaisfeasts_power_soup____",
+          "youkaisfeasts_cumberland_loin______",
+          "youkaisfeasts_imitation_bear_paw____",
+          "youkaisfeasts_seven_colored_yokan_____",
           "kaleidoscope_world_liquor_johnnie_walker_____"
         ],
         "childTags": [],
-        "parentTags": [
-          "tag_1790175849511"
-        ]
+        "parentTags": []
+      },
+      "tag_1791442729338": {
+        "id": "tag_1791442729338",
+        "name": "实惠",
+        "items": [
+          "aquaculturedelight_crispy_nori_kelp_Crispy_Nori",
+          "minecraft_beetroot_soup____",
+          "minecraft_mushroom_stew____",
+          "farmersdelight_cooked_rice___",
+          "minecraft_bread___",
+          "kaleidoscope_cookery_mantou___",
+          "kaleidoscope_cookery_baozi___",
+          "kaleidoscope_cookery_shengjian_mantou____",
+          "kaleidoscope_cookery_samsa____",
+          "kaleidoscope_cookery_meat_pie___",
+          "kaleidoscope_cookery_tea_egg____",
+          "kaleidoscope_cookery_dumpling___",
+          "kaleidoscope_cookery_egg_fried_rice____",
+          "farmersdelight_egg_sandwich______",
+          "farmersdelight_chicken_sandwich______",
+          "farmersdelight_hamburger____",
+          "farmersdelight_bacon_sandwich______",
+          "collectorsreap_prawn_po_boy_________",
+          "farmersdelight_mutton_wrap_____",
+          "minecraft_baked_potato_____",
+          "minecraft_cooked_beef___",
+          "minecraft_cooked_porkchop____",
+          "kaleidoscope_cookery_fried_egg___",
+          "farmersdelight_cabbage_rolls_____",
+          "youkaisfeasts_onigili___",
+          "youkaisfeasts_big_popsicle_____",
+          "kaleidoscope_grilling_roasted_sweet_potato____"
+        ],
+        "childTags": [],
+        "parentTags": []
+      },
+      "tag_1791514589381": {
+        "id": "tag_1791514589381",
+        "name": "重油",
+        "items": [
+          "extradelight_french_fries_____",
+          "collectorsreap_potato_fritters______",
+          "aquaculturedelight_crispy_fried_perch_Crispy_Fried_Perch",
+          "kaleidoscope_cookery_fried_caterpillar______",
+          "kaleidoscope_cookery_fried_spring_roll____",
+          "aquaculturedelight_fried_perch_roll_Fried_Perch_Roll",
+          "aquaculturedelight_fish_and_chips_Fish_and_Chips",
+          "kaleidoscope_grilling_grilled_lamb_skewer_____",
+          "kaleidoscope_grilling_grilled_gluten_skewer_____",
+          "kaleidoscope_grilling_grilled_beef_skewer_____",
+          "kaleidoscope_grilling_grilled_pork_belly_skewer______",
+          "kaleidoscope_grilling_grilled_mid_wing_skewer_____",
+          "kaleidoscope_grilling_grilled_squid_tentacle_skewer______",
+          "kaleidoscope_grilling_grilled_sweet_potato_sheet_skewer_____",
+          "kaleidoscope_grilling_grilled_potato_slice_skewer______",
+          "kaleidoscope_grilling_grilled_mushroom_skewer_____",
+          "kaleidoscope_grilling_grilled_meat_and_bone_skewer_______",
+          "kaleidoscope_grilling_grilled_bun_slice_skewer______"
+        ],
+        "childTags": [],
+        "parentTags": []
       }
     },
     "recipes": {
@@ -8617,47 +8886,6 @@
             "type": "item",
             "ref": "kaleidoscope_cookery_flour___",
             "count": 2
-          }
-        ]
-      },
-      "recipe_1790249180602": {
-        "id": "recipe_1790249180602",
-        "name": "水母果冻",
-        "workstation": "kaleidoscope_cookery_stockpot___",
-        "inputs": [
-          {
-            "type": "item",
-            "ref": "aquaculture_jellyfish___",
-            "count": 1
-          },
-          {
-            "type": "item",
-            "ref": "minecraft_sugar__",
-            "count": 1
-          },
-          {
-            "type": "item",
-            "ref": "kaleidoscope_cookery_flour___",
-            "count": 1
-          }
-        ],
-        "attachments": [
-          {
-            "type": "item",
-            "ref": "minecraft_water_bucket___",
-            "count": 1
-          },
-          {
-            "type": "item",
-            "ref": "minecraft_bowl__",
-            "count": 1
-          }
-        ],
-        "outputs": [
-          {
-            "type": "item",
-            "ref": "aquaculturedelight_jellyfish_jelly_Jellyfish_Jelly",
-            "count": 1
           }
         ]
       },
@@ -8896,7 +9124,7 @@
       },
       "recipe_1790255253295": {
         "id": "recipe_1790255253295",
-        "name": "奇异鱼汤",
+        "name": "巨脂鱼汤",
         "workstation": "kaleidoscope_cookery_stockpot___",
         "inputs": [
           {
@@ -10148,32 +10376,6 @@
             "type": "item",
             "ref": "bakery_chocolate_truffle______",
             "count": 4
-          }
-        ]
-      },
-      "recipe_1790403546864": {
-        "id": "recipe_1790403546864",
-        "name": "巧克力礼盒",
-        "workstation": "farm_and_charm_crafting_bowl____",
-        "inputs": [
-          {
-            "type": "item",
-            "ref": "bakery_chocolate_truffle______",
-            "count": 8
-          }
-        ],
-        "attachments": [
-          {
-            "type": "item",
-            "ref": "minecraft_bowl__",
-            "count": 1
-          }
-        ],
-        "outputs": [
-          {
-            "type": "item",
-            "ref": "bakery_chocolate_box______",
-            "count": 1
           }
         ]
       },
@@ -15538,7 +15740,7 @@
           },
           {
             "type": "item",
-            "ref": "kaleidoscope_grilling_oil_residue___",
+            "ref": "kaleidoscope_cookery_oil___",
             "count": 4
           }
         ],
@@ -16740,7 +16942,12 @@
           },
           {
             "type": "item",
-            "ref": "crabbersdelight_coconut_milk_Coconut_Milk",
+            "ref": "crabbersdelight_coconut_halve_Coconut_Halve",
+            "count": 2
+          },
+          {
+            "type": "item",
+            "ref": "youkaisfeasts_ice_cube___",
             "count": 1
           }
         ],
@@ -16766,13 +16973,13 @@
         "inputs": [
           {
             "type": "item",
-            "ref": "item_1790141939382",
-            "count": 2
+            "ref": "minecraft_milk_bucket___",
+            "count": 1
           },
           {
             "type": "item",
-            "ref": "minecraft_milk_bucket___",
-            "count": 1
+            "ref": "crabbersdelight_coconut_halve_Coconut_Halve",
+            "count": 2
           }
         ],
         "attachments": [
