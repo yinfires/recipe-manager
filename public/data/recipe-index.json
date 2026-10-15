@@ -2,7 +2,7 @@
   "indexVersion": 3,
   "generatedFrom": {
     "schemaVersion": 5,
-    "updatedAt": "2026-10-09T05:40:18.411Z"
+    "updatedAt": "2026-10-15T05:34:56.864Z"
   },
   "counts": {
     "items": 518,
@@ -17671,9 +17671,9 @@
       "id": "recipe_1790502128889",
       "name": "椰子布丁",
       "workstation": {
-        "id": "kaleidoscope_world_liquor_freezer___",
-        "name": "冰柜",
-        "itemId": "kaleidoscope_world_liquor:freezer"
+        "id": "kaleidoscope_fragrantorchard_juicer____",
+        "name": "榨汁机",
+        "itemId": "kaleidoscope_fragrantorchard:juicer"
       },
       "inputs": [
         {
@@ -27947,7 +27947,9 @@
         }
       ],
       "predecessorRecipeIds": [],
-      "successorRecipeIds": []
+      "successorRecipeIds": [
+        "recipe_1790566058919"
+      ]
     },
     {
       "id": "recipe_1790564228267",
@@ -28190,9 +28192,9 @@
         {
           "type": "item",
           "ref": {
-            "id": "item_1790142068808",
-            "name": "黄金葡萄",
-            "itemId": "kaleidoscope_tavern:gold_grape"
+            "id": "kaleidoscope_tavern_gold_grape_bucket______",
+            "name": "黄金葡萄桶",
+            "itemId": "kaleidoscope_tavern:gold_grape_bucket"
           },
           "count": 4
         },
@@ -28237,7 +28239,9 @@
           "count": 16
         }
       ],
-      "predecessorRecipeIds": [],
+      "predecessorRecipeIds": [
+        "recipe_1790564178526"
+      ],
       "successorRecipeIds": []
     },
     {
@@ -28842,6 +28846,7 @@
       "recipe_1790417255732",
       "recipe_1790417356493",
       "recipe_1790417417366",
+      "recipe_1790502128889",
       "recipe_1790502530326",
       "recipe_1790503383408",
       "recipe_1790520645125",
@@ -28885,7 +28890,6 @@
       "recipe_1790393692322",
       "recipe_1790422224151",
       "recipe_1790500724521",
-      "recipe_1790502128889",
       "recipe_1790503297387",
       "recipe_1790510762237",
       "recipe_1790510792995",
@@ -29319,8 +29323,7 @@
       "recipe_1790564164811"
     ],
     "item_1790142068808": [
-      "recipe_1790564178526",
-      "recipe_1790566058919"
+      "recipe_1790564178526"
     ],
     "item_1790142085428": [
       "recipe_1790564228267"
@@ -42247,9 +42250,9 @@
       "recipe_1790566058919": [
         {
           "type": "item",
-          "ref": "item_1790142068808",
+          "ref": "kaleidoscope_tavern_gold_grape_bucket______",
           "matched": [
-            "item_1790142068808"
+            "kaleidoscope_tavern_gold_grape_bucket______"
           ]
         },
         {

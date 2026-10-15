@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-10-09T05:40:18.411Z",
+  "updatedAt": "2026-10-15T05:34:56.864Z",
   "data": {
     "items": {
       "item_1790124131145": {
@@ -5913,7 +5913,7 @@
           "tag_food_main_staple",
           "tag_food_ingredient_vegetarian",
           "tag_food_flavor_spicy",
-          "tag_food_flavor_light"
+          "tag_1791442558597"
         ],
         "createdAt": "2026-09-28T06:34:38.113Z",
         "autoPrice": 55.5
@@ -6053,7 +6053,8 @@
           "tag_1790175849511",
           "tag_food_main_staple",
           "tag_food_flavor_spicy",
-          "tag_food_ingredient_meat"
+          "tag_food_ingredient_meat",
+          "tag_1791442558597"
         ],
         "createdAt": "2026-09-28T06:34:49.113Z",
         "autoPrice": 62.2
@@ -6504,7 +6505,7 @@
           "tag_1791442723408"
         ],
         "createdAt": "2026-09-28T06:35:27.113Z",
-        "autoPrice": 21.4
+        "autoPrice": 39.1
       },
       "kaleidoscope_world_liquor_dassai___": {
         "id": "kaleidoscope_world_liquor_dassai___",
@@ -6983,32 +6984,7 @@
           "youkaisfeasts_oyaki___",
           "bakery_chocolate_truffle______"
         ],
-        "childTags": [
-          "tag_food_main_staple",
-          "tag_food_main_drink",
-          "tag_food_main_snack",
-          "tag_food_flavor_sweet",
-          "tag_food_flavor_spicy",
-          "tag_food_flavor_sour",
-          "tag_food_flavor_umami",
-          "tag_food_flavor_light",
-          "tag_food_flavor_rich",
-          "tag_food_flavor_refreshing",
-          "tag_food_drink_mellow",
-          "tag_food_drink_dry",
-          "tag_food_drink_bitter",
-          "tag_food_ingredient_meat",
-          "tag_food_ingredient_aquatic",
-          "tag_food_ingredient_vegetarian",
-          "tag_food_ingredient_fungus",
-          "tag_food_ingredient_fruit",
-          "tag_food_ingredient_dairy",
-          "tag_food_ingredient_grain",
-          "tag_food_form_soup",
-          "tag_food_form_tea",
-          "tag_food_form_raw",
-          "tag_food_form_baked"
-        ],
+        "childTags": [],
         "parentTags": []
       },
       "tag_1790252241364": {
@@ -7773,7 +7749,6 @@
           "collectorsreap_deluxe_salad_____",
           "farmersdelight_mixed_salad_____",
           "youkaisfeasts_cold_tofu_____",
-          "kaleidoscope_grilling_cold_houttuynia______",
           "farmersdelight_cooked_rice___",
           "youkaisfeasts_steamed_crab_____",
           "farmersdelight_vegetable_noodles____",
@@ -8599,7 +8574,9 @@
           "kaleidoscope_cookery_stargazy_pie______",
           "kaleidoscope_cookery_fried_caterpillar______",
           "kaleidoscope_chinesefood_douzhi____",
-          "youkaisfeasts_stinky_tofu____"
+          "youkaisfeasts_stinky_tofu____",
+          "kaleidoscope_grilling_cold_houttuynia______",
+          "kaleidoscope_grilling_houttuynia_stir_fried_pork______"
         ],
         "childTags": [],
         "parentTags": []
@@ -16923,7 +16900,7 @@
       "recipe_1790502128889": {
         "id": "recipe_1790502128889",
         "name": "椰子布丁",
-        "workstation": "kaleidoscope_world_liquor_freezer___",
+        "workstation": "kaleidoscope_fragrantorchard_juicer____",
         "inputs": [
           {
             "type": "item",
@@ -22663,7 +22640,7 @@
         "inputs": [
           {
             "type": "item",
-            "ref": "item_1790142068808",
+            "ref": "kaleidoscope_tavern_gold_grape_bucket______",
             "count": 4
           },
           {

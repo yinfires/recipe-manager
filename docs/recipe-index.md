@@ -1,7 +1,7 @@
 # AI 配方与解锁规划索引
 
 > 本文件由 `public/data/recipe-manager.json` 自动生成，只读，不是正式数据源。
-> 源数据更新时间：2026-10-09T05:40:18.411Z；生成格式版本：3
+> 源数据更新时间：2026-10-15T05:34:56.864Z；生成格式版本：3
 
 ## 快速统计
 
@@ -40,11 +40,11 @@
 | kaleidoscope_cookery_steamer___ | 蒸笼 | 9 |
 | kaleidoscope_cookery_stockpot___ | 汤锅 | 93 |
 | kaleidoscope_cookery_teapot___ | 茶壶 | 8 |
-| kaleidoscope_fragrantorchard_juicer____ | 榨汁机 | 18 |
+| kaleidoscope_fragrantorchard_juicer____ | 榨汁机 | 19 |
 | kaleidoscope_grilling_grill____ | 烧烤架 | 11 |
 | kaleidoscope_grilling_oil_press____ | 榨油器 | 1 |
 | kaleidoscope_tavern_barrel___ | 酒桶 | 7 |
-| kaleidoscope_world_liquor_freezer___ | 冰柜 | 8 |
+| kaleidoscope_world_liquor_freezer___ | 冰柜 | 7 |
 | minecraft_stick___ | 木棍 | 11 |
 | youkaisfeasts_cuisine_board____ | 料理台 | 22 |
 | youkaisfeasts_fermentation_tank____ | 发酵桶 | 9 |
@@ -106,7 +106,7 @@
 | item_1790141993088 | 梨 | 3 |
 | item_1790142009787 | 葡萄 | 3 |
 | item_1790142054571 | 冰葡萄 | 1 |
-| item_1790142068808 | 黄金葡萄 | 2 |
+| item_1790142068808 | 黄金葡萄 | 1 |
 | item_1790142085428 | 青提葡萄 | 1 |
 | item_1790155533298 | 生牛肉 | 3 |
 | item_1790155582175 | 生猪排 | 2 |
