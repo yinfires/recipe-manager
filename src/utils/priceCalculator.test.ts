@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { AppData, Item, Recipe, RecipeSlot } from '../types';
-import { getEffectivePrice, recalculatePrices } from './priceCalculator';
+import { calculatePlainPrices, getEffectivePrice, getItemProfit, recalculatePrices } from './priceCalculator';
 
 function item(id: string, manualPrice?: number, tags: string[] = []): Item {
   return {
@@ -31,6 +31,82 @@ function data(items: Item[], recipes: Recipe[], tags: AppData['tags'] = {}): App
 }
 
 describe('priceCalculator', () => {
+  it('excludes fees throughout the chain and never propagates manual selling prices', () => {
+    const values = [item('raw', 10), item('middle', 30), item('final'), item('machine', undefined, ['workstation'])];
+    values[3].processingFee = { fixedFee: 2, rate: 0.1, cap: 3 };
+    const first = recipe('first', [slot('raw')], [slot('middle')]);
+    first.workstation = 'machine';
+    const last = recipe('last', [slot('middle', 2)], [slot('final', 2)]);
+    last.workstation = 'machine';
+    last.processingFeeOverride = { fixedFee: 50, rate: 1, capMode: 'value', cap: 4 };
+    const source = data(values, [first, last], {
+      workstation: { id: 'workstation', name: '工作方块', items: ['machine'], childTags: [], parentTags: [] }
+    });
+    const actual = recalculatePrices(source);
+    const plain = calculatePlainPrices(actual);
+    expect(actual.items.middle.autoPrice).toBe(13);
+    expect(actual.items.final.autoPrice).toBe(32);
+    expect(plain.middle).toBe(10);
+    expect(plain.final).toBe(10);
+    expect(getItemProfit(actual.items.middle, plain)).toBe(20);
+    expect(getItemProfit(actual.items.final, plain)).toBe(22);
+    expect(source.items.final.autoPrice).toBeUndefined();
+    expect(actual.items.middle.manualPrice).toBe(30);
+    const changed = recalculatePrices({ ...actual, items: { ...actual.items, raw: { ...actual.items.raw, manualPrice: 20 } } });
+    expect(calculatePlainPrices(changed).final).toBe(20);
+  });
+
+  it('uses plain tag prices and attachments and splits outputs without deducting manual prices', () => {
+    const source = data([item('raw', 8), item('high', 20), item('middle', 100), item('attachment', 2), item('a', 40), item('b')], [
+      recipe('middle', [slot('raw')], [slot('middle')]),
+      recipe('split', [slot('choice', 2, 'tag')], [slot('a', 2), slot('b')], [slot('attachment', 2)])
+    ], { choice: { id: 'choice', name: 'choice', items: ['middle', 'high'], childTags: [], parentTags: [] } });
+    const plain = calculatePlainPrices(source);
+    expect(plain.a).toBe(5);
+    expect(plain.b).toBe(10);
+  });
+
+  it('keeps unknown produced prices unknown while supporting zero anchors and negative profits', () => {
+    const source = data([item('unknown'), item('unpriced'), item('produced', 10), item('zero', 0), item('raw', 5), item('loss', 2)], [
+      recipe('unknown', [slot('unknown')], [slot('produced')]),
+      recipe('loss', [slot('raw')], [slot('loss')])
+    ]);
+    const actual = recalculatePrices(source);
+    const plain = calculatePlainPrices(actual);
+    expect(plain.produced).toBeUndefined();
+    expect(getItemProfit(actual.items.produced, plain)).toBeUndefined();
+    expect(getItemProfit(actual.items.unpriced, plain)).toBeUndefined();
+    expect(plain.zero).toBe(0);
+    expect(getItemProfit(actual.items.zero, plain)).toBe(0);
+    expect(getItemProfit(actual.items.loss, plain)).toBe(-3);
+    expect(getItemProfit(item('fraction', 0.3), { fraction: 0.2 })).toBe(0.1);
+  });
+
+  it('chooses the cheapest plain recipe and leaves unseeded cycles unknown', () => {
+    const plain = calculatePlainPrices(data([item('cheap', 4), item('expensive', 9), item('result'), item('a', 100), item('b')], [
+      recipe('cheap', [slot('cheap')], [slot('result')]),
+      recipe('expensive', [slot('expensive')], [slot('result')]),
+      recipe('cycle-a', [slot('a')], [slot('b')]),
+      recipe('cycle-b', [slot('b')], [slot('a')])
+    ]));
+    expect(plain.result).toBe(4);
+    expect(plain.a).toBeUndefined();
+    expect(plain.b).toBeUndefined();
+  });
+
+  it('reverse derives a single input using independently derived plain outputs', () => {
+    const source = data([item('raw', 20), item('input'), item('a', 100), item('b', 100), item('attachment', 2)], [
+      recipe('seed-a', [slot('raw')], [slot('a')]),
+      recipe('seed-b', [slot('raw')], [slot('b')]),
+      recipe('reverse', [slot('input', 2)], [slot('a'), slot('b')])
+    ]);
+    // 两个输出由独立配方获得素价，反推不使用其手动售价。
+    const plain = calculatePlainPrices(source);
+    expect(plain.input).toBe(20);
+    expect(plain.a).toBe(20);
+    expect(plain.b).toBe(20);
+  });
+
   it('uses actual quantities and ignores materials without prices', () => {
     const result = recalculatePrices(data(
       [item('known', 2), item('unknown'), item('result')],

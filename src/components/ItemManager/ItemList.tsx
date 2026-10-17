@@ -8,6 +8,8 @@ import { TagFilter } from '../common/TagFilter';
 import { ItemEditDialog } from './ItemEditDialog';
 import { matchesSearch } from '../../utils/searchMatcher';
 import { loadItemFilterSettings, saveItemFilterSettings } from '../../utils/itemFilters';
+import { getEffectivePrice, getItemProfit } from '../../utils/priceCalculator';
+import { loadItemPriceDisplaySettings, saveItemPriceDisplaySettings } from '../../utils/itemPriceDisplay';
 import {
   ItemSortDirection,
   ItemSortField,
@@ -21,6 +23,7 @@ import {
 const SORT_FIELD_LABELS: Record<ItemSortField, string> = {
   createdAt: '时间',
   price: '价格',
+  profit: '利润',
   tags: '标签'
 };
 
@@ -112,13 +115,18 @@ function ItemSortToolbar({
 }
 
 export function ItemList() {
-  const { data, setData, isEditable, isLoading } = useApp();
+  const { data, plainPrices, setData, isEditable, isLoading } = useApp();
   const { setSelectedItem } = useNavigation();
   const initialFilters = useState(loadItemFilterSettings)[0];
   const [searchText, setSearchText] = useState(initialFilters.searchText);
   const [selectedTagIds, setSelectedTagIds] = useState(initialFilters.selectedTagIds);
   const [isCreating, setIsCreating] = useState(false);
   const [sortSettings, setSortSettings] = useState(loadItemSortSettings);
+  const [priceDisplay, setPriceDisplay] = useState(loadItemPriceDisplaySettings);
+
+  useEffect(() => {
+    saveItemPriceDisplaySettings(priceDisplay);
+  }, [priceDisplay]);
 
   useEffect(() => {
     saveItemSortSettings(sortSettings);
@@ -146,7 +154,7 @@ export function ItemList() {
 
     return matchesText && matchesTags;
   });
-  const items = sortItems(filteredItems, data.tags, sortSettings);
+  const items = sortItems(filteredItems, data.tags, sortSettings, plainPrices);
 
   const handleCreate = () => {
     setIsCreating(true);
@@ -192,6 +200,12 @@ export function ItemList() {
           onChange={setSelectedTagIds}
         />
         <ItemSortToolbar settings={sortSettings} onChange={setSortSettings} />
+        <div className="item-price-display-controls" aria-label="物品价格显示选项">
+          <label><input type="checkbox" checked={priceDisplay.showPrices}
+            onChange={event => setPriceDisplay({ ...priceDisplay, showPrices: event.target.checked })} />显示价格</label>
+          <label><input type="checkbox" checked={priceDisplay.showProfit}
+            onChange={event => setPriceDisplay({ ...priceDisplay, showProfit: event.target.checked })} />显示利润</label>
+        </div>
         {isEditable && <button className="btn-primary" onClick={handleCreate}>+ 新建物品</button>}
       </div>
 
@@ -211,6 +225,15 @@ export function ItemList() {
               entityType="item"
               entityId={item.id}
             />
+            {(priceDisplay.showPrices || priceDisplay.showProfit) && (
+              <div className="item-card-prices">
+                {priceDisplay.showPrices && <>
+                  <span>实际价格：{getEffectivePrice(item) ?? '无'}</span>
+                  <span>素价格：{plainPrices[item.id] ?? '无'}</span>
+                </>}
+                {priceDisplay.showProfit && <span>利润：{getItemProfit(item, plainPrices) ?? '无'}</span>}
+              </div>
+            )}
           </div>
         ))}
         {items.length === 0 && (

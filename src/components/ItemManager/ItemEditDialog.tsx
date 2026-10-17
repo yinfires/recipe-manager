@@ -4,6 +4,7 @@ import { Item } from '../../types';
 import { SearchInput } from '../common/SearchInput';
 import { matchesSearch } from '../../utils/searchMatcher';
 import { useBackdropClick } from '../common/useBackdropClick';
+import { getItemProfit } from '../../utils/priceCalculator';
 
 interface ItemEditDialogProps {
   item: Item | null;
@@ -14,7 +15,7 @@ interface ItemEditDialogProps {
 }
 
 export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: ItemEditDialogProps) {
-  const { data } = useApp();
+  const { data, plainPrices } = useApp();
   const backdropClickHandlers = useBackdropClick(onCancel);
   const [formData, setFormData] = useState<Item>({
     id: item?.id || '',
@@ -153,6 +154,16 @@ export function ItemEditDialog({ item, onSave, onDelete, onCancel, onClose }: It
           </div>
 
           <div className="price-edit-grid">
+            <div className="form-group">
+              <label>素价格</label>
+              <input type="text" value={item ? plainPrices[item.id] ?? '无' : '无'}
+                readOnly className="price-readonly-input" aria-label="素价格" />
+            </div>
+            <div className="form-group">
+              <label>利润</label>
+              <input type="text" value={item ? getItemProfit(item, plainPrices) ?? '无' : '无'}
+                readOnly className="price-readonly-input" aria-label="利润" />
+            </div>
             <div className="form-group">
               <label>自动计算价格</label>
               <input

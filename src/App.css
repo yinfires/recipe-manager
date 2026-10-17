@@ -520,6 +520,30 @@ button {
   border-color: var(--accent);
 }
 
+.item-price-display-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.item-price-display-controls label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.item-card-prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
 .tag-children {
   font-size: 12px;
   color: var(--text-dim);

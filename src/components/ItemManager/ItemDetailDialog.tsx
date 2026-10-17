@@ -4,6 +4,7 @@ import { ItemDisplay } from '../common/ItemDisplay';
 import { findRecipesForTarget } from '../../utils/recipeRelations';
 import { entityDataAttributes } from '../../utils/entityTarget';
 import { useBackdropClick } from '../common/useBackdropClick';
+import { getEffectivePrice, getItemProfit } from '../../utils/priceCalculator';
 
 interface ItemDetailDialogProps {
   item: Item | Tag;
@@ -16,7 +17,7 @@ interface ItemDetailDialogProps {
 }
 
 export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem, onNavigateToTag, onNavigateToRecipe }: ItemDetailDialogProps) {
-  const { data, showItemIds } = useApp();
+  const { data, plainPrices, showItemIds } = useApp();
   const backdropClickHandlers = useBackdropClick(onBack || onClose);
 
   const targetType = 'itemId' in item ? 'item' : 'tag';
@@ -235,23 +236,22 @@ export function ItemDetailDialog({ item, mode, onClose, onBack, onNavigateToItem
 
               <section className="item-detail-field">
                 <div className="item-detail-label">价格</div>
-                {item.autoPrice === undefined && item.manualPrice === undefined ? (
-                  <div className="item-detail-value">无</div>
-                ) : (
-                  <div className="price-detail-list">
-                    <div>
-                      <span>自动计算价格</span>
-                      <strong>{item.autoPrice === undefined ? '无' : item.autoPrice}</strong>
-                    </div>
-                    <div>
-                      <span>手动覆盖价格</span>
-                      <strong>{item.manualPrice === undefined ? '无' : item.manualPrice}</strong>
-                    </div>
-                    {item.manualPrice !== undefined && (
-                      <div className="price-active-note">当前采用手动覆盖价格</div>
-                    )}
+                <div className="price-detail-list">
+                  <div><span>实际价格</span><strong>{getEffectivePrice(item) ?? '无'}</strong></div>
+                  <div><span>素价格</span><strong>{plainPrices[item.id] ?? '无'}</strong></div>
+                  <div><span>利润</span><strong>{getItemProfit(item, plainPrices) ?? '无'}</strong></div>
+                  <div>
+                    <span>自动计算价格</span>
+                    <strong>{item.autoPrice === undefined ? '无' : item.autoPrice}</strong>
                   </div>
-                )}
+                  <div>
+                    <span>手动覆盖价格</span>
+                    <strong>{item.manualPrice === undefined ? '无' : item.manualPrice}</strong>
+                  </div>
+                  {item.manualPrice !== undefined && (
+                    <div className="price-active-note">当前采用手动覆盖价格</div>
+                  )}
+                </div>
               </section>
 
               <section className="item-detail-field">

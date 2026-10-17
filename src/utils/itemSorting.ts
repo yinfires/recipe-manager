@@ -1,7 +1,7 @@
 import { Item, Tag } from '../types';
-import { getEffectivePrice } from './priceCalculator';
+import { getEffectivePrice, getItemProfit, PlainPrices } from './priceCalculator';
 
-export type ItemSortField = 'createdAt' | 'price' | 'tags';
+export type ItemSortField = 'createdAt' | 'price' | 'profit' | 'tags';
 export type ItemSortDirection = 'asc' | 'desc';
 
 export interface ItemSortSettings {
@@ -24,7 +24,7 @@ export const DEFAULT_ITEM_SORT_SETTINGS: ItemSortSettings = {
   secondaryDirection: 'asc'
 };
 
-const fields: ItemSortField[] = ['createdAt', 'price', 'tags'];
+const fields: ItemSortField[] = ['createdAt', 'price', 'profit', 'tags'];
 const directions: ItemSortDirection[] = ['asc', 'desc'];
 const collator = new Intl.Collator('zh-CN', { numeric: true, sensitivity: 'base' });
 
@@ -104,8 +104,9 @@ function comparePresentValues(left: number | string, right: number | string): nu
     : collator.compare(String(left), String(right));
 }
 
-function fieldValue(item: Item, field: ItemSortField, tags: Record<string, Tag>): number | string | undefined {
+function fieldValue(item: Item, field: ItemSortField, tags: Record<string, Tag>, plainPrices: PlainPrices): number | string | undefined {
   if (field === 'price') return getEffectivePrice(item);
+  if (field === 'profit') return getItemProfit(item, plainPrices);
   if (field === 'tags') return tagSortKey(item, tags);
 
   const time = typeof item.createdAt === 'string' ? Date.parse(item.createdAt) : Number.NaN;
@@ -117,10 +118,11 @@ function compareField(
   right: Item,
   field: ItemSortField,
   direction: ItemSortDirection,
-  tags: Record<string, Tag>
+  tags: Record<string, Tag>,
+  plainPrices: PlainPrices
 ): number {
-  const leftValue = fieldValue(left, field, tags);
-  const rightValue = fieldValue(right, field, tags);
+  const leftValue = fieldValue(left, field, tags, plainPrices);
+  const rightValue = fieldValue(right, field, tags, plainPrices);
   const leftMissing = leftValue === undefined;
   const rightMissing = rightValue === undefined;
 
@@ -136,18 +138,19 @@ function compareField(
 export function sortItems(
   items: Item[],
   tags: Record<string, Tag>,
-  settings: ItemSortSettings
+  settings: ItemSortSettings,
+  plainPrices: PlainPrices = {}
 ): Item[] {
   const normalized = normalizeItemSortSettings(settings);
   return [...items].sort((left, right) => {
     const primary = compareField(
-      left, right, normalized.primaryField, normalized.primaryDirection, tags
+      left, right, normalized.primaryField, normalized.primaryDirection, tags, plainPrices
     );
     if (primary !== 0) return primary;
 
     if (normalized.secondaryField) {
       const secondary = compareField(
-        left, right, normalized.secondaryField, normalized.secondaryDirection, tags
+        left, right, normalized.secondaryField, normalized.secondaryDirection, tags, plainPrices
       );
       if (secondary !== 0) return secondary;
     }

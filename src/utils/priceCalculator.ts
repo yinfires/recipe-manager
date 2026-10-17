@@ -3,6 +3,30 @@ import { calculateProcessingFee, resolveProcessingFee, reverseInputTotal } from 
 
 const PRICE_FACTOR = 10;
 
+export type PlainPrices = Readonly<Record<string, number | undefined>>;
+
+export function getItemProfit(item: Item | undefined, plainPrices: PlainPrices): number | undefined {
+  const actualPrice = getEffectivePrice(item);
+  const plainPrice = item ? plainPrices[item.id] : undefined;
+  return actualPrice === undefined || plainPrice === undefined
+    ? undefined
+    : roundPrice(actualPrice - plainPrice);
+}
+
+export function calculatePlainPrices(data: AppData): PlainPrices {
+  const producedItems = new Set(Object.values(data.recipes).flatMap(recipe =>
+    recipe.outputs.filter(slot => slot.type === 'item' && slot.count > 0).map(slot => slot.ref)
+  ));
+  const items = Object.fromEntries(Object.entries(data.items).map(([id, item]) => {
+    const copy = { ...item };
+    // 手动售价只为没有产出配方的物品提供素价格锚点。
+    if (producedItems.has(id)) delete copy.manualPrice;
+    return [id, copy];
+  }));
+  const plainData = calculatePrices({ ...data, items }, false);
+  return Object.fromEntries(Object.values(plainData.items).map(item => [item.id, getEffectivePrice(item)]));
+}
+
 export function roundPrice(value: number): number {
   return Math.round((value + Number.EPSILON) * PRICE_FACTOR) / PRICE_FACTOR;
 }
@@ -81,7 +105,7 @@ function addCandidate(candidates: Map<string, number[]>, itemId: string, value: 
   candidates.set(itemId, values);
 }
 
-function collectForwardCandidates(data: AppData, candidates: Map<string, number[]>) {
+function collectForwardCandidates(data: AppData, candidates: Map<string, number[]>, includeProcessingFees: boolean) {
   Object.values(data.recipes).forEach(recipe => {
     let inputTotal = 0;
     let hasKnownInputPrice = false;
@@ -97,7 +121,8 @@ function collectForwardCandidates(data: AppData, candidates: Map<string, number[
     const outputs = aggregateItemSlots(recipe.outputs);
     if (!hasKnownInputPrice || outputs.size === 0) return;
 
-    const distributableTotal = inputTotal + calculateProcessingFee(inputTotal, resolveProcessingFee(data, recipe));
+    const distributableTotal = inputTotal + (includeProcessingFees
+      ? calculateProcessingFee(inputTotal, resolveProcessingFee(data, recipe)) : 0);
 
     const outputKinds = [...outputs.entries()];
     const baseShare = distributableTotal / outputKinds.length;
@@ -124,7 +149,7 @@ function collectForwardCandidates(data: AppData, candidates: Map<string, number[
   });
 }
 
-function collectReverseCandidates(data: AppData, candidates: Map<string, number[]>) {
+function collectReverseCandidates(data: AppData, candidates: Map<string, number[]>, includeProcessingFees: boolean) {
   Object.values(data.recipes).forEach(recipe => {
     const inputItems = aggregateItemSlots(recipe.inputs);
     const containsNonItemInput = recipe.inputs.some(slot => slot.type !== 'item');
@@ -158,7 +183,8 @@ function collectReverseCandidates(data: AppData, candidates: Map<string, number[
     });
 
     if (hasKnownOutputPrice && !hasUnknownAttachment) {
-      const totalBeforeProcessing = reverseInputTotal(outputTotal, resolveProcessingFee(data, recipe));
+      const totalBeforeProcessing = includeProcessingFees
+        ? reverseInputTotal(outputTotal, resolveProcessingFee(data, recipe)) : outputTotal;
       const inputItemTotal = Math.max(0, totalBeforeProcessing - knownAttachmentTotal);
       addCandidate(candidates, inputItemId, inputItemTotal / inputCount);
     }
@@ -173,14 +199,18 @@ function priceSignature(data: AppData): string {
 }
 
 export function recalculatePrices(data: AppData): AppData {
+  return calculatePrices(data, true);
+}
+
+function calculatePrices(data: AppData, includeProcessingFees: boolean): AppData {
   let current = cloneWithoutAutoPrices(data);
   const seenStates = new Set<string>([priceSignature(current)]);
   const maxIterations = Math.max(32, Math.min(256, Object.keys(current.items).length * 4 + Object.keys(current.recipes).length * 4));
 
   for (let iteration = 0; iteration < maxIterations; iteration += 1) {
     const candidates = new Map<string, number[]>();
-    collectForwardCandidates(current, candidates);
-    collectReverseCandidates(current, candidates);
+    collectForwardCandidates(current, candidates, includeProcessingFees);
+    collectReverseCandidates(current, candidates, includeProcessingFees);
 
     const nextItems = Object.fromEntries(
       Object.entries(current.items).map(([itemId, item]) => {

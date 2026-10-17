@@ -1,10 +1,11 @@
-import { createContext, useCallback, useContext, useRef, useState, useEffect, ReactNode } from 'react';
+import { createContext, useCallback, useContext, useRef, useState, useEffect, useMemo, ReactNode } from 'react';
 import { AppData } from '../types';
 import { DataStore, SaveState } from '../data/store';
-import { recalculatePrices } from '../utils/priceCalculator';
+import { calculatePlainPrices, PlainPrices, recalculatePrices } from '../utils/priceCalculator';
 
 interface AppContextType {
   data: AppData;
+  plainPrices: PlainPrices;
   setData: (data: AppData | ((prev: AppData) => AppData)) => void;
   showItemIds: boolean;
   setShowItemIds: (show: boolean) => void;
@@ -35,6 +36,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [legacyData, setLegacyData] = useState<AppData | null>(null);
   const [showItemIds, setShowItemIds] = useState(false);
   const loadedRef = useRef(false);
+  const plainPrices = useMemo(() => calculatePlainPrices(data), [data.items, data.tags, data.recipes]);
   const dirtyRef = useRef(false);
   const saveTimerRef = useRef<number | null>(null);
 
@@ -113,7 +115,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   return (
     <AppContext.Provider value={{
-      data, setData, showItemIds, setShowItemIds, isEditable, isLoading, saveState,
+      data, plainPrices, setData, showItemIds, setShowItemIds, isEditable, isLoading, saveState,
       saveNow, downloadBackup: () => DataStore.download(data), legacyData,
       migrateLegacyData, keepFileData
     }}>

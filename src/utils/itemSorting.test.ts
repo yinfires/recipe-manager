@@ -38,6 +38,36 @@ function settings(overrides: Partial<ItemSortSettings>): ItemSortSettings {
 }
 
 describe('itemSorting', () => {
+  it('sorts positive, zero and negative profits and always places unknown profits last', () => {
+    const values = ['positive', 'zero', 'negative', 'unknown', 'noactual'].map(id => item(id, 'invalid',
+      id === 'noactual' ? {} : { manualPrice: 10 }));
+    const plain = { positive: 8, zero: 10, negative: 12, noactual: 1 };
+    expect(sortItems(values, tags, settings({ primaryField: 'profit', primaryDirection: 'asc' }), plain).map(value => value.id))
+      .toEqual(['negative', 'zero', 'positive', 'noactual', 'unknown']);
+    expect(sortItems(values, tags, settings({ primaryField: 'profit', primaryDirection: 'desc' }), plain).map(value => value.id))
+      .toEqual(['positive', 'zero', 'negative', 'noactual', 'unknown']);
+  });
+
+  it('combines profit with secondary sorting and keeps deterministic ties', () => {
+    const values = [item('b', 'invalid', { manualPrice: 10 }), item('a', 'invalid', { manualPrice: 8 }), item('c', 'invalid', { manualPrice: 10 })];
+    const plain = { b: 8, a: 6, c: 9 };
+    expect(sortItems(values, tags, settings({ primaryField: 'profit', primaryDirection: 'desc', secondaryField: 'price', secondaryDirection: 'asc' }), plain).map(value => value.id))
+      .toEqual(['a', 'b', 'c']);
+    expect(sortItems(values, tags, settings({ primaryField: 'price', secondaryField: 'profit', secondaryDirection: 'desc' }), plain).map(value => value.id))
+      .toEqual(['b', 'c', 'a']);
+    expect(sortItems(values, tags, settings({ primaryField: 'profit', primaryDirection: 'desc' }), plain).map(value => value.id))
+      .toEqual(['a', 'b', 'c']);
+  });
+
+  it('restores profit preferences and continues accepting old preferences', () => {
+    const values = new Map<string, string>();
+    const storage = { getItem: (key: string) => values.get(key) ?? null, setItem: (key: string, value: string) => { values.set(key, value); } };
+    const value = settings({ primaryField: 'profit', secondaryField: 'price', primaryDirection: 'asc' });
+    saveItemSortSettings(value, storage);
+    expect(loadItemSortSettings(storage)).toEqual(value);
+    expect(normalizeItemSortSettings(DEFAULT_ITEM_SORT_SETTINGS)).toEqual(DEFAULT_ITEM_SORT_SETTINGS);
+  });
+
   it('sorts creation time in both directions', () => {
     const values = [
       item('missing', 'invalid'),

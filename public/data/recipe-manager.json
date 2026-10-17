@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-10-15T05:34:56.864Z",
+  "updatedAt": "2026-10-16T04:58:27.258Z",
   "data": {
     "items": {
       "item_1790124131145": {
@@ -999,7 +999,7 @@
       },
       "kaleidoscope_tavern_empty_glassware____": {
         "id": "kaleidoscope_tavern_empty_glassware____",
-        "name": "空酒杯",
+        "name": "空杯子",
         "itemId": "kaleidoscope_tavern:empty_glassware",
         "tags": [
           "tag_1790169485328"
